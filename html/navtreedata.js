@@ -35,19 +35,16 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_effects_container_8h_source.html",
-"class_a_rotatable_actor.html#ae6a6ba15dea33e12f9b6738da7ab2f65",
-"class_u_grabbable_skel_mesh.html#ace3586798570b1205c54183976eb08b6",
-"class_u_v_r_physics_handle_component.html#afc1cd9d0a9b574775fbbcaef6631371d"
+"annotated.html",
+"class_a_slidable_actor.html#a4ad3ac99184fc478457ad062c227026c",
+"class_u_pressable_static_mesh.html#a0a62d3d205d2ce9e4f964a215130796a",
+"functions_func_p.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

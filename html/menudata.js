@@ -89,6 +89,4 @@ var menudata={children:[
 {text:"t",url:"functions_vars_t.html#index_t"},
 {text:"u",url:"functions_vars_u.html#index_u"},
 {text:"v",url:"functions_vars_v.html#index_v"},
-{text:"w",url:"functions_vars_w.html#index_w"}]}]}]},
-{text:"Files",url:"files.html",children:[
-{text:"File List",url:"files.html"}]}]}
+{text:"w",url:"functions_vars_w.html#index_w"}]}]}]}]}
