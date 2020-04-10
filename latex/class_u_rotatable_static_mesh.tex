@@ -1,0 +1,490 @@
+\hypertarget{class_u_rotatable_static_mesh}{}\doxysection{U\+Rotatable\+Static\+Mesh Class Reference}
+\label{class_u_rotatable_static_mesh}\index{URotatableStaticMesh@{URotatableStaticMesh}}
+
+
+{\ttfamily \#include $<$Rotatable\+Static\+Mesh.\+h$>$}
+
+Inheritance diagram for U\+Rotatable\+Static\+Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_rotatable_static_mesh}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_rotatable_static_mesh_aad612bf9f96d5234dc9c67007253f57a}{U\+Rotatable\+Static\+Mesh}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_rotatable_static_mesh_aa3846829da80305a2141c9aa6e59a5a3}{Tick\+Component}} (float Delta\+Time, enum E\+Level\+Tick Tick\+Type, F\+Actor\+Component\+Tick\+Function $\ast$This\+Tick\+Function) override
+\item 
+void \mbox{\hyperlink{class_u_rotatable_static_mesh_aae6f4464fd62b3d348911892132bb80d}{Update\+Grabbed\+Rotation}} ()
+\item 
+void \mbox{\hyperlink{class_u_rotatable_static_mesh_a3dbd2782eebbd2e78fdc362a6473213b}{Update\+Rotatable}} (float Delta\+Time)
+\item 
+void \mbox{\hyperlink{class_u_rotatable_static_mesh_a818c993eff1a4ef834b87883954eb7c1}{Increase\+Cumulative\+Angle}} (float increase\+Amount)
+\item 
+bool \mbox{\hyperlink{class_u_rotatable_static_mesh_adcce396e0d6dfa1ed8d63a3ac9e1e51b}{In\+Range}} (float Value, float Min, float Max, bool Inclusive\+Min=true, bool Inclusive\+Max=true)
+\item 
+void \mbox{\hyperlink{class_u_rotatable_static_mesh_aeb2bbe34d82aa09101f88b59fc9e211f}{Lock}} (float locking\+Angle)
+\item 
+void \mbox{\hyperlink{class_u_rotatable_static_mesh_af9702183fe634ac36678c27dd661685c}{Unlock}} ()
+\item 
+void \mbox{\hyperlink{class_u_rotatable_static_mesh_adb60bf24389b0f664770750488bbac06}{Interpolate\+To\+Locked\+Rotation}} (float locked\+Rotation)
+\item 
+void \mbox{\hyperlink{class_u_rotatable_static_mesh_aaa7e5c05a10153befab5cab0099bd1eb}{Update\+Rotation}} (float Delta\+Time=0.\+0f)
+\item 
+void \mbox{\hyperlink{class_u_rotatable_static_mesh_a68237d8ca42738533eaef241549002a0}{Update\+Physical\+Rotation}} (float Delta\+Time)
+\item 
+void \mbox{\hyperlink{class_u_rotatable_static_mesh_a2cd058edc52189b5202e87b455d1730f}{Create\+Scene\+Comp}} (U\+Scene\+Component $\ast$connection, F\+Vector world\+Location)
+\item 
+F\+Transform \mbox{\hyperlink{class_u_rotatable_static_mesh_a540f12c21afb1c46c327e5b33d7f0784}{Get\+Parent\+Transform}} ()
+\item 
+void \mbox{\hyperlink{class_u_rotatable_static_mesh_a6557a1f5bd951eba63fcee59b078df52}{Update\+Hand\+Grab\+Distance}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_rotatable_static_mesh_a8b8f58fe83afde8b47162f934b5d9be2}{Grab\+Pressed\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_u_rotatable_static_mesh_aa7933032518569ce17c80fa205fb97ec}{Grab\+Released\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_u_rotatable_static_mesh_a191bb593b8480d22b8825b73cfe5ed63}{Dragging\+\_\+\+Implementation}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{class_u_rotatable_static_mesh_ae1e4f61c521ca7caa400b2e95e359723}{Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_u_rotatable_static_mesh_a0ce4bba3de1c876acbf094e1933dd582}{End\+Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_u_rotatable_static_mesh_a7b62426dbcd5a6430d6e5c4d512beca4}{Get\+Interface\+Settings\+\_\+\+Implementation}} () override
+\item 
+\mbox{\Hypertarget{class_u_rotatable_static_mesh_a8e94343aeac4abc36441dd9b31b83e90}\label{class_u_rotatable_static_mesh_a8e94343aeac4abc36441dd9b31b83e90}} 
+virtual void {\bfseries Set\+Interface\+Settings\+\_\+\+Implementation} (\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} new\+Interface\+Settings) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+A\+V\+R\+Hand $\ast$ \mbox{\hyperlink{class_u_rotatable_static_mesh_a27ac89eedf160e0f11d6a846e1a2f25c}{hand\+Ref}}
+\item 
+E\+Static\+Rotation \mbox{\hyperlink{class_u_rotatable_static_mesh_aaf799e7621d1ad996e8ef7c89436ddcd}{rotate\+Mode}}
+\item 
+bool \mbox{\hyperlink{class_u_rotatable_static_mesh_a8d84d32fce231859bd2b4e6143e78bee}{lock\+Only\+Update}}
+\item 
+bool \mbox{\hyperlink{class_u_rotatable_static_mesh_aa64713918464be9e84464405a352762e}{fake\+Physics}}
+\item 
+bool \mbox{\hyperlink{class_u_rotatable_static_mesh_af2a53cdb47bd03a2791ce97381604593}{center\+Rotation\+Limit}}
+\item 
+bool \mbox{\hyperlink{class_u_rotatable_static_mesh_af05693756ca09d3fc78a53532e00b226}{release\+On\+Over\+Rotation}}
+\item 
+bool \mbox{\hyperlink{class_u_rotatable_static_mesh_a3d6f8f34cdc4e6523b0a3012ac7a885d}{debug}}
+\item 
+float \mbox{\hyperlink{class_u_rotatable_static_mesh_a652fc11099f29258a249b0b44a01879b}{restitution}}
+\item 
+float \mbox{\hyperlink{class_u_rotatable_static_mesh_ad68883b9882c8b3baf52842a9b7c5e10}{friction}}
+\item 
+float \mbox{\hyperlink{class_u_rotatable_static_mesh_a6adf6b747f8fc5f7379359ad533b4024}{grab\+Rotation\+Step}}
+\item 
+float \mbox{\hyperlink{class_u_rotatable_static_mesh_af57eae3db160f58dd931f68603ca25be}{rotation\+Limit}}
+\item 
+float \mbox{\hyperlink{class_u_rotatable_static_mesh_a7961ac3b9acf94d75425a05bc43fe480}{start\+Rotation}}
+\item 
+float \mbox{\hyperlink{class_u_rotatable_static_mesh_a5722c452b454adbb4b60d7ec6d370d7c}{max\+Over\+Rotation}}
+\item 
+float \mbox{\hyperlink{class_u_rotatable_static_mesh_a7c4f3cf30f2c851176f6e86f97738373}{cumulative\+Angle}}
+\item 
+int \mbox{\hyperlink{class_u_rotatable_static_mesh_ac21d1c8f6ed8f004c6d7b5de46a282ee}{revolution\+Count}}
+\item 
+U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_u_rotatable_static_mesh_ad74ea2a50e1ba192272858b4c87b13d1}{lock\+Haptic\+Effect}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_u_rotatable_static_mesh_a0d2b5c7a77105a074bd6cc53bb710994}{lock\+Sound}}
+\item 
+bool \mbox{\hyperlink{class_u_rotatable_static_mesh_a86488009536cd04b9e5f8cfb09b17006}{lockable}}
+\item 
+bool \mbox{\hyperlink{class_u_rotatable_static_mesh_a32b021df97c7cc52edcec47b95543912}{locked}}
+\item 
+bool \mbox{\hyperlink{class_u_rotatable_static_mesh_aa167a8222da9b87a4f286cc91133b1aa}{lock\+While\+Grabbed}}
+\item 
+bool \mbox{\hyperlink{class_u_rotatable_static_mesh_abeeeed27464f4ed71549fbba1fbf01e3}{grab\+While\+Locked}}
+\item 
+bool \mbox{\hyperlink{class_u_rotatable_static_mesh_a8e86643295e5d2969c638edb1a22143b}{release\+When\+Locked}}
+\item 
+bool \mbox{\hyperlink{class_u_rotatable_static_mesh_a06907c258a06ebbeb1f2dfd390db9e1f}{interpolate\+To\+Lock}}
+\item 
+float \mbox{\hyperlink{class_u_rotatable_static_mesh_a5ac7ecdaa4c0dc1c81a75bb1fcc98a0c}{locking\+Distance}}
+\item 
+float \mbox{\hyperlink{class_u_rotatable_static_mesh_aedcf46ff53fddc32f5dc671005f21fb5}{unlocking\+Distance}}
+\item 
+T\+Array$<$ float $>$ \mbox{\hyperlink{class_u_rotatable_static_mesh_a12257bdb3307b712debba9f1bb74c2ee}{locking\+Points}}
+\item 
+\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_u_rotatable_static_mesh_a88378a71d3d9ca488986a78558e67bd7}{interactable\+Settings}}
+\item 
+U\+Scene\+Component $\ast$ \mbox{\hyperlink{class_u_rotatable_static_mesh_a61ad6c7b99e3cbab84f163b4b359602a}{grab\+Scene}}
+\item 
+F\+Grabbed \mbox{\hyperlink{class_u_rotatable_static_mesh_a7d114d9be82a344ec0d24b1bd27db403}{On\+Mesh\+Grabbed}}
+\item 
+F\+Grabbed \mbox{\hyperlink{class_u_rotatable_static_mesh_a260301b1f9e973854e6619a5b6f71292}{On\+Mesh\+Released}}
+\item 
+F\+On\+Rotatable\+Mesh\+Lock \mbox{\hyperlink{class_u_rotatable_static_mesh_a2f24bd9347ca7048bc8316d8117c2a88}{On\+Rotatable\+Lock}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_rotatable_static_mesh_a2580622f8d97d0a79a3aebc87021b30f}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_u_rotatable_static_mesh_ac08d3c8f7c88e5f2f31499b76b1dbebb}{Update\+Rotatable\+Lock}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rotatable static mesh component created for implementing rotating parts on an actor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_rotatable_static_mesh_aad612bf9f96d5234dc9c67007253f57a}\label{class_u_rotatable_static_mesh_aad612bf9f96d5234dc9c67007253f57a}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!URotatableStaticMesh@{URotatableStaticMesh}}
+\index{URotatableStaticMesh@{URotatableStaticMesh}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{URotatableStaticMesh()}{URotatableStaticMesh()}}
+{\footnotesize\ttfamily U\+Rotatable\+Static\+Mesh\+::\+U\+Rotatable\+Static\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_rotatable_static_mesh_a2580622f8d97d0a79a3aebc87021b30f}\label{class_u_rotatable_static_mesh_a2580622f8d97d0a79a3aebc87021b30f}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Locking interpolation timer. Level start. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a2cd058edc52189b5202e87b455d1730f}\label{class_u_rotatable_static_mesh_a2cd058edc52189b5202e87b455d1730f}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!CreateSceneComp@{CreateSceneComp}}
+\index{CreateSceneComp@{CreateSceneComp}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{CreateSceneComp()}{CreateSceneComp()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Create\+Scene\+Comp (\begin{DoxyParamCaption}\item[{U\+Scene\+Component $\ast$}]{connection,  }\item[{F\+Vector}]{world\+Location }\end{DoxyParamCaption})}
+
+Spawns a scene component to keep track of certain rotations/locations relative to the hand and this component. @\+Param connection, the primitive component to connect the newly spawned scene component to. @\+Param world\+Location, the world location to spawn and attach the scene component at... \mbox{\Hypertarget{class_u_rotatable_static_mesh_a191bb593b8480d22b8825b73cfe5ed63}\label{class_u_rotatable_static_mesh_a191bb593b8480d22b8825b73cfe5ed63}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!Dragging\_Implementation@{Dragging\_Implementation}}
+\index{Dragging\_Implementation@{Dragging\_Implementation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{Dragging\_Implementation()}{Dragging\_Implementation()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Dragging\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ticking function that is ran while an interactable is grabbed. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae97908dd8838ff7157fdf8d61aeae1e6}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_rotatable_static_mesh_a0ce4bba3de1c876acbf094e1933dd582}\label{class_u_rotatable_static_mesh_a0ce4bba3de1c876acbf094e1933dd582}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!EndOverlapping\_Implementation@{EndOverlapping\_Implementation}}
+\index{EndOverlapping\_Implementation@{EndOverlapping\_Implementation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{EndOverlapping\_Implementation()}{EndOverlapping\_Implementation()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+End\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed is removed. N\+O\+TE\+: Handles un-\/highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a4f3dfa15eb379b4c9fd7f2dbe3aca9bd}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_rotatable_static_mesh_a7b62426dbcd5a6430d6e5c4d512beca4}\label{class_u_rotatable_static_mesh_a7b62426dbcd5a6430d6e5c4d512beca4}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}}
+\index{GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{GetInterfaceSettings\_Implementation()}{GetInterfaceSettings\_Implementation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} U\+Rotatable\+Static\+Mesh\+::\+Get\+Interface\+Settings\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get and set functions to allow changes from blueprint. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a445029683d12cb13b8bddff6dd093993}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_rotatable_static_mesh_a540f12c21afb1c46c327e5b33d7f0784}\label{class_u_rotatable_static_mesh_a540f12c21afb1c46c327e5b33d7f0784}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!GetParentTransform@{GetParentTransform}}
+\index{GetParentTransform@{GetParentTransform}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{GetParentTransform()}{GetParentTransform()}}
+{\footnotesize\ttfamily F\+Transform U\+Rotatable\+Static\+Mesh\+::\+Get\+Parent\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the correct transform to use as this components parent.... \mbox{\Hypertarget{class_u_rotatable_static_mesh_a8b8f58fe83afde8b47162f934b5d9be2}\label{class_u_rotatable_static_mesh_a8b8f58fe83afde8b47162f934b5d9be2}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!GrabPressed\_Implementation@{GrabPressed\_Implementation}}
+\index{GrabPressed\_Implementation@{GrabPressed\_Implementation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{GrabPressed\_Implementation()}{GrabPressed\_Implementation()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Grab\+Pressed\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Implementation of the hands interface. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a904db7e568a399ef503d68e40cf4d4eb}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_rotatable_static_mesh_aa7933032518569ce17c80fa205fb97ec}\label{class_u_rotatable_static_mesh_aa7933032518569ce17c80fa205fb97ec}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!GrabReleased\_Implementation@{GrabReleased\_Implementation}}
+\index{GrabReleased\_Implementation@{GrabReleased\_Implementation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{GrabReleased\_Implementation()}{GrabReleased\_Implementation()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Grab\+Released\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran when the trigger is released. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae50003621758b8836e206bff33003ab8}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_rotatable_static_mesh_a818c993eff1a4ef834b87883954eb7c1}\label{class_u_rotatable_static_mesh_a818c993eff1a4ef834b87883954eb7c1}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!IncreaseCumulativeAngle@{IncreaseCumulativeAngle}}
+\index{IncreaseCumulativeAngle@{IncreaseCumulativeAngle}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{IncreaseCumulativeAngle()}{IncreaseCumulativeAngle()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Increase\+Cumulative\+Angle (\begin{DoxyParamCaption}\item[{float}]{increase\+Amount }\end{DoxyParamCaption})}
+
+Updates and clamps both the cumulative angle and revolution count. @\+Param increase\+Amount, the amount the cumulative angle has increased/decreased. \mbox{\Hypertarget{class_u_rotatable_static_mesh_adcce396e0d6dfa1ed8d63a3ac9e1e51b}\label{class_u_rotatable_static_mesh_adcce396e0d6dfa1ed8d63a3ac9e1e51b}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!InRange@{InRange}}
+\index{InRange@{InRange}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{InRange()}{InRange()}}
+{\footnotesize\ttfamily bool U\+Rotatable\+Static\+Mesh\+::\+In\+Range (\begin{DoxyParamCaption}\item[{float}]{Value,  }\item[{float}]{Min,  }\item[{float}]{Max,  }\item[{bool}]{Inclusive\+Min = {\ttfamily true},  }\item[{bool}]{Inclusive\+Max = {\ttfamily true} }\end{DoxyParamCaption})}
+
+iS T\+HE V\+A\+L\+UE W\+I\+T\+H\+IN A R\+A\+N\+GE. Taken from kismet math library. \mbox{\Hypertarget{class_u_rotatable_static_mesh_adb60bf24389b0f664770750488bbac06}\label{class_u_rotatable_static_mesh_adb60bf24389b0f664770750488bbac06}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!InterpolateToLockedRotation@{InterpolateToLockedRotation}}
+\index{InterpolateToLockedRotation@{InterpolateToLockedRotation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{InterpolateToLockedRotation()}{InterpolateToLockedRotation()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Interpolate\+To\+Locked\+Rotation (\begin{DoxyParamCaption}\item[{float}]{locked\+Rotation }\end{DoxyParamCaption})}
+
+Interpolation function for interpolating the rotation to a given rotation. \mbox{\Hypertarget{class_u_rotatable_static_mesh_aeb2bbe34d82aa09101f88b59fc9e211f}\label{class_u_rotatable_static_mesh_aeb2bbe34d82aa09101f88b59fc9e211f}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!Lock@{Lock}}
+\index{Lock@{Lock}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{Lock()}{Lock()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Lock (\begin{DoxyParamCaption}\item[{float}]{locking\+Angle }\end{DoxyParamCaption})}
+
+Lock this rotatable static mesh at the specified locking angle. \mbox{\Hypertarget{class_u_rotatable_static_mesh_ae1e4f61c521ca7caa400b2e95e359723}\label{class_u_rotatable_static_mesh_ae1e4f61c521ca7caa400b2e95e359723}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!Overlapping\_Implementation@{Overlapping\_Implementation}}
+\index{Overlapping\_Implementation@{Overlapping\_Implementation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{Overlapping\_Implementation()}{Overlapping\_Implementation()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed. N\+O\+TE\+: Handles highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a06805a0a6903417322d5bda009bf8fa4}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_rotatable_static_mesh_aa3846829da80305a2141c9aa6e59a5a3}\label{class_u_rotatable_static_mesh_aa3846829da80305a2141c9aa6e59a5a3}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!TickComponent@{TickComponent}}
+\index{TickComponent@{TickComponent}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{TickComponent()}{TickComponent()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Tick\+Component (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{enum E\+Level\+Tick}]{Tick\+Type,  }\item[{F\+Actor\+Component\+Tick\+Function $\ast$}]{This\+Tick\+Function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Updates the current rotational values and the physical rotation that uses those values. \mbox{\Hypertarget{class_u_rotatable_static_mesh_af9702183fe634ac36678c27dd661685c}\label{class_u_rotatable_static_mesh_af9702183fe634ac36678c27dd661685c}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!Unlock@{Unlock}}
+\index{Unlock@{Unlock}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{Unlock()}{Unlock()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Unlock this rotatable static mesh. \mbox{\Hypertarget{class_u_rotatable_static_mesh_aae6f4464fd62b3d348911892132bb80d}\label{class_u_rotatable_static_mesh_aae6f4464fd62b3d348911892132bb80d}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!UpdateGrabbedRotation@{UpdateGrabbedRotation}}
+\index{UpdateGrabbedRotation@{UpdateGrabbedRotation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{UpdateGrabbedRotation()}{UpdateGrabbedRotation()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Update\+Grabbed\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+If grabbed this function will update the grabbed angle (current\+Yaw\+Angle) in the yaw using original grab offsets and trigonometry. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a6557a1f5bd951eba63fcee59b078df52}\label{class_u_rotatable_static_mesh_a6557a1f5bd951eba63fcee59b078df52}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!UpdateHandGrabDistance@{UpdateHandGrabDistance}}
+\index{UpdateHandGrabDistance@{UpdateHandGrabDistance}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{UpdateHandGrabDistance()}{UpdateHandGrabDistance()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Update\+Hand\+Grab\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Update the hands release distance variables. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a68237d8ca42738533eaef241549002a0}\label{class_u_rotatable_static_mesh_a68237d8ca42738533eaef241549002a0}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!UpdatePhysicalRotation@{UpdatePhysicalRotation}}
+\index{UpdatePhysicalRotation@{UpdatePhysicalRotation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{UpdatePhysicalRotation()}{UpdatePhysicalRotation()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Update\+Physical\+Rotation (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})}
+
+Apply physical rotation from last force of the hand on release, Handled in tick.... Also handles restitution values. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a3dbd2782eebbd2e78fdc362a6473213b}\label{class_u_rotatable_static_mesh_a3dbd2782eebbd2e78fdc362a6473213b}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!UpdateRotatable@{UpdateRotatable}}
+\index{UpdateRotatable@{UpdateRotatable}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{UpdateRotatable()}{UpdateRotatable()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Update\+Rotatable (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})}
+
+Updates the rotational values used in update rotation for keeping rotation offset from hand grabbed location \mbox{\Hypertarget{class_u_rotatable_static_mesh_ac08d3c8f7c88e5f2f31499b76b1dbebb}\label{class_u_rotatable_static_mesh_ac08d3c8f7c88e5f2f31499b76b1dbebb}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!UpdateRotatableLock@{UpdateRotatableLock}}
+\index{UpdateRotatableLock@{UpdateRotatableLock}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{UpdateRotatableLock()}{UpdateRotatableLock()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Update\+Rotatable\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check if the current cumulative angle is close enough to a locking position, if so lock the rotatable. \mbox{\Hypertarget{class_u_rotatable_static_mesh_aaa7e5c05a10153befab5cab0099bd1eb}\label{class_u_rotatable_static_mesh_aaa7e5c05a10153befab5cab0099bd1eb}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!UpdateRotation@{UpdateRotation}}
+\index{UpdateRotation@{UpdateRotation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{UpdateRotation()}{UpdateRotation()}}
+{\footnotesize\ttfamily void U\+Rotatable\+Static\+Mesh\+::\+Update\+Rotation (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time = {\ttfamily 0.0f} }\end{DoxyParamCaption})}
+
+Update the current angle in this components yaw axis. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_rotatable_static_mesh_af2a53cdb47bd03a2791ce97381604593}\label{class_u_rotatable_static_mesh_af2a53cdb47bd03a2791ce97381604593}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!centerRotationLimit@{centerRotationLimit}}
+\index{centerRotationLimit@{centerRotationLimit}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{centerRotationLimit}{centerRotationLimit}}
+{\footnotesize\ttfamily bool U\+Rotatable\+Static\+Mesh\+::center\+Rotation\+Limit}
+
+Center the rotational limit to plus and minus \char`\"{}rotation\+Limit / 2\char`\"{} in either direction. Default is false. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a7c4f3cf30f2c851176f6e86f97738373}\label{class_u_rotatable_static_mesh_a7c4f3cf30f2c851176f6e86f97738373}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!cumulativeAngle@{cumulativeAngle}}
+\index{cumulativeAngle@{cumulativeAngle}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{cumulativeAngle}{cumulativeAngle}}
+{\footnotesize\ttfamily float U\+Rotatable\+Static\+Mesh\+::cumulative\+Angle}
+
+Current amount of rotation done by this rotatable static mesh. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a3d6f8f34cdc4e6523b0a3012ac7a885d}\label{class_u_rotatable_static_mesh_a3d6f8f34cdc4e6523b0a3012ac7a885d}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!debug@{debug}}
+\index{debug@{debug}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily bool U\+Rotatable\+Static\+Mesh\+::debug}
+
+Shows cumulative\+Angle, revolution\+Count and draws the current expected grabbed position as a blue point in the scene. Also draws the current grabbed position as green... N\+O\+TE\+: Twist mode has a red point which represents the hand position for rotation calculations. \mbox{\Hypertarget{class_u_rotatable_static_mesh_aa64713918464be9e84464405a352762e}\label{class_u_rotatable_static_mesh_aa64713918464be9e84464405a352762e}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!fakePhysics@{fakePhysics}}
+\index{fakePhysics@{fakePhysics}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{fakePhysics}{fakePhysics}}
+{\footnotesize\ttfamily bool U\+Rotatable\+Static\+Mesh\+::fake\+Physics}
+
+The constraint will attempt to fake physics using hand release velocity and faked restitution/friction values. \mbox{\Hypertarget{class_u_rotatable_static_mesh_ad68883b9882c8b3baf52842a9b7c5e10}\label{class_u_rotatable_static_mesh_ad68883b9882c8b3baf52842a9b7c5e10}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!friction@{friction}}
+\index{friction@{friction}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{friction}{friction}}
+{\footnotesize\ttfamily float U\+Rotatable\+Static\+Mesh\+::friction}
+
+The faked\+Physics damping variable. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a6adf6b747f8fc5f7379359ad533b4024}\label{class_u_rotatable_static_mesh_a6adf6b747f8fc5f7379359ad533b4024}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!grabRotationStep@{grabRotationStep}}
+\index{grabRotationStep@{grabRotationStep}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{grabRotationStep}{grabRotationStep}}
+{\footnotesize\ttfamily float U\+Rotatable\+Static\+Mesh\+::grab\+Rotation\+Step}
+
+The amount of rotation to add to the rotation at a time. N\+O\+TE\+: If 0 this is not used. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a61ad6c7b99e3cbab84f163b4b359602a}\label{class_u_rotatable_static_mesh_a61ad6c7b99e3cbab84f163b4b359602a}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!grabScene@{grabScene}}
+\index{grabScene@{grabScene}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{grabScene}{grabScene}}
+{\footnotesize\ttfamily U\+Scene\+Component$\ast$ U\+Rotatable\+Static\+Mesh\+::grab\+Scene}
+
+Scene component reference. N\+O\+TE\+: Spawned in when grabbed to keep track of grabbed position/rotation. \mbox{\Hypertarget{class_u_rotatable_static_mesh_abeeeed27464f4ed71549fbba1fbf01e3}\label{class_u_rotatable_static_mesh_abeeeed27464f4ed71549fbba1fbf01e3}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!grabWhileLocked@{grabWhileLocked}}
+\index{grabWhileLocked@{grabWhileLocked}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{grabWhileLocked}{grabWhileLocked}}
+{\footnotesize\ttfamily bool U\+Rotatable\+Static\+Mesh\+::grab\+While\+Locked}
+
+Grab while locked. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a27ac89eedf160e0f11d6a846e1a2f25c}\label{class_u_rotatable_static_mesh_a27ac89eedf160e0f11d6a846e1a2f25c}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!handRef@{handRef}}
+\index{handRef@{handRef}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{handRef}{handRef}}
+{\footnotesize\ttfamily A\+V\+R\+Hand$\ast$ U\+Rotatable\+Static\+Mesh\+::hand\+Ref}
+
+Reference to the hand currently grabbing this component. Also can be used as a bool to check if this is in a hand. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a88378a71d3d9ca488986a78558e67bd7}\label{class_u_rotatable_static_mesh_a88378a71d3d9ca488986a78558e67bd7}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!interactableSettings@{interactableSettings}}
+\index{interactableSettings@{interactableSettings}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{interactableSettings}{interactableSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} U\+Rotatable\+Static\+Mesh\+::interactable\+Settings}
+
+The interface settings for hand interaction with this interactable. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a06907c258a06ebbeb1f2dfd390db9e1f}\label{class_u_rotatable_static_mesh_a06907c258a06ebbeb1f2dfd390db9e1f}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!interpolateToLock@{interpolateToLock}}
+\index{interpolateToLock@{interpolateToLock}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{interpolateToLock}{interpolateToLock}}
+{\footnotesize\ttfamily bool U\+Rotatable\+Static\+Mesh\+::interpolate\+To\+Lock}
+
+Interpolate to the locked angle, otherwise set rotation instantly. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a86488009536cd04b9e5f8cfb09b17006}\label{class_u_rotatable_static_mesh_a86488009536cd04b9e5f8cfb09b17006}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!lockable@{lockable}}
+\index{lockable@{lockable}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{lockable}{lockable}}
+{\footnotesize\ttfamily bool U\+Rotatable\+Static\+Mesh\+::lockable}
+
+Enable the rotatable to lock into certain positions. N\+O\+TE\+: On lock is a delegate that indicates which point has been locked to. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a32b021df97c7cc52edcec47b95543912}\label{class_u_rotatable_static_mesh_a32b021df97c7cc52edcec47b95543912}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!locked@{locked}}
+\index{locked@{locked}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{locked}{locked}}
+{\footnotesize\ttfamily bool U\+Rotatable\+Static\+Mesh\+::locked}
+
+Is currently locked. If enabled on begin play the rotatable will be locked in its start rotation. \mbox{\Hypertarget{class_u_rotatable_static_mesh_ad74ea2a50e1ba192272858b4c87b13d1}\label{class_u_rotatable_static_mesh_ad74ea2a50e1ba192272858b4c87b13d1}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!lockHapticEffect@{lockHapticEffect}}
+\index{lockHapticEffect@{lockHapticEffect}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{lockHapticEffect}{lockHapticEffect}}
+{\footnotesize\ttfamily U\+Haptic\+Feedback\+Effect\+\_\+\+Base$\ast$ U\+Rotatable\+Static\+Mesh\+::lock\+Haptic\+Effect}
+
+Haptic effect to play on hand when locking while grabbed. N\+O\+TE\+: Will not play haptic effect if this in null. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a5ac7ecdaa4c0dc1c81a75bb1fcc98a0c}\label{class_u_rotatable_static_mesh_a5ac7ecdaa4c0dc1c81a75bb1fcc98a0c}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!lockingDistance@{lockingDistance}}
+\index{lockingDistance@{lockingDistance}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{lockingDistance}{lockingDistance}}
+{\footnotesize\ttfamily float U\+Rotatable\+Static\+Mesh\+::locking\+Distance}
+
+How close to a locking point before locking into rotation. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a12257bdb3307b712debba9f1bb74c2ee}\label{class_u_rotatable_static_mesh_a12257bdb3307b712debba9f1bb74c2ee}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!lockingPoints@{lockingPoints}}
+\index{lockingPoints@{lockingPoints}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{lockingPoints}{lockingPoints}}
+{\footnotesize\ttfamily T\+Array$<$float$>$ U\+Rotatable\+Static\+Mesh\+::locking\+Points}
+
+Rotatable locking points. N\+O\+TE\+: If you want the constraint to lock at (x) degrees add a float to the array set to (x)f. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a8d84d32fce231859bd2b4e6143e78bee}\label{class_u_rotatable_static_mesh_a8d84d32fce231859bd2b4e6143e78bee}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!lockOnlyUpdate@{lockOnlyUpdate}}
+\index{lockOnlyUpdate@{lockOnlyUpdate}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{lockOnlyUpdate}{lockOnlyUpdate}}
+{\footnotesize\ttfamily bool U\+Rotatable\+Static\+Mesh\+::lock\+Only\+Update}
+
+The rotation will only update on locking angle. N\+O\+TE\+: Use-\/full for knobs for selection etc. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a0d2b5c7a77105a074bd6cc53bb710994}\label{class_u_rotatable_static_mesh_a0d2b5c7a77105a074bd6cc53bb710994}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!lockSound@{lockSound}}
+\index{lockSound@{lockSound}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{lockSound}{lockSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ U\+Rotatable\+Static\+Mesh\+::lock\+Sound}
+
+Sound to play when locking this rotatable. \mbox{\Hypertarget{class_u_rotatable_static_mesh_aa167a8222da9b87a4f286cc91133b1aa}\label{class_u_rotatable_static_mesh_aa167a8222da9b87a4f286cc91133b1aa}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!lockWhileGrabbed@{lockWhileGrabbed}}
+\index{lockWhileGrabbed@{lockWhileGrabbed}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{lockWhileGrabbed}{lockWhileGrabbed}}
+{\footnotesize\ttfamily bool U\+Rotatable\+Static\+Mesh\+::lock\+While\+Grabbed}
+
+Can lock while grabbed? \mbox{\Hypertarget{class_u_rotatable_static_mesh_a5722c452b454adbb4b60d7ec6d370d7c}\label{class_u_rotatable_static_mesh_a5722c452b454adbb4b60d7ec6d370d7c}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!maxOverRotation@{maxOverRotation}}
+\index{maxOverRotation@{maxOverRotation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{maxOverRotation}{maxOverRotation}}
+{\footnotesize\ttfamily float U\+Rotatable\+Static\+Mesh\+::max\+Over\+Rotation}
+
+Max angle you can go past the constraint before it is released from the hand. Used to prevent unusual functionality. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a7d114d9be82a344ec0d24b1bd27db403}\label{class_u_rotatable_static_mesh_a7d114d9be82a344ec0d24b1bd27db403}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!OnMeshGrabbed@{OnMeshGrabbed}}
+\index{OnMeshGrabbed@{OnMeshGrabbed}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{OnMeshGrabbed}{OnMeshGrabbed}}
+{\footnotesize\ttfamily F\+Grabbed U\+Rotatable\+Static\+Mesh\+::\+On\+Mesh\+Grabbed}
+
+Mesh grabbed by hand. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a260301b1f9e973854e6619a5b6f71292}\label{class_u_rotatable_static_mesh_a260301b1f9e973854e6619a5b6f71292}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!OnMeshReleased@{OnMeshReleased}}
+\index{OnMeshReleased@{OnMeshReleased}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{OnMeshReleased}{OnMeshReleased}}
+{\footnotesize\ttfamily F\+Grabbed U\+Rotatable\+Static\+Mesh\+::\+On\+Mesh\+Released}
+
+Mesh released from hand. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a2f24bd9347ca7048bc8316d8117c2a88}\label{class_u_rotatable_static_mesh_a2f24bd9347ca7048bc8316d8117c2a88}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!OnRotatableLock@{OnRotatableLock}}
+\index{OnRotatableLock@{OnRotatableLock}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{OnRotatableLock}{OnRotatableLock}}
+{\footnotesize\ttfamily F\+On\+Rotatable\+Mesh\+Lock U\+Rotatable\+Static\+Mesh\+::\+On\+Rotatable\+Lock}
+
+Locking delegate. Called when locked function is ran. \mbox{\Hypertarget{class_u_rotatable_static_mesh_af05693756ca09d3fc78a53532e00b226}\label{class_u_rotatable_static_mesh_af05693756ca09d3fc78a53532e00b226}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!releaseOnOverRotation@{releaseOnOverRotation}}
+\index{releaseOnOverRotation@{releaseOnOverRotation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{releaseOnOverRotation}{releaseOnOverRotation}}
+{\footnotesize\ttfamily bool U\+Rotatable\+Static\+Mesh\+::release\+On\+Over\+Rotation}
+
+Use the max\+Over\+Rotation float to determine when to release from the hand... \mbox{\Hypertarget{class_u_rotatable_static_mesh_a8e86643295e5d2969c638edb1a22143b}\label{class_u_rotatable_static_mesh_a8e86643295e5d2969c638edb1a22143b}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!releaseWhenLocked@{releaseWhenLocked}}
+\index{releaseWhenLocked@{releaseWhenLocked}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{releaseWhenLocked}{releaseWhenLocked}}
+{\footnotesize\ttfamily bool U\+Rotatable\+Static\+Mesh\+::release\+When\+Locked}
+
+Release from the hand when locked. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a652fc11099f29258a249b0b44a01879b}\label{class_u_rotatable_static_mesh_a652fc11099f29258a249b0b44a01879b}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!restitution@{restitution}}
+\index{restitution@{restitution}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{restitution}{restitution}}
+{\footnotesize\ttfamily float U\+Rotatable\+Static\+Mesh\+::restitution}
+
+The faked\+Physics restitution when hitting objects. How much velocity to keep when bouncing off the walls of the constraint. \mbox{\Hypertarget{class_u_rotatable_static_mesh_ac21d1c8f6ed8f004c6d7b5de46a282ee}\label{class_u_rotatable_static_mesh_ac21d1c8f6ed8f004c6d7b5de46a282ee}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!revolutionCount@{revolutionCount}}
+\index{revolutionCount@{revolutionCount}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{revolutionCount}{revolutionCount}}
+{\footnotesize\ttfamily int U\+Rotatable\+Static\+Mesh\+::revolution\+Count}
+
+Current amount of revolutions calculated from the cumulative angle. \mbox{\Hypertarget{class_u_rotatable_static_mesh_aaf799e7621d1ad996e8ef7c89436ddcd}\label{class_u_rotatable_static_mesh_aaf799e7621d1ad996e8ef7c89436ddcd}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!rotateMode@{rotateMode}}
+\index{rotateMode@{rotateMode}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{rotateMode}{rotateMode}}
+{\footnotesize\ttfamily E\+Static\+Rotation U\+Rotatable\+Static\+Mesh\+::rotate\+Mode}
+
+What rotation mode is this rotatable static mesh. \mbox{\Hypertarget{class_u_rotatable_static_mesh_af57eae3db160f58dd931f68603ca25be}\label{class_u_rotatable_static_mesh_af57eae3db160f58dd931f68603ca25be}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!rotationLimit@{rotationLimit}}
+\index{rotationLimit@{rotationLimit}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{rotationLimit}{rotationLimit}}
+{\footnotesize\ttfamily float U\+Rotatable\+Static\+Mesh\+::rotation\+Limit}
+
+The max rotation limit. N\+O\+TE\+: 0 means its free to rotate to any given limit. \mbox{\Hypertarget{class_u_rotatable_static_mesh_a7961ac3b9acf94d75425a05bc43fe480}\label{class_u_rotatable_static_mesh_a7961ac3b9acf94d75425a05bc43fe480}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!startRotation@{startRotation}}
+\index{startRotation@{startRotation}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{startRotation}{startRotation}}
+{\footnotesize\ttfamily float U\+Rotatable\+Static\+Mesh\+::start\+Rotation}
+
+The start rotation of the rotatable. Updates in real time within editor when changed. \mbox{\Hypertarget{class_u_rotatable_static_mesh_aedcf46ff53fddc32f5dc671005f21fb5}\label{class_u_rotatable_static_mesh_aedcf46ff53fddc32f5dc671005f21fb5}} 
+\index{URotatableStaticMesh@{URotatableStaticMesh}!unlockingDistance@{unlockingDistance}}
+\index{unlockingDistance@{unlockingDistance}!URotatableStaticMesh@{URotatableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{unlockingDistance}{unlockingDistance}}
+{\footnotesize\ttfamily float U\+Rotatable\+Static\+Mesh\+::unlocking\+Distance}
+
+How far in the yaw axis after an unlock before this rotatable can be locked again. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Rotatable\+Static\+Mesh.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Rotatable\+Static\+Mesh.\+cpp\end{DoxyCompactItemize}

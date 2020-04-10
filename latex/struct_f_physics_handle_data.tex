@@ -1,0 +1,149 @@
+\hypertarget{struct_f_physics_handle_data}{}\doxysection{F\+Physics\+Handle\+Data Struct Reference}
+\label{struct_f_physics_handle_data}\index{FPhysicsHandleData@{FPhysicsHandleData}}
+
+
+{\ttfamily \#include $<$V\+R\+Physics\+Handle\+Component.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_f_physics_handle_data_ae705be326b13e131cc126b815e2b8f84}{F\+Physics\+Handle\+Data}} (bool data\+Enabled=false, float lin\+Damp=200.\+0f, float ang\+Damp=200.\+0f, float lin\+Stiff=35000.\+0f, float ang\+Stiff=30000.\+0f, float speed=50.\+0f, bool soft\+Agn\+Constraint=true, bool softlin\+Constraint=true, float max\+Force\+Linear=10000.\+0f, float max\+Force\+Angular=10000.\+0f, bool interp\+To\+Target=true, bool update\+Handle=true)
+\item 
+void \mbox{\hyperlink{struct_f_physics_handle_data_ad7f92bb94e74696e29d114b4bdfee955}{Update\+Joint\+Drive}} (bool soft\+Linear, bool soft\+Angular, float max\+Force\+Lin=10000.\+0f, float max\+Force\+Ang=10000.\+0f)
+\item 
+F\+String \mbox{\hyperlink{struct_f_physics_handle_data_a004e394d6cec9fa24836f78bfcbbd122}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{struct_f_physics_handle_data_a0171f8953f47207f321b751629b7f7f7}{handle\+Data\+Enabled}}
+\item 
+float \mbox{\hyperlink{struct_f_physics_handle_data_ae881d2e3a48f99b50b58a2c528e5231d}{linear\+Damping}}
+\item 
+float \mbox{\hyperlink{struct_f_physics_handle_data_a3f3cbb210ecfb43070974e6db28013b6}{linear\+Stiffness}}
+\item 
+float \mbox{\hyperlink{struct_f_physics_handle_data_a6b3c4d448a27dd33677935fff018bd62}{angular\+Damping}}
+\item 
+float \mbox{\hyperlink{struct_f_physics_handle_data_aac31f74e6a7d8c7a83a5fd2f309790b1}{angular\+Stiffness}}
+\item 
+float \mbox{\hyperlink{struct_f_physics_handle_data_a269f45b9ce4f0a18cd452cfb8dcf44e0}{max\+Linear\+Force}}
+\item 
+float \mbox{\hyperlink{struct_f_physics_handle_data_a578a99369fb19abf1efdf2f468941d5f}{max\+Angular\+Force}}
+\item 
+float \mbox{\hyperlink{struct_f_physics_handle_data_a889543a41d2295ef8c189e19958b9796}{interp\+Speed}}
+\item 
+bool \mbox{\hyperlink{struct_f_physics_handle_data_a500a5b4bebdc6615fd1dcccb6f74a367}{soft\+Angular\+Constraint}}
+\item 
+bool \mbox{\hyperlink{struct_f_physics_handle_data_aa7d4d3c6b7277b6d461c1200761ff6bc}{soft\+Linear\+Constraint}}
+\item 
+bool \mbox{\hyperlink{struct_f_physics_handle_data_a86ea470f4d3bb42eaee499c3cc20c473}{interpolate}}
+\item 
+bool \mbox{\hyperlink{struct_f_physics_handle_data_a84c37e1264edce72e1dcf7710bd72af6}{update\+Target\+Location}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+VR Physics Handle data, holds all of this classes functionality variables. Defaults values are tested with 1kg grabbable assets. N\+O\+TE\+: Values may need to be higher to have effect on lighter components less than 1KG and heavier may need weaker values to prevent collision issues. N\+O\+TE\+: Mainly used to switch between different functionality using the Update\+Joint\+Values function. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_f_physics_handle_data_ae705be326b13e131cc126b815e2b8f84}\label{struct_f_physics_handle_data_ae705be326b13e131cc126b815e2b8f84}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!FPhysicsHandleData@{FPhysicsHandleData}}
+\index{FPhysicsHandleData@{FPhysicsHandleData}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{FPhysicsHandleData()}{FPhysicsHandleData()}}
+{\footnotesize\ttfamily F\+Physics\+Handle\+Data\+::\+F\+Physics\+Handle\+Data (\begin{DoxyParamCaption}\item[{bool}]{data\+Enabled = {\ttfamily false},  }\item[{float}]{lin\+Damp = {\ttfamily 200.0f},  }\item[{float}]{ang\+Damp = {\ttfamily 200.0f},  }\item[{float}]{lin\+Stiff = {\ttfamily 35000.0f},  }\item[{float}]{ang\+Stiff = {\ttfamily 30000.0f},  }\item[{float}]{speed = {\ttfamily 50.0f},  }\item[{bool}]{soft\+Agn\+Constraint = {\ttfamily true},  }\item[{bool}]{softlin\+Constraint = {\ttfamily true},  }\item[{float}]{max\+Force\+Linear = {\ttfamily 10000.0f},  }\item[{float}]{max\+Force\+Angular = {\ttfamily 10000.0f},  }\item[{bool}]{interp\+To\+Target = {\ttfamily true},  }\item[{bool}]{update\+Handle = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for this struct. Defaults to default constraint values. Prioritize linear constrained movement over angular for more realistic collision tracking. N\+O\+TE\+: If using something like a sword etc. Use a much lower angular stiffness than the linear stiffness to get that specific effect. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_f_physics_handle_data_a004e394d6cec9fa24836f78bfcbbd122}\label{struct_f_physics_handle_data_a004e394d6cec9fa24836f78bfcbbd122}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!ToString@{ToString}}
+\index{ToString@{ToString}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily F\+String F\+Physics\+Handle\+Data\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert and return this structure as a string. \mbox{\Hypertarget{struct_f_physics_handle_data_ad7f92bb94e74696e29d114b4bdfee955}\label{struct_f_physics_handle_data_ad7f92bb94e74696e29d114b4bdfee955}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!UpdateJointDrive@{UpdateJointDrive}}
+\index{UpdateJointDrive@{UpdateJointDrive}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{UpdateJointDrive()}{UpdateJointDrive()}}
+{\footnotesize\ttfamily void F\+Physics\+Handle\+Data\+::\+Update\+Joint\+Drive (\begin{DoxyParamCaption}\item[{bool}]{soft\+Linear,  }\item[{bool}]{soft\+Angular,  }\item[{float}]{max\+Force\+Lin = {\ttfamily 10000.0f},  }\item[{float}]{max\+Force\+Ang = {\ttfamily 10000.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the constraints drive values and force that can be applied linearly and angularly. @\+Param soft\+Linear, soft linear constraint? @\+Param soft\+Angular, soft angular constraint? @\+Param max\+Force\+Linear, max amount of force that can be applied by the joint linearly. @\+Param max\+Force\+Angular, max amount of force that can be applied by the joint angularly. N\+O\+TE\+: This function will N\+OT update the current joint if one exists. Either use this and run reinit\+Joint or use the toggle\+Drive function. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_f_physics_handle_data_a6b3c4d448a27dd33677935fff018bd62}\label{struct_f_physics_handle_data_a6b3c4d448a27dd33677935fff018bd62}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!angularDamping@{angularDamping}}
+\index{angularDamping@{angularDamping}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{angularDamping}{angularDamping}}
+{\footnotesize\ttfamily float F\+Physics\+Handle\+Data\+::angular\+Damping}
+
+The angular damping value of the joints angular drive. N\+O\+TE\+: Only used if the soft angular constraint is enabled. \mbox{\Hypertarget{struct_f_physics_handle_data_aac31f74e6a7d8c7a83a5fd2f309790b1}\label{struct_f_physics_handle_data_aac31f74e6a7d8c7a83a5fd2f309790b1}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!angularStiffness@{angularStiffness}}
+\index{angularStiffness@{angularStiffness}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{angularStiffness}{angularStiffness}}
+{\footnotesize\ttfamily float F\+Physics\+Handle\+Data\+::angular\+Stiffness}
+
+The angular stiffness value of the joints angular drive. N\+O\+TE\+: Only used if the soft angular constraint is enabled. \mbox{\Hypertarget{struct_f_physics_handle_data_a0171f8953f47207f321b751629b7f7f7}\label{struct_f_physics_handle_data_a0171f8953f47207f321b751629b7f7f7}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!handleDataEnabled@{handleDataEnabled}}
+\index{handleDataEnabled@{handleDataEnabled}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{handleDataEnabled}{handleDataEnabled}}
+{\footnotesize\ttfamily bool F\+Physics\+Handle\+Data\+::handle\+Data\+Enabled}
+
+Should the handle data be used. Only used for instances of this structure outside of this class checked and applied in the hand class. \mbox{\Hypertarget{struct_f_physics_handle_data_a86ea470f4d3bb42eaee499c3cc20c473}\label{struct_f_physics_handle_data_a86ea470f4d3bb42eaee499c3cc20c473}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{interpolate}{interpolate}}
+{\footnotesize\ttfamily bool F\+Physics\+Handle\+Data\+::interpolate}
+
+Should interpolate the target location. If true the target\+Transform will interpolate from its current value at the interp\+Speed, otherwise it will be set immediately. \mbox{\Hypertarget{struct_f_physics_handle_data_a889543a41d2295ef8c189e19958b9796}\label{struct_f_physics_handle_data_a889543a41d2295ef8c189e19958b9796}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!interpSpeed@{interpSpeed}}
+\index{interpSpeed@{interpSpeed}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{interpSpeed}{interpSpeed}}
+{\footnotesize\ttfamily float F\+Physics\+Handle\+Data\+::interp\+Speed}
+
+The interpolation speed of the current target location to the new target location. N\+O\+TE\+: Only used if the interpolation is enabled. \mbox{\Hypertarget{struct_f_physics_handle_data_ae881d2e3a48f99b50b58a2c528e5231d}\label{struct_f_physics_handle_data_ae881d2e3a48f99b50b58a2c528e5231d}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!linearDamping@{linearDamping}}
+\index{linearDamping@{linearDamping}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{linearDamping}{linearDamping}}
+{\footnotesize\ttfamily float F\+Physics\+Handle\+Data\+::linear\+Damping}
+
+The linear damping value of the joints linear drive. N\+O\+TE\+: Only used if the soft linear constraint is enabled. \mbox{\Hypertarget{struct_f_physics_handle_data_a3f3cbb210ecfb43070974e6db28013b6}\label{struct_f_physics_handle_data_a3f3cbb210ecfb43070974e6db28013b6}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!linearStiffness@{linearStiffness}}
+\index{linearStiffness@{linearStiffness}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{linearStiffness}{linearStiffness}}
+{\footnotesize\ttfamily float F\+Physics\+Handle\+Data\+::linear\+Stiffness}
+
+The linear stiffness value of the joints linear drive. N\+O\+TE\+: Only used if the soft linear constraint is enabled. \mbox{\Hypertarget{struct_f_physics_handle_data_a578a99369fb19abf1efdf2f468941d5f}\label{struct_f_physics_handle_data_a578a99369fb19abf1efdf2f468941d5f}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!maxAngularForce@{maxAngularForce}}
+\index{maxAngularForce@{maxAngularForce}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{maxAngularForce}{maxAngularForce}}
+{\footnotesize\ttfamily float F\+Physics\+Handle\+Data\+::max\+Angular\+Force}
+
+The max amount of force the angular drive of the joint can apply. N\+O\+TE\+: Only used if the soft angular constraint is enabled. \mbox{\Hypertarget{struct_f_physics_handle_data_a269f45b9ce4f0a18cd452cfb8dcf44e0}\label{struct_f_physics_handle_data_a269f45b9ce4f0a18cd452cfb8dcf44e0}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!maxLinearForce@{maxLinearForce}}
+\index{maxLinearForce@{maxLinearForce}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{maxLinearForce}{maxLinearForce}}
+{\footnotesize\ttfamily float F\+Physics\+Handle\+Data\+::max\+Linear\+Force}
+
+The max amount of force the linear drive of the joint can apply. N\+O\+TE\+: Only used if the soft linear constraint is enabled. \mbox{\Hypertarget{struct_f_physics_handle_data_a500a5b4bebdc6615fd1dcccb6f74a367}\label{struct_f_physics_handle_data_a500a5b4bebdc6615fd1dcccb6f74a367}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!softAngularConstraint@{softAngularConstraint}}
+\index{softAngularConstraint@{softAngularConstraint}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{softAngularConstraint}{softAngularConstraint}}
+{\footnotesize\ttfamily bool F\+Physics\+Handle\+Data\+::soft\+Angular\+Constraint}
+
+Should use soft angular constraint on the joint for this handle. N\+O\+TE\+: Changes angular constraint to be free and targets angular rotation with the angular drive of the joint. \mbox{\Hypertarget{struct_f_physics_handle_data_aa7d4d3c6b7277b6d461c1200761ff6bc}\label{struct_f_physics_handle_data_aa7d4d3c6b7277b6d461c1200761ff6bc}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!softLinearConstraint@{softLinearConstraint}}
+\index{softLinearConstraint@{softLinearConstraint}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{softLinearConstraint}{softLinearConstraint}}
+{\footnotesize\ttfamily bool F\+Physics\+Handle\+Data\+::soft\+Linear\+Constraint}
+
+Should use soft linear constraint on the joint for this handle. N\+O\+TE\+: Changes linear constraint to be free and targets linear position with the linear drive of the joint. \mbox{\Hypertarget{struct_f_physics_handle_data_a84c37e1264edce72e1dcf7710bd72af6}\label{struct_f_physics_handle_data_a84c37e1264edce72e1dcf7710bd72af6}} 
+\index{FPhysicsHandleData@{FPhysicsHandleData}!updateTargetLocation@{updateTargetLocation}}
+\index{updateTargetLocation@{updateTargetLocation}!FPhysicsHandleData@{FPhysicsHandleData}}
+\doxysubsubsection{\texorpdfstring{updateTargetLocation}{updateTargetLocation}}
+{\footnotesize\ttfamily bool F\+Physics\+Handle\+Data\+::update\+Target\+Location}
+
+Should update the handle automatically. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Player/V\+R\+Physics\+Handle\+Component.\+h\end{DoxyCompactItemize}

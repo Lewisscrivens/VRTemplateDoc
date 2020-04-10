@@ -1,0 +1,292 @@
+\hypertarget{class_u_pressable_static_mesh}{}\doxysection{U\+Pressable\+Static\+Mesh Class Reference}
+\label{class_u_pressable_static_mesh}\index{UPressableStaticMesh@{UPressableStaticMesh}}
+
+
+{\ttfamily \#include $<$Pressable\+Static\+Mesh.\+h$>$}
+
+Inheritance diagram for U\+Pressable\+Static\+Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_pressable_static_mesh}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_pressable_static_mesh_ad5d09dfd0e122b66a243c719e2dde9d8}{Tick\+Component}} (float Delta\+Time, enum E\+Level\+Tick Tick\+Type, F\+Actor\+Component\+Tick\+Function $\ast$This\+Tick\+Function) override
+\item 
+void \mbox{\hyperlink{class_u_pressable_static_mesh_a4baa0783938e92bfc2ad7eef31f00227}{Update\+Button\+Position}} ()
+\item 
+void \mbox{\hyperlink{class_u_pressable_static_mesh_a4aeab2edc3bbf56c61484b9a84d72bc3}{Update\+Button}} (bool is\+On)
+\item 
+void \mbox{\hyperlink{class_u_pressable_static_mesh_a4f1a8fca2136f49e494b71d89f12eeb1}{Interp\+Button\+Position}} (float Delta\+Time)
+\item 
+void \mbox{\hyperlink{class_u_pressable_static_mesh_a51d03746f6e4183f11ef11100ea8ab98}{Press\+Button}} ()
+\item 
+void \mbox{\hyperlink{class_u_pressable_static_mesh_afe4df4128c050f6e3c19286442cfb1ca}{Release\+Button}} ()
+\item 
+void \mbox{\hyperlink{class_u_pressable_static_mesh_a59d5484e2890abe0a0b0eae662e8a73c}{Reset\+Button}} ()
+\item 
+F\+Transform \mbox{\hyperlink{class_u_pressable_static_mesh_a2eb0a1364816d78656e2e76ed46a3ae9}{Get\+Parent\+Transform}} ()
+\item 
+void \mbox{\hyperlink{class_u_pressable_static_mesh_ad0c7aa491972e8cb1198590d06a0deac}{Update\+Audio}} (U\+Sound\+Base $\ast$down\+Sound, U\+Sound\+Base $\ast$up\+Sound, float intesity=1.\+0f, float pitch=1.\+0f, U\+Sound\+Attenuation $\ast$attenuation=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+E\+Button\+Mode \mbox{\hyperlink{class_u_pressable_static_mesh_ac9915111291617d83b353b934cc33d29}{button\+Mode}}
+\item 
+E\+Button\+Trace\+Collision \mbox{\hyperlink{class_u_pressable_static_mesh_adaef7241e0389f2aa1a996ff2a6ce8d4}{shape\+Trace\+Type}}
+\item 
+U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_u_pressable_static_mesh_abc090f70e33353ac92b3bec99d3c04ce}{haptic\+Effect}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_u_pressable_static_mesh_aff239416143ca7c00125ae60551b389c}{button\+Pressed}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_u_pressable_static_mesh_a3cbdd9ac71e0a38da05aa869a7a674a4}{button\+Released}}
+\item 
+T\+Array$<$ A\+Actor $\ast$ $>$ \mbox{\hyperlink{class_u_pressable_static_mesh_ab2e24a7ca4e9d35b1c91e1dfa9ab5e76}{ignored\+Actors}}
+\item 
+F\+Vector \mbox{\hyperlink{class_u_pressable_static_mesh_ae8a9149fd9165399e569fcecac97c028}{button\+Offset}}
+\item 
+float \mbox{\hyperlink{class_u_pressable_static_mesh_a0a62d3d205d2ce9e4f964a215130796a}{travel\+Distance}}
+\item 
+float \mbox{\hyperlink{class_u_pressable_static_mesh_a02e7bec425d4973dfaa459d253c1358c}{on\+Percentage}}
+\item 
+float \mbox{\hyperlink{class_u_pressable_static_mesh_a60c2e6907412fc76d18628f38520d389}{interpolation\+Speed}}
+\item 
+float \mbox{\hyperlink{class_u_pressable_static_mesh_a071ffaebc29bed7299a78e5c85fea236}{press\+Speed}}
+\item 
+bool \mbox{\hyperlink{class_u_pressable_static_mesh_aa25121b2d5052629e7ab0cc74ebe71e6}{haptic\+Feedback\+Enabled}}
+\item 
+bool \mbox{\hyperlink{class_u_pressable_static_mesh_afad3457d390093ad33b7337727ee4159}{on}}
+\item 
+bool \mbox{\hyperlink{class_u_pressable_static_mesh_ad9d79fc2e6321176676a2a4e40f5bd4a}{locked}}
+\item 
+bool \mbox{\hyperlink{class_u_pressable_static_mesh_a2cf5b5871780506f42142c08db8fd7ae}{cannot\+Press}}
+\item 
+bool \mbox{\hyperlink{class_u_pressable_static_mesh_a62c99eb2e8da8b8cd95c3cf70d3b25bd}{button\+Is\+Updating}}
+\item 
+bool \mbox{\hyperlink{class_u_pressable_static_mesh_ac1c013531094483d3f18dbfa6efe6491}{debug}}
+\item 
+U\+Sound\+Attenuation $\ast$ \mbox{\hyperlink{class_u_pressable_static_mesh_ae21cfb1cfb34c90a39f70af7eac88245}{sound\+Attenuation}}
+\item 
+F\+Pressed \mbox{\hyperlink{class_u_pressable_static_mesh_adc73880e21f78a2d21abfd2c5c7b37df}{On\+Pressed}}
+\item 
+F\+Pressed\+On \mbox{\hyperlink{class_u_pressable_static_mesh_a91ac48761a6e0c192809a27d0b776193}{On\+Pressed\+On}}
+\item 
+F\+Pressed\+Refference \mbox{\hyperlink{class_u_pressable_static_mesh_a5ebccb04b8acc5ba543a0a9c753d03c5}{on\+Pressed\+Reff}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_pressable_static_mesh_af1ab7f7d4f3ebddaa1c2c65c16622aec}{Begin\+Play}} () override
+\item 
+F\+Vector \mbox{\hyperlink{class_u_pressable_static_mesh_a9e98893e278519aaa77fa14fd1d124a3}{Remove\+Relative\+Offset}} (F\+Vector relative\+Vector)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+To adjust the buttons update distance make the intractable sphere collider larger. N\+O\+TE\+: Created a blueprint class from this class in editor for use in blueprint based actors. Also this button updates every frame, to improve this only update this button when overlapping with a shape collider in the actor blueprint/class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_pressable_static_mesh_af1ab7f7d4f3ebddaa1c2c65c16622aec}\label{class_u_pressable_static_mesh_af1ab7f7d4f3ebddaa1c2c65c16622aec}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void U\+Pressable\+Static\+Mesh\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Level start. \mbox{\Hypertarget{class_u_pressable_static_mesh_a2eb0a1364816d78656e2e76ed46a3ae9}\label{class_u_pressable_static_mesh_a2eb0a1364816d78656e2e76ed46a3ae9}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!GetParentTransform@{GetParentTransform}}
+\index{GetParentTransform@{GetParentTransform}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{GetParentTransform()}{GetParentTransform()}}
+{\footnotesize\ttfamily F\+Transform U\+Pressable\+Static\+Mesh\+::\+Get\+Parent\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the correct parent transform for this component. \mbox{\Hypertarget{class_u_pressable_static_mesh_a4f1a8fca2136f49e494b71d89f12eeb1}\label{class_u_pressable_static_mesh_a4f1a8fca2136f49e494b71d89f12eeb1}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!InterpButtonPosition@{InterpButtonPosition}}
+\index{InterpButtonPosition@{InterpButtonPosition}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{InterpButtonPosition()}{InterpButtonPosition()}}
+{\footnotesize\ttfamily void U\+Pressable\+Static\+Mesh\+::\+Interp\+Button\+Position (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})}
+
+Function to lerp smoothly between different relative locations. \mbox{\Hypertarget{class_u_pressable_static_mesh_a51d03746f6e4183f11ef11100ea8ab98}\label{class_u_pressable_static_mesh_a51d03746f6e4183f11ef11100ea8ab98}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!PressButton@{PressButton}}
+\index{PressButton@{PressButton}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{PressButton()}{PressButton()}}
+{\footnotesize\ttfamily void U\+Pressable\+Static\+Mesh\+::\+Press\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Press this button smoothly. \mbox{\Hypertarget{class_u_pressable_static_mesh_afe4df4128c050f6e3c19286442cfb1ca}\label{class_u_pressable_static_mesh_afe4df4128c050f6e3c19286442cfb1ca}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!ReleaseButton@{ReleaseButton}}
+\index{ReleaseButton@{ReleaseButton}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{ReleaseButton()}{ReleaseButton()}}
+{\footnotesize\ttfamily void U\+Pressable\+Static\+Mesh\+::\+Release\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Release this button smoothly. \mbox{\Hypertarget{class_u_pressable_static_mesh_a9e98893e278519aaa77fa14fd1d124a3}\label{class_u_pressable_static_mesh_a9e98893e278519aaa77fa14fd1d124a3}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!RemoveRelativeOffset@{RemoveRelativeOffset}}
+\index{RemoveRelativeOffset@{RemoveRelativeOffset}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{RemoveRelativeOffset()}{RemoveRelativeOffset()}}
+{\footnotesize\ttfamily F\+Vector U\+Pressable\+Static\+Mesh\+::\+Remove\+Relative\+Offset (\begin{DoxyParamCaption}\item[{F\+Vector}]{relative\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remove the button\+Offset from a relative vector. @\+Param relative\+Vector, The relative vector to remove the button offset from. \mbox{\Hypertarget{class_u_pressable_static_mesh_a59d5484e2890abe0a0b0eae662e8a73c}\label{class_u_pressable_static_mesh_a59d5484e2890abe0a0b0eae662e8a73c}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!ResetButton@{ResetButton}}
+\index{ResetButton@{ResetButton}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{ResetButton()}{ResetButton()}}
+{\footnotesize\ttfamily void U\+Pressable\+Static\+Mesh\+::\+Reset\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset the button back to default. \mbox{\Hypertarget{class_u_pressable_static_mesh_ad5d09dfd0e122b66a243c719e2dde9d8}\label{class_u_pressable_static_mesh_ad5d09dfd0e122b66a243c719e2dde9d8}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!TickComponent@{TickComponent}}
+\index{TickComponent@{TickComponent}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{TickComponent()}{TickComponent()}}
+{\footnotesize\ttfamily void U\+Pressable\+Static\+Mesh\+::\+Tick\+Component (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{enum E\+Level\+Tick}]{Tick\+Type,  }\item[{F\+Actor\+Component\+Tick\+Function $\ast$}]{This\+Tick\+Function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Frame. \mbox{\Hypertarget{class_u_pressable_static_mesh_ad0c7aa491972e8cb1198590d06a0deac}\label{class_u_pressable_static_mesh_ad0c7aa491972e8cb1198590d06a0deac}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!UpdateAudio@{UpdateAudio}}
+\index{UpdateAudio@{UpdateAudio}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{UpdateAudio()}{UpdateAudio()}}
+{\footnotesize\ttfamily void U\+Pressable\+Static\+Mesh\+::\+Update\+Audio (\begin{DoxyParamCaption}\item[{U\+Sound\+Base $\ast$}]{down\+Sound,  }\item[{U\+Sound\+Base $\ast$}]{up\+Sound,  }\item[{float}]{intesity = {\ttfamily 1.0f},  }\item[{float}]{pitch = {\ttfamily 1.0f},  }\item[{U\+Sound\+Attenuation $\ast$}]{attenuation = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Update this pressable components audio settings for pitch and sound intensity. \mbox{\Hypertarget{class_u_pressable_static_mesh_a4aeab2edc3bbf56c61484b9a84d72bc3}\label{class_u_pressable_static_mesh_a4aeab2edc3bbf56c61484b9a84d72bc3}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!UpdateButton@{UpdateButton}}
+\index{UpdateButton@{UpdateButton}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{UpdateButton()}{UpdateButton()}}
+{\footnotesize\ttfamily void U\+Pressable\+Static\+Mesh\+::\+Update\+Button (\begin{DoxyParamCaption}\item[{bool}]{is\+On }\end{DoxyParamCaption})}
+
+Used to run functions for rumbling the hand, sound effects etc. for when the on value is changed. \mbox{\Hypertarget{class_u_pressable_static_mesh_a4baa0783938e92bfc2ad7eef31f00227}\label{class_u_pressable_static_mesh_a4baa0783938e92bfc2ad7eef31f00227}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!UpdateButtonPosition@{UpdateButtonPosition}}
+\index{UpdateButtonPosition@{UpdateButtonPosition}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{UpdateButtonPosition()}{UpdateButtonPosition()}}
+{\footnotesize\ttfamily void U\+Pressable\+Static\+Mesh\+::\+Update\+Button\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ran when hand is overlapping with interaction sphere. N\+O\+TE\+: needs adding manually. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_pressable_static_mesh_a62c99eb2e8da8b8cd95c3cf70d3b25bd}\label{class_u_pressable_static_mesh_a62c99eb2e8da8b8cd95c3cf70d3b25bd}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!buttonIsUpdating@{buttonIsUpdating}}
+\index{buttonIsUpdating@{buttonIsUpdating}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{buttonIsUpdating}{buttonIsUpdating}}
+{\footnotesize\ttfamily bool U\+Pressable\+Static\+Mesh\+::button\+Is\+Updating}
+
+Boolean to control when to update button position. Controlled from owning actor. \mbox{\Hypertarget{class_u_pressable_static_mesh_ac9915111291617d83b353b934cc33d29}\label{class_u_pressable_static_mesh_ac9915111291617d83b353b934cc33d29}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!buttonMode@{buttonMode}}
+\index{buttonMode@{buttonMode}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{buttonMode}{buttonMode}}
+{\footnotesize\ttfamily E\+Button\+Mode U\+Pressable\+Static\+Mesh\+::button\+Mode}
+
+Current Button mode. \mbox{\Hypertarget{class_u_pressable_static_mesh_ae8a9149fd9165399e569fcecac97c028}\label{class_u_pressable_static_mesh_ae8a9149fd9165399e569fcecac97c028}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!buttonOffset@{buttonOffset}}
+\index{buttonOffset@{buttonOffset}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{buttonOffset}{buttonOffset}}
+{\footnotesize\ttfamily F\+Vector U\+Pressable\+Static\+Mesh\+::button\+Offset}
+
+Offset of the buttons trace overall if the origin is incorrect. Relative offset. \mbox{\Hypertarget{class_u_pressable_static_mesh_aff239416143ca7c00125ae60551b389c}\label{class_u_pressable_static_mesh_aff239416143ca7c00125ae60551b389c}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!buttonPressed@{buttonPressed}}
+\index{buttonPressed@{buttonPressed}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{buttonPressed}{buttonPressed}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ U\+Pressable\+Static\+Mesh\+::button\+Pressed}
+
+Sound to play when the button is switched on or pressed down. \mbox{\Hypertarget{class_u_pressable_static_mesh_a3cbdd9ac71e0a38da05aa869a7a674a4}\label{class_u_pressable_static_mesh_a3cbdd9ac71e0a38da05aa869a7a674a4}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!buttonReleased@{buttonReleased}}
+\index{buttonReleased@{buttonReleased}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{buttonReleased}{buttonReleased}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ U\+Pressable\+Static\+Mesh\+::button\+Released}
+
+Sound to play when the button returns up to the unpressed state. \mbox{\Hypertarget{class_u_pressable_static_mesh_a2cf5b5871780506f42142c08db8fd7ae}\label{class_u_pressable_static_mesh_a2cf5b5871780506f42142c08db8fd7ae}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!cannotPress@{cannotPress}}
+\index{cannotPress@{cannotPress}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{cannotPress}{cannotPress}}
+{\footnotesize\ttfamily bool U\+Pressable\+Static\+Mesh\+::cannot\+Press}
+
+Prevents the button on events from working if they temporarily need to be disabled. \mbox{\Hypertarget{class_u_pressable_static_mesh_ac1c013531094483d3f18dbfa6efe6491}\label{class_u_pressable_static_mesh_ac1c013531094483d3f18dbfa6efe6491}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!debug@{debug}}
+\index{debug@{debug}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily bool U\+Pressable\+Static\+Mesh\+::debug}
+
+Show any debug information. \mbox{\Hypertarget{class_u_pressable_static_mesh_abc090f70e33353ac92b3bec99d3c04ce}\label{class_u_pressable_static_mesh_abc090f70e33353ac92b3bec99d3c04ce}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!hapticEffect@{hapticEffect}}
+\index{hapticEffect@{hapticEffect}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{hapticEffect}{hapticEffect}}
+{\footnotesize\ttfamily U\+Haptic\+Feedback\+Effect\+\_\+\+Base$\ast$ U\+Pressable\+Static\+Mesh\+::haptic\+Effect}
+
+Haptic effect to play when the button state is changed. \mbox{\Hypertarget{class_u_pressable_static_mesh_aa25121b2d5052629e7ab0cc74ebe71e6}\label{class_u_pressable_static_mesh_aa25121b2d5052629e7ab0cc74ebe71e6}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!hapticFeedbackEnabled@{hapticFeedbackEnabled}}
+\index{hapticFeedbackEnabled@{hapticFeedbackEnabled}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{hapticFeedbackEnabled}{hapticFeedbackEnabled}}
+{\footnotesize\ttfamily bool U\+Pressable\+Static\+Mesh\+::haptic\+Feedback\+Enabled}
+
+Use haptic feedback on this button. \mbox{\Hypertarget{class_u_pressable_static_mesh_ab2e24a7ca4e9d35b1c91e1dfa9ab5e76}\label{class_u_pressable_static_mesh_ab2e24a7ca4e9d35b1c91e1dfa9ab5e76}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!ignoredActors@{ignoredActors}}
+\index{ignoredActors@{ignoredActors}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{ignoredActors}{ignoredActors}}
+{\footnotesize\ttfamily T\+Array$<$A\+Actor$\ast$$>$ U\+Pressable\+Static\+Mesh\+::ignored\+Actors}
+
+Ignored actors. \mbox{\Hypertarget{class_u_pressable_static_mesh_a60c2e6907412fc76d18628f38520d389}\label{class_u_pressable_static_mesh_a60c2e6907412fc76d18628f38520d389}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!interpolationSpeed@{interpolationSpeed}}
+\index{interpolationSpeed@{interpolationSpeed}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{interpolationSpeed}{interpolationSpeed}}
+{\footnotesize\ttfamily float U\+Pressable\+Static\+Mesh\+::interpolation\+Speed}
+
+Time taken to interpolate button position back to the current state. \mbox{\Hypertarget{class_u_pressable_static_mesh_ad9d79fc2e6321176676a2a4e40f5bd4a}\label{class_u_pressable_static_mesh_ad9d79fc2e6321176676a2a4e40f5bd4a}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!locked@{locked}}
+\index{locked@{locked}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{locked}{locked}}
+{\footnotesize\ttfamily bool U\+Pressable\+Static\+Mesh\+::locked}
+
+Locked in place. N\+O\+TE\+: Use reset function to reset the button to default. \mbox{\Hypertarget{class_u_pressable_static_mesh_afad3457d390093ad33b7337727ee4159}\label{class_u_pressable_static_mesh_afad3457d390093ad33b7337727ee4159}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!on@{on}}
+\index{on@{on}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{on}{on}}
+{\footnotesize\ttfamily bool U\+Pressable\+Static\+Mesh\+::on}
+
+Is the button currently on. \mbox{\Hypertarget{class_u_pressable_static_mesh_a02e7bec425d4973dfaa459d253c1358c}\label{class_u_pressable_static_mesh_a02e7bec425d4973dfaa459d253c1358c}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!onPercentage@{onPercentage}}
+\index{onPercentage@{onPercentage}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{onPercentage}{onPercentage}}
+{\footnotesize\ttfamily float U\+Pressable\+Static\+Mesh\+::on\+Percentage}
+
+The distance pressed that should be classed as the button being on. N\+O\+TE\+: 1 would be the end position and 0 would be the start. 0.\+5 would be half way... \mbox{\Hypertarget{class_u_pressable_static_mesh_adc73880e21f78a2d21abfd2c5c7b37df}\label{class_u_pressable_static_mesh_adc73880e21f78a2d21abfd2c5c7b37df}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!OnPressed@{OnPressed}}
+\index{OnPressed@{OnPressed}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{OnPressed}{OnPressed}}
+{\footnotesize\ttfamily F\+Pressed U\+Pressable\+Static\+Mesh\+::\+On\+Pressed}
+
+Button has been pressed down or released. \mbox{\Hypertarget{class_u_pressable_static_mesh_a91ac48761a6e0c192809a27d0b776193}\label{class_u_pressable_static_mesh_a91ac48761a6e0c192809a27d0b776193}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!OnPressedOn@{OnPressedOn}}
+\index{OnPressedOn@{OnPressedOn}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{OnPressedOn}{OnPressedOn}}
+{\footnotesize\ttfamily F\+Pressed\+On U\+Pressable\+Static\+Mesh\+::\+On\+Pressed\+On}
+
+Button has been pressed down. \mbox{\Hypertarget{class_u_pressable_static_mesh_a5ebccb04b8acc5ba543a0a9c753d03c5}\label{class_u_pressable_static_mesh_a5ebccb04b8acc5ba543a0a9c753d03c5}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!onPressedReff@{onPressedReff}}
+\index{onPressedReff@{onPressedReff}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{onPressedReff}{onPressedReff}}
+{\footnotesize\ttfamily F\+Pressed\+Refference U\+Pressable\+Static\+Mesh\+::on\+Pressed\+Reff}
+
+Button has been pressed or released. N\+O\+TE\+: Passes through the pressable that has been pressed/released. \mbox{\Hypertarget{class_u_pressable_static_mesh_a071ffaebc29bed7299a78e5c85fea236}\label{class_u_pressable_static_mesh_a071ffaebc29bed7299a78e5c85fea236}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!pressSpeed@{pressSpeed}}
+\index{pressSpeed@{pressSpeed}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{pressSpeed}{pressSpeed}}
+{\footnotesize\ttfamily float U\+Pressable\+Static\+Mesh\+::press\+Speed}
+
+Artificial press speed for the press\+Button function. \mbox{\Hypertarget{class_u_pressable_static_mesh_adaef7241e0389f2aa1a996ff2a6ce8d4}\label{class_u_pressable_static_mesh_adaef7241e0389f2aa1a996ff2a6ce8d4}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!shapeTraceType@{shapeTraceType}}
+\index{shapeTraceType@{shapeTraceType}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{shapeTraceType}{shapeTraceType}}
+{\footnotesize\ttfamily E\+Button\+Trace\+Collision U\+Pressable\+Static\+Mesh\+::shape\+Trace\+Type}
+
+Button trace shape. \mbox{\Hypertarget{class_u_pressable_static_mesh_ae21cfb1cfb34c90a39f70af7eac88245}\label{class_u_pressable_static_mesh_ae21cfb1cfb34c90a39f70af7eac88245}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!soundAttenuation@{soundAttenuation}}
+\index{soundAttenuation@{soundAttenuation}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{soundAttenuation}{soundAttenuation}}
+{\footnotesize\ttfamily U\+Sound\+Attenuation$\ast$ U\+Pressable\+Static\+Mesh\+::sound\+Attenuation}
+
+The sound attenuation for the button audio. \mbox{\Hypertarget{class_u_pressable_static_mesh_a0a62d3d205d2ce9e4f964a215130796a}\label{class_u_pressable_static_mesh_a0a62d3d205d2ce9e4f964a215130796a}} 
+\index{UPressableStaticMesh@{UPressableStaticMesh}!travelDistance@{travelDistance}}
+\index{travelDistance@{travelDistance}!UPressableStaticMesh@{UPressableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{travelDistance}{travelDistance}}
+{\footnotesize\ttfamily float U\+Pressable\+Static\+Mesh\+::travel\+Distance}
+
+Travel distance. Note\+: Travel axis is the relative z-\/axis for this component. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Pressable\+Static\+Mesh.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Pressable\+Static\+Mesh.\+cpp\end{DoxyCompactItemize}

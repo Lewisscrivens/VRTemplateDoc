@@ -1,0 +1,349 @@
+\hypertarget{class_a_peelable_spline_actor}{}\doxysection{A\+Peelable\+Spline\+Actor Class Reference}
+\label{class_a_peelable_spline_actor}\index{APeelableSplineActor@{APeelableSplineActor}}
+
+
+{\ttfamily \#include $<$Peelable\+Spline\+Actor.\+h$>$}
+
+Inheritance diagram for A\+Peelable\+Spline\+Actor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_peelable_spline_actor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_peelable_spline_actor_a37443ca2cee22745af38b2a219464146}{A\+Peelable\+Spline\+Actor}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_peelable_spline_actor_af960a8adffa3153665cc61b1db0aa2c1}{Tick}} (float Delta\+Time) override
+\item 
+void \mbox{\hyperlink{class_a_peelable_spline_actor_a36a861e46bbb10d75ab81271efc70055}{Regenerate\+Spline\+Point}} (int index\+To\+Reset)
+\item 
+void \mbox{\hyperlink{class_a_peelable_spline_actor_a59b3699eafa5ee496ce220a0291f835c}{Regenerate\+Spline\+From\+Defaults}} (E\+Regen\+Type regen\+Type)
+\item 
+virtual void \mbox{\hyperlink{class_a_peelable_spline_actor_a8b7b23bf0718e8c81c1a47c4e57ddc79}{On\+Construction}} (const F\+Transform \&Transform) override
+\item 
+T\+Array$<$ U\+Spline\+Mesh\+Component $\ast$ $>$ \& \mbox{\hyperlink{class_a_peelable_spline_actor_a9b9cea1f182e8cfe5e2a26998dfeea78}{Get\+Generated\+Spline\+Meshes}} ()
+\item 
+void \mbox{\hyperlink{class_a_peelable_spline_actor_ad1f9a0c6edab5ff8ec984783e35f5d55}{Overlap\+Detected}} (class U\+Primitive\+Component $\ast$Overlapped\+Comp, class A\+Actor $\ast$Other\+Actor, class U\+Primitive\+Component $\ast$Other\+Comp, int32 Other\+Body\+Index, bool b\+From\+Sweep, const F\+Hit\+Result \&Sweep\+Result)
+\item 
+void \mbox{\hyperlink{class_a_peelable_spline_actor_a5f522c38d1c53bf20a5ac788b7ec3dc2}{Overlap\+Ended}} (class U\+Primitive\+Component $\ast$Overlapped\+Comp, class A\+Actor $\ast$Other\+Actor, class U\+Primitive\+Component $\ast$Other\+Comp, int32 Other\+Body\+Index)
+\item 
+virtual void \mbox{\hyperlink{class_a_peelable_spline_actor_a002e838d5e9fc9480cabf2ff431f3609}{Grab\+Pressed\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_peelable_spline_actor_a35c8428610e43ec878f6886cec80ff3a}{Grab\+Released\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_peelable_spline_actor_a2328357dc4a27b7e22e9c939917a9a47}{Dragging\+\_\+\+Implementation}} (float delta\+Time) override
+\item 
+virtual \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_a_peelable_spline_actor_a2ca485ece6fd3e5bcd6ebaeefce12bf6}{Get\+Interface\+Settings\+\_\+\+Implementation}} () override
+\item 
+\mbox{\Hypertarget{class_a_peelable_spline_actor_aa5f183d065b85a50fee480991e841646}\label{class_a_peelable_spline_actor_aa5f183d065b85a50fee480991e841646}} 
+virtual void {\bfseries Set\+Interface\+Settings\+\_\+\+Implementation} (\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} new\+Interface\+Settings) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\+Scene\+Component $\ast$ \mbox{\hyperlink{class_a_peelable_spline_actor_acb89f83b602d42be292af96c9513a0cc}{root}}
+\item 
+U\+Spline\+Component $\ast$ \mbox{\hyperlink{class_a_peelable_spline_actor_a8daae6390eb8fbac9385f87d7080fdf8}{peelable\+Spline}}
+\item 
+U\+Sphere\+Component $\ast$ \mbox{\hyperlink{class_a_peelable_spline_actor_a1543249e35e01fbb61a681b5da103a94}{grab\+Area}}
+\item 
+U\+Spline\+Component $\ast$ \mbox{\hyperlink{class_a_peelable_spline_actor_a7ca526befe203806e9549a936ecd9234}{grab\+Curve\+Spline}}
+\item 
+U\+Static\+Mesh $\ast$ \mbox{\hyperlink{class_a_peelable_spline_actor_aa397776ea8a633a82c08ccab9b22a984}{spline\+Start\+Mesh}}
+\item 
+U\+Static\+Mesh $\ast$ \mbox{\hyperlink{class_a_peelable_spline_actor_a50e2a171e2d47c400dee9d6150c0e8c1}{spline\+End\+Mesh}}
+\item 
+U\+Static\+Mesh $\ast$ \mbox{\hyperlink{class_a_peelable_spline_actor_a679a5b611f03b67eb21d9dec41851233}{spline\+Middle\+Mesh}}
+\item 
+U\+Material\+Interface $\ast$ \mbox{\hyperlink{class_a_peelable_spline_actor_aab8f92cdf731b163b2b78344cc564890}{spline\+Mesh\+Material}}
+\item 
+U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_a_peelable_spline_actor_a592be51acb31403c8123f541158c5214}{haptic\+Curve}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_a_peelable_spline_actor_ae3fe301a7772ca285e6eeedc8ba8c726}{peel\+Sound}}
+\item 
+bool \mbox{\hyperlink{class_a_peelable_spline_actor_a3334534103e5c573d4b7309859858173}{regenerate\+Spline}}
+\item 
+bool \mbox{\hyperlink{class_a_peelable_spline_actor_abf80b274a9bec53bd274022666523066}{point\+Ends\+Down}}
+\item 
+float \mbox{\hyperlink{class_a_peelable_spline_actor_a4008bc4dce05c80ecae9669b81479746}{spline\+Mesh\+Distance}}
+\item 
+int \mbox{\hyperlink{class_a_peelable_spline_actor_a15390678b60dd8329a2b935c21bdf4f4}{tape\+Sections}}
+\item 
+bool \mbox{\hyperlink{class_a_peelable_spline_actor_ac5cd860d05d9aeb53eec25c3a1ad98cc}{debug}}
+\item 
+\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_a_peelable_spline_actor_ad2775570dced17abb3828e6db02d3113}{interactable\+Settings}}
+\item 
+A\+V\+R\+Hand $\ast$ \mbox{\hyperlink{class_a_peelable_spline_actor_a5cf4b2569d7c8d479a2030f1c9ff59d5}{hand\+Ref}}
+\item 
+F\+Peelable\+Section \mbox{\hyperlink{class_a_peelable_spline_actor_ac08b44f68e6dbb896fbc56eacd840442}{On\+Peeled}}
+\item 
+F\+Peelable\+Event \mbox{\hyperlink{class_a_peelable_spline_actor_a710fc9d7032375a9bd2af1ca171e186c}{On\+Peelable\+Grabbed}}
+\item 
+F\+Peelable\+Event \mbox{\hyperlink{class_a_peelable_spline_actor_a740c07944a633a43547f6816f026ee3e}{On\+Peelable\+Released}}
+\item 
+F\+Peelable\+Event \mbox{\hyperlink{class_a_peelable_spline_actor_a2ccfc469769d3ef6fced30536bb61392}{On\+Peelable\+Complete}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_peelable_spline_actor_abb1502dc3a9e8da136d6e5cb9f9749b0}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_a_peelable_spline_actor_ab92efabedf7637965eaf9c1bff6e5563}{Refresh\+Spline\+Meshes\+From\+Spline}} (int index=-\/1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\+Array$<$ U\+Spline\+Mesh\+Component $\ast$ $>$ \mbox{\hyperlink{class_a_peelable_spline_actor_a971ccec93e4efc0b7033bba4fb4d14cd}{spline\+Meshes}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An actor that can be grabbed and peeled away from its start state. N\+O\+TE\+: Use-\/full for tape, tearing card etc. N\+O\+TE\+: Ignore E\+C\+C\+\_\+\+Destructible to ignore the spline\+Meshes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_peelable_spline_actor_a37443ca2cee22745af38b2a219464146}\label{class_a_peelable_spline_actor_a37443ca2cee22745af38b2a219464146}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!APeelableSplineActor@{APeelableSplineActor}}
+\index{APeelableSplineActor@{APeelableSplineActor}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{APeelableSplineActor()}{APeelableSplineActor()}}
+{\footnotesize\ttfamily A\+Peelable\+Spline\+Actor\+::\+A\+Peelable\+Spline\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_peelable_spline_actor_abb1502dc3a9e8da136d6e5cb9f9749b0}\label{class_a_peelable_spline_actor_abb1502dc3a9e8da136d6e5cb9f9749b0}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Peelable\+Spline\+Actor\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Level start. \mbox{\Hypertarget{class_a_peelable_spline_actor_a2328357dc4a27b7e22e9c939917a9a47}\label{class_a_peelable_spline_actor_a2328357dc4a27b7e22e9c939917a9a47}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!Dragging\_Implementation@{Dragging\_Implementation}}
+\index{Dragging\_Implementation@{Dragging\_Implementation}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{Dragging\_Implementation()}{Dragging\_Implementation()}}
+{\footnotesize\ttfamily void A\+Peelable\+Spline\+Actor\+::\+Dragging\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ticking function that is ran while an interactable is grabbed. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae97908dd8838ff7157fdf8d61aeae1e6}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_peelable_spline_actor_a9b9cea1f182e8cfe5e2a26998dfeea78}\label{class_a_peelable_spline_actor_a9b9cea1f182e8cfe5e2a26998dfeea78}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!GetGeneratedSplineMeshes@{GetGeneratedSplineMeshes}}
+\index{GetGeneratedSplineMeshes@{GetGeneratedSplineMeshes}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{GetGeneratedSplineMeshes()}{GetGeneratedSplineMeshes()}}
+{\footnotesize\ttfamily T\+Array$<$ U\+Spline\+Mesh\+Component $\ast$ $>$ \& A\+Peelable\+Spline\+Actor\+::\+Get\+Generated\+Spline\+Meshes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the collection of currently spawned spline meshes. \mbox{\Hypertarget{class_a_peelable_spline_actor_a2ca485ece6fd3e5bcd6ebaeefce12bf6}\label{class_a_peelable_spline_actor_a2ca485ece6fd3e5bcd6ebaeefce12bf6}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}}
+\index{GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{GetInterfaceSettings\_Implementation()}{GetInterfaceSettings\_Implementation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} A\+Peelable\+Spline\+Actor\+::\+Get\+Interface\+Settings\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get and set functions to allow changes from blueprint. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a445029683d12cb13b8bddff6dd093993}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_peelable_spline_actor_a002e838d5e9fc9480cabf2ff431f3609}\label{class_a_peelable_spline_actor_a002e838d5e9fc9480cabf2ff431f3609}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!GrabPressed\_Implementation@{GrabPressed\_Implementation}}
+\index{GrabPressed\_Implementation@{GrabPressed\_Implementation}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{GrabPressed\_Implementation()}{GrabPressed\_Implementation()}}
+{\footnotesize\ttfamily void A\+Peelable\+Spline\+Actor\+::\+Grab\+Pressed\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Implementation of the hands interface. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a904db7e568a399ef503d68e40cf4d4eb}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_peelable_spline_actor_a35c8428610e43ec878f6886cec80ff3a}\label{class_a_peelable_spline_actor_a35c8428610e43ec878f6886cec80ff3a}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!GrabReleased\_Implementation@{GrabReleased\_Implementation}}
+\index{GrabReleased\_Implementation@{GrabReleased\_Implementation}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{GrabReleased\_Implementation()}{GrabReleased\_Implementation()}}
+{\footnotesize\ttfamily void A\+Peelable\+Spline\+Actor\+::\+Grab\+Released\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran when the trigger is released. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae50003621758b8836e206bff33003ab8}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_peelable_spline_actor_a8b7b23bf0718e8c81c1a47c4e57ddc79}\label{class_a_peelable_spline_actor_a8b7b23bf0718e8c81c1a47c4e57ddc79}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!OnConstruction@{OnConstruction}}
+\index{OnConstruction@{OnConstruction}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{OnConstruction()}{OnConstruction()}}
+{\footnotesize\ttfamily void A\+Peelable\+Spline\+Actor\+::\+On\+Construction (\begin{DoxyParamCaption}\item[{const F\+Transform \&}]{Transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Constructor called when anything is changed on the spline mesh or added etc. \mbox{\Hypertarget{class_a_peelable_spline_actor_ad1f9a0c6edab5ff8ec984783e35f5d55}\label{class_a_peelable_spline_actor_ad1f9a0c6edab5ff8ec984783e35f5d55}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!OverlapDetected@{OverlapDetected}}
+\index{OverlapDetected@{OverlapDetected}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{OverlapDetected()}{OverlapDetected()}}
+{\footnotesize\ttfamily void A\+Peelable\+Spline\+Actor\+::\+Overlap\+Detected (\begin{DoxyParamCaption}\item[{class U\+Primitive\+Component $\ast$}]{Overlapped\+Comp,  }\item[{class A\+Actor $\ast$}]{Other\+Actor,  }\item[{class U\+Primitive\+Component $\ast$}]{Other\+Comp,  }\item[{int32}]{Other\+Body\+Index,  }\item[{bool}]{b\+From\+Sweep,  }\item[{const F\+Hit\+Result \&}]{Sweep\+Result }\end{DoxyParamCaption})}
+
+When hand starts overlap on any spline mesh. \mbox{\Hypertarget{class_a_peelable_spline_actor_a5f522c38d1c53bf20a5ac788b7ec3dc2}\label{class_a_peelable_spline_actor_a5f522c38d1c53bf20a5ac788b7ec3dc2}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!OverlapEnded@{OverlapEnded}}
+\index{OverlapEnded@{OverlapEnded}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{OverlapEnded()}{OverlapEnded()}}
+{\footnotesize\ttfamily void A\+Peelable\+Spline\+Actor\+::\+Overlap\+Ended (\begin{DoxyParamCaption}\item[{class U\+Primitive\+Component $\ast$}]{Overlapped\+Comp,  }\item[{class A\+Actor $\ast$}]{Other\+Actor,  }\item[{class U\+Primitive\+Component $\ast$}]{Other\+Comp,  }\item[{int32}]{Other\+Body\+Index }\end{DoxyParamCaption})}
+
+When hand ends overlap on any spline mesh. \mbox{\Hypertarget{class_a_peelable_spline_actor_ab92efabedf7637965eaf9c1bff6e5563}\label{class_a_peelable_spline_actor_ab92efabedf7637965eaf9c1bff6e5563}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!RefreshSplineMeshesFromSpline@{RefreshSplineMeshesFromSpline}}
+\index{RefreshSplineMeshesFromSpline@{RefreshSplineMeshesFromSpline}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{RefreshSplineMeshesFromSpline()}{RefreshSplineMeshesFromSpline()}}
+{\footnotesize\ttfamily void A\+Peelable\+Spline\+Actor\+::\+Refresh\+Spline\+Meshes\+From\+Spline (\begin{DoxyParamCaption}\item[{int}]{index = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Refresh all spline meshes and the spline itself. N\+O\+TE\+: If index is a valid index within the spline\+Meshes array this function will only update that single index. \mbox{\Hypertarget{class_a_peelable_spline_actor_a59b3699eafa5ee496ce220a0291f835c}\label{class_a_peelable_spline_actor_a59b3699eafa5ee496ce220a0291f835c}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!RegenerateSplineFromDefaults@{RegenerateSplineFromDefaults}}
+\index{RegenerateSplineFromDefaults@{RegenerateSplineFromDefaults}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{RegenerateSplineFromDefaults()}{RegenerateSplineFromDefaults()}}
+{\footnotesize\ttfamily void A\+Peelable\+Spline\+Actor\+::\+Regenerate\+Spline\+From\+Defaults (\begin{DoxyParamCaption}\item[{E\+Regen\+Type}]{regen\+Type }\end{DoxyParamCaption})}
+
+Regenerate the spline component from the default values in the \char`\"{}\+Spline Defaults\char`\"{} subcategory of this peelable actor. N\+O\+TE\+: Also binded to the editor widget Regenerate\+Spline button. N\+O\+TE\+: Also ran when released from hand when not fully peeled. @\+Param regen\+Type, E\+Regen\+Type\+::\+Default, Regenerate the spline peelable into its default state. E\+Regen\+Type\+::\+Grabbed, Regenerate the spline peelable between the hand, current peel state and the end of the spline. \mbox{\Hypertarget{class_a_peelable_spline_actor_a36a861e46bbb10d75ab81271efc70055}\label{class_a_peelable_spline_actor_a36a861e46bbb10d75ab81271efc70055}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!RegenerateSplinePoint@{RegenerateSplinePoint}}
+\index{RegenerateSplinePoint@{RegenerateSplinePoint}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{RegenerateSplinePoint()}{RegenerateSplinePoint()}}
+{\footnotesize\ttfamily void A\+Peelable\+Spline\+Actor\+::\+Regenerate\+Spline\+Point (\begin{DoxyParamCaption}\item[{int}]{index\+To\+Reset }\end{DoxyParamCaption})}
+
+Regenerate a given spline point back to its default position after a full regenerate spline point from defaults. @\+Param index\+To\+Reset, index of spline point to be regenerated to default. \mbox{\Hypertarget{class_a_peelable_spline_actor_af960a8adffa3153665cc61b1db0aa2c1}\label{class_a_peelable_spline_actor_af960a8adffa3153665cc61b1db0aa2c1}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!Tick@{Tick}}
+\index{Tick@{Tick}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void A\+Peelable\+Spline\+Actor\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Frame. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_peelable_spline_actor_ac5cd860d05d9aeb53eec25c3a1ad98cc}\label{class_a_peelable_spline_actor_ac5cd860d05d9aeb53eec25c3a1ad98cc}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!debug@{debug}}
+\index{debug@{debug}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily bool A\+Peelable\+Spline\+Actor\+::debug}
+
+Are debugging logs enabled on this class. \mbox{\Hypertarget{class_a_peelable_spline_actor_a1543249e35e01fbb61a681b5da103a94}\label{class_a_peelable_spline_actor_a1543249e35e01fbb61a681b5da103a94}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!grabArea@{grabArea}}
+\index{grabArea@{grabArea}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{grabArea}{grabArea}}
+{\footnotesize\ttfamily U\+Sphere\+Component$\ast$ A\+Peelable\+Spline\+Actor\+::grab\+Area}
+
+Sphere collision to act as the grabbable area of this component. \mbox{\Hypertarget{class_a_peelable_spline_actor_a7ca526befe203806e9549a936ecd9234}\label{class_a_peelable_spline_actor_a7ca526befe203806e9549a936ecd9234}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!grabCurveSpline@{grabCurveSpline}}
+\index{grabCurveSpline@{grabCurveSpline}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{grabCurveSpline}{grabCurveSpline}}
+{\footnotesize\ttfamily U\+Spline\+Component$\ast$ A\+Peelable\+Spline\+Actor\+::grab\+Curve\+Spline}
+
+The spline component to curve the held part of the already peeled spline. \mbox{\Hypertarget{class_a_peelable_spline_actor_a5cf4b2569d7c8d479a2030f1c9ff59d5}\label{class_a_peelable_spline_actor_a5cf4b2569d7c8d479a2030f1c9ff59d5}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!handRef@{handRef}}
+\index{handRef@{handRef}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{handRef}{handRef}}
+{\footnotesize\ttfamily A\+V\+R\+Hand$\ast$ A\+Peelable\+Spline\+Actor\+::hand\+Ref}
+
+Stored reference to the hand if this component is grabbed. \mbox{\Hypertarget{class_a_peelable_spline_actor_a592be51acb31403c8123f541158c5214}\label{class_a_peelable_spline_actor_a592be51acb31403c8123f541158c5214}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!hapticCurve@{hapticCurve}}
+\index{hapticCurve@{hapticCurve}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{hapticCurve}{hapticCurve}}
+{\footnotesize\ttfamily U\+Haptic\+Feedback\+Effect\+\_\+\+Base$\ast$ A\+Peelable\+Spline\+Actor\+::haptic\+Curve}
+
+Curve to apply the haptic feedback effect to the controller while grabbed. N\+O\+TE\+: Intensity is multiplied by the movement velocity hand. N\+O\+TE\+: If null no haptic feedback is played. \mbox{\Hypertarget{class_a_peelable_spline_actor_ad2775570dced17abb3828e6db02d3113}\label{class_a_peelable_spline_actor_ad2775570dced17abb3828e6db02d3113}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!interactableSettings@{interactableSettings}}
+\index{interactableSettings@{interactableSettings}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{interactableSettings}{interactableSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} A\+Peelable\+Spline\+Actor\+::interactable\+Settings}
+
+The interfaces interactable settings for how to interact with VR controllers/hands. \mbox{\Hypertarget{class_a_peelable_spline_actor_a2ccfc469769d3ef6fced30536bb61392}\label{class_a_peelable_spline_actor_a2ccfc469769d3ef6fced30536bb61392}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!OnPeelableComplete@{OnPeelableComplete}}
+\index{OnPeelableComplete@{OnPeelableComplete}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{OnPeelableComplete}{OnPeelableComplete}}
+{\footnotesize\ttfamily F\+Peelable\+Event A\+Peelable\+Spline\+Actor\+::\+On\+Peelable\+Complete}
+
+Called when peelable is fully peeled after being released from the hand. Post\+Update. \mbox{\Hypertarget{class_a_peelable_spline_actor_a710fc9d7032375a9bd2af1ca171e186c}\label{class_a_peelable_spline_actor_a710fc9d7032375a9bd2af1ca171e186c}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!OnPeelableGrabbed@{OnPeelableGrabbed}}
+\index{OnPeelableGrabbed@{OnPeelableGrabbed}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{OnPeelableGrabbed}{OnPeelableGrabbed}}
+{\footnotesize\ttfamily F\+Peelable\+Event A\+Peelable\+Spline\+Actor\+::\+On\+Peelable\+Grabbed}
+
+Peelable grabbed. \mbox{\Hypertarget{class_a_peelable_spline_actor_a740c07944a633a43547f6816f026ee3e}\label{class_a_peelable_spline_actor_a740c07944a633a43547f6816f026ee3e}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!OnPeelableReleased@{OnPeelableReleased}}
+\index{OnPeelableReleased@{OnPeelableReleased}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{OnPeelableReleased}{OnPeelableReleased}}
+{\footnotesize\ttfamily F\+Peelable\+Event A\+Peelable\+Spline\+Actor\+::\+On\+Peelable\+Released}
+
+Peelable released. \mbox{\Hypertarget{class_a_peelable_spline_actor_ac08b44f68e6dbb896fbc56eacd840442}\label{class_a_peelable_spline_actor_ac08b44f68e6dbb896fbc56eacd840442}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!OnPeeled@{OnPeeled}}
+\index{OnPeeled@{OnPeeled}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{OnPeeled}{OnPeeled}}
+{\footnotesize\ttfamily F\+Peelable\+Section A\+Peelable\+Spline\+Actor\+::\+On\+Peeled}
+
+Peelable peeled another section. @\+Int section, The index of the peelable spline point peeled up. @\+Bool up, True\+: Was peeled up. False\+: stuck back down. \mbox{\Hypertarget{class_a_peelable_spline_actor_a8daae6390eb8fbac9385f87d7080fdf8}\label{class_a_peelable_spline_actor_a8daae6390eb8fbac9385f87d7080fdf8}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!peelableSpline@{peelableSpline}}
+\index{peelableSpline@{peelableSpline}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{peelableSpline}{peelableSpline}}
+{\footnotesize\ttfamily U\+Spline\+Component$\ast$ A\+Peelable\+Spline\+Actor\+::peelable\+Spline}
+
+The spline component to hold the peelable spline meshes. \mbox{\Hypertarget{class_a_peelable_spline_actor_ae3fe301a7772ca285e6eeedc8ba8c726}\label{class_a_peelable_spline_actor_ae3fe301a7772ca285e6eeedc8ba8c726}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!peelSound@{peelSound}}
+\index{peelSound@{peelSound}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{peelSound}{peelSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ A\+Peelable\+Spline\+Actor\+::peel\+Sound}
+
+Sound to play while grabbed and dragging peelable spline. N\+O\+TE\+: Intensity and pitch of sound is multiplied by the movement velocity hand. N\+O\+TE\+: If null no sound is played. \mbox{\Hypertarget{class_a_peelable_spline_actor_abf80b274a9bec53bd274022666523066}\label{class_a_peelable_spline_actor_abf80b274a9bec53bd274022666523066}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!pointEndsDown@{pointEndsDown}}
+\index{pointEndsDown@{pointEndsDown}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{pointEndsDown}{pointEndsDown}}
+{\footnotesize\ttfamily bool A\+Peelable\+Spline\+Actor\+::point\+Ends\+Down}
+
+Point the end spline meshes attatched to the spline down. \mbox{\Hypertarget{class_a_peelable_spline_actor_a3334534103e5c573d4b7309859858173}\label{class_a_peelable_spline_actor_a3334534103e5c573d4b7309859858173}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!regenerateSpline@{regenerateSpline}}
+\index{regenerateSpline@{regenerateSpline}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{regenerateSpline}{regenerateSpline}}
+{\footnotesize\ttfamily bool A\+Peelable\+Spline\+Actor\+::regenerate\+Spline}
+
+Regenerate the spline using the spline\+Mesh\+Distance and tape\+Sections. \mbox{\Hypertarget{class_a_peelable_spline_actor_acb89f83b602d42be292af96c9513a0cc}\label{class_a_peelable_spline_actor_acb89f83b602d42be292af96c9513a0cc}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!root@{root}}
+\index{root@{root}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily U\+Scene\+Component$\ast$ A\+Peelable\+Spline\+Actor\+::root}
+
+Root component to hold spline component. \mbox{\Hypertarget{class_a_peelable_spline_actor_a50e2a171e2d47c400dee9d6150c0e8c1}\label{class_a_peelable_spline_actor_a50e2a171e2d47c400dee9d6150c0e8c1}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!splineEndMesh@{splineEndMesh}}
+\index{splineEndMesh@{splineEndMesh}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{splineEndMesh}{splineEndMesh}}
+{\footnotesize\ttfamily U\+Static\+Mesh$\ast$ A\+Peelable\+Spline\+Actor\+::spline\+End\+Mesh}
+
+The spline mesh to use at the end of the spline. \mbox{\Hypertarget{class_a_peelable_spline_actor_a4008bc4dce05c80ecae9669b81479746}\label{class_a_peelable_spline_actor_a4008bc4dce05c80ecae9669b81479746}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!splineMeshDistance@{splineMeshDistance}}
+\index{splineMeshDistance@{splineMeshDistance}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{splineMeshDistance}{splineMeshDistance}}
+{\footnotesize\ttfamily float A\+Peelable\+Spline\+Actor\+::spline\+Mesh\+Distance}
+
+The default size in-\/between each spline point. \mbox{\Hypertarget{class_a_peelable_spline_actor_a971ccec93e4efc0b7033bba4fb4d14cd}\label{class_a_peelable_spline_actor_a971ccec93e4efc0b7033bba4fb4d14cd}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!splineMeshes@{splineMeshes}}
+\index{splineMeshes@{splineMeshes}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{splineMeshes}{splineMeshes}}
+{\footnotesize\ttfamily T\+Array$<$U\+Spline\+Mesh\+Component$\ast$$>$ A\+Peelable\+Spline\+Actor\+::spline\+Meshes\hspace{0.3cm}{\ttfamily [protected]}}
+
+Keep track of how many parts of the spline is being overlapped by the hand. Stored references to the currently spawned spline meshes. \mbox{\Hypertarget{class_a_peelable_spline_actor_aab8f92cdf731b163b2b78344cc564890}\label{class_a_peelable_spline_actor_aab8f92cdf731b163b2b78344cc564890}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!splineMeshMaterial@{splineMeshMaterial}}
+\index{splineMeshMaterial@{splineMeshMaterial}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{splineMeshMaterial}{splineMeshMaterial}}
+{\footnotesize\ttfamily U\+Material\+Interface$\ast$ A\+Peelable\+Spline\+Actor\+::spline\+Mesh\+Material}
+
+Material to be used for the spline meshes. \mbox{\Hypertarget{class_a_peelable_spline_actor_a679a5b611f03b67eb21d9dec41851233}\label{class_a_peelable_spline_actor_a679a5b611f03b67eb21d9dec41851233}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!splineMiddleMesh@{splineMiddleMesh}}
+\index{splineMiddleMesh@{splineMiddleMesh}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{splineMiddleMesh}{splineMiddleMesh}}
+{\footnotesize\ttfamily U\+Static\+Mesh$\ast$ A\+Peelable\+Spline\+Actor\+::spline\+Middle\+Mesh}
+
+The spline mesh to repeat between the start and end mesh along the spline. N\+O\+TE\+: Requires 3 or more spline points on the peelable spline. \mbox{\Hypertarget{class_a_peelable_spline_actor_aa397776ea8a633a82c08ccab9b22a984}\label{class_a_peelable_spline_actor_aa397776ea8a633a82c08ccab9b22a984}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!splineStartMesh@{splineStartMesh}}
+\index{splineStartMesh@{splineStartMesh}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{splineStartMesh}{splineStartMesh}}
+{\footnotesize\ttfamily U\+Static\+Mesh$\ast$ A\+Peelable\+Spline\+Actor\+::spline\+Start\+Mesh}
+
+The spline mesh to use at the start of the spline. \mbox{\Hypertarget{class_a_peelable_spline_actor_a15390678b60dd8329a2b935c21bdf4f4}\label{class_a_peelable_spline_actor_a15390678b60dd8329a2b935c21bdf4f4}} 
+\index{APeelableSplineActor@{APeelableSplineActor}!tapeSections@{tapeSections}}
+\index{tapeSections@{tapeSections}!APeelableSplineActor@{APeelableSplineActor}}
+\doxysubsubsection{\texorpdfstring{tapeSections}{tapeSections}}
+{\footnotesize\ttfamily int A\+Peelable\+Spline\+Actor\+::tape\+Sections}
+
+The number of spline points to generate by default. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Peelable\+Spline\+Actor.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Peelable\+Spline\+Actor.\+cpp\end{DoxyCompactItemize}

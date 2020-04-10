@@ -1,0 +1,49 @@
+\hypertarget{struct_f_post_update_tick}{}\doxysection{F\+Post\+Update\+Tick Struct Reference}
+\label{struct_f_post_update_tick}\index{FPostUpdateTick@{FPostUpdateTick}}
+
+
+{\ttfamily \#include $<$V\+R\+Pawn.\+h$>$}
+
+Inheritance diagram for F\+Post\+Update\+Tick\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_f_post_update_tick}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{struct_f_post_update_tick_ad5d404836eabf57c53fe241a65ee8ad4}{Execute\+Tick}} (float Delta\+Time, enum E\+Level\+Tick Tick\+Type, E\+Named\+Threads\+::\+Type Current\+Thread, const F\+Graph\+Event\+Ref \&My\+Completion\+Graph\+Event) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_a_v_r_pawn}{A\+V\+R\+Pawn}} $\ast$ \mbox{\hyperlink{struct_f_post_update_tick_ae5f2674f2f805d962ee6feea71a0d156}{Target}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Post update ticking function integration. N\+O\+T\+EL\+: Important for checking the tracking state of the H\+MD and hands. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_f_post_update_tick_ad5d404836eabf57c53fe241a65ee8ad4}\label{struct_f_post_update_tick_ad5d404836eabf57c53fe241a65ee8ad4}} 
+\index{FPostUpdateTick@{FPostUpdateTick}!ExecuteTick@{ExecuteTick}}
+\index{ExecuteTick@{ExecuteTick}!FPostUpdateTick@{FPostUpdateTick}}
+\doxysubsubsection{\texorpdfstring{ExecuteTick()}{ExecuteTick()}}
+{\footnotesize\ttfamily void F\+Post\+Update\+Tick\+::\+Execute\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{enum E\+Level\+Tick}]{Tick\+Type,  }\item[{E\+Named\+Threads\+::\+Type}]{Current\+Thread,  }\item[{const F\+Graph\+Event\+Ref \&}]{My\+Completion\+Graph\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Declaration of the new ticking function for this class. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_f_post_update_tick_ae5f2674f2f805d962ee6feea71a0d156}\label{struct_f_post_update_tick_ae5f2674f2f805d962ee6feea71a0d156}} 
+\index{FPostUpdateTick@{FPostUpdateTick}!Target@{Target}}
+\index{Target@{Target}!FPostUpdateTick@{FPostUpdateTick}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily class \mbox{\hyperlink{class_a_v_r_pawn}{A\+V\+R\+Pawn}}$\ast$ F\+Post\+Update\+Tick\+::\+Target}
+
+Target actor. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Player/V\+R\+Pawn.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Player/V\+R\+Pawn.\+cpp\end{DoxyCompactItemize}

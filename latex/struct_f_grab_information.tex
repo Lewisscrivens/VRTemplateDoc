@@ -1,0 +1,101 @@
+\hypertarget{struct_f_grab_information}{}\doxysection{F\+Grab\+Information Struct Reference}
+\label{struct_f_grab_information}\index{FGrabInformation@{FGrabInformation}}
+
+
+{\ttfamily \#include $<$Grabbable\+Actor.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_f_grab_information_a322fb0e4198cdf1f77e6f05f9ebcb4b6}{F\+Grab\+Information}} ()
+\item 
+void \mbox{\hyperlink{struct_f_grab_information_ad0d2d93bdc170e10a5c6d6792ec9ee4c}{Reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+A\+V\+R\+Hand $\ast$ \mbox{\hyperlink{struct_f_grab_information_a1765f5fb691bb88cbbc4bfece722368e}{hand\+Ref}}
+\item 
+U\+Primitive\+Component $\ast$ \mbox{\hyperlink{struct_f_grab_information_acd86bf4eb09c1203ad40a6a3b041bacd}{target\+Component}}
+\item 
+F\+Rotator \mbox{\hyperlink{struct_f_grab_information_a41cd844feaeb7e603d39476754db316f}{original\+Pickup\+Relative\+Rotation}}
+\item 
+F\+Vector \mbox{\hyperlink{struct_f_grab_information_ae249a90e3f40a7e401f22a3f10e24a23}{original\+Relative\+Pickup\+Offset}}
+\item 
+F\+Vector \mbox{\hyperlink{struct_f_grab_information_a84564674848493991d4edb8a706d6cc3}{original\+World\+Grabbed\+Location}}
+\item 
+F\+Vector \mbox{\hyperlink{struct_f_grab_information_acb18d176153ae1aa1578a034e1a9bb80}{world\+Pickup\+Offset}}
+\item 
+F\+Rotator \mbox{\hyperlink{struct_f_grab_information_a733928f8819183f7af8e428da293b871}{world\+Rotation\+Offset}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct to hold a hands initial and current grabbing information/variables. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_f_grab_information_a322fb0e4198cdf1f77e6f05f9ebcb4b6}\label{struct_f_grab_information_a322fb0e4198cdf1f77e6f05f9ebcb4b6}} 
+\index{FGrabInformation@{FGrabInformation}!FGrabInformation@{FGrabInformation}}
+\index{FGrabInformation@{FGrabInformation}!FGrabInformation@{FGrabInformation}}
+\doxysubsubsection{\texorpdfstring{FGrabInformation()}{FGrabInformation()}}
+{\footnotesize\ttfamily F\+Grab\+Information\+::\+F\+Grab\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_f_grab_information_ad0d2d93bdc170e10a5c6d6792ec9ee4c}\label{struct_f_grab_information_ad0d2d93bdc170e10a5c6d6792ec9ee4c}} 
+\index{FGrabInformation@{FGrabInformation}!Reset@{Reset}}
+\index{Reset@{Reset}!FGrabInformation@{FGrabInformation}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void F\+Grab\+Information\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reset this structs variables. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_f_grab_information_a1765f5fb691bb88cbbc4bfece722368e}\label{struct_f_grab_information_a1765f5fb691bb88cbbc4bfece722368e}} 
+\index{FGrabInformation@{FGrabInformation}!handRef@{handRef}}
+\index{handRef@{handRef}!FGrabInformation@{FGrabInformation}}
+\doxysubsubsection{\texorpdfstring{handRef}{handRef}}
+{\footnotesize\ttfamily A\+V\+R\+Hand$\ast$ F\+Grab\+Information\+::hand\+Ref}
+
+Storage variable for the hand when grabbing a grabbable\+Actor. \mbox{\Hypertarget{struct_f_grab_information_a41cd844feaeb7e603d39476754db316f}\label{struct_f_grab_information_a41cd844feaeb7e603d39476754db316f}} 
+\index{FGrabInformation@{FGrabInformation}!originalPickupRelativeRotation@{originalPickupRelativeRotation}}
+\index{originalPickupRelativeRotation@{originalPickupRelativeRotation}!FGrabInformation@{FGrabInformation}}
+\doxysubsubsection{\texorpdfstring{originalPickupRelativeRotation}{originalPickupRelativeRotation}}
+{\footnotesize\ttfamily F\+Rotator F\+Grab\+Information\+::original\+Pickup\+Relative\+Rotation}
+
+Store the original relative pickup rotation for re-\/attachment after collisions. \mbox{\Hypertarget{struct_f_grab_information_ae249a90e3f40a7e401f22a3f10e24a23}\label{struct_f_grab_information_ae249a90e3f40a7e401f22a3f10e24a23}} 
+\index{FGrabInformation@{FGrabInformation}!originalRelativePickupOffset@{originalRelativePickupOffset}}
+\index{originalRelativePickupOffset@{originalRelativePickupOffset}!FGrabInformation@{FGrabInformation}}
+\doxysubsubsection{\texorpdfstring{originalRelativePickupOffset}{originalRelativePickupOffset}}
+{\footnotesize\ttfamily F\+Vector F\+Grab\+Information\+::original\+Relative\+Pickup\+Offset}
+
+Store the original relative pickup offset to the hand for re-\/attachment after collisions. \mbox{\Hypertarget{struct_f_grab_information_a84564674848493991d4edb8a706d6cc3}\label{struct_f_grab_information_a84564674848493991d4edb8a706d6cc3}} 
+\index{FGrabInformation@{FGrabInformation}!originalWorldGrabbedLocation@{originalWorldGrabbedLocation}}
+\index{originalWorldGrabbedLocation@{originalWorldGrabbedLocation}!FGrabInformation@{FGrabInformation}}
+\doxysubsubsection{\texorpdfstring{originalWorldGrabbedLocation}{originalWorldGrabbedLocation}}
+{\footnotesize\ttfamily F\+Vector F\+Grab\+Information\+::original\+World\+Grabbed\+Location}
+
+The original grabbed location of the grabbable. \mbox{\Hypertarget{struct_f_grab_information_acd86bf4eb09c1203ad40a6a3b041bacd}\label{struct_f_grab_information_acd86bf4eb09c1203ad40a6a3b041bacd}} 
+\index{FGrabInformation@{FGrabInformation}!targetComponent@{targetComponent}}
+\index{targetComponent@{targetComponent}!FGrabInformation@{FGrabInformation}}
+\doxysubsubsection{\texorpdfstring{targetComponent}{targetComponent}}
+{\footnotesize\ttfamily U\+Primitive\+Component$\ast$ F\+Grab\+Information\+::target\+Component}
+
+Component used to target location/rotation while grabbed. \mbox{\Hypertarget{struct_f_grab_information_acb18d176153ae1aa1578a034e1a9bb80}\label{struct_f_grab_information_acb18d176153ae1aa1578a034e1a9bb80}} 
+\index{FGrabInformation@{FGrabInformation}!worldPickupOffset@{worldPickupOffset}}
+\index{worldPickupOffset@{worldPickupOffset}!FGrabInformation@{FGrabInformation}}
+\doxysubsubsection{\texorpdfstring{worldPickupOffset}{worldPickupOffset}}
+{\footnotesize\ttfamily F\+Vector F\+Grab\+Information\+::world\+Pickup\+Offset}
+
+Save the current world pickup location offset for collision check. \mbox{\Hypertarget{struct_f_grab_information_a733928f8819183f7af8e428da293b871}\label{struct_f_grab_information_a733928f8819183f7af8e428da293b871}} 
+\index{FGrabInformation@{FGrabInformation}!worldRotationOffset@{worldRotationOffset}}
+\index{worldRotationOffset@{worldRotationOffset}!FGrabInformation@{FGrabInformation}}
+\doxysubsubsection{\texorpdfstring{worldRotationOffset}{worldRotationOffset}}
+{\footnotesize\ttfamily F\+Rotator F\+Grab\+Information\+::world\+Rotation\+Offset}
+
+Save the current world pickup rotation offset for collision check. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Grabbable\+Actor.\+h\end{DoxyCompactItemize}

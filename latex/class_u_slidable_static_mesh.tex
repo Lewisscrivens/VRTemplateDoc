@@ -1,0 +1,266 @@
+\hypertarget{class_u_slidable_static_mesh}{}\doxysection{U\+Slidable\+Static\+Mesh Class Reference}
+\label{class_u_slidable_static_mesh}\index{USlidableStaticMesh@{USlidableStaticMesh}}
+
+
+{\ttfamily \#include $<$Slidable\+Static\+Mesh.\+h$>$}
+
+Inheritance diagram for U\+Slidable\+Static\+Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_slidable_static_mesh}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_slidable_static_mesh_acb9c4fdde09699699f42a12e86648eb7}{U\+Slidable\+Static\+Mesh}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_slidable_static_mesh_a7b5559f11b239fe5b4a606417f5fe8c9}{Tick\+Component}} (float Delta\+Time, enum E\+Level\+Tick Tick\+Type, F\+Actor\+Component\+Tick\+Function $\ast$This\+Tick\+Function) override
+\item 
+void \mbox{\hyperlink{class_u_slidable_static_mesh_a70a162c1a6450dcd624fd3c1ede60477}{Update\+Constraint\+Bounds}} ()
+\item 
+void \mbox{\hyperlink{class_u_slidable_static_mesh_a95f96664a7e14ea51e78b48ab0652214}{Update\+Slidable}} ()
+\item 
+F\+Vector \mbox{\hyperlink{class_u_slidable_static_mesh_a653d3b9619e2f1373085d710f04abf97}{Clamp\+Position}} (F\+Vector position)
+\item 
+void \mbox{\hyperlink{class_u_slidable_static_mesh_ad25275ae91cbefd2ac45ccf40c6e4a67}{Set\+Slidable\+Position}} (float position\+Along\+Axis, bool interpolate=false, float interp\+Speed=8.\+0f)
+\item 
+virtual void \mbox{\hyperlink{class_u_slidable_static_mesh_a6e366b4abd4a39fffd0b0d57d9080e2e}{Grab\+Pressed\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_u_slidable_static_mesh_a7ea1753f0e77d131a793024ae7040d19}{Grab\+Released\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_u_slidable_static_mesh_abc009a830fb989528f355b00d224f646}{Dragging\+\_\+\+Implementation}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{class_u_slidable_static_mesh_a2d3fd4e363f124b78133a97a37af74a2}{Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_u_slidable_static_mesh_a0810c9230bcf080bd884851879c77da7}{End\+Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_u_slidable_static_mesh_a93b57579c73198b12b97b1176c1c22dd}{Get\+Interface\+Settings\+\_\+\+Implementation}} () override
+\item 
+\mbox{\Hypertarget{class_u_slidable_static_mesh_a5090d57009ae0f77bb1dc899de37b26d}\label{class_u_slidable_static_mesh_a5090d57009ae0f77bb1dc899de37b26d}} 
+virtual void {\bfseries Set\+Interface\+Settings\+\_\+\+Implementation} (\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} new\+Interface\+Settings) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+A\+V\+R\+Hand $\ast$ \mbox{\hyperlink{class_u_slidable_static_mesh_a2e649876cf4f60989745062defab699e}{hand\+Ref}}
+\item 
+E\+Slide\+Axis \mbox{\hyperlink{class_u_slidable_static_mesh_a13a234cb151a495ad77202ecb6e6bfc8}{current\+Axis}}
+\item 
+float \mbox{\hyperlink{class_u_slidable_static_mesh_ad412f564fb5306aec23841b0941f3d24}{slide\+Limit}}
+\item 
+float \mbox{\hyperlink{class_u_slidable_static_mesh_a9f16067155784663cbfd31a7bc3cfa8c}{start\+Location}}
+\item 
+bool \mbox{\hyperlink{class_u_slidable_static_mesh_ab5efe362f9ebb6e7b6dd01083d5d4ecf}{center\+Limit}}
+\item 
+bool \mbox{\hyperlink{class_u_slidable_static_mesh_a9a397f804943d9f315b6d26a511aa7b8}{release\+On\+Limit}}
+\item 
+F\+Transform \mbox{\hyperlink{class_u_slidable_static_mesh_a7dd1453a39890d8fdf4dc65d602eedca}{original\+Relative\+Transform}}
+\item 
+\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_u_slidable_static_mesh_a3f18648db55a599311ad88ad64edc037}{interactable\+Settings}}
+\item 
+F\+Grabbed \mbox{\hyperlink{class_u_slidable_static_mesh_af66c878cbd5616c98e93b172c1f254a6}{On\+Mesh\+Grabbed}}
+\item 
+F\+Grabbed \mbox{\hyperlink{class_u_slidable_static_mesh_a09844f9a11c5abbd0dcba43651c89d07}{On\+Mesh\+Released}}
+\item 
+F\+Grabbed \mbox{\hyperlink{class_u_slidable_static_mesh_a9d0ea03db2b2dc473d274423ba4bd659}{On\+Mesh\+Released\+On\+Limit}}
+\item 
+float \mbox{\hyperlink{class_u_slidable_static_mesh_ac48dc8664e49619f78e04bd0cb80cde5}{current\+Position}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_slidable_static_mesh_abf656253a83ee5547fb9ef35c3aac685}{Begin\+Play}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple version of a slidable static mesh actor that can be used for things that do not need collisions, like sliders on panel of electronics, or things like inserting a floppy disc etc. N\+O\+TE\+: Will slide in its relative selected axis to its parent component/actor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_slidable_static_mesh_acb9c4fdde09699699f42a12e86648eb7}\label{class_u_slidable_static_mesh_acb9c4fdde09699699f42a12e86648eb7}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!USlidableStaticMesh@{USlidableStaticMesh}}
+\index{USlidableStaticMesh@{USlidableStaticMesh}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{USlidableStaticMesh()}{USlidableStaticMesh()}}
+{\footnotesize\ttfamily U\+Slidable\+Static\+Mesh\+::\+U\+Slidable\+Static\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_slidable_static_mesh_abf656253a83ee5547fb9ef35c3aac685}\label{class_u_slidable_static_mesh_abf656253a83ee5547fb9ef35c3aac685}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void U\+Slidable\+Static\+Mesh\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+The relative location along the selected sliding axis to interpolate to if interpolate\+On\+Release it true. Level start. \mbox{\Hypertarget{class_u_slidable_static_mesh_a653d3b9619e2f1373085d710f04abf97}\label{class_u_slidable_static_mesh_a653d3b9619e2f1373085d710f04abf97}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!ClampPosition@{ClampPosition}}
+\index{ClampPosition@{ClampPosition}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{ClampPosition()}{ClampPosition()}}
+{\footnotesize\ttfamily F\+Vector U\+Slidable\+Static\+Mesh\+::\+Clamp\+Position (\begin{DoxyParamCaption}\item[{F\+Vector}]{position }\end{DoxyParamCaption})}
+
+Returns the closes vector relative location along the clamped axis limits from the input variable position. \mbox{\Hypertarget{class_u_slidable_static_mesh_abc009a830fb989528f355b00d224f646}\label{class_u_slidable_static_mesh_abc009a830fb989528f355b00d224f646}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!Dragging\_Implementation@{Dragging\_Implementation}}
+\index{Dragging\_Implementation@{Dragging\_Implementation}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{Dragging\_Implementation()}{Dragging\_Implementation()}}
+{\footnotesize\ttfamily void U\+Slidable\+Static\+Mesh\+::\+Dragging\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ticking function that is ran while an interactable is grabbed. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae97908dd8838ff7157fdf8d61aeae1e6}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_slidable_static_mesh_a0810c9230bcf080bd884851879c77da7}\label{class_u_slidable_static_mesh_a0810c9230bcf080bd884851879c77da7}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!EndOverlapping\_Implementation@{EndOverlapping\_Implementation}}
+\index{EndOverlapping\_Implementation@{EndOverlapping\_Implementation}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{EndOverlapping\_Implementation()}{EndOverlapping\_Implementation()}}
+{\footnotesize\ttfamily void U\+Slidable\+Static\+Mesh\+::\+End\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed is removed. N\+O\+TE\+: Handles un-\/highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a4f3dfa15eb379b4c9fd7f2dbe3aca9bd}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_slidable_static_mesh_a93b57579c73198b12b97b1176c1c22dd}\label{class_u_slidable_static_mesh_a93b57579c73198b12b97b1176c1c22dd}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}}
+\index{GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{GetInterfaceSettings\_Implementation()}{GetInterfaceSettings\_Implementation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} U\+Slidable\+Static\+Mesh\+::\+Get\+Interface\+Settings\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get and set functions to allow changes from blueprint. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a445029683d12cb13b8bddff6dd093993}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_slidable_static_mesh_a6e366b4abd4a39fffd0b0d57d9080e2e}\label{class_u_slidable_static_mesh_a6e366b4abd4a39fffd0b0d57d9080e2e}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!GrabPressed\_Implementation@{GrabPressed\_Implementation}}
+\index{GrabPressed\_Implementation@{GrabPressed\_Implementation}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{GrabPressed\_Implementation()}{GrabPressed\_Implementation()}}
+{\footnotesize\ttfamily void U\+Slidable\+Static\+Mesh\+::\+Grab\+Pressed\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Implementation of the hands interface. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a904db7e568a399ef503d68e40cf4d4eb}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_slidable_static_mesh_a7ea1753f0e77d131a793024ae7040d19}\label{class_u_slidable_static_mesh_a7ea1753f0e77d131a793024ae7040d19}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!GrabReleased\_Implementation@{GrabReleased\_Implementation}}
+\index{GrabReleased\_Implementation@{GrabReleased\_Implementation}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{GrabReleased\_Implementation()}{GrabReleased\_Implementation()}}
+{\footnotesize\ttfamily void U\+Slidable\+Static\+Mesh\+::\+Grab\+Released\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran when the trigger is released. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae50003621758b8836e206bff33003ab8}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_slidable_static_mesh_a2d3fd4e363f124b78133a97a37af74a2}\label{class_u_slidable_static_mesh_a2d3fd4e363f124b78133a97a37af74a2}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!Overlapping\_Implementation@{Overlapping\_Implementation}}
+\index{Overlapping\_Implementation@{Overlapping\_Implementation}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{Overlapping\_Implementation()}{Overlapping\_Implementation()}}
+{\footnotesize\ttfamily void U\+Slidable\+Static\+Mesh\+::\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed. N\+O\+TE\+: Handles highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a06805a0a6903417322d5bda009bf8fa4}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_slidable_static_mesh_ad25275ae91cbefd2ac45ccf40c6e4a67}\label{class_u_slidable_static_mesh_ad25275ae91cbefd2ac45ccf40c6e4a67}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!SetSlidablePosition@{SetSlidablePosition}}
+\index{SetSlidablePosition@{SetSlidablePosition}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{SetSlidablePosition()}{SetSlidablePosition()}}
+{\footnotesize\ttfamily void U\+Slidable\+Static\+Mesh\+::\+Set\+Slidable\+Position (\begin{DoxyParamCaption}\item[{float}]{position\+Along\+Axis,  }\item[{bool}]{interpolate = {\ttfamily false},  }\item[{float}]{interp\+Speed = {\ttfamily 8.0f} }\end{DoxyParamCaption})}
+
+Set a slidable position along the current axis. @\+Param position\+Along\+Axis, The position along the current axis to go to in Local space. @\+Param interpolate, weather or not to interpolate to the slidable position. @\+Param interp\+Speed, The speed in which to interpolate the position at. \mbox{\Hypertarget{class_u_slidable_static_mesh_a7b5559f11b239fe5b4a606417f5fe8c9}\label{class_u_slidable_static_mesh_a7b5559f11b239fe5b4a606417f5fe8c9}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!TickComponent@{TickComponent}}
+\index{TickComponent@{TickComponent}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{TickComponent()}{TickComponent()}}
+{\footnotesize\ttfamily void U\+Slidable\+Static\+Mesh\+::\+Tick\+Component (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{enum E\+Level\+Tick}]{Tick\+Type,  }\item[{F\+Actor\+Component\+Tick\+Function $\ast$}]{This\+Tick\+Function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Frame. \mbox{\Hypertarget{class_u_slidable_static_mesh_a70a162c1a6450dcd624fd3c1ede60477}\label{class_u_slidable_static_mesh_a70a162c1a6450dcd624fd3c1ede60477}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!UpdateConstraintBounds@{UpdateConstraintBounds}}
+\index{UpdateConstraintBounds@{UpdateConstraintBounds}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{UpdateConstraintBounds()}{UpdateConstraintBounds()}}
+{\footnotesize\ttfamily void U\+Slidable\+Static\+Mesh\+::\+Update\+Constraint\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates the min and max limits depending on what the current slidable options are. \mbox{\Hypertarget{class_u_slidable_static_mesh_a95f96664a7e14ea51e78b48ab0652214}\label{class_u_slidable_static_mesh_a95f96664a7e14ea51e78b48ab0652214}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!UpdateSlidable@{UpdateSlidable}}
+\index{UpdateSlidable@{UpdateSlidable}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{UpdateSlidable()}{UpdateSlidable()}}
+{\footnotesize\ttfamily void U\+Slidable\+Static\+Mesh\+::\+Update\+Slidable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Update this slidables position relative to the original relative grab offset within the relative limits of the selected sliding axis. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_slidable_static_mesh_ab5efe362f9ebb6e7b6dd01083d5d4ecf}\label{class_u_slidable_static_mesh_ab5efe362f9ebb6e7b6dd01083d5d4ecf}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!centerLimit@{centerLimit}}
+\index{centerLimit@{centerLimit}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{centerLimit}{centerLimit}}
+{\footnotesize\ttfamily bool U\+Slidable\+Static\+Mesh\+::center\+Limit}
+
+Is the constraint limit centered. \mbox{\Hypertarget{class_u_slidable_static_mesh_a13a234cb151a495ad77202ecb6e6bfc8}\label{class_u_slidable_static_mesh_a13a234cb151a495ad77202ecb6e6bfc8}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!currentAxis@{currentAxis}}
+\index{currentAxis@{currentAxis}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{currentAxis}{currentAxis}}
+{\footnotesize\ttfamily E\+Slide\+Axis U\+Slidable\+Static\+Mesh\+::current\+Axis}
+
+The current relative axis for this sliding component to slide in when grabbed. \mbox{\Hypertarget{class_u_slidable_static_mesh_ac48dc8664e49619f78e04bd0cb80cde5}\label{class_u_slidable_static_mesh_ac48dc8664e49619f78e04bd0cb80cde5}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!currentPosition@{currentPosition}}
+\index{currentPosition@{currentPosition}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{currentPosition}{currentPosition}}
+{\footnotesize\ttfamily float U\+Slidable\+Static\+Mesh\+::current\+Position}
+
+Current position along the constraint for this slidable static mesh. \mbox{\Hypertarget{class_u_slidable_static_mesh_a2e649876cf4f60989745062defab699e}\label{class_u_slidable_static_mesh_a2e649876cf4f60989745062defab699e}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!handRef@{handRef}}
+\index{handRef@{handRef}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{handRef}{handRef}}
+{\footnotesize\ttfamily A\+V\+R\+Hand$\ast$ U\+Slidable\+Static\+Mesh\+::hand\+Ref}
+
+Reference to the hand currently grabbing this component. Also can be used as a bool to check if this is in a hand. \mbox{\Hypertarget{class_u_slidable_static_mesh_a3f18648db55a599311ad88ad64edc037}\label{class_u_slidable_static_mesh_a3f18648db55a599311ad88ad64edc037}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!interactableSettings@{interactableSettings}}
+\index{interactableSettings@{interactableSettings}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{interactableSettings}{interactableSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} U\+Slidable\+Static\+Mesh\+::interactable\+Settings}
+
+The interface settings for hand interaction with this intractable. \mbox{\Hypertarget{class_u_slidable_static_mesh_af66c878cbd5616c98e93b172c1f254a6}\label{class_u_slidable_static_mesh_af66c878cbd5616c98e93b172c1f254a6}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!OnMeshGrabbed@{OnMeshGrabbed}}
+\index{OnMeshGrabbed@{OnMeshGrabbed}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{OnMeshGrabbed}{OnMeshGrabbed}}
+{\footnotesize\ttfamily F\+Grabbed U\+Slidable\+Static\+Mesh\+::\+On\+Mesh\+Grabbed}
+
+Mesh grabbed by hand. \mbox{\Hypertarget{class_u_slidable_static_mesh_a09844f9a11c5abbd0dcba43651c89d07}\label{class_u_slidable_static_mesh_a09844f9a11c5abbd0dcba43651c89d07}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!OnMeshReleased@{OnMeshReleased}}
+\index{OnMeshReleased@{OnMeshReleased}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{OnMeshReleased}{OnMeshReleased}}
+{\footnotesize\ttfamily F\+Grabbed U\+Slidable\+Static\+Mesh\+::\+On\+Mesh\+Released}
+
+Mesh released from hand. \mbox{\Hypertarget{class_u_slidable_static_mesh_a9d0ea03db2b2dc473d274423ba4bd659}\label{class_u_slidable_static_mesh_a9d0ea03db2b2dc473d274423ba4bd659}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!OnMeshReleasedOnLimit@{OnMeshReleasedOnLimit}}
+\index{OnMeshReleasedOnLimit@{OnMeshReleasedOnLimit}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{OnMeshReleasedOnLimit}{OnMeshReleasedOnLimit}}
+{\footnotesize\ttfamily F\+Grabbed U\+Slidable\+Static\+Mesh\+::\+On\+Mesh\+Released\+On\+Limit}
+
+Mesh released on limit. \mbox{\Hypertarget{class_u_slidable_static_mesh_a7dd1453a39890d8fdf4dc65d602eedca}\label{class_u_slidable_static_mesh_a7dd1453a39890d8fdf4dc65d602eedca}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!originalRelativeTransform@{originalRelativeTransform}}
+\index{originalRelativeTransform@{originalRelativeTransform}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{originalRelativeTransform}{originalRelativeTransform}}
+{\footnotesize\ttfamily F\+Transform U\+Slidable\+Static\+Mesh\+::original\+Relative\+Transform}
+
+Original relative transform to calculate boundaries of slidable movement. \mbox{\Hypertarget{class_u_slidable_static_mesh_a9a397f804943d9f315b6d26a511aa7b8}\label{class_u_slidable_static_mesh_a9a397f804943d9f315b6d26a511aa7b8}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!releaseOnLimit@{releaseOnLimit}}
+\index{releaseOnLimit@{releaseOnLimit}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{releaseOnLimit}{releaseOnLimit}}
+{\footnotesize\ttfamily bool U\+Slidable\+Static\+Mesh\+::release\+On\+Limit}
+
+Should release the slidable when it reaches it max\+Limit. \mbox{\Hypertarget{class_u_slidable_static_mesh_ad412f564fb5306aec23841b0941f3d24}\label{class_u_slidable_static_mesh_ad412f564fb5306aec23841b0941f3d24}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!slideLimit@{slideLimit}}
+\index{slideLimit@{slideLimit}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{slideLimit}{slideLimit}}
+{\footnotesize\ttfamily float U\+Slidable\+Static\+Mesh\+::slide\+Limit}
+
+The current slidable limit that the slidable will move in. \mbox{\Hypertarget{class_u_slidable_static_mesh_a9f16067155784663cbfd31a7bc3cfa8c}\label{class_u_slidable_static_mesh_a9f16067155784663cbfd31a7bc3cfa8c}} 
+\index{USlidableStaticMesh@{USlidableStaticMesh}!startLocation@{startLocation}}
+\index{startLocation@{startLocation}!USlidableStaticMesh@{USlidableStaticMesh}}
+\doxysubsubsection{\texorpdfstring{startLocation}{startLocation}}
+{\footnotesize\ttfamily float U\+Slidable\+Static\+Mesh\+::start\+Location}
+
+The slidables start location in the specified axis. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Slidable\+Static\+Mesh.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Slidable\+Static\+Mesh.\+cpp\end{DoxyCompactItemize}

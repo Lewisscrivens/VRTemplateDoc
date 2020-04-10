@@ -1,0 +1,223 @@
+\hypertarget{class_i_hands_interface}{}\doxysection{I\+Hands\+Interface Class Reference}
+\label{class_i_hands_interface}\index{IHandsInterface@{IHandsInterface}}
+
+
+{\ttfamily \#include $<$Hands\+Interface.\+h$>$}
+
+Inheritance diagram for I\+Hands\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{class_i_hands_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_i_hands_interface_a68c8bc77bf34c42fd54ac8fe5cdc7496}{Grab\+Pressed}} (A\+V\+R\+Hand $\ast$hand)
+\item 
+\mbox{\Hypertarget{class_i_hands_interface_a57d5c207150b29f9e9f8e402fa506f95}\label{class_i_hands_interface_a57d5c207150b29f9e9f8e402fa506f95}} 
+void {\bfseries Grab\+Released} (A\+V\+R\+Hand $\ast$hand)
+\item 
+\mbox{\Hypertarget{class_i_hands_interface_ae19ecc948c04b1acf31e8a7b17cd4b4d}\label{class_i_hands_interface_ae19ecc948c04b1acf31e8a7b17cd4b4d}} 
+void {\bfseries Grabbed\+While\+Locked} ()
+\item 
+\mbox{\Hypertarget{class_i_hands_interface_a91cce86d4e926dbec341b493cbf857a6}\label{class_i_hands_interface_a91cce86d4e926dbec341b493cbf857a6}} 
+void {\bfseries Released\+While\+Locked} ()
+\item 
+\mbox{\Hypertarget{class_i_hands_interface_a75d39b56ff6b02e071b31a3f27a09120}\label{class_i_hands_interface_a75d39b56ff6b02e071b31a3f27a09120}} 
+void {\bfseries Grip\+Pressed} (A\+V\+R\+Hand $\ast$hand)
+\item 
+\mbox{\Hypertarget{class_i_hands_interface_aa43fe1560f7a879d626e0a80bd789fe8}\label{class_i_hands_interface_aa43fe1560f7a879d626e0a80bd789fe8}} 
+void {\bfseries Grip\+Released} ()
+\item 
+\mbox{\Hypertarget{class_i_hands_interface_a7b288d1bb83ad727eed0ac34f0d8a220}\label{class_i_hands_interface_a7b288d1bb83ad727eed0ac34f0d8a220}} 
+void {\bfseries Dragging} (float delta\+Time)
+\item 
+\mbox{\Hypertarget{class_i_hands_interface_ad756c4f7801ab9bc448d4f58c4afac7e}\label{class_i_hands_interface_ad756c4f7801ab9bc448d4f58c4afac7e}} 
+void {\bfseries Interact} (bool pressed)
+\item 
+\mbox{\Hypertarget{class_i_hands_interface_ac63b9e36f42bf014df71bba3cd475d87}\label{class_i_hands_interface_ac63b9e36f42bf014df71bba3cd475d87}} 
+void {\bfseries Overlapping} (A\+V\+R\+Hand $\ast$hand)
+\item 
+\mbox{\Hypertarget{class_i_hands_interface_aa70f0516abacccfb37ef4c5a1e5e5264}\label{class_i_hands_interface_aa70f0516abacccfb37ef4c5a1e5e5264}} 
+void {\bfseries End\+Overlapping} (A\+V\+R\+Hand $\ast$hand)
+\item 
+\mbox{\Hypertarget{class_i_hands_interface_a7ecb0001bf1acbb8b68e4fb2fe4b3960}\label{class_i_hands_interface_a7ecb0001bf1acbb8b68e4fb2fe4b3960}} 
+void {\bfseries Teleported} ()
+\item 
+\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_i_hands_interface_a4989ba8b7366ae1eb20c119230197ff8}{Get\+Interface\+Settings}} ()
+\item 
+\mbox{\Hypertarget{class_i_hands_interface_a0acfe4bd78443f0f5795852a86e10ad5}\label{class_i_hands_interface_a0acfe4bd78443f0f5795852a86e10ad5}} 
+void {\bfseries Set\+Interface\+Settings} (\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} new\+Interface\+Settings)
+\item 
+virtual void \mbox{\hyperlink{class_i_hands_interface_a904db7e568a399ef503d68e40cf4d4eb}{Grab\+Pressed\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand)
+\item 
+virtual void \mbox{\hyperlink{class_i_hands_interface_ae50003621758b8836e206bff33003ab8}{Grab\+Released\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand)
+\item 
+virtual void \mbox{\hyperlink{class_i_hands_interface_a793723aaeaf88c1d3b225aa9464dc746}{Grabbed\+While\+Locked\+\_\+\+Implementation}} ()
+\item 
+virtual void \mbox{\hyperlink{class_i_hands_interface_a8001f0337ece3e311b7b52fca477971e}{Released\+While\+Locked\+\_\+\+Implementation}} ()
+\item 
+virtual void \mbox{\hyperlink{class_i_hands_interface_ad8ab186d973d2d64d66ef6d3f9a58b3d}{Grip\+Pressed\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand)
+\item 
+virtual void \mbox{\hyperlink{class_i_hands_interface_aa3caddd60c6813abdc588984c8b4ec09}{Grip\+Released\+\_\+\+Implementation}} ()
+\item 
+virtual void \mbox{\hyperlink{class_i_hands_interface_ae97908dd8838ff7157fdf8d61aeae1e6}{Dragging\+\_\+\+Implementation}} (float delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{class_i_hands_interface_a7545f93bc5693b453a5fbf23f31105db}{Interact\+\_\+\+Implementation}} (bool pressed)
+\item 
+virtual void \mbox{\hyperlink{class_i_hands_interface_a06805a0a6903417322d5bda009bf8fa4}{Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand)
+\item 
+virtual void \mbox{\hyperlink{class_i_hands_interface_a4f3dfa15eb379b4c9fd7f2dbe3aca9bd}{End\+Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand)
+\item 
+virtual void \mbox{\hyperlink{class_i_hands_interface_a8db4165f23e93d3889e89ff4f5057016}{Teleported\+\_\+\+Implementation}} ()
+\item 
+virtual \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_i_hands_interface_a445029683d12cb13b8bddff6dd093993}{Get\+Interface\+Settings\+\_\+\+Implementation}} ()
+\item 
+\mbox{\Hypertarget{class_i_hands_interface_a560daa0c7e2a485debc1ab3987d7b75f}\label{class_i_hands_interface_a560daa0c7e2a485debc1ab3987d7b75f}} 
+virtual void {\bfseries Set\+Interface\+Settings\+\_\+\+Implementation} (\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} new\+Interface\+Settings)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface class to hold C++ and Blueprint versions of intractable functions. N\+O\+TE\+: Must implement the getter and setter method along with a local variable for the interactables \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} as it cannot be stored in the interface... 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_hands_interface_ae97908dd8838ff7157fdf8d61aeae1e6}\label{class_i_hands_interface_ae97908dd8838ff7157fdf8d61aeae1e6}} 
+\index{IHandsInterface@{IHandsInterface}!Dragging\_Implementation@{Dragging\_Implementation}}
+\index{Dragging\_Implementation@{Dragging\_Implementation}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{Dragging\_Implementation()}{Dragging\_Implementation()}}
+{\footnotesize\ttfamily void I\+Hands\+Interface\+::\+Dragging\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ticking function that is ran while an interactable is grabbed. 
+
+Reimplemented in \mbox{\hyperlink{class_a_grabbable_actor_aeca18b3fc4314fd0db8c3feca521a861}{A\+Grabbable\+Actor}}, \mbox{\hyperlink{class_a_rotatable_actor_aeec31eb1ebb1caea158bc97a3450cd0e}{A\+Rotatable\+Actor}}, \mbox{\hyperlink{class_u_rotatable_static_mesh_a191bb593b8480d22b8825b73cfe5ed63}{U\+Rotatable\+Static\+Mesh}}, \mbox{\hyperlink{class_a_slidable_actor_ac39cb3ed9a3950e02263b7509a30c04b}{A\+Slidable\+Actor}}, \mbox{\hyperlink{class_a_peelable_spline_actor_a2328357dc4a27b7e22e9c939917a9a47}{A\+Peelable\+Spline\+Actor}}, \mbox{\hyperlink{class_u_grabbable_skel_mesh_af60d6f4f54972dc6fb58be9a5cb39a2a}{U\+Grabbable\+Skel\+Mesh}}, \mbox{\hyperlink{class_u_slidable_static_mesh_abc009a830fb989528f355b00d224f646}{U\+Slidable\+Static\+Mesh}}, and \mbox{\hyperlink{class_a_interactable_actor_a0e5d41ad5293893df6506878e510a568}{A\+Interactable\+Actor}}.
+
+\mbox{\Hypertarget{class_i_hands_interface_a4f3dfa15eb379b4c9fd7f2dbe3aca9bd}\label{class_i_hands_interface_a4f3dfa15eb379b4c9fd7f2dbe3aca9bd}} 
+\index{IHandsInterface@{IHandsInterface}!EndOverlapping\_Implementation@{EndOverlapping\_Implementation}}
+\index{EndOverlapping\_Implementation@{EndOverlapping\_Implementation}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{EndOverlapping\_Implementation()}{EndOverlapping\_Implementation()}}
+{\footnotesize\ttfamily void I\+Hands\+Interface\+::\+End\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed is removed. N\+O\+TE\+: Handles un-\/highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented in \mbox{\hyperlink{class_a_grabbable_actor_a31f18db31e6f6a354c3789c747f4db7e}{A\+Grabbable\+Actor}}, \mbox{\hyperlink{class_a_rotatable_actor_a75077d4872020117ca66da7b7c168b30}{A\+Rotatable\+Actor}}, \mbox{\hyperlink{class_u_rotatable_static_mesh_a0ce4bba3de1c876acbf094e1933dd582}{U\+Rotatable\+Static\+Mesh}}, \mbox{\hyperlink{class_a_slidable_actor_ab263b3bef620284ad8855e8f459ce5e8}{A\+Slidable\+Actor}}, \mbox{\hyperlink{class_u_grabbable_skel_mesh_a6fe562c8c90ae78a142963490aa31fd2}{U\+Grabbable\+Skel\+Mesh}}, \mbox{\hyperlink{class_u_slidable_static_mesh_a0810c9230bcf080bd884851879c77da7}{U\+Slidable\+Static\+Mesh}}, and \mbox{\hyperlink{class_a_interactable_actor_aa02a3716eb9cbdc937ba877fe8882918}{A\+Interactable\+Actor}}.
+
+\mbox{\Hypertarget{class_i_hands_interface_a4989ba8b7366ae1eb20c119230197ff8}\label{class_i_hands_interface_a4989ba8b7366ae1eb20c119230197ff8}} 
+\index{IHandsInterface@{IHandsInterface}!GetInterfaceSettings@{GetInterfaceSettings}}
+\index{GetInterfaceSettings@{GetInterfaceSettings}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{GetInterfaceSettings()}{GetInterfaceSettings()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} I\+Hands\+Interface\+::\+Get\+Interface\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get and set functions to allow changes from blueprint. \mbox{\Hypertarget{class_i_hands_interface_a445029683d12cb13b8bddff6dd093993}\label{class_i_hands_interface_a445029683d12cb13b8bddff6dd093993}} 
+\index{IHandsInterface@{IHandsInterface}!GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}}
+\index{GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{GetInterfaceSettings\_Implementation()}{GetInterfaceSettings\_Implementation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} I\+Hands\+Interface\+::\+Get\+Interface\+Settings\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get and set functions to allow changes to an interactable. 
+
+Reimplemented in \mbox{\hyperlink{class_a_grabbable_actor_abe43ce6f8ef418747e4998be548050f5}{A\+Grabbable\+Actor}}, \mbox{\hyperlink{class_a_rotatable_actor_a718578f6b76e73672eaae2d3fd2bbf61}{A\+Rotatable\+Actor}}, \mbox{\hyperlink{class_u_rotatable_static_mesh_a7b62426dbcd5a6430d6e5c4d512beca4}{U\+Rotatable\+Static\+Mesh}}, \mbox{\hyperlink{class_a_slidable_actor_af23b34d845c92568be359c44ddb10d0c}{A\+Slidable\+Actor}}, \mbox{\hyperlink{class_a_peelable_spline_actor_a2ca485ece6fd3e5bcd6ebaeefce12bf6}{A\+Peelable\+Spline\+Actor}}, \mbox{\hyperlink{class_u_grabbable_skel_mesh_a73f9845a4a23b9fd06c1e196f50f4622}{U\+Grabbable\+Skel\+Mesh}}, \mbox{\hyperlink{class_u_slidable_static_mesh_a93b57579c73198b12b97b1176c1c22dd}{U\+Slidable\+Static\+Mesh}}, and \mbox{\hyperlink{class_a_interactable_actor_ad07520021cc0d8e333890b8e93f27904}{A\+Interactable\+Actor}}.
+
+\mbox{\Hypertarget{class_i_hands_interface_a793723aaeaf88c1d3b225aa9464dc746}\label{class_i_hands_interface_a793723aaeaf88c1d3b225aa9464dc746}} 
+\index{IHandsInterface@{IHandsInterface}!GrabbedWhileLocked\_Implementation@{GrabbedWhileLocked\_Implementation}}
+\index{GrabbedWhileLocked\_Implementation@{GrabbedWhileLocked\_Implementation}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{GrabbedWhileLocked\_Implementation()}{GrabbedWhileLocked\_Implementation()}}
+{\footnotesize\ttfamily void I\+Hands\+Interface\+::\+Grabbed\+While\+Locked\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ran if the grabbable is locked to the hand and the trigger is pressed all the way down. 
+
+Reimplemented in \mbox{\hyperlink{class_a_rotatable_actor_ad1b9063adc83239eccb24a001432f3b1}{A\+Rotatable\+Actor}}, \mbox{\hyperlink{class_a_slidable_actor_abfde92bb4bfdf740e20fa390f968d106}{A\+Slidable\+Actor}}, and \mbox{\hyperlink{class_a_interactable_actor_a8fe81aadb170326f4ba1ed04511b91e6}{A\+Interactable\+Actor}}.
+
+\mbox{\Hypertarget{class_i_hands_interface_a68c8bc77bf34c42fd54ac8fe5cdc7496}\label{class_i_hands_interface_a68c8bc77bf34c42fd54ac8fe5cdc7496}} 
+\index{IHandsInterface@{IHandsInterface}!GrabPressed@{GrabPressed}}
+\index{GrabPressed@{GrabPressed}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{GrabPressed()}{GrabPressed()}}
+{\footnotesize\ttfamily void I\+Hands\+Interface\+::\+Grab\+Pressed (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})}
+
+Add any changed depth components to this array so they can be reset later. Implementable Functions for this interface. \mbox{\Hypertarget{class_i_hands_interface_a904db7e568a399ef503d68e40cf4d4eb}\label{class_i_hands_interface_a904db7e568a399ef503d68e40cf4d4eb}} 
+\index{IHandsInterface@{IHandsInterface}!GrabPressed\_Implementation@{GrabPressed\_Implementation}}
+\index{GrabPressed\_Implementation@{GrabPressed\_Implementation}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{GrabPressed\_Implementation()}{GrabPressed\_Implementation()}}
+{\footnotesize\ttfamily void I\+Hands\+Interface\+::\+Grab\+Pressed\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Setup functions for other classes overriding this interfaces functions Ran when trigger is pressed all the way down. 
+
+Reimplemented in \mbox{\hyperlink{class_a_grabbable_actor_a87b8e09916fec0742bd5e669de003b25}{A\+Grabbable\+Actor}}, \mbox{\hyperlink{class_a_rotatable_actor_a43ef39647dd8166f915121463ede98bb}{A\+Rotatable\+Actor}}, \mbox{\hyperlink{class_u_rotatable_static_mesh_a8b8f58fe83afde8b47162f934b5d9be2}{U\+Rotatable\+Static\+Mesh}}, \mbox{\hyperlink{class_a_slidable_actor_a455e7afc86e9467ae23552ad81266aa3}{A\+Slidable\+Actor}}, \mbox{\hyperlink{class_a_peelable_spline_actor_a002e838d5e9fc9480cabf2ff431f3609}{A\+Peelable\+Spline\+Actor}}, \mbox{\hyperlink{class_u_grabbable_skel_mesh_af9d98aa95e2d048e6f5d34f631111aaf}{U\+Grabbable\+Skel\+Mesh}}, \mbox{\hyperlink{class_u_slidable_static_mesh_a6e366b4abd4a39fffd0b0d57d9080e2e}{U\+Slidable\+Static\+Mesh}}, \mbox{\hyperlink{class_a_render_target_input_a89e7ccdebe604a24b73b14bfbf26bca7}{A\+Render\+Target\+Input}}, and \mbox{\hyperlink{class_a_interactable_actor_ad94046a461b3ac6f5bbecfc526c58655}{A\+Interactable\+Actor}}.
+
+\mbox{\Hypertarget{class_i_hands_interface_ae50003621758b8836e206bff33003ab8}\label{class_i_hands_interface_ae50003621758b8836e206bff33003ab8}} 
+\index{IHandsInterface@{IHandsInterface}!GrabReleased\_Implementation@{GrabReleased\_Implementation}}
+\index{GrabReleased\_Implementation@{GrabReleased\_Implementation}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{GrabReleased\_Implementation()}{GrabReleased\_Implementation()}}
+{\footnotesize\ttfamily void I\+Hands\+Interface\+::\+Grab\+Released\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ran when the trigger is released. 
+
+Reimplemented in \mbox{\hyperlink{class_a_grabbable_actor_a11404b554c43fdc997645ca36d97f4c0}{A\+Grabbable\+Actor}}, \mbox{\hyperlink{class_a_rotatable_actor_a7700d1bbd8ed36dbb57923948f85cb16}{A\+Rotatable\+Actor}}, \mbox{\hyperlink{class_u_rotatable_static_mesh_aa7933032518569ce17c80fa205fb97ec}{U\+Rotatable\+Static\+Mesh}}, \mbox{\hyperlink{class_a_slidable_actor_aa9854aeb5148734871fb89476b0c0f06}{A\+Slidable\+Actor}}, \mbox{\hyperlink{class_a_peelable_spline_actor_a35c8428610e43ec878f6886cec80ff3a}{A\+Peelable\+Spline\+Actor}}, \mbox{\hyperlink{class_u_grabbable_skel_mesh_a616534e5bed436dd9b845d71638e8267}{U\+Grabbable\+Skel\+Mesh}}, \mbox{\hyperlink{class_u_slidable_static_mesh_a7ea1753f0e77d131a793024ae7040d19}{U\+Slidable\+Static\+Mesh}}, \mbox{\hyperlink{class_a_render_target_input_ace8c9c1d34a0e3ac7c2f0554df0c986e}{A\+Render\+Target\+Input}}, and \mbox{\hyperlink{class_a_interactable_actor_a8fc8ebee6b1af8c0bdcb9a3cb8e3b82e}{A\+Interactable\+Actor}}.
+
+\mbox{\Hypertarget{class_i_hands_interface_ad8ab186d973d2d64d66ef6d3f9a58b3d}\label{class_i_hands_interface_ad8ab186d973d2d64d66ef6d3f9a58b3d}} 
+\index{IHandsInterface@{IHandsInterface}!GripPressed\_Implementation@{GripPressed\_Implementation}}
+\index{GripPressed\_Implementation@{GripPressed\_Implementation}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{GripPressed\_Implementation()}{GripPressed\_Implementation()}}
+{\footnotesize\ttfamily void I\+Hands\+Interface\+::\+Grip\+Pressed\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ran when the controller is squeezed. 
+
+Reimplemented in \mbox{\hyperlink{class_a_interactable_actor_ab9cd95f36c73832b9076011294879d31}{A\+Interactable\+Actor}}.
+
+\mbox{\Hypertarget{class_i_hands_interface_aa3caddd60c6813abdc588984c8b4ec09}\label{class_i_hands_interface_aa3caddd60c6813abdc588984c8b4ec09}} 
+\index{IHandsInterface@{IHandsInterface}!GripReleased\_Implementation@{GripReleased\_Implementation}}
+\index{GripReleased\_Implementation@{GripReleased\_Implementation}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{GripReleased\_Implementation()}{GripReleased\_Implementation()}}
+{\footnotesize\ttfamily void I\+Hands\+Interface\+::\+Grip\+Released\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ran when the controller is un-\/squeezed. 
+
+Reimplemented in \mbox{\hyperlink{class_a_interactable_actor_a315464f52f68ecdc2f8a18bf067440b9}{A\+Interactable\+Actor}}.
+
+\mbox{\Hypertarget{class_i_hands_interface_a7545f93bc5693b453a5fbf23f31105db}\label{class_i_hands_interface_a7545f93bc5693b453a5fbf23f31105db}} 
+\index{IHandsInterface@{IHandsInterface}!Interact\_Implementation@{Interact\_Implementation}}
+\index{Interact\_Implementation@{Interact\_Implementation}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{Interact\_Implementation()}{Interact\_Implementation()}}
+{\footnotesize\ttfamily void I\+Hands\+Interface\+::\+Interact\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{bool}]{pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ran when the thumb button is pressed while something is being held. For example the trigger on the Valve index controller being pressed down. 
+
+Reimplemented in \mbox{\hyperlink{class_a_interactable_actor_aed014e109202fe698451122093a0e068}{A\+Interactable\+Actor}}.
+
+\mbox{\Hypertarget{class_i_hands_interface_a06805a0a6903417322d5bda009bf8fa4}\label{class_i_hands_interface_a06805a0a6903417322d5bda009bf8fa4}} 
+\index{IHandsInterface@{IHandsInterface}!Overlapping\_Implementation@{Overlapping\_Implementation}}
+\index{Overlapping\_Implementation@{Overlapping\_Implementation}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{Overlapping\_Implementation()}{Overlapping\_Implementation()}}
+{\footnotesize\ttfamily void I\+Hands\+Interface\+::\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed. N\+O\+TE\+: Handles highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented in \mbox{\hyperlink{class_a_grabbable_actor_a3a0f9c701a911920e4d35a7097886c8c}{A\+Grabbable\+Actor}}, \mbox{\hyperlink{class_a_rotatable_actor_a5c684a60caa61f13c58d06fa20423a19}{A\+Rotatable\+Actor}}, \mbox{\hyperlink{class_u_rotatable_static_mesh_ae1e4f61c521ca7caa400b2e95e359723}{U\+Rotatable\+Static\+Mesh}}, \mbox{\hyperlink{class_a_slidable_actor_aeba747c6e6db5d96856d277d275a3121}{A\+Slidable\+Actor}}, \mbox{\hyperlink{class_u_grabbable_skel_mesh_a5030b4fc948f424336a9edc543928ccd}{U\+Grabbable\+Skel\+Mesh}}, \mbox{\hyperlink{class_u_slidable_static_mesh_a2d3fd4e363f124b78133a97a37af74a2}{U\+Slidable\+Static\+Mesh}}, and \mbox{\hyperlink{class_a_interactable_actor_a5fa466962d0562d236da1b4390e86015}{A\+Interactable\+Actor}}.
+
+\mbox{\Hypertarget{class_i_hands_interface_a8001f0337ece3e311b7b52fca477971e}\label{class_i_hands_interface_a8001f0337ece3e311b7b52fca477971e}} 
+\index{IHandsInterface@{IHandsInterface}!ReleasedWhileLocked\_Implementation@{ReleasedWhileLocked\_Implementation}}
+\index{ReleasedWhileLocked\_Implementation@{ReleasedWhileLocked\_Implementation}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{ReleasedWhileLocked\_Implementation()}{ReleasedWhileLocked\_Implementation()}}
+{\footnotesize\ttfamily void I\+Hands\+Interface\+::\+Released\+While\+Locked\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ran if the hand is locked to an interactable and the trigger is released. 
+
+Reimplemented in \mbox{\hyperlink{class_a_slidable_actor_a873ac9bf01924f9e3c3a6389c31ffb0b}{A\+Slidable\+Actor}}, and \mbox{\hyperlink{class_a_interactable_actor_a2849a54ee94a6b19855583bcd4e4780a}{A\+Interactable\+Actor}}.
+
+\mbox{\Hypertarget{class_i_hands_interface_a8db4165f23e93d3889e89ff4f5057016}\label{class_i_hands_interface_a8db4165f23e93d3889e89ff4f5057016}} 
+\index{IHandsInterface@{IHandsInterface}!Teleported\_Implementation@{Teleported\_Implementation}}
+\index{Teleported\_Implementation@{Teleported\_Implementation}!IHandsInterface@{IHandsInterface}}
+\doxysubsubsection{\texorpdfstring{Teleported\_Implementation()}{Teleported\_Implementation()}}
+{\footnotesize\ttfamily void I\+Hands\+Interface\+::\+Teleported\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Ran on an interactable when the hand is teleported. 
+
+Reimplemented in \mbox{\hyperlink{class_a_grabbable_actor_a8bb409bbc253dfb18bc2ef30bafaa95e}{A\+Grabbable\+Actor}}, \mbox{\hyperlink{class_u_grabbable_skel_mesh_abb3a6c27d1fe0a120c95d73a25c75d42}{U\+Grabbable\+Skel\+Mesh}}, and \mbox{\hyperlink{class_a_interactable_actor_acde163757cf1742f9553a9dfb8f72c93}{A\+Interactable\+Actor}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Player/Hands\+Interface.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Player/Hands\+Interface.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,327 @@
+\hypertarget{class_a_snapping_actor}{}\doxysection{A\+Snapping\+Actor Class Reference}
+\label{class_a_snapping_actor}\index{ASnappingActor@{ASnappingActor}}
+
+
+{\ttfamily \#include $<$Snapping\+Actor.\+h$>$}
+
+Inheritance diagram for A\+Snapping\+Actor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_snapping_actor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_snapping_actor_a7a542a56e3aec5d3e775ea3ab41a4a2e}{A\+Snapping\+Actor}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_snapping_actor_ad45138c99eedf161acbbf5fe4edd1bac}{Tick}} (float Delta\+Time) override
+\item 
+void \mbox{\hyperlink{class_a_snapping_actor_a04196121fff789364c6cf60edd4af117}{On\+Grabbable\+Pressed}} (A\+V\+R\+Hand $\ast$hand, U\+Primitive\+Component $\ast$comp\+Released)
+\item 
+void \mbox{\hyperlink{class_a_snapping_actor_ae1c7966ca73e89e32756e50701cb698a}{On\+Grabbable\+Realeased}} (A\+V\+R\+Hand $\ast$hand, U\+Primitive\+Component $\ast$comp\+Released)
+\item 
+void \mbox{\hyperlink{class_a_snapping_actor_a5de073f16609ff4406f3a31dabdcc5ec}{Start\+Interpolation}} (E\+Interp\+Mode mode)
+\item 
+void \mbox{\hyperlink{class_a_snapping_actor_a048d85f37cf19050f12b7a51a5c53c0f}{Force\+Snap}} (A\+Actor $\ast$snapping\+Actor)
+\item 
+void \mbox{\hyperlink{class_a_snapping_actor_ad68b2672f2c5a368b69792145e841157}{Force\+Release}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\+Box\+Component $\ast$ \mbox{\hyperlink{class_a_snapping_actor_a1b1d58aeeb0a449aa35fb6ec4782c675}{snap\+Box}}
+\item 
+E\+Snapping\+Mode \mbox{\hyperlink{class_a_snapping_actor_a9fc2bc45c99cbc47443ff6d9bfc767bf}{snap\+Mode}}
+\item 
+U\+Material\+Interface $\ast$ \mbox{\hyperlink{class_a_snapping_actor_a22a6777318a11edc74baa48476955788}{preview\+Material}}
+\item 
+bool \mbox{\hyperlink{class_a_snapping_actor_a621562699f634d3e30b33640c7cd81a8}{snatch}}
+\item 
+\mbox{\hyperlink{struct_f_physics_handle_data}{F\+Physics\+Handle\+Data}} \mbox{\hyperlink{class_a_snapping_actor_a14fd3382436f695bdef0bf97254c3818}{physics\+Handle\+Settings}}
+\item 
+bool \mbox{\hyperlink{class_a_snapping_actor_a7d81c487299bf0769e75440e5d2d15d2}{rotate\+Around\+Yaw}}
+\item 
+float \mbox{\hyperlink{class_a_snapping_actor_a0539ab16882764d6b9b271f12a6016f5}{rotation\+Speed}}
+\item 
+float \mbox{\hyperlink{class_a_snapping_actor_ac8deb8037b49971ed1d7087b0336e669}{time\+To\+Interp}}
+\item 
+bool \mbox{\hyperlink{class_a_snapping_actor_ad03f0e22bbb0f49664dd76cc6a26ea31}{full}}
+\item 
+F\+Vector \mbox{\hyperlink{class_a_snapping_actor_ae5ec022137c4314062e0e531ca4aa4fd}{location\+Offset}}
+\item 
+F\+Rotator \mbox{\hyperlink{class_a_snapping_actor_adc3c68243c806a744a29e4d59bbc105c}{rotation\+Offset}}
+\item 
+A\+Actor $\ast$ \mbox{\hyperlink{class_a_snapping_actor_a46b8b714dce9c3965bae04396b60586e}{actor\+To\+Snap}}
+\item 
+F\+Name \mbox{\hyperlink{class_a_snapping_actor_a5e4c7728d01709fb42f3c85969631e24}{snapping\+Tag}}
+\item 
+U\+Mesh\+Component $\ast$ \mbox{\hyperlink{class_a_snapping_actor_aa359a3c15c6c7307a80a94d66f3887a8}{preview\+Component}}
+\item 
+U\+Mesh\+Component $\ast$ \mbox{\hyperlink{class_a_snapping_actor_a69a6311a4220f8e0db8584f69a67f7d7}{component\+To\+Interpolate}}
+\item 
+\mbox{\hyperlink{class_a_grabbable_actor}{A\+Grabbable\+Actor}} $\ast$ \mbox{\hyperlink{class_a_snapping_actor_addf54230c2515e9c4da815dd0cd026e8}{overlapping\+Grabbable}}
+\item 
+\mbox{\hyperlink{class_u_grabbable_skel_mesh}{U\+Grabbable\+Skel\+Mesh}} $\ast$ \mbox{\hyperlink{class_a_snapping_actor_a083580509894672e419df164768b7529}{overlapping\+Grabbable\+Skel}}
+\item 
+\mbox{\hyperlink{class_u_v_r_physics_handle_component}{U\+V\+R\+Physics\+Handle\+Component}} $\ast$ \mbox{\hyperlink{class_a_snapping_actor_aa857ac23e7514f0230368b5effd8fcd6}{current\+Handle}}
+\item 
+F\+On\+Snappped\+Grabbable\+Actor \mbox{\hyperlink{class_a_snapping_actor_a5e400c196197e1455285bc6158671060}{On\+Snap\+Connect\+Grabbable}}
+\item 
+F\+On\+Snappped \mbox{\hyperlink{class_a_snapping_actor_adbaea2d5a7868afc52546f9b26371948}{On\+Snap\+Connect}}
+\item 
+F\+On\+Unsnapped \mbox{\hyperlink{class_a_snapping_actor_aef6d474a0454816c629a4af7d7093edb}{On\+Snap\+Disconnect}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_snapping_actor_aa70f8c3bad7a76d6ca355769e48a9cf0}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_a_snapping_actor_aa4b359a01c7b614b5d87db541f5f6942}{Overlap\+Begin}} (U\+Primitive\+Component $\ast$Overlapped\+Component, A\+Actor $\ast$Other\+Actor, U\+Primitive\+Component $\ast$Other\+Comp, int32 Other\+Body\+Index, bool b\+From\+Sweep, const F\+Hit\+Result \&Sweep\+Result)
+\item 
+void \mbox{\hyperlink{class_a_snapping_actor_af794752500d4b5cbff6ce2ccc3f47a4a}{Overlap\+End}} (U\+Primitive\+Component $\ast$Overlapped\+Component, A\+Actor $\ast$Other\+Actor, U\+Primitive\+Component $\ast$Other\+Comp, int32 Other\+Body\+Index)
+\item 
+void \mbox{\hyperlink{class_a_snapping_actor_a73f67888bca735d0f5dd862341c34059}{Interpolate}} (float delta\+Time)
+\item 
+bool \mbox{\hyperlink{class_a_snapping_actor_af2a4ffca04e47b24bb55e2aada9aa3f3}{Setup\+Preview\+Mesh}} (U\+Primitive\+Component $\ast$comp, E\+Preview\+Mesh\+Setup setup\+Type)
+\item 
+void \mbox{\hyperlink{class_a_snapping_actor_a23c8daf525672c152c5c863a03a5d190}{Reset\+Preview\+Mesh}} ()
+\item 
+void \mbox{\hyperlink{class_a_snapping_actor_a5a000f4d3645455d3634e7a971732332}{Create\+And\+Attatch\+Physics\+Handle}} (U\+Primitive\+Component $\ast$comp\+To\+Attatch, E\+Preview\+Mesh\+Setup setup\+Type)
+\item 
+void \mbox{\hyperlink{class_a_snapping_actor_a4a2864ae4b1fda57dd0fb28c090b3da7}{Destroy\+Physics\+Handle}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Actor with a Box component that will snap any grabbable that overlaps into its center position + the location and rotation offset applied to the instance of this class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_snapping_actor_a7a542a56e3aec5d3e775ea3ab41a4a2e}\label{class_a_snapping_actor_a7a542a56e3aec5d3e775ea3ab41a4a2e}} 
+\index{ASnappingActor@{ASnappingActor}!ASnappingActor@{ASnappingActor}}
+\index{ASnappingActor@{ASnappingActor}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{ASnappingActor()}{ASnappingActor()}}
+{\footnotesize\ttfamily A\+Snapping\+Actor\+::\+A\+Snapping\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Should update animation of the skeletal mesh that is being snapped to this actor. Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_snapping_actor_aa70f8c3bad7a76d6ca355769e48a9cf0}\label{class_a_snapping_actor_aa70f8c3bad7a76d6ca355769e48a9cf0}} 
+\index{ASnappingActor@{ASnappingActor}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Level start. \mbox{\Hypertarget{class_a_snapping_actor_a5a000f4d3645455d3634e7a971732332}\label{class_a_snapping_actor_a5a000f4d3645455d3634e7a971732332}} 
+\index{ASnappingActor@{ASnappingActor}!CreateAndAttatchPhysicsHandle@{CreateAndAttatchPhysicsHandle}}
+\index{CreateAndAttatchPhysicsHandle@{CreateAndAttatchPhysicsHandle}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{CreateAndAttatchPhysicsHandle()}{CreateAndAttatchPhysicsHandle()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+Create\+And\+Attatch\+Physics\+Handle (\begin{DoxyParamCaption}\item[{U\+Primitive\+Component $\ast$}]{comp\+To\+Attatch,  }\item[{E\+Preview\+Mesh\+Setup}]{setup\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a physics handle and grab the comp\+To\+Attach. @\+Param comp\+To\+Attatch, The component to attach to the handles joint. @\+Param setup\+Type, The type of setup to use to grab the component. \mbox{\Hypertarget{class_a_snapping_actor_a4a2864ae4b1fda57dd0fb28c090b3da7}\label{class_a_snapping_actor_a4a2864ae4b1fda57dd0fb28c090b3da7}} 
+\index{ASnappingActor@{ASnappingActor}!DestroyPhysicsHandle@{DestroyPhysicsHandle}}
+\index{DestroyPhysicsHandle@{DestroyPhysicsHandle}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{DestroyPhysicsHandle()}{DestroyPhysicsHandle()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+Destroy\+Physics\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function to destroy the physics handle joint attatched to any given component. \mbox{\Hypertarget{class_a_snapping_actor_ad68b2672f2c5a368b69792145e841157}\label{class_a_snapping_actor_ad68b2672f2c5a368b69792145e841157}} 
+\index{ASnappingActor@{ASnappingActor}!ForceRelease@{ForceRelease}}
+\index{ForceRelease@{ForceRelease}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{ForceRelease()}{ForceRelease()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+Force\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Force release of a snapped object. \mbox{\Hypertarget{class_a_snapping_actor_a048d85f37cf19050f12b7a51a5c53c0f}\label{class_a_snapping_actor_a048d85f37cf19050f12b7a51a5c53c0f}} 
+\index{ASnappingActor@{ASnappingActor}!ForceSnap@{ForceSnap}}
+\index{ForceSnap@{ForceSnap}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{ForceSnap()}{ForceSnap()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+Force\+Snap (\begin{DoxyParamCaption}\item[{A\+Actor $\ast$}]{snapping\+Actor }\end{DoxyParamCaption})}
+
+Force a component to snap into the snapping actor. @\+Param snapping\+Actor, The actor to snap to this snappable actor. \mbox{\Hypertarget{class_a_snapping_actor_a73f67888bca735d0f5dd862341c34059}\label{class_a_snapping_actor_a73f67888bca735d0f5dd862341c34059}} 
+\index{ASnappingActor@{ASnappingActor}!Interpolate@{Interpolate}}
+\index{Interpolate@{Interpolate}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{Interpolate()}{Interpolate()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+Interpolate (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function to interpolate a given component into this components location + the offset location \& rotation. @\+Param root\+Component, the root component that is being interpolated by this function. \mbox{\Hypertarget{class_a_snapping_actor_a04196121fff789364c6cf60edd4af117}\label{class_a_snapping_actor_a04196121fff789364c6cf60edd4af117}} 
+\index{ASnappingActor@{ASnappingActor}!OnGrabbablePressed@{OnGrabbablePressed}}
+\index{OnGrabbablePressed@{OnGrabbablePressed}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{OnGrabbablePressed()}{OnGrabbablePressed()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+On\+Grabbable\+Pressed (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand,  }\item[{U\+Primitive\+Component $\ast$}]{comp\+Released }\end{DoxyParamCaption})}
+
+Function binded to current overlapping grabbable. @\+Param hand, The hand that grabbed the current overlapping grabbable. @\+Param comp\+Released, The component that was grabbed by the hand. \mbox{\Hypertarget{class_a_snapping_actor_ae1c7966ca73e89e32756e50701cb698a}\label{class_a_snapping_actor_ae1c7966ca73e89e32756e50701cb698a}} 
+\index{ASnappingActor@{ASnappingActor}!OnGrabbableRealeased@{OnGrabbableRealeased}}
+\index{OnGrabbableRealeased@{OnGrabbableRealeased}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{OnGrabbableRealeased()}{OnGrabbableRealeased()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+On\+Grabbable\+Realeased (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand,  }\item[{U\+Primitive\+Component $\ast$}]{comp\+Released }\end{DoxyParamCaption})}
+
+Function binded to current overlapping grabbable. @\+Param hand, The hand that released the current overlapping grabbable. @\+Param comp\+Released, The component that was released by the hand. \mbox{\Hypertarget{class_a_snapping_actor_aa4b359a01c7b614b5d87db541f5f6942}\label{class_a_snapping_actor_aa4b359a01c7b614b5d87db541f5f6942}} 
+\index{ASnappingActor@{ASnappingActor}!OverlapBegin@{OverlapBegin}}
+\index{OverlapBegin@{OverlapBegin}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{OverlapBegin()}{OverlapBegin()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+Overlap\+Begin (\begin{DoxyParamCaption}\item[{U\+Primitive\+Component $\ast$}]{Overlapped\+Component,  }\item[{A\+Actor $\ast$}]{Other\+Actor,  }\item[{U\+Primitive\+Component $\ast$}]{Other\+Comp,  }\item[{int32}]{Other\+Body\+Index,  }\item[{bool}]{b\+From\+Sweep,  }\item[{const F\+Hit\+Result \&}]{Sweep\+Result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Overlapping Event binded to this classes box component. \mbox{\Hypertarget{class_a_snapping_actor_af794752500d4b5cbff6ce2ccc3f47a4a}\label{class_a_snapping_actor_af794752500d4b5cbff6ce2ccc3f47a4a}} 
+\index{ASnappingActor@{ASnappingActor}!OverlapEnd@{OverlapEnd}}
+\index{OverlapEnd@{OverlapEnd}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{OverlapEnd()}{OverlapEnd()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+Overlap\+End (\begin{DoxyParamCaption}\item[{U\+Primitive\+Component $\ast$}]{Overlapped\+Component,  }\item[{A\+Actor $\ast$}]{Other\+Actor,  }\item[{U\+Primitive\+Component $\ast$}]{Other\+Comp,  }\item[{int32}]{Other\+Body\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Overlapping Ending Event binded to this classes box component. \mbox{\Hypertarget{class_a_snapping_actor_a23c8daf525672c152c5c863a03a5d190}\label{class_a_snapping_actor_a23c8daf525672c152c5c863a03a5d190}} 
+\index{ASnappingActor@{ASnappingActor}!ResetPreviewMesh@{ResetPreviewMesh}}
+\index{ResetPreviewMesh@{ResetPreviewMesh}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{ResetPreviewMesh()}{ResetPreviewMesh()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+Reset\+Preview\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reset the preview mesh back to null and destroy any duplicated children preview meshes. \mbox{\Hypertarget{class_a_snapping_actor_af2a4ffca04e47b24bb55e2aada9aa3f3}\label{class_a_snapping_actor_af2a4ffca04e47b24bb55e2aada9aa3f3}} 
+\index{ASnappingActor@{ASnappingActor}!SetupPreviewMesh@{SetupPreviewMesh}}
+\index{SetupPreviewMesh@{SetupPreviewMesh}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{SetupPreviewMesh()}{SetupPreviewMesh()}}
+{\footnotesize\ttfamily bool A\+Snapping\+Actor\+::\+Setup\+Preview\+Mesh (\begin{DoxyParamCaption}\item[{U\+Primitive\+Component $\ast$}]{comp,  }\item[{E\+Preview\+Mesh\+Setup}]{setup\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Spawn a copy of the root\+Component and its children and set this as the preview mesh and make sure the material is set to preview\+Material. @\+Param comp, The root component of the preview\+Component/mesh. @\+Param setup\+Type, Enum to differentiate skeletal mesh setup from static mesh. \mbox{\Hypertarget{class_a_snapping_actor_a5de073f16609ff4406f3a31dabdcc5ec}\label{class_a_snapping_actor_a5de073f16609ff4406f3a31dabdcc5ec}} 
+\index{ASnappingActor@{ASnappingActor}!StartInterpolation@{StartInterpolation}}
+\index{StartInterpolation@{StartInterpolation}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{StartInterpolation()}{StartInterpolation()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+Start\+Interpolation (\begin{DoxyParamCaption}\item[{E\+Interp\+Mode}]{mode }\end{DoxyParamCaption})}
+
+Start interpolating the preview mesh or the mesh released/overlapped depending on the mode of interpolation. @\+Param mode, The mode of interpolation to put into motion. \mbox{\Hypertarget{class_a_snapping_actor_ad45138c99eedf161acbbf5fe4edd1bac}\label{class_a_snapping_actor_ad45138c99eedf161acbbf5fe4edd1bac}} 
+\index{ASnappingActor@{ASnappingActor}!Tick@{Tick}}
+\index{Tick@{Tick}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void A\+Snapping\+Actor\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Frame. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_snapping_actor_a46b8b714dce9c3965bae04396b60586e}\label{class_a_snapping_actor_a46b8b714dce9c3965bae04396b60586e}} 
+\index{ASnappingActor@{ASnappingActor}!actorToSnap@{actorToSnap}}
+\index{actorToSnap@{actorToSnap}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{actorToSnap}{actorToSnap}}
+{\footnotesize\ttfamily A\+Actor$\ast$ A\+Snapping\+Actor\+::actor\+To\+Snap}
+
+A grabbable actor or actor with a grabbable skeletal mesh component to be snapped to this component on begin play. \mbox{\Hypertarget{class_a_snapping_actor_a69a6311a4220f8e0db8584f69a67f7d7}\label{class_a_snapping_actor_a69a6311a4220f8e0db8584f69a67f7d7}} 
+\index{ASnappingActor@{ASnappingActor}!componentToInterpolate@{componentToInterpolate}}
+\index{componentToInterpolate@{componentToInterpolate}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{componentToInterpolate}{componentToInterpolate}}
+{\footnotesize\ttfamily U\+Mesh\+Component$\ast$ A\+Snapping\+Actor\+::component\+To\+Interpolate}
+
+The component to interpolate to or from the hand. \mbox{\Hypertarget{class_a_snapping_actor_aa857ac23e7514f0230368b5effd8fcd6}\label{class_a_snapping_actor_aa857ac23e7514f0230368b5effd8fcd6}} 
+\index{ASnappingActor@{ASnappingActor}!currentHandle@{currentHandle}}
+\index{currentHandle@{currentHandle}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{currentHandle}{currentHandle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_u_v_r_physics_handle_component}{U\+V\+R\+Physics\+Handle\+Component}}$\ast$ A\+Snapping\+Actor\+::current\+Handle}
+
+Pointer to a physics handle component used in the physics modes for snapping. \mbox{\Hypertarget{class_a_snapping_actor_ad03f0e22bbb0f49664dd76cc6a26ea31}\label{class_a_snapping_actor_ad03f0e22bbb0f49664dd76cc6a26ea31}} 
+\index{ASnappingActor@{ASnappingActor}!full@{full}}
+\index{full@{full}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{full}{full}}
+{\footnotesize\ttfamily bool A\+Snapping\+Actor\+::full}
+
+Already has component snapped within the component. \mbox{\Hypertarget{class_a_snapping_actor_ae5ec022137c4314062e0e531ca4aa4fd}\label{class_a_snapping_actor_ae5ec022137c4314062e0e531ca4aa4fd}} 
+\index{ASnappingActor@{ASnappingActor}!locationOffset@{locationOffset}}
+\index{locationOffset@{locationOffset}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{locationOffset}{locationOffset}}
+{\footnotesize\ttfamily F\+Vector A\+Snapping\+Actor\+::location\+Offset}
+
+The location offset from this box components center location to snap the grabbable to. \mbox{\Hypertarget{class_a_snapping_actor_adbaea2d5a7868afc52546f9b26371948}\label{class_a_snapping_actor_adbaea2d5a7868afc52546f9b26371948}} 
+\index{ASnappingActor@{ASnappingActor}!OnSnapConnect@{OnSnapConnect}}
+\index{OnSnapConnect@{OnSnapConnect}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{OnSnapConnect}{OnSnapConnect}}
+{\footnotesize\ttfamily F\+On\+Snappped A\+Snapping\+Actor\+::\+On\+Snap\+Connect}
+
+Called when something is connected. \mbox{\Hypertarget{class_a_snapping_actor_a5e400c196197e1455285bc6158671060}\label{class_a_snapping_actor_a5e400c196197e1455285bc6158671060}} 
+\index{ASnappingActor@{ASnappingActor}!OnSnapConnectGrabbable@{OnSnapConnectGrabbable}}
+\index{OnSnapConnectGrabbable@{OnSnapConnectGrabbable}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{OnSnapConnectGrabbable}{OnSnapConnectGrabbable}}
+{\footnotesize\ttfamily F\+On\+Snappped\+Grabbable\+Actor A\+Snapping\+Actor\+::\+On\+Snap\+Connect\+Grabbable}
+
+Delegates. Called when something is connected. \mbox{\Hypertarget{class_a_snapping_actor_aef6d474a0454816c629a4af7d7093edb}\label{class_a_snapping_actor_aef6d474a0454816c629a4af7d7093edb}} 
+\index{ASnappingActor@{ASnappingActor}!OnSnapDisconnect@{OnSnapDisconnect}}
+\index{OnSnapDisconnect@{OnSnapDisconnect}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{OnSnapDisconnect}{OnSnapDisconnect}}
+{\footnotesize\ttfamily F\+On\+Unsnapped A\+Snapping\+Actor\+::\+On\+Snap\+Disconnect}
+
+Called when something is disconnected when grabbed. \mbox{\Hypertarget{class_a_snapping_actor_addf54230c2515e9c4da815dd0cd026e8}\label{class_a_snapping_actor_addf54230c2515e9c4da815dd0cd026e8}} 
+\index{ASnappingActor@{ASnappingActor}!overlappingGrabbable@{overlappingGrabbable}}
+\index{overlappingGrabbable@{overlappingGrabbable}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{overlappingGrabbable}{overlappingGrabbable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_grabbable_actor}{A\+Grabbable\+Actor}}$\ast$ A\+Snapping\+Actor\+::overlapping\+Grabbable}
+
+Grabbable actor that is currently overlapping with this component. \mbox{\Hypertarget{class_a_snapping_actor_a083580509894672e419df164768b7529}\label{class_a_snapping_actor_a083580509894672e419df164768b7529}} 
+\index{ASnappingActor@{ASnappingActor}!overlappingGrabbableSkel@{overlappingGrabbableSkel}}
+\index{overlappingGrabbableSkel@{overlappingGrabbableSkel}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{overlappingGrabbableSkel}{overlappingGrabbableSkel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_u_grabbable_skel_mesh}{U\+Grabbable\+Skel\+Mesh}}$\ast$ A\+Snapping\+Actor\+::overlapping\+Grabbable\+Skel}
+
+Grabbable Skeletal Mesh Component that is currently overlapping this component. \mbox{\Hypertarget{class_a_snapping_actor_a14fd3382436f695bdef0bf97254c3818}\label{class_a_snapping_actor_a14fd3382436f695bdef0bf97254c3818}} 
+\index{ASnappingActor@{ASnappingActor}!physicsHandleSettings@{physicsHandleSettings}}
+\index{physicsHandleSettings@{physicsHandleSettings}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{physicsHandleSettings}{physicsHandleSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_physics_handle_data}{F\+Physics\+Handle\+Data}} A\+Snapping\+Actor\+::physics\+Handle\+Settings}
+
+Handle data for the physics handle snapping mode. \mbox{\Hypertarget{class_a_snapping_actor_aa359a3c15c6c7307a80a94d66f3887a8}\label{class_a_snapping_actor_aa359a3c15c6c7307a80a94d66f3887a8}} 
+\index{ASnappingActor@{ASnappingActor}!previewComponent@{previewComponent}}
+\index{previewComponent@{previewComponent}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{previewComponent}{previewComponent}}
+{\footnotesize\ttfamily U\+Mesh\+Component$\ast$ A\+Snapping\+Actor\+::preview\+Component}
+
+The preview mesh of whatever is currently overlapping. \mbox{\Hypertarget{class_a_snapping_actor_a22a6777318a11edc74baa48476955788}\label{class_a_snapping_actor_a22a6777318a11edc74baa48476955788}} 
+\index{ASnappingActor@{ASnappingActor}!previewMaterial@{previewMaterial}}
+\index{previewMaterial@{previewMaterial}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{previewMaterial}{previewMaterial}}
+{\footnotesize\ttfamily U\+Material\+Interface$\ast$ A\+Snapping\+Actor\+::preview\+Material}
+
+Use this material on the preview mesh of the overlapping grabbable. N\+O\+TE\+: Only used if it is not null. \mbox{\Hypertarget{class_a_snapping_actor_a7d81c487299bf0769e75440e5d2d15d2}\label{class_a_snapping_actor_a7d81c487299bf0769e75440e5d2d15d2}} 
+\index{ASnappingActor@{ASnappingActor}!rotateAroundYaw@{rotateAroundYaw}}
+\index{rotateAroundYaw@{rotateAroundYaw}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{rotateAroundYaw}{rotateAroundYaw}}
+{\footnotesize\ttfamily bool A\+Snapping\+Actor\+::rotate\+Around\+Yaw}
+
+Should rotate while snapped in place. \mbox{\Hypertarget{class_a_snapping_actor_adc3c68243c806a744a29e4d59bbc105c}\label{class_a_snapping_actor_adc3c68243c806a744a29e4d59bbc105c}} 
+\index{ASnappingActor@{ASnappingActor}!rotationOffset@{rotationOffset}}
+\index{rotationOffset@{rotationOffset}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{rotationOffset}{rotationOffset}}
+{\footnotesize\ttfamily F\+Rotator A\+Snapping\+Actor\+::rotation\+Offset}
+
+The rotation offset from this box components rotation to snap the grabbable to. \mbox{\Hypertarget{class_a_snapping_actor_a0539ab16882764d6b9b271f12a6016f5}\label{class_a_snapping_actor_a0539ab16882764d6b9b271f12a6016f5}} 
+\index{ASnappingActor@{ASnappingActor}!rotationSpeed@{rotationSpeed}}
+\index{rotationSpeed@{rotationSpeed}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{rotationSpeed}{rotationSpeed}}
+{\footnotesize\ttfamily float A\+Snapping\+Actor\+::rotation\+Speed}
+
+Speed in which to rotate the grabbable snapped into this snappable component. \mbox{\Hypertarget{class_a_snapping_actor_a1b1d58aeeb0a449aa35fb6ec4782c675}\label{class_a_snapping_actor_a1b1d58aeeb0a449aa35fb6ec4782c675}} 
+\index{ASnappingActor@{ASnappingActor}!snapBox@{snapBox}}
+\index{snapBox@{snapBox}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{snapBox}{snapBox}}
+{\footnotesize\ttfamily U\+Box\+Component$\ast$ A\+Snapping\+Actor\+::snap\+Box}
+
+Box component to detect overlaps with snappable objects. \mbox{\Hypertarget{class_a_snapping_actor_a9fc2bc45c99cbc47443ff6d9bfc767bf}\label{class_a_snapping_actor_a9fc2bc45c99cbc47443ff6d9bfc767bf}} 
+\index{ASnappingActor@{ASnappingActor}!snapMode@{snapMode}}
+\index{snapMode@{snapMode}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{snapMode}{snapMode}}
+{\footnotesize\ttfamily E\+Snapping\+Mode A\+Snapping\+Actor\+::snap\+Mode}
+
+Current snapping mode of this snapping component. \mbox{\Hypertarget{class_a_snapping_actor_a5e4c7728d01709fb42f3c85969631e24}\label{class_a_snapping_actor_a5e4c7728d01709fb42f3c85969631e24}} 
+\index{ASnappingActor@{ASnappingActor}!snappingTag@{snappingTag}}
+\index{snappingTag@{snappingTag}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{snappingTag}{snappingTag}}
+{\footnotesize\ttfamily F\+Name A\+Snapping\+Actor\+::snapping\+Tag}
+
+This snappable snapping tag which will be checked for overlapping grabbables or grabbable skeletal components. N\+O\+TE\+: If N\+A\+M\+E\+\_\+\+None then every grabbable and grabbable skeletal mesh component will snap to this snapping actor. N\+O\+TE\+: For grabbable\+Actor add tag to actor, for grabbable\+Skel\+Mesh add tag to the component. \mbox{\Hypertarget{class_a_snapping_actor_a621562699f634d3e30b33640c7cd81a8}\label{class_a_snapping_actor_a621562699f634d3e30b33640c7cd81a8}} 
+\index{ASnappingActor@{ASnappingActor}!snatch@{snatch}}
+\index{snatch@{snatch}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{snatch}{snatch}}
+{\footnotesize\ttfamily bool A\+Snapping\+Actor\+::snatch}
+
+Instantly release from handle on overlap. \mbox{\Hypertarget{class_a_snapping_actor_ac8deb8037b49971ed1d7087b0336e669}\label{class_a_snapping_actor_ac8deb8037b49971ed1d7087b0336e669}} 
+\index{ASnappingActor@{ASnappingActor}!timeToInterp@{timeToInterp}}
+\index{timeToInterp@{timeToInterp}!ASnappingActor@{ASnappingActor}}
+\doxysubsubsection{\texorpdfstring{timeToInterp}{timeToInterp}}
+{\footnotesize\ttfamily float A\+Snapping\+Actor\+::time\+To\+Interp}
+
+How long it takes the preview/mesh to interpolate/lerp into snapping position and back to the hand if need be. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Snapping\+Actor.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Snapping\+Actor.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,175 @@
+\hypertarget{class_a_render_target_board}{}\doxysection{A\+Render\+Target\+Board Class Reference}
+\label{class_a_render_target_board}\index{ARenderTargetBoard@{ARenderTargetBoard}}
+
+
+{\ttfamily \#include $<$Render\+Target\+Board.\+h$>$}
+
+Inheritance diagram for A\+Render\+Target\+Board\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_render_target_board}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_render_target_board_a52d830b650e1f99e66b9b4a70e1a3966}{A\+Render\+Target\+Board}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_render_target_board_ac8570e5d8e0c836301603dcbe07ef1ca}{Tick}} (float Delta\+Time) override
+\item 
+void \mbox{\hyperlink{class_a_render_target_board_a6ebfe25dcfb5265060e691723b033454}{Draw\+On\+Board}} (F\+Vector2D uv\+Location, float size)
+\item 
+void \mbox{\hyperlink{class_a_render_target_board_a27d631bb6940bc927ae847f028628a28}{Remove\+From\+Board}} (F\+Vector2D uv\+Location, float size)
+\item 
+void \mbox{\hyperlink{class_a_render_target_board_a4c3ba6bdf13347eff69abe7c41e33d4d}{Clear\+Board}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\+Static\+Mesh\+Component $\ast$ \mbox{\hyperlink{class_a_render_target_board_ab6ee8cdea84b6057c197824ce7734d1f}{board\+Mesh}}
+\item 
+U\+Material\+Instance\+Dynamic $\ast$ \mbox{\hyperlink{class_a_render_target_board_af51562c72eba1b7cbbfc11d251b95923}{board\+Mesh\+Material\+Inst}}
+\item 
+U\+Material\+Instance\+Dynamic $\ast$ \mbox{\hyperlink{class_a_render_target_board_a0138b2e6790b12e12336927a604834b1}{input\+Material\+Inst}}
+\item 
+U\+Material\+Instance\+Dynamic $\ast$ \mbox{\hyperlink{class_a_render_target_board_a01c61c693138ef30c67aef89c5c4f7be}{removal\+Material\+Instance}}
+\item 
+U\+Canvas\+Render\+Target2D $\ast$ \mbox{\hyperlink{class_a_render_target_board_a88cdb88ae68084cf443b132ae8f99e83}{blue\+Render\+Target}}
+\item 
+U\+Canvas\+Render\+Target2D $\ast$ \mbox{\hyperlink{class_a_render_target_board_a72b7c471667dc26cacdf4bc0b9135a30}{removal\+Render\+Target}}
+\item 
+U\+Material\+Interface $\ast$ \mbox{\hyperlink{class_a_render_target_board_ae3b959e7942359e4a1a24d407afc9c00}{board\+Mesh\+Material}}
+\item 
+U\+Material\+Interface $\ast$ \mbox{\hyperlink{class_a_render_target_board_ab5ccef54a2a56bb33b4458716643b564}{input\+Material}}
+\item 
+U\+Material\+Interface $\ast$ \mbox{\hyperlink{class_a_render_target_board_aa2d866f2df19f6e50084b659d9d29d79}{removal\+Material}}
+\item 
+F\+Vector2D \mbox{\hyperlink{class_a_render_target_board_a4f356929872bd3b69c87b6f646ca646d}{render\+Target\+Size}}
+\item 
+F\+Name \mbox{\hyperlink{class_a_render_target_board_a171356a6cdd0973d1b6c0f808a3baa80}{board\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_render_target_board_a615c342adc91801cf48cdb5a95c38ff5}{Begin\+Play}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class which allows the given board\+Mesh to be drawn on like a piece of paper or white board from the Render\+Target\+Input class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_render_target_board_a52d830b650e1f99e66b9b4a70e1a3966}\label{class_a_render_target_board_a52d830b650e1f99e66b9b4a70e1a3966}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!ARenderTargetBoard@{ARenderTargetBoard}}
+\index{ARenderTargetBoard@{ARenderTargetBoard}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{ARenderTargetBoard()}{ARenderTargetBoard()}}
+{\footnotesize\ttfamily A\+Render\+Target\+Board\+::\+A\+Render\+Target\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_render_target_board_a615c342adc91801cf48cdb5a95c38ff5}\label{class_a_render_target_board_a615c342adc91801cf48cdb5a95c38ff5}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Render\+Target\+Board\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Level start. \mbox{\Hypertarget{class_a_render_target_board_a4c3ba6bdf13347eff69abe7c41e33d4d}\label{class_a_render_target_board_a4c3ba6bdf13347eff69abe7c41e33d4d}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!ClearBoard@{ClearBoard}}
+\index{ClearBoard@{ClearBoard}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{ClearBoard()}{ClearBoard()}}
+{\footnotesize\ttfamily void A\+Render\+Target\+Board\+::\+Clear\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear all render targets on the board. \mbox{\Hypertarget{class_a_render_target_board_a6ebfe25dcfb5265060e691723b033454}\label{class_a_render_target_board_a6ebfe25dcfb5265060e691723b033454}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!DrawOnBoard@{DrawOnBoard}}
+\index{DrawOnBoard@{DrawOnBoard}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{DrawOnBoard()}{DrawOnBoard()}}
+{\footnotesize\ttfamily void A\+Render\+Target\+Board\+::\+Draw\+On\+Board (\begin{DoxyParamCaption}\item[{F\+Vector2D}]{uv\+Location,  }\item[{float}]{size }\end{DoxyParamCaption})}
+
+Draw on the board into the input\+Render\+Target. N\+O\+TE\+: Called from Render\+Target\+Input class when touching the board with an input. \mbox{\Hypertarget{class_a_render_target_board_a27d631bb6940bc927ae847f028628a28}\label{class_a_render_target_board_a27d631bb6940bc927ae847f028628a28}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!RemoveFromBoard@{RemoveFromBoard}}
+\index{RemoveFromBoard@{RemoveFromBoard}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{RemoveFromBoard()}{RemoveFromBoard()}}
+{\footnotesize\ttfamily void A\+Render\+Target\+Board\+::\+Remove\+From\+Board (\begin{DoxyParamCaption}\item[{F\+Vector2D}]{uv\+Location,  }\item[{float}]{size }\end{DoxyParamCaption})}
+
+Remove from the board and draw into the removal\+Render\+Target. N\+O\+TE\+: Called from Render\+Target\+Input class when touching the board with a removal. \mbox{\Hypertarget{class_a_render_target_board_ac8570e5d8e0c836301603dcbe07ef1ca}\label{class_a_render_target_board_ac8570e5d8e0c836301603dcbe07ef1ca}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!Tick@{Tick}}
+\index{Tick@{Tick}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void A\+Render\+Target\+Board\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Frame. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_render_target_board_a88cdb88ae68084cf443b132ae8f99e83}\label{class_a_render_target_board_a88cdb88ae68084cf443b132ae8f99e83}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!blueRenderTarget@{blueRenderTarget}}
+\index{blueRenderTarget@{blueRenderTarget}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{blueRenderTarget}{blueRenderTarget}}
+{\footnotesize\ttfamily U\+Canvas\+Render\+Target2D$\ast$ A\+Render\+Target\+Board\+::blue\+Render\+Target}
+
+The created render target set in the board\+Mesh\textquotesingle{}s material instance for input of the marker blue. \mbox{\Hypertarget{class_a_render_target_board_ab6ee8cdea84b6057c197824ce7734d1f}\label{class_a_render_target_board_ab6ee8cdea84b6057c197824ce7734d1f}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!boardMesh@{boardMesh}}
+\index{boardMesh@{boardMesh}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{boardMesh}{boardMesh}}
+{\footnotesize\ttfamily U\+Static\+Mesh\+Component$\ast$ A\+Render\+Target\+Board\+::board\+Mesh}
+
+The board mesh to compare world hit locations with UV locations to allow drawing onto a RT mask. \mbox{\Hypertarget{class_a_render_target_board_ae3b959e7942359e4a1a24d407afc9c00}\label{class_a_render_target_board_ae3b959e7942359e4a1a24d407afc9c00}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!boardMeshMaterial@{boardMeshMaterial}}
+\index{boardMeshMaterial@{boardMeshMaterial}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{boardMeshMaterial}{boardMeshMaterial}}
+{\footnotesize\ttfamily U\+Material\+Interface$\ast$ A\+Render\+Target\+Board\+::board\+Mesh\+Material}
+
+Material to create board\+Mesh material instance from. \mbox{\Hypertarget{class_a_render_target_board_af51562c72eba1b7cbbfc11d251b95923}\label{class_a_render_target_board_af51562c72eba1b7cbbfc11d251b95923}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!boardMeshMaterialInst@{boardMeshMaterialInst}}
+\index{boardMeshMaterialInst@{boardMeshMaterialInst}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{boardMeshMaterialInst}{boardMeshMaterialInst}}
+{\footnotesize\ttfamily U\+Material\+Instance\+Dynamic$\ast$ A\+Render\+Target\+Board\+::board\+Mesh\+Material\+Inst}
+
+Material instance for the board\+Mesh to allow updating of the material from the input and removal render targets... \mbox{\Hypertarget{class_a_render_target_board_a171356a6cdd0973d1b6c0f808a3baa80}\label{class_a_render_target_board_a171356a6cdd0973d1b6c0f808a3baa80}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!boardType@{boardType}}
+\index{boardType@{boardType}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{boardType}{boardType}}
+{\footnotesize\ttfamily F\+Name A\+Render\+Target\+Board\+::board\+Type}
+
+Checked in a Render\+Target\+Input object to see if its this board that it supports. Needs to be set the same in all input and removal object for them to work. \mbox{\Hypertarget{class_a_render_target_board_ab5ccef54a2a56bb33b4458716643b564}\label{class_a_render_target_board_ab5ccef54a2a56bb33b4458716643b564}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!inputMaterial@{inputMaterial}}
+\index{inputMaterial@{inputMaterial}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{inputMaterial}{inputMaterial}}
+{\footnotesize\ttfamily U\+Material\+Interface$\ast$ A\+Render\+Target\+Board\+::input\+Material}
+
+Material to create input material instance from. \mbox{\Hypertarget{class_a_render_target_board_a0138b2e6790b12e12336927a604834b1}\label{class_a_render_target_board_a0138b2e6790b12e12336927a604834b1}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!inputMaterialInst@{inputMaterialInst}}
+\index{inputMaterialInst@{inputMaterialInst}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{inputMaterialInst}{inputMaterialInst}}
+{\footnotesize\ttfamily U\+Material\+Instance\+Dynamic$\ast$ A\+Render\+Target\+Board\+::input\+Material\+Inst}
+
+The material instance created for the input material for drawing onto the input\+Render\+Target. \mbox{\Hypertarget{class_a_render_target_board_aa2d866f2df19f6e50084b659d9d29d79}\label{class_a_render_target_board_aa2d866f2df19f6e50084b659d9d29d79}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!removalMaterial@{removalMaterial}}
+\index{removalMaterial@{removalMaterial}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{removalMaterial}{removalMaterial}}
+{\footnotesize\ttfamily U\+Material\+Interface$\ast$ A\+Render\+Target\+Board\+::removal\+Material}
+
+Material to create removal material instance from. \mbox{\Hypertarget{class_a_render_target_board_a01c61c693138ef30c67aef89c5c4f7be}\label{class_a_render_target_board_a01c61c693138ef30c67aef89c5c4f7be}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!removalMaterialInstance@{removalMaterialInstance}}
+\index{removalMaterialInstance@{removalMaterialInstance}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{removalMaterialInstance}{removalMaterialInstance}}
+{\footnotesize\ttfamily U\+Material\+Instance\+Dynamic$\ast$ A\+Render\+Target\+Board\+::removal\+Material\+Instance}
+
+The material instance created for the removal material for drawing onto the removal\+Render\+Target. \mbox{\Hypertarget{class_a_render_target_board_a72b7c471667dc26cacdf4bc0b9135a30}\label{class_a_render_target_board_a72b7c471667dc26cacdf4bc0b9135a30}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!removalRenderTarget@{removalRenderTarget}}
+\index{removalRenderTarget@{removalRenderTarget}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{removalRenderTarget}{removalRenderTarget}}
+{\footnotesize\ttfamily U\+Canvas\+Render\+Target2D$\ast$ A\+Render\+Target\+Board\+::removal\+Render\+Target}
+
+The created render target set in the board\+Mesh\textquotesingle{}s material instance for removal of the marker. \mbox{\Hypertarget{class_a_render_target_board_a4f356929872bd3b69c87b6f646ca646d}\label{class_a_render_target_board_a4f356929872bd3b69c87b6f646ca646d}} 
+\index{ARenderTargetBoard@{ARenderTargetBoard}!renderTargetSize@{renderTargetSize}}
+\index{renderTargetSize@{renderTargetSize}!ARenderTargetBoard@{ARenderTargetBoard}}
+\doxysubsubsection{\texorpdfstring{renderTargetSize}{renderTargetSize}}
+{\footnotesize\ttfamily F\+Vector2D A\+Render\+Target\+Board\+::render\+Target\+Size}
+
+The size of the render targets to use. N\+O\+TE\+: Changes resolution of marker input/removal. N\+O\+TE\+: Increase the more the bigger your board mesh. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Render\+Target\+Board.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Render\+Target\+Board.\+cpp\end{DoxyCompactItemize}

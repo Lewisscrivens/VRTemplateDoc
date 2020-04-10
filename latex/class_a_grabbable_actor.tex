@@ -1,0 +1,553 @@
+\hypertarget{class_a_grabbable_actor}{}\doxysection{A\+Grabbable\+Actor Class Reference}
+\label{class_a_grabbable_actor}\index{AGrabbableActor@{AGrabbableActor}}
+
+
+{\ttfamily \#include $<$Grabbable\+Actor.\+h$>$}
+
+Inheritance diagram for A\+Grabbable\+Actor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_a_grabbable_actor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_grabbable_actor_ae555a9c3efde31f33d09f189eb55b021}{A\+Grabbable\+Actor}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_grabbable_actor_a1b6f70c3f1fc50eb9343c98a2f7b81eb}{Tick}} (float Delta\+Time) override
+\item 
+void \mbox{\hyperlink{class_a_grabbable_actor_a63ea6931d86f7a2ac63a95e015f9b124}{Pickup\+Attatch\+To}} ()
+\item 
+void \mbox{\hyperlink{class_a_grabbable_actor_a7a061efea01f9c91aab9488f961d673a}{Pickup\+Physics\+Handle}} (\mbox{\hyperlink{struct_f_grab_information}{F\+Grab\+Information}} grab\+Info)
+\item 
+void \mbox{\hyperlink{class_a_grabbable_actor_a5f72135a6383660905404fd2bb996dc8}{Drop\+Attatch\+To}} ()
+\item 
+void \mbox{\hyperlink{class_a_grabbable_actor_a4ce3763607d8277475ccef71191e0271}{Drop\+Physics\+Handle}} (\mbox{\hyperlink{struct_f_grab_information}{F\+Grab\+Information}} grab\+Info)
+\item 
+bool \mbox{\hyperlink{class_a_grabbable_actor_aa6191ead4ac8174c568c115ab6ea4cc2}{Get\+Colliding}} ()
+\item 
+bool \mbox{\hyperlink{class_a_grabbable_actor_afa800cee55d1b69bbde127633929b548}{Is\+Actor\+Grabbed}} ()
+\item 
+bool \mbox{\hyperlink{class_a_grabbable_actor_ad1e4cfb7e8395447cbeb4be884d6f89b}{Is\+Actor\+Grabbed\+Two\+Handed}} ()
+\item 
+F\+Hit\+Result \mbox{\hyperlink{class_a_grabbable_actor_a8ec2c1f0ae56fdbd05ace257803e6532}{Sweep\+Actor}} ()
+\item 
+F\+Transform \mbox{\hyperlink{class_a_grabbable_actor_a3b7d60cfb1132414f9778d76c64ae93f}{Get\+Grabbed\+Transform}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_grabbable_actor_a87b8e09916fec0742bd5e669de003b25}{Grab\+Pressed\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_grabbable_actor_a11404b554c43fdc997645ca36d97f4c0}{Grab\+Released\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_grabbable_actor_aeca18b3fc4314fd0db8c3feca521a861}{Dragging\+\_\+\+Implementation}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{class_a_grabbable_actor_a3a0f9c701a911920e4d35a7097886c8c}{Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_grabbable_actor_a31f18db31e6f6a354c3789c747f4db7e}{End\+Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_grabbable_actor_a8bb409bbc253dfb18bc2ef30bafaa95e}{Teleported\+\_\+\+Implementation}} () override
+\item 
+virtual \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_a_grabbable_actor_abe43ce6f8ef418747e4998be548050f5}{Get\+Interface\+Settings\+\_\+\+Implementation}} () override
+\item 
+\mbox{\Hypertarget{class_a_grabbable_actor_a5ce94ae02a2c5639a664327c5402caf2}\label{class_a_grabbable_actor_a5ce94ae02a2c5639a664327c5402caf2}} 
+virtual void {\bfseries Set\+Interface\+Settings\+\_\+\+Implementation} (\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} new\+Interface\+Settings) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_grabbable_actor_a0b514ce6ee479e13dccacd0d7344195d}\label{class_a_grabbable_actor_a0b514ce6ee479e13dccacd0d7344195d}} 
+U\+Static\+Mesh\+Component $\ast$ {\bfseries grabbable\+Mesh}
+\item 
+U\+Audio\+Component $\ast$ \mbox{\hyperlink{class_a_grabbable_actor_a52299fa50a0bdeeb8996c7104724df4a}{grabbable\+Audio}}
+\item 
+\mbox{\hyperlink{struct_f_grab_information}{F\+Grab\+Information}} \mbox{\hyperlink{class_a_grabbable_actor_aa3da397511bd88edadce7040d872d7f9}{hand\+Ref\+Info}}
+\item 
+\mbox{\hyperlink{struct_f_grab_information}{F\+Grab\+Information}} \mbox{\hyperlink{class_a_grabbable_actor_a14ff0f047f8d46f7166bb4c6770e53fe}{other\+Hand\+Ref\+Info}}
+\item 
+E\+Grab\+Mode \mbox{\hyperlink{class_a_grabbable_actor_a8565e63b897d4328837e49733129d306}{grab\+Mode}}
+\item 
+E\+Second\+Grab\+Mode \mbox{\hyperlink{class_a_grabbable_actor_aa6e34cff2169a1106ceaaead3677cae3}{second\+Hand\+Grab\+Mode}}
+\item 
+E\+Return\+Mode \mbox{\hyperlink{class_a_grabbable_actor_ac46cfa2cfb2d7c785c12cff40df0c2ac}{lerp\+Mode}}
+\item 
+E\+Overlap\+Type \mbox{\hyperlink{class_a_grabbable_actor_a65cfa5f1dc3b41f65e97e0e5b21bb012}{collision\+Type}}
+\item 
+U\+Physical\+Material $\ast$ \mbox{\hyperlink{class_a_grabbable_actor_ab85ffe9668324a46beb61c81bc130b21}{physics\+Material\+While\+Grabbed}}
+\item 
+float \mbox{\hyperlink{class_a_grabbable_actor_a2ff76a36b68a64e8969402d4591ea5f2}{haptic\+Intensity\+Multiplier}}
+\item 
+U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_a_grabbable_actor_a6a38a2ee319b80b5f9d35eff1ceafc26}{collision\+Feedback\+Override}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_a_grabbable_actor_acda11c529b975a9ff0941708d0090441}{impact\+Sound\+Override}}
+\item 
+float \mbox{\hyperlink{class_a_grabbable_actor_a3550796f2d990748b9ef5e35ad3e233a}{time\+To\+Lerp}}
+\item 
+float \mbox{\hyperlink{class_a_grabbable_actor_a635ff110c6c92e83002c90b479c87a1a}{sweep\+Accuracy}}
+\item 
+F\+Rotator \mbox{\hyperlink{class_a_grabbable_actor_a89bea83d08551bf7f6845fd2a3faf21f}{second\+Hand\+Rotation\+Offset}}
+\item 
+F\+Rotator \mbox{\hyperlink{class_a_grabbable_actor_a1c91df63a66532d00eaff77fb0383b1e}{snap\+To\+Hand\+Rotation\+Offset}}
+\item 
+F\+Vector \mbox{\hyperlink{class_a_grabbable_actor_ace7e8b580d780b805b46d9afa9695621}{snap\+To\+Hand\+Location\+Offset}}
+\item 
+bool \mbox{\hyperlink{class_a_grabbable_actor_af003d2a7416d7f028644c1b4d6251150}{physics\+Material\+While\+Grabbed\+Enabled}}
+\item 
+bool \mbox{\hyperlink{class_a_grabbable_actor_a6fd7ed1185fa72f8bf9af4c3eb8980ad}{snap\+To\+Hand}}
+\item 
+bool \mbox{\hyperlink{class_a_grabbable_actor_adef1ac8d5553dc2e5bca1896a8dbdc31}{consider\+Mass\+When\+Thrown}}
+\item 
+bool \mbox{\hyperlink{class_a_grabbable_actor_ad75873b564240dfa11c196e53528e9e2}{change\+Mass\+On\+Grab}}
+\item 
+float \mbox{\hyperlink{class_a_grabbable_actor_aca55f9e62a0720fb4c6bd9661abd6213}{mass\+When\+Grabbed}}
+\item 
+float \mbox{\hyperlink{class_a_grabbable_actor_a5e4ca29c6ee0f3320542bd51d694953f}{current\+Frame\+Velocity}}
+\item 
+float \mbox{\hyperlink{class_a_grabbable_actor_a472f31945e01f34a297c2d05d2fc38fd}{current\+Velocity\+Change}}
+\item 
+bool \mbox{\hyperlink{class_a_grabbable_actor_aaace3dc946053328d681f7b3dc2e1bcf}{debug}}
+\item 
+bool \mbox{\hyperlink{class_a_grabbable_actor_ac8af10788080eb0c40516a287cae8a73}{cancel\+Grab}}
+\item 
+\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_a_grabbable_actor_a67cc3dbf05a4d75e2eeba00f4ef1a20e}{interactable\+Settings}}
+\item 
+T\+Array$<$ U\+Primitive\+Component $\ast$ $>$ \mbox{\hyperlink{class_a_grabbable_actor_acdc45cc9c5f91acddf1a2f5d6e170015}{collidable\+Meshes}}
+\item 
+T\+Array$<$ A\+Actor $\ast$ $>$ \mbox{\hyperlink{class_a_grabbable_actor_a949caaa2a26280c18c6e27ba59ac476c}{ignored\+Actors}}
+\item 
+U\+Physical\+Material $\ast$ \mbox{\hyperlink{class_a_grabbable_actor_abce043b7420a6ebe56ac3046579bcd11}{original\+Physical\+M\+AT}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_a_grabbable_actor_a694545c3e3af178736732680306b8fe9}{impact\+Sound}}
+\item 
+U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_a_grabbable_actor_a45471df31cd1feb529352472bce9d4c1}{collision\+Feedback}}
+\item 
+F\+Grabbed\+Component \mbox{\hyperlink{class_a_grabbable_actor_a338763aaf3c22c912b49b5944184bd76}{On\+Mesh\+Grabbed}}
+\item 
+F\+Grabbed \mbox{\hyperlink{class_a_grabbable_actor_ad8136ec668afd7e4e909239ee394e5df}{On\+Mesh\+Grabbed\+End}}
+\item 
+F\+Physical\+State\+Changed \mbox{\hyperlink{class_a_grabbable_actor_a698603f87e5d4dc0c82d43dd7b58f4bb}{On\+Physics\+State\+Changed}}
+\item 
+F\+Collision\+Changed \mbox{\hyperlink{class_a_grabbable_actor_a61913f1f8b323adf47b2838ea833d62b}{On\+Collision\+Changed}}
+\item 
+F\+Grabbed\+Component \mbox{\hyperlink{class_a_grabbable_actor_a869341d163212a11b103bd6f70513cf0}{On\+Mesh\+Released}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_grabbable_actor_a3df13c2e97ee80ed35ecb7e992473b73}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_a_grabbable_actor_abbea30d70ae6d74cd9a3297317867c6f}{Lerping\+Back}} (float delta\+Time)
+\item 
+void \mbox{\hyperlink{class_a_grabbable_actor_a0e5f9efb7f72a0ecb136c882d7d6d842}{Toggle\+Lerping}} (bool on)
+\item 
+void \mbox{\hyperlink{class_a_grabbable_actor_ab21a04f00eb3d7a4c072a5c29f8b7992}{Update\+Grab\+Information}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Make a actor grabbable using this class. N\+O\+TE\+: components will have to use the mesh as the root component to be able to be part of the grabbable actor... T\+O\+DO\+: Improve target rotation mode for two handed grab modes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_grabbable_actor_ae555a9c3efde31f33d09f189eb55b021}\label{class_a_grabbable_actor_ae555a9c3efde31f33d09f189eb55b021}} 
+\index{AGrabbableActor@{AGrabbableActor}!AGrabbableActor@{AGrabbableActor}}
+\index{AGrabbableActor@{AGrabbableActor}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{AGrabbableActor()}{AGrabbableActor()}}
+{\footnotesize\ttfamily A\+Grabbable\+Actor\+::\+A\+Grabbable\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_grabbable_actor_a3df13c2e97ee80ed35ecb7e992473b73}\label{class_a_grabbable_actor_a3df13c2e97ee80ed35ecb7e992473b73}} 
+\index{AGrabbableActor@{AGrabbableActor}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Is the physics drive currently enabled. Level Start 
+
+Reimplemented in \mbox{\hyperlink{class_a_render_target_input_a7074be80fe7b6cefb1071bb01e4e5aeb}{A\+Render\+Target\+Input}}.
+
+\mbox{\Hypertarget{class_a_grabbable_actor_aeca18b3fc4314fd0db8c3feca521a861}\label{class_a_grabbable_actor_aeca18b3fc4314fd0db8c3feca521a861}} 
+\index{AGrabbableActor@{AGrabbableActor}!Dragging\_Implementation@{Dragging\_Implementation}}
+\index{Dragging\_Implementation@{Dragging\_Implementation}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{Dragging\_Implementation()}{Dragging\_Implementation()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Dragging\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ticking function that is ran while an interactable is grabbed. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae97908dd8838ff7157fdf8d61aeae1e6}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_grabbable_actor_a5f72135a6383660905404fd2bb996dc8}\label{class_a_grabbable_actor_a5f72135a6383660905404fd2bb996dc8}} 
+\index{AGrabbableActor@{AGrabbableActor}!DropAttatchTo@{DropAttatchTo}}
+\index{DropAttatchTo@{DropAttatchTo}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{DropAttatchTo()}{DropAttatchTo()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Drop\+Attatch\+To (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called to detach the grabbable from the hand. \mbox{\Hypertarget{class_a_grabbable_actor_a4ce3763607d8277475ccef71191e0271}\label{class_a_grabbable_actor_a4ce3763607d8277475ccef71191e0271}} 
+\index{AGrabbableActor@{AGrabbableActor}!DropPhysicsHandle@{DropPhysicsHandle}}
+\index{DropPhysicsHandle@{DropPhysicsHandle}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{DropPhysicsHandle()}{DropPhysicsHandle()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Drop\+Physics\+Handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_f_grab_information}{F\+Grab\+Information}}}]{grab\+Info }\end{DoxyParamCaption})}
+
+Called to detach the grabbable from the hands collision physics handle. \mbox{\Hypertarget{class_a_grabbable_actor_a31f18db31e6f6a354c3789c747f4db7e}\label{class_a_grabbable_actor_a31f18db31e6f6a354c3789c747f4db7e}} 
+\index{AGrabbableActor@{AGrabbableActor}!EndOverlapping\_Implementation@{EndOverlapping\_Implementation}}
+\index{EndOverlapping\_Implementation@{EndOverlapping\_Implementation}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{EndOverlapping\_Implementation()}{EndOverlapping\_Implementation()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+End\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed is removed. N\+O\+TE\+: Handles un-\/highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a4f3dfa15eb379b4c9fd7f2dbe3aca9bd}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_grabbable_actor_aa6191ead4ac8174c568c115ab6ea4cc2}\label{class_a_grabbable_actor_aa6191ead4ac8174c568c115ab6ea4cc2}} 
+\index{AGrabbableActor@{AGrabbableActor}!GetColliding@{GetColliding}}
+\index{GetColliding@{GetColliding}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{GetColliding()}{GetColliding()}}
+{\footnotesize\ttfamily bool A\+Grabbable\+Actor\+::\+Get\+Colliding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check for colliding components. @\+Param complex, Should each individual components bounds be checked for collisions OR the entire actor bounds to save on performance. \mbox{\Hypertarget{class_a_grabbable_actor_a3b7d60cfb1132414f9778d76c64ae93f}\label{class_a_grabbable_actor_a3b7d60cfb1132414f9778d76c64ae93f}} 
+\index{AGrabbableActor@{AGrabbableActor}!GetGrabbedTransform@{GetGrabbedTransform}}
+\index{GetGrabbedTransform@{GetGrabbedTransform}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{GetGrabbedTransform()}{GetGrabbedTransform()}}
+{\footnotesize\ttfamily F\+Transform A\+Grabbable\+Actor\+::\+Get\+Grabbed\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current grabbed transform. \mbox{\Hypertarget{class_a_grabbable_actor_abe43ce6f8ef418747e4998be548050f5}\label{class_a_grabbable_actor_abe43ce6f8ef418747e4998be548050f5}} 
+\index{AGrabbableActor@{AGrabbableActor}!GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}}
+\index{GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{GetInterfaceSettings\_Implementation()}{GetInterfaceSettings\_Implementation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} A\+Grabbable\+Actor\+::\+Get\+Interface\+Settings\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get and set functions to allow changes from blueprint. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a445029683d12cb13b8bddff6dd093993}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_grabbable_actor_a87b8e09916fec0742bd5e669de003b25}\label{class_a_grabbable_actor_a87b8e09916fec0742bd5e669de003b25}} 
+\index{AGrabbableActor@{AGrabbableActor}!GrabPressed\_Implementation@{GrabPressed\_Implementation}}
+\index{GrabPressed\_Implementation@{GrabPressed\_Implementation}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{GrabPressed\_Implementation()}{GrabPressed\_Implementation()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Grab\+Pressed\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Implementation of the required interface functions. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a904db7e568a399ef503d68e40cf4d4eb}{I\+Hands\+Interface}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_render_target_input_a89e7ccdebe604a24b73b14bfbf26bca7}{A\+Render\+Target\+Input}}.
+
+\mbox{\Hypertarget{class_a_grabbable_actor_a11404b554c43fdc997645ca36d97f4c0}\label{class_a_grabbable_actor_a11404b554c43fdc997645ca36d97f4c0}} 
+\index{AGrabbableActor@{AGrabbableActor}!GrabReleased\_Implementation@{GrabReleased\_Implementation}}
+\index{GrabReleased\_Implementation@{GrabReleased\_Implementation}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{GrabReleased\_Implementation()}{GrabReleased\_Implementation()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Grab\+Released\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran when the trigger is released. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae50003621758b8836e206bff33003ab8}{I\+Hands\+Interface}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_render_target_input_ace8c9c1d34a0e3ac7c2f0554df0c986e}{A\+Render\+Target\+Input}}.
+
+\mbox{\Hypertarget{class_a_grabbable_actor_afa800cee55d1b69bbde127633929b548}\label{class_a_grabbable_actor_afa800cee55d1b69bbde127633929b548}} 
+\index{AGrabbableActor@{AGrabbableActor}!IsActorGrabbed@{IsActorGrabbed}}
+\index{IsActorGrabbed@{IsActorGrabbed}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{IsActorGrabbed()}{IsActorGrabbed()}}
+{\footnotesize\ttfamily bool A\+Grabbable\+Actor\+::\+Is\+Actor\+Grabbed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if the actor is grabbed. \mbox{\Hypertarget{class_a_grabbable_actor_ad1e4cfb7e8395447cbeb4be884d6f89b}\label{class_a_grabbable_actor_ad1e4cfb7e8395447cbeb4be884d6f89b}} 
+\index{AGrabbableActor@{AGrabbableActor}!IsActorGrabbedTwoHanded@{IsActorGrabbedTwoHanded}}
+\index{IsActorGrabbedTwoHanded@{IsActorGrabbedTwoHanded}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{IsActorGrabbedTwoHanded()}{IsActorGrabbedTwoHanded()}}
+{\footnotesize\ttfamily bool A\+Grabbable\+Actor\+::\+Is\+Actor\+Grabbed\+Two\+Handed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if the actor is grabbed by two hands. \mbox{\Hypertarget{class_a_grabbable_actor_abbea30d70ae6d74cd9a3297317867c6f}\label{class_a_grabbable_actor_abbea30d70ae6d74cd9a3297317867c6f}} 
+\index{AGrabbableActor@{AGrabbableActor}!LerpingBack@{LerpingBack}}
+\index{LerpingBack@{LerpingBack}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{LerpingBack()}{LerpingBack()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Lerping\+Back (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function for returning to attach to mode when using mixed physics mode. \mbox{\Hypertarget{class_a_grabbable_actor_a3a0f9c701a911920e4d35a7097886c8c}\label{class_a_grabbable_actor_a3a0f9c701a911920e4d35a7097886c8c}} 
+\index{AGrabbableActor@{AGrabbableActor}!Overlapping\_Implementation@{Overlapping\_Implementation}}
+\index{Overlapping\_Implementation@{Overlapping\_Implementation}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{Overlapping\_Implementation()}{Overlapping\_Implementation()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed. N\+O\+TE\+: Handles highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a06805a0a6903417322d5bda009bf8fa4}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_grabbable_actor_a63ea6931d86f7a2ac63a95e015f9b124}\label{class_a_grabbable_actor_a63ea6931d86f7a2ac63a95e015f9b124}} 
+\index{AGrabbableActor@{AGrabbableActor}!PickupAttatchTo@{PickupAttatchTo}}
+\index{PickupAttatchTo@{PickupAttatchTo}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{PickupAttatchTo()}{PickupAttatchTo()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Pickup\+Attatch\+To (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called to attach the grabbable to the hand using attach to. \mbox{\Hypertarget{class_a_grabbable_actor_a7a061efea01f9c91aab9488f961d673a}\label{class_a_grabbable_actor_a7a061efea01f9c91aab9488f961d673a}} 
+\index{AGrabbableActor@{AGrabbableActor}!PickupPhysicsHandle@{PickupPhysicsHandle}}
+\index{PickupPhysicsHandle@{PickupPhysicsHandle}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{PickupPhysicsHandle()}{PickupPhysicsHandle()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Pickup\+Physics\+Handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_f_grab_information}{F\+Grab\+Information}}}]{grab\+Info }\end{DoxyParamCaption})}
+
+Called to attach the grabbable to the hand using physics handle. N\+O\+TE\+: grab information (hand) to use to grab this grabbable with its physics handle. \mbox{\Hypertarget{class_a_grabbable_actor_a8ec2c1f0ae56fdbd05ace257803e6532}\label{class_a_grabbable_actor_a8ec2c1f0ae56fdbd05ace257803e6532}} 
+\index{AGrabbableActor@{AGrabbableActor}!SweepActor@{SweepActor}}
+\index{SweepActor@{SweepActor}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{SweepActor()}{SweepActor()}}
+{\footnotesize\ttfamily F\+Hit\+Result A\+Grabbable\+Actor\+::\+Sweep\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sweep the current actor to the current hand location and check if it hits anything. @\+Return F\+Hit\+Result of the result from the component sweep. \mbox{\Hypertarget{class_a_grabbable_actor_a8bb409bbc253dfb18bc2ef30bafaa95e}\label{class_a_grabbable_actor_a8bb409bbc253dfb18bc2ef30bafaa95e}} 
+\index{AGrabbableActor@{AGrabbableActor}!Teleported\_Implementation@{Teleported\_Implementation}}
+\index{Teleported\_Implementation@{Teleported\_Implementation}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{Teleported\_Implementation()}{Teleported\_Implementation()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Teleported\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand is teleported. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a8db4165f23e93d3889e89ff4f5057016}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_grabbable_actor_a1b6f70c3f1fc50eb9343c98a2f7b81eb}\label{class_a_grabbable_actor_a1b6f70c3f1fc50eb9343c98a2f7b81eb}} 
+\index{AGrabbableActor@{AGrabbableActor}!Tick@{Tick}}
+\index{Tick@{Tick}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Frame. 
+
+Reimplemented in \mbox{\hyperlink{class_a_render_target_input_a69a71c00ab5dd3fa289232a8742b7143}{A\+Render\+Target\+Input}}.
+
+\mbox{\Hypertarget{class_a_grabbable_actor_a0e5f9efb7f72a0ecb136c882d7d6d842}\label{class_a_grabbable_actor_a0e5f9efb7f72a0ecb136c882d7d6d842}} 
+\index{AGrabbableActor@{AGrabbableActor}!ToggleLerping@{ToggleLerping}}
+\index{ToggleLerping@{ToggleLerping}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{ToggleLerping()}{ToggleLerping()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Toggle\+Lerping (\begin{DoxyParamCaption}\item[{bool}]{on }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Toggles the lerping value and saves the lerp\+End\+Time if turned on. \mbox{\Hypertarget{class_a_grabbable_actor_ab21a04f00eb3d7a4c072a5c29f8b7992}\label{class_a_grabbable_actor_ab21a04f00eb3d7a4c072a5c29f8b7992}} 
+\index{AGrabbableActor@{AGrabbableActor}!UpdateGrabInformation@{UpdateGrabInformation}}
+\index{UpdateGrabInformation@{UpdateGrabInformation}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateGrabInformation()}{UpdateGrabInformation()}}
+{\footnotesize\ttfamily void A\+Grabbable\+Actor\+::\+Update\+Grab\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update the current grab information for the current world offset in location and rotation. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_grabbable_actor_ac8af10788080eb0c40516a287cae8a73}\label{class_a_grabbable_actor_ac8af10788080eb0c40516a287cae8a73}} 
+\index{AGrabbableActor@{AGrabbableActor}!cancelGrab@{cancelGrab}}
+\index{cancelGrab@{cancelGrab}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{cancelGrab}{cancelGrab}}
+{\footnotesize\ttfamily bool A\+Grabbable\+Actor\+::cancel\+Grab}
+
+Cancel the grabbing of this component. \mbox{\Hypertarget{class_a_grabbable_actor_ad75873b564240dfa11c196e53528e9e2}\label{class_a_grabbable_actor_ad75873b564240dfa11c196e53528e9e2}} 
+\index{AGrabbableActor@{AGrabbableActor}!changeMassOnGrab@{changeMassOnGrab}}
+\index{changeMassOnGrab@{changeMassOnGrab}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{changeMassOnGrab}{changeMassOnGrab}}
+{\footnotesize\ttfamily bool A\+Grabbable\+Actor\+::change\+Mass\+On\+Grab}
+
+Can be used to change the mass on grab to prevent it effecting the physics handles functionality. N\+O\+TE\+: Changes mass of this grabbable when grabbed to mass\+When\+Grabbed. \mbox{\Hypertarget{class_a_grabbable_actor_acdc45cc9c5f91acddf1a2f5d6e170015}\label{class_a_grabbable_actor_acdc45cc9c5f91acddf1a2f5d6e170015}} 
+\index{AGrabbableActor@{AGrabbableActor}!collidableMeshes@{collidableMeshes}}
+\index{collidableMeshes@{collidableMeshes}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{collidableMeshes}{collidableMeshes}}
+{\footnotesize\ttfamily T\+Array$<$U\+Primitive\+Component$\ast$$>$ A\+Grabbable\+Actor\+::collidable\+Meshes}
+
+Array of components to check for collisions/overlap events. \mbox{\Hypertarget{class_a_grabbable_actor_a45471df31cd1feb529352472bce9d4c1}\label{class_a_grabbable_actor_a45471df31cd1feb529352472bce9d4c1}} 
+\index{AGrabbableActor@{AGrabbableActor}!collisionFeedback@{collisionFeedback}}
+\index{collisionFeedback@{collisionFeedback}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{collisionFeedback}{collisionFeedback}}
+{\footnotesize\ttfamily U\+Haptic\+Feedback\+Effect\+\_\+\+Base$\ast$ A\+Grabbable\+Actor\+::collision\+Feedback}
+
+Stored collision haptic feedback pointer. \mbox{\Hypertarget{class_a_grabbable_actor_a6a38a2ee319b80b5f9d35eff1ceafc26}\label{class_a_grabbable_actor_a6a38a2ee319b80b5f9d35eff1ceafc26}} 
+\index{AGrabbableActor@{AGrabbableActor}!collisionFeedbackOverride@{collisionFeedbackOverride}}
+\index{collisionFeedbackOverride@{collisionFeedbackOverride}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{collisionFeedbackOverride}{collisionFeedbackOverride}}
+{\footnotesize\ttfamily U\+Haptic\+Feedback\+Effect\+\_\+\+Base$\ast$ A\+Grabbable\+Actor\+::collision\+Feedback\+Override}
+
+The haptic feedback collision effect to play override. If null it will use the default collision feedback in the A\+V\+R\+Hands grabbing this grabbable. \mbox{\Hypertarget{class_a_grabbable_actor_a65cfa5f1dc3b41f65e97e0e5b21bb012}\label{class_a_grabbable_actor_a65cfa5f1dc3b41f65e97e0e5b21bb012}} 
+\index{AGrabbableActor@{AGrabbableActor}!collisionType@{collisionType}}
+\index{collisionType@{collisionType}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{collisionType}{collisionType}}
+{\footnotesize\ttfamily E\+Overlap\+Type A\+Grabbable\+Actor\+::collision\+Type}
+
+Collision type to use when in Physics\+Handle\+Stiff mode or Attatch\+To\+With\+Physics grab\+Mode. \mbox{\Hypertarget{class_a_grabbable_actor_adef1ac8d5553dc2e5bca1896a8dbdc31}\label{class_a_grabbable_actor_adef1ac8d5553dc2e5bca1896a8dbdc31}} 
+\index{AGrabbableActor@{AGrabbableActor}!considerMassWhenThrown@{considerMassWhenThrown}}
+\index{considerMassWhenThrown@{considerMassWhenThrown}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{considerMassWhenThrown}{considerMassWhenThrown}}
+{\footnotesize\ttfamily bool A\+Grabbable\+Actor\+::consider\+Mass\+When\+Thrown}
+
+Consider the weight of the object when throwing it by decreasing velocity based on mass. \mbox{\Hypertarget{class_a_grabbable_actor_a5e4ca29c6ee0f3320542bd51d694953f}\label{class_a_grabbable_actor_a5e4ca29c6ee0f3320542bd51d694953f}} 
+\index{AGrabbableActor@{AGrabbableActor}!currentFrameVelocity@{currentFrameVelocity}}
+\index{currentFrameVelocity@{currentFrameVelocity}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{currentFrameVelocity}{currentFrameVelocity}}
+{\footnotesize\ttfamily float A\+Grabbable\+Actor\+::current\+Frame\+Velocity}
+
+The current frames velocity of the grabbable. N\+O\+TE\+: Used instead of physics velocity as the grabbable isn\textquotesingle{}t simulating physics when not colliding with other objects. \mbox{\Hypertarget{class_a_grabbable_actor_a472f31945e01f34a297c2d05d2fc38fd}\label{class_a_grabbable_actor_a472f31945e01f34a297c2d05d2fc38fd}} 
+\index{AGrabbableActor@{AGrabbableActor}!currentVelocityChange@{currentVelocityChange}}
+\index{currentVelocityChange@{currentVelocityChange}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{currentVelocityChange}{currentVelocityChange}}
+{\footnotesize\ttfamily float A\+Grabbable\+Actor\+::current\+Velocity\+Change}
+
+The current frames velocity change when compared to the last frame. N\+O\+TE\+: Useful for calculating impact force etc. \mbox{\Hypertarget{class_a_grabbable_actor_aaace3dc946053328d681f7b3dc2e1bcf}\label{class_a_grabbable_actor_aaace3dc946053328d681f7b3dc2e1bcf}} 
+\index{AGrabbableActor@{AGrabbableActor}!debug@{debug}}
+\index{debug@{debug}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily bool A\+Grabbable\+Actor\+::debug}
+
+Show debug information. \mbox{\Hypertarget{class_a_grabbable_actor_a52299fa50a0bdeeb8996c7104724df4a}\label{class_a_grabbable_actor_a52299fa50a0bdeeb8996c7104724df4a}} 
+\index{AGrabbableActor@{AGrabbableActor}!grabbableAudio@{grabbableAudio}}
+\index{grabbableAudio@{grabbableAudio}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{grabbableAudio}{grabbableAudio}}
+{\footnotesize\ttfamily U\+Audio\+Component$\ast$ A\+Grabbable\+Actor\+::grabbable\+Audio}
+
+Component to play audio when this grabbable impacts other objects on hit. \mbox{\Hypertarget{class_a_grabbable_actor_a8565e63b897d4328837e49733129d306}\label{class_a_grabbable_actor_a8565e63b897d4328837e49733129d306}} 
+\index{AGrabbableActor@{AGrabbableActor}!grabMode@{grabMode}}
+\index{grabMode@{grabMode}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{grabMode}{grabMode}}
+{\footnotesize\ttfamily E\+Grab\+Mode A\+Grabbable\+Actor\+::grab\+Mode}
+
+Storage value for current grab mode of this grabbable. \mbox{\Hypertarget{class_a_grabbable_actor_aa3da397511bd88edadce7040d872d7f9}\label{class_a_grabbable_actor_aa3da397511bd88edadce7040d872d7f9}} 
+\index{AGrabbableActor@{AGrabbableActor}!handRefInfo@{handRefInfo}}
+\index{handRefInfo@{handRefInfo}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{handRefInfo}{handRefInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_grab_information}{F\+Grab\+Information}} A\+Grabbable\+Actor\+::hand\+Ref\+Info}
+
+Struct to hold information on the hand grabbing this component like grab offsets, hand\+Refference, target locations etc. \mbox{\Hypertarget{class_a_grabbable_actor_a2ff76a36b68a64e8969402d4591ea5f2}\label{class_a_grabbable_actor_a2ff76a36b68a64e8969402d4591ea5f2}} 
+\index{AGrabbableActor@{AGrabbableActor}!hapticIntensityMultiplier@{hapticIntensityMultiplier}}
+\index{hapticIntensityMultiplier@{hapticIntensityMultiplier}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{hapticIntensityMultiplier}{hapticIntensityMultiplier}}
+{\footnotesize\ttfamily float A\+Grabbable\+Actor\+::haptic\+Intensity\+Multiplier}
+
+The haptic feedback intensity multiplier. \mbox{\Hypertarget{class_a_grabbable_actor_a949caaa2a26280c18c6e27ba59ac476c}\label{class_a_grabbable_actor_a949caaa2a26280c18c6e27ba59ac476c}} 
+\index{AGrabbableActor@{AGrabbableActor}!ignoredActors@{ignoredActors}}
+\index{ignoredActors@{ignoredActors}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{ignoredActors}{ignoredActors}}
+{\footnotesize\ttfamily T\+Array$<$A\+Actor$\ast$$>$ A\+Grabbable\+Actor\+::ignored\+Actors}
+
+Holds ignored actors for when performing traces in the collision check functions. \mbox{\Hypertarget{class_a_grabbable_actor_a694545c3e3af178736732680306b8fe9}\label{class_a_grabbable_actor_a694545c3e3af178736732680306b8fe9}} 
+\index{AGrabbableActor@{AGrabbableActor}!impactSound@{impactSound}}
+\index{impactSound@{impactSound}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{impactSound}{impactSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ A\+Grabbable\+Actor\+::impact\+Sound}
+
+Stored impact sound pointer. \mbox{\Hypertarget{class_a_grabbable_actor_acda11c529b975a9ff0941708d0090441}\label{class_a_grabbable_actor_acda11c529b975a9ff0941708d0090441}} 
+\index{AGrabbableActor@{AGrabbableActor}!impactSoundOverride@{impactSoundOverride}}
+\index{impactSoundOverride@{impactSoundOverride}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{impactSoundOverride}{impactSoundOverride}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ A\+Grabbable\+Actor\+::impact\+Sound\+Override}
+
+Sound to play on collision if null it will use the A\+V\+R\+Hands default collision sound. \mbox{\Hypertarget{class_a_grabbable_actor_a67cc3dbf05a4d75e2eeba00f4ef1a20e}\label{class_a_grabbable_actor_a67cc3dbf05a4d75e2eeba00f4ef1a20e}} 
+\index{AGrabbableActor@{AGrabbableActor}!interactableSettings@{interactableSettings}}
+\index{interactableSettings@{interactableSettings}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{interactableSettings}{interactableSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} A\+Grabbable\+Actor\+::interactable\+Settings}
+
+The interfaces interactable settings for how to interact with VR controllers/hands. \mbox{\Hypertarget{class_a_grabbable_actor_ac46cfa2cfb2d7c785c12cff40df0c2ac}\label{class_a_grabbable_actor_ac46cfa2cfb2d7c785c12cff40df0c2ac}} 
+\index{AGrabbableActor@{AGrabbableActor}!lerpMode@{lerpMode}}
+\index{lerpMode@{lerpMode}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{lerpMode}{lerpMode}}
+{\footnotesize\ttfamily E\+Return\+Mode A\+Grabbable\+Actor\+::lerp\+Mode}
+
+Storage value for current return mode of this grabbable. Note\+: Only used if grab mode is Attatch\+To\+With\+Physics grab mode, otherwise it will always use Return\+With\+Collision. \mbox{\Hypertarget{class_a_grabbable_actor_aca55f9e62a0720fb4c6bd9661abd6213}\label{class_a_grabbable_actor_aca55f9e62a0720fb4c6bd9661abd6213}} 
+\index{AGrabbableActor@{AGrabbableActor}!massWhenGrabbed@{massWhenGrabbed}}
+\index{massWhenGrabbed@{massWhenGrabbed}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{massWhenGrabbed}{massWhenGrabbed}}
+{\footnotesize\ttfamily float A\+Grabbable\+Actor\+::mass\+When\+Grabbed}
+
+Mass to use on the grabbable\+Mesh while grabbed. \mbox{\Hypertarget{class_a_grabbable_actor_a61913f1f8b323adf47b2838ea833d62b}\label{class_a_grabbable_actor_a61913f1f8b323adf47b2838ea833d62b}} 
+\index{AGrabbableActor@{AGrabbableActor}!OnCollisionChanged@{OnCollisionChanged}}
+\index{OnCollisionChanged@{OnCollisionChanged}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{OnCollisionChanged}{OnCollisionChanged}}
+{\footnotesize\ttfamily F\+Collision\+Changed A\+Grabbable\+Actor\+::\+On\+Collision\+Changed}
+
+Mesh grabbed by hand function has ended when this has ran. \mbox{\Hypertarget{class_a_grabbable_actor_a338763aaf3c22c912b49b5944184bd76}\label{class_a_grabbable_actor_a338763aaf3c22c912b49b5944184bd76}} 
+\index{AGrabbableActor@{AGrabbableActor}!OnMeshGrabbed@{OnMeshGrabbed}}
+\index{OnMeshGrabbed@{OnMeshGrabbed}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{OnMeshGrabbed}{OnMeshGrabbed}}
+{\footnotesize\ttfamily F\+Grabbed\+Component A\+Grabbable\+Actor\+::\+On\+Mesh\+Grabbed}
+
+Mesh grabbed by hand. \mbox{\Hypertarget{class_a_grabbable_actor_ad8136ec668afd7e4e909239ee394e5df}\label{class_a_grabbable_actor_ad8136ec668afd7e4e909239ee394e5df}} 
+\index{AGrabbableActor@{AGrabbableActor}!OnMeshGrabbedEnd@{OnMeshGrabbedEnd}}
+\index{OnMeshGrabbedEnd@{OnMeshGrabbedEnd}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{OnMeshGrabbedEnd}{OnMeshGrabbedEnd}}
+{\footnotesize\ttfamily F\+Grabbed A\+Grabbable\+Actor\+::\+On\+Mesh\+Grabbed\+End}
+
+Mesh grabbed by hand function has ended when this has ran. \mbox{\Hypertarget{class_a_grabbable_actor_a869341d163212a11b103bd6f70513cf0}\label{class_a_grabbable_actor_a869341d163212a11b103bd6f70513cf0}} 
+\index{AGrabbableActor@{AGrabbableActor}!OnMeshReleased@{OnMeshReleased}}
+\index{OnMeshReleased@{OnMeshReleased}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{OnMeshReleased}{OnMeshReleased}}
+{\footnotesize\ttfamily F\+Grabbed\+Component A\+Grabbable\+Actor\+::\+On\+Mesh\+Released}
+
+Mesh released from hand. \mbox{\Hypertarget{class_a_grabbable_actor_a698603f87e5d4dc0c82d43dd7b58f4bb}\label{class_a_grabbable_actor_a698603f87e5d4dc0c82d43dd7b58f4bb}} 
+\index{AGrabbableActor@{AGrabbableActor}!OnPhysicsStateChanged@{OnPhysicsStateChanged}}
+\index{OnPhysicsStateChanged@{OnPhysicsStateChanged}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{OnPhysicsStateChanged}{OnPhysicsStateChanged}}
+{\footnotesize\ttfamily F\+Physical\+State\+Changed A\+Grabbable\+Actor\+::\+On\+Physics\+State\+Changed}
+
+Mesh grabbed by hand function has ended when this has ran. \mbox{\Hypertarget{class_a_grabbable_actor_abce043b7420a6ebe56ac3046579bcd11}\label{class_a_grabbable_actor_abce043b7420a6ebe56ac3046579bcd11}} 
+\index{AGrabbableActor@{AGrabbableActor}!originalPhysicalMAT@{originalPhysicalMAT}}
+\index{originalPhysicalMAT@{originalPhysicalMAT}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{originalPhysicalMAT}{originalPhysicalMAT}}
+{\footnotesize\ttfamily U\+Physical\+Material$\ast$ A\+Grabbable\+Actor\+::original\+Physical\+M\+AT}
+
+The original physics material of this grabbable before grabbed. \mbox{\Hypertarget{class_a_grabbable_actor_a14ff0f047f8d46f7166bb4c6770e53fe}\label{class_a_grabbable_actor_a14ff0f047f8d46f7166bb4c6770e53fe}} 
+\index{AGrabbableActor@{AGrabbableActor}!otherHandRefInfo@{otherHandRefInfo}}
+\index{otherHandRefInfo@{otherHandRefInfo}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{otherHandRefInfo}{otherHandRefInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_grab_information}{F\+Grab\+Information}} A\+Grabbable\+Actor\+::other\+Hand\+Ref\+Info}
+
+Struct to hold a second hands information if two handed grabbing is enabled on this actor. \mbox{\Hypertarget{class_a_grabbable_actor_ab85ffe9668324a46beb61c81bc130b21}\label{class_a_grabbable_actor_ab85ffe9668324a46beb61c81bc130b21}} 
+\index{AGrabbableActor@{AGrabbableActor}!physicsMaterialWhileGrabbed@{physicsMaterialWhileGrabbed}}
+\index{physicsMaterialWhileGrabbed@{physicsMaterialWhileGrabbed}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{physicsMaterialWhileGrabbed}{physicsMaterialWhileGrabbed}}
+{\footnotesize\ttfamily U\+Physical\+Material$\ast$ A\+Grabbable\+Actor\+::physics\+Material\+While\+Grabbed}
+
+Friction material to use while grabbed to prevent grabbable edge colliders catching on flat surfaces. \mbox{\Hypertarget{class_a_grabbable_actor_af003d2a7416d7f028644c1b4d6251150}\label{class_a_grabbable_actor_af003d2a7416d7f028644c1b4d6251150}} 
+\index{AGrabbableActor@{AGrabbableActor}!physicsMaterialWhileGrabbedEnabled@{physicsMaterialWhileGrabbedEnabled}}
+\index{physicsMaterialWhileGrabbedEnabled@{physicsMaterialWhileGrabbedEnabled}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{physicsMaterialWhileGrabbedEnabled}{physicsMaterialWhileGrabbedEnabled}}
+{\footnotesize\ttfamily bool A\+Grabbable\+Actor\+::physics\+Material\+While\+Grabbed\+Enabled}
+
+Physics material while grabbed enabled or disabled. N\+O\+TE\+: Replaces physics material override back to null after release. \mbox{\Hypertarget{class_a_grabbable_actor_aa6e34cff2169a1106ceaaead3677cae3}\label{class_a_grabbable_actor_aa6e34cff2169a1106ceaaead3677cae3}} 
+\index{AGrabbableActor@{AGrabbableActor}!secondHandGrabMode@{secondHandGrabMode}}
+\index{secondHandGrabMode@{secondHandGrabMode}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{secondHandGrabMode}{secondHandGrabMode}}
+{\footnotesize\ttfamily E\+Second\+Grab\+Mode A\+Grabbable\+Actor\+::second\+Hand\+Grab\+Mode}
+
+Storage value for current grab mode of this grabbable for the second hand to grab it. N\+O\+TE\+: Requires two handed grabbing to be enabled in the interactable settings. \mbox{\Hypertarget{class_a_grabbable_actor_a89bea83d08551bf7f6845fd2a3faf21f}\label{class_a_grabbable_actor_a89bea83d08551bf7f6845fd2a3faf21f}} 
+\index{AGrabbableActor@{AGrabbableActor}!secondHandRotationOffset@{secondHandRotationOffset}}
+\index{secondHandRotationOffset@{secondHandRotationOffset}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{secondHandRotationOffset}{secondHandRotationOffset}}
+{\footnotesize\ttfamily F\+Rotator A\+Grabbable\+Actor\+::second\+Hand\+Rotation\+Offset}
+
+The second hands rotation offset for when two\+Handed\+Grabbing is enabled and the grabbable is grabbed with two hands while in the second\+Grab\+Mode target\+Rotation. N\+O\+TE\+: Use-\/full for offsetting different models for weapons etc. \mbox{\Hypertarget{class_a_grabbable_actor_a6fd7ed1185fa72f8bf9af4c3eb8980ad}\label{class_a_grabbable_actor_a6fd7ed1185fa72f8bf9af4c3eb8980ad}} 
+\index{AGrabbableActor@{AGrabbableActor}!snapToHand@{snapToHand}}
+\index{snapToHand@{snapToHand}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{snapToHand}{snapToHand}}
+{\footnotesize\ttfamily bool A\+Grabbable\+Actor\+::snap\+To\+Hand}
+
+Snap the grabbed object to the current hand location. \mbox{\Hypertarget{class_a_grabbable_actor_ace7e8b580d780b805b46d9afa9695621}\label{class_a_grabbable_actor_ace7e8b580d780b805b46d9afa9695621}} 
+\index{AGrabbableActor@{AGrabbableActor}!snapToHandLocationOffset@{snapToHandLocationOffset}}
+\index{snapToHandLocationOffset@{snapToHandLocationOffset}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{snapToHandLocationOffset}{snapToHandLocationOffset}}
+{\footnotesize\ttfamily F\+Vector A\+Grabbable\+Actor\+::snap\+To\+Hand\+Location\+Offset}
+
+Used for snap to hand so the location for each object can be adjusted to an offset. N\+O\+TE\+: If snap\+To\+Hand is false then this will not be used. \mbox{\Hypertarget{class_a_grabbable_actor_a1c91df63a66532d00eaff77fb0383b1e}\label{class_a_grabbable_actor_a1c91df63a66532d00eaff77fb0383b1e}} 
+\index{AGrabbableActor@{AGrabbableActor}!snapToHandRotationOffset@{snapToHandRotationOffset}}
+\index{snapToHandRotationOffset@{snapToHandRotationOffset}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{snapToHandRotationOffset}{snapToHandRotationOffset}}
+{\footnotesize\ttfamily F\+Rotator A\+Grabbable\+Actor\+::snap\+To\+Hand\+Rotation\+Offset}
+
+Used for snap to hand so the rotation for each object can be adjusted to an offset. N\+O\+TE\+: If snap\+To\+Hand is false then this will not be used. \mbox{\Hypertarget{class_a_grabbable_actor_a635ff110c6c92e83002c90b479c87a1a}\label{class_a_grabbable_actor_a635ff110c6c92e83002c90b479c87a1a}} 
+\index{AGrabbableActor@{AGrabbableActor}!sweepAccuracy@{sweepAccuracy}}
+\index{sweepAccuracy@{sweepAccuracy}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{sweepAccuracy}{sweepAccuracy}}
+{\footnotesize\ttfamily float A\+Grabbable\+Actor\+::sweep\+Accuracy}
+
+Accuracy/\+Size of the sweep trace that checks if there is a clear path to the hand. (current grabbed component scale $\ast$ sweep\+Accuracy). \mbox{\Hypertarget{class_a_grabbable_actor_a3550796f2d990748b9ef5e35ad3e233a}\label{class_a_grabbable_actor_a3550796f2d990748b9ef5e35ad3e233a}} 
+\index{AGrabbableActor@{AGrabbableActor}!timeToLerp@{timeToLerp}}
+\index{timeToLerp@{timeToLerp}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{timeToLerp}{timeToLerp}}
+{\footnotesize\ttfamily float A\+Grabbable\+Actor\+::time\+To\+Lerp}
+
+Time it takes for component to return to the hand. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Grabbable\+Actor.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Grabbable\+Actor.\+cpp\end{DoxyCompactItemize}

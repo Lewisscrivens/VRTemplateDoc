@@ -1,0 +1,272 @@
+\hypertarget{class_a_interactable_actor}{}\doxysection{A\+Interactable\+Actor Class Reference}
+\label{class_a_interactable_actor}\index{AInteractableActor@{AInteractableActor}}
+
+
+{\ttfamily \#include $<$Interactable\+Actor.\+h$>$}
+
+Inheritance diagram for A\+Interactable\+Actor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_interactable_actor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_interactable_actor_a1bcfde38db7cd44cf5b1f2843c112562}{A\+Interactable\+Actor}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_a18c133b7c185e8cd30993061a1a68611}{Tick}} (float Delta\+Time) override
+\item 
+void \mbox{\hyperlink{class_a_interactable_actor_a6bfdeb4b1fdfb42f66172de8d46adbb5}{Grab\+Pressed\+BP}} (A\+V\+R\+Hand $\ast$hand)
+\item 
+\mbox{\Hypertarget{class_a_interactable_actor_a48b5c5bb1655108bb14a67b91d5f80e2}\label{class_a_interactable_actor_a48b5c5bb1655108bb14a67b91d5f80e2}} 
+void {\bfseries Grab\+Released\+BP} (A\+V\+R\+Hand $\ast$hand)
+\item 
+\mbox{\Hypertarget{class_a_interactable_actor_a3b907b89a02069aa38b51fb330c35206}\label{class_a_interactable_actor_a3b907b89a02069aa38b51fb330c35206}} 
+void {\bfseries Dragging\+BP} (float delta\+Time)
+\item 
+\mbox{\Hypertarget{class_a_interactable_actor_abed9285df77f6e219bbca656209a7b80}\label{class_a_interactable_actor_abed9285df77f6e219bbca656209a7b80}} 
+void {\bfseries Grip\+Pressed} (A\+V\+R\+Hand $\ast$hand)
+\item 
+\mbox{\Hypertarget{class_a_interactable_actor_af9df49fd529edd298ffa0f108e2d1d0b}\label{class_a_interactable_actor_af9df49fd529edd298ffa0f108e2d1d0b}} 
+void {\bfseries Grip\+Released} ()
+\item 
+\mbox{\Hypertarget{class_a_interactable_actor_a6e4740d75a78b59dc7da808af48aaf3c}\label{class_a_interactable_actor_a6e4740d75a78b59dc7da808af48aaf3c}} 
+void {\bfseries Interact} (bool pressed)
+\item 
+\mbox{\Hypertarget{class_a_interactable_actor_a5a2d8166154e20d46c24c58d14101792}\label{class_a_interactable_actor_a5a2d8166154e20d46c24c58d14101792}} 
+void {\bfseries Overlapping\+BP} (A\+V\+R\+Hand $\ast$hand)
+\item 
+\mbox{\Hypertarget{class_a_interactable_actor_afcd01bc96c752d2972616abcfd1efe20}\label{class_a_interactable_actor_afcd01bc96c752d2972616abcfd1efe20}} 
+void {\bfseries End\+Overlapping\+BP} (A\+V\+R\+Hand $\ast$hand)
+\item 
+\mbox{\Hypertarget{class_a_interactable_actor_aad6f291ea02ed4e481719fd101edc5fd}\label{class_a_interactable_actor_aad6f291ea02ed4e481719fd101edc5fd}} 
+void {\bfseries Grabbed\+While\+Locked\+BP} ()
+\item 
+\mbox{\Hypertarget{class_a_interactable_actor_a0dffdfc81249266ba9f8a15947d656e8}\label{class_a_interactable_actor_a0dffdfc81249266ba9f8a15947d656e8}} 
+void {\bfseries Released\+While\+Locked\+BP} ()
+\item 
+\mbox{\Hypertarget{class_a_interactable_actor_a3b32e791fdeabb1eed80d32f560e9930}\label{class_a_interactable_actor_a3b32e791fdeabb1eed80d32f560e9930}} 
+void {\bfseries Teleported\+BP} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_ad94046a461b3ac6f5bbecfc526c58655}{Grab\+Pressed\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_a8fc8ebee6b1af8c0bdcb9a3cb8e3b82e}{Grab\+Released\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_a8fe81aadb170326f4ba1ed04511b91e6}{Grabbed\+While\+Locked\+\_\+\+Implementation}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_a2849a54ee94a6b19855583bcd4e4780a}{Released\+While\+Locked\+\_\+\+Implementation}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_ab9cd95f36c73832b9076011294879d31}{Grip\+Pressed\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_a315464f52f68ecdc2f8a18bf067440b9}{Grip\+Released\+\_\+\+Implementation}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_a0e5d41ad5293893df6506878e510a568}{Dragging\+\_\+\+Implementation}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_aed014e109202fe698451122093a0e068}{Interact\+\_\+\+Implementation}} (bool pressed) override
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_a5fa466962d0562d236da1b4390e86015}{Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_aa02a3716eb9cbdc937ba877fe8882918}{End\+Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_acde163757cf1742f9553a9dfb8f72c93}{Teleported\+\_\+\+Implementation}} () override
+\item 
+virtual \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_a_interactable_actor_ad07520021cc0d8e333890b8e93f27904}{Get\+Interface\+Settings\+\_\+\+Implementation}} () override
+\item 
+\mbox{\Hypertarget{class_a_interactable_actor_ac2e9d22ecec366424dc7550ef48be1f2}\label{class_a_interactable_actor_ac2e9d22ecec366424dc7550ef48be1f2}} 
+virtual void {\bfseries Set\+Interface\+Settings\+\_\+\+Implementation} (\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} new\+Interface\+Settings) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_a_interactable_actor_a0ea4c89a7df9ae357b9cb0554f9f22ef}{debug\+Settings}}
+\item 
+\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_a_interactable_actor_a61826d5579c5273ddeb2140c6fc90f47}{interactable\+Settings}}
+\item 
+F\+Interact\+Event \mbox{\hyperlink{class_a_interactable_actor_a0bfd7c08ed516972a6d0c871280cfd24}{On\+Interact}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_interactable_actor_a487028a6e70a40200ad0fa4951d259d3}{Begin\+Play}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class with implemented interface ready for blueprint use, Needed due to the \mbox{\hyperlink{class_i_hands_interface}{I\+Hands\+Interface}} class being null when called from a Blueprint\+Actor with said interface implemented. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_interactable_actor_a1bcfde38db7cd44cf5b1f2843c112562}\label{class_a_interactable_actor_a1bcfde38db7cd44cf5b1f2843c112562}} 
+\index{AInteractableActor@{AInteractableActor}!AInteractableActor@{AInteractableActor}}
+\index{AInteractableActor@{AInteractableActor}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{AInteractableActor()}{AInteractableActor()}}
+{\footnotesize\ttfamily A\+Interactable\+Actor\+::\+A\+Interactable\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_interactable_actor_a487028a6e70a40200ad0fa4951d259d3}\label{class_a_interactable_actor_a487028a6e70a40200ad0fa4951d259d3}} 
+\index{AInteractableActor@{AInteractableActor}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Level Start. \mbox{\Hypertarget{class_a_interactable_actor_a0e5d41ad5293893df6506878e510a568}\label{class_a_interactable_actor_a0e5d41ad5293893df6506878e510a568}} 
+\index{AInteractableActor@{AInteractableActor}!Dragging\_Implementation@{Dragging\_Implementation}}
+\index{Dragging\_Implementation@{Dragging\_Implementation}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{Dragging\_Implementation()}{Dragging\_Implementation()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Dragging\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ticking function that is ran while an interactable is grabbed. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae97908dd8838ff7157fdf8d61aeae1e6}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_interactable_actor_aa02a3716eb9cbdc937ba877fe8882918}\label{class_a_interactable_actor_aa02a3716eb9cbdc937ba877fe8882918}} 
+\index{AInteractableActor@{AInteractableActor}!EndOverlapping\_Implementation@{EndOverlapping\_Implementation}}
+\index{EndOverlapping\_Implementation@{EndOverlapping\_Implementation}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{EndOverlapping\_Implementation()}{EndOverlapping\_Implementation()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+End\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed is removed. N\+O\+TE\+: Handles un-\/highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a4f3dfa15eb379b4c9fd7f2dbe3aca9bd}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_interactable_actor_ad07520021cc0d8e333890b8e93f27904}\label{class_a_interactable_actor_ad07520021cc0d8e333890b8e93f27904}} 
+\index{AInteractableActor@{AInteractableActor}!GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}}
+\index{GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{GetInterfaceSettings\_Implementation()}{GetInterfaceSettings\_Implementation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} A\+Interactable\+Actor\+::\+Get\+Interface\+Settings\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get and set functions to allow changes from blueprint. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a445029683d12cb13b8bddff6dd093993}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_interactable_actor_a8fe81aadb170326f4ba1ed04511b91e6}\label{class_a_interactable_actor_a8fe81aadb170326f4ba1ed04511b91e6}} 
+\index{AInteractableActor@{AInteractableActor}!GrabbedWhileLocked\_Implementation@{GrabbedWhileLocked\_Implementation}}
+\index{GrabbedWhileLocked\_Implementation@{GrabbedWhileLocked\_Implementation}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{GrabbedWhileLocked\_Implementation()}{GrabbedWhileLocked\_Implementation()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Grabbed\+While\+Locked\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran if the grabbable is locked to the hand and the trigger is pressed all the way down. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a793723aaeaf88c1d3b225aa9464dc746}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_interactable_actor_ad94046a461b3ac6f5bbecfc526c58655}\label{class_a_interactable_actor_ad94046a461b3ac6f5bbecfc526c58655}} 
+\index{AInteractableActor@{AInteractableActor}!GrabPressed\_Implementation@{GrabPressed\_Implementation}}
+\index{GrabPressed\_Implementation@{GrabPressed\_Implementation}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{GrabPressed\_Implementation()}{GrabPressed\_Implementation()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Grab\+Pressed\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Implementation of the interfaces functions... 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a904db7e568a399ef503d68e40cf4d4eb}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_interactable_actor_a6bfdeb4b1fdfb42f66172de8d46adbb5}\label{class_a_interactable_actor_a6bfdeb4b1fdfb42f66172de8d46adbb5}} 
+\index{AInteractableActor@{AInteractableActor}!GrabPressedBP@{GrabPressedBP}}
+\index{GrabPressedBP@{GrabPressedBP}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{GrabPressedBP()}{GrabPressedBP()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Grab\+Pressed\+BP (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})}
+
+Blueprint interface functions to be override in the BP.... N\+O\+TE\+: This is needed due to the interface being C++ it doesn\textquotesingle{}t work correctly in BP... \mbox{\Hypertarget{class_a_interactable_actor_a8fc8ebee6b1af8c0bdcb9a3cb8e3b82e}\label{class_a_interactable_actor_a8fc8ebee6b1af8c0bdcb9a3cb8e3b82e}} 
+\index{AInteractableActor@{AInteractableActor}!GrabReleased\_Implementation@{GrabReleased\_Implementation}}
+\index{GrabReleased\_Implementation@{GrabReleased\_Implementation}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{GrabReleased\_Implementation()}{GrabReleased\_Implementation()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Grab\+Released\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran when the trigger is released. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae50003621758b8836e206bff33003ab8}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_interactable_actor_ab9cd95f36c73832b9076011294879d31}\label{class_a_interactable_actor_ab9cd95f36c73832b9076011294879d31}} 
+\index{AInteractableActor@{AInteractableActor}!GripPressed\_Implementation@{GripPressed\_Implementation}}
+\index{GripPressed\_Implementation@{GripPressed\_Implementation}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{GripPressed\_Implementation()}{GripPressed\_Implementation()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Grip\+Pressed\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran when the controller is squeezed. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ad8ab186d973d2d64d66ef6d3f9a58b3d}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_interactable_actor_a315464f52f68ecdc2f8a18bf067440b9}\label{class_a_interactable_actor_a315464f52f68ecdc2f8a18bf067440b9}} 
+\index{AInteractableActor@{AInteractableActor}!GripReleased\_Implementation@{GripReleased\_Implementation}}
+\index{GripReleased\_Implementation@{GripReleased\_Implementation}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{GripReleased\_Implementation()}{GripReleased\_Implementation()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Grip\+Released\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran when the controller is un-\/squeezed. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_aa3caddd60c6813abdc588984c8b4ec09}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_interactable_actor_aed014e109202fe698451122093a0e068}\label{class_a_interactable_actor_aed014e109202fe698451122093a0e068}} 
+\index{AInteractableActor@{AInteractableActor}!Interact\_Implementation@{Interact\_Implementation}}
+\index{Interact\_Implementation@{Interact\_Implementation}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{Interact\_Implementation()}{Interact\_Implementation()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Interact\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{bool}]{pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran when the thumb button is pressed while something is being held. For example the trigger on the Valve index controller being pressed down. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a7545f93bc5693b453a5fbf23f31105db}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_interactable_actor_a5fa466962d0562d236da1b4390e86015}\label{class_a_interactable_actor_a5fa466962d0562d236da1b4390e86015}} 
+\index{AInteractableActor@{AInteractableActor}!Overlapping\_Implementation@{Overlapping\_Implementation}}
+\index{Overlapping\_Implementation@{Overlapping\_Implementation}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{Overlapping\_Implementation()}{Overlapping\_Implementation()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed. N\+O\+TE\+: Handles highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a06805a0a6903417322d5bda009bf8fa4}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_interactable_actor_a2849a54ee94a6b19855583bcd4e4780a}\label{class_a_interactable_actor_a2849a54ee94a6b19855583bcd4e4780a}} 
+\index{AInteractableActor@{AInteractableActor}!ReleasedWhileLocked\_Implementation@{ReleasedWhileLocked\_Implementation}}
+\index{ReleasedWhileLocked\_Implementation@{ReleasedWhileLocked\_Implementation}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{ReleasedWhileLocked\_Implementation()}{ReleasedWhileLocked\_Implementation()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Released\+While\+Locked\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran if the hand is locked to an interactable and the trigger is released. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a8001f0337ece3e311b7b52fca477971e}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_interactable_actor_acde163757cf1742f9553a9dfb8f72c93}\label{class_a_interactable_actor_acde163757cf1742f9553a9dfb8f72c93}} 
+\index{AInteractableActor@{AInteractableActor}!Teleported\_Implementation@{Teleported\_Implementation}}
+\index{Teleported\_Implementation@{Teleported\_Implementation}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{Teleported\_Implementation()}{Teleported\_Implementation()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Teleported\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand is teleported. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a8db4165f23e93d3889e89ff4f5057016}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_interactable_actor_a18c133b7c185e8cd30993061a1a68611}\label{class_a_interactable_actor_a18c133b7c185e8cd30993061a1a68611}} 
+\index{AInteractableActor@{AInteractableActor}!Tick@{Tick}}
+\index{Tick@{Tick}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void A\+Interactable\+Actor\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Frame. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_interactable_actor_a0ea4c89a7df9ae357b9cb0554f9f22ef}\label{class_a_interactable_actor_a0ea4c89a7df9ae357b9cb0554f9f22ef}} 
+\index{AInteractableActor@{AInteractableActor}!debugSettings@{debugSettings}}
+\index{debugSettings@{debugSettings}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{debugSettings}{debugSettings}}
+{\footnotesize\ttfamily bool A\+Interactable\+Actor\+::debug\+Settings}
+
+Enable the debugging message for printing this interactables current settings every frame. \mbox{\Hypertarget{class_a_interactable_actor_a61826d5579c5273ddeb2140c6fc90f47}\label{class_a_interactable_actor_a61826d5579c5273ddeb2140c6fc90f47}} 
+\index{AInteractableActor@{AInteractableActor}!interactableSettings@{interactableSettings}}
+\index{interactableSettings@{interactableSettings}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{interactableSettings}{interactableSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} A\+Interactable\+Actor\+::interactable\+Settings}
+
+The interfaces interactable settings for how to interact with VR controllers/hands. \mbox{\Hypertarget{class_a_interactable_actor_a0bfd7c08ed516972a6d0c871280cfd24}\label{class_a_interactable_actor_a0bfd7c08ed516972a6d0c871280cfd24}} 
+\index{AInteractableActor@{AInteractableActor}!OnInteract@{OnInteract}}
+\index{OnInteract@{OnInteract}!AInteractableActor@{AInteractableActor}}
+\doxysubsubsection{\texorpdfstring{OnInteract}{OnInteract}}
+{\footnotesize\ttfamily F\+Interact\+Event A\+Interactable\+Actor\+::\+On\+Interact}
+
+Cast to delegate when interact is pressed. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Interactable\+Actor.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Interactable\+Actor.\+cpp\end{DoxyCompactItemize}

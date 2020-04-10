@@ -1,0 +1,494 @@
+\hypertarget{class_a_slidable_actor}{}\doxysection{A\+Slidable\+Actor Class Reference}
+\label{class_a_slidable_actor}\index{ASlidableActor@{ASlidableActor}}
+
+
+{\ttfamily \#include $<$Slidable\+Actor.\+h$>$}
+
+Inheritance diagram for A\+Slidable\+Actor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_slidable_actor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_slidable_actor_a03d01d21e890890727c53fda3b80442c}{A\+Slidable\+Actor}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_slidable_actor_a48bc8b4e77d590e8b6ea3428c52fb3c1}{Tick}} (float Delta\+Time) override
+\item 
+void \mbox{\hyperlink{class_a_slidable_actor_aefb5fb73fd4761cd082b2af34600d9bc}{Check\+Constraint\+Bounds}} ()
+\item 
+F\+Vector \mbox{\hyperlink{class_a_slidable_actor_ac97df84a47ff9a965d65bfb865f8df66}{Clamp\+Position}} (F\+Vector position)
+\item 
+void \mbox{\hyperlink{class_a_slidable_actor_ac1f6b8351ee5e4a746d537b44cd6ef70}{Update\+Slidable}} (float Delta\+Time)
+\item 
+void \mbox{\hyperlink{class_a_slidable_actor_a4df50a871cec18765ce42f942df58b63}{Update\+Audio\+And\+Haptics}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_slidable_actor_a455e7afc86e9467ae23552ad81266aa3}{Grab\+Pressed\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_slidable_actor_aa9854aeb5148734871fb89476b0c0f06}{Grab\+Released\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_slidable_actor_ac39cb3ed9a3950e02263b7509a30c04b}{Dragging\+\_\+\+Implementation}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{class_a_slidable_actor_aeba747c6e6db5d96856d277d275a3121}{Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_slidable_actor_ab263b3bef620284ad8855e8f459ce5e8}{End\+Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_slidable_actor_abfde92bb4bfdf740e20fa390f968d106}{Grabbed\+While\+Locked\+\_\+\+Implementation}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_slidable_actor_a873ac9bf01924f9e3c3a6389c31ffb0b}{Released\+While\+Locked\+\_\+\+Implementation}} () override
+\item 
+virtual \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_a_slidable_actor_af23b34d845c92568be359c44ddb10d0c}{Get\+Interface\+Settings\+\_\+\+Implementation}} () override
+\item 
+\mbox{\Hypertarget{class_a_slidable_actor_a3c9350cc23cdb3d8915a2750fb08f4cd}\label{class_a_slidable_actor_a3c9350cc23cdb3d8915a2750fb08f4cd}} 
+virtual void {\bfseries Set\+Interface\+Settings\+\_\+\+Implementation} (\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} new\+Interface\+Settings) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\+Scene\+Component $\ast$ \mbox{\hyperlink{class_a_slidable_actor_ac113afa048a5a7d4eb7ba2f8c3139d76}{root}}
+\item 
+U\+Primitive\+Component $\ast$ \mbox{\hyperlink{class_a_slidable_actor_ac99c7f2c5a0fa9fd1d69d61fda7cb99d}{sliding\+Mesh}}
+\item 
+U\+Audio\+Component $\ast$ \mbox{\hyperlink{class_a_slidable_actor_a730210943dfcc31c2632af23bd6fa435}{slidable\+Audio}}
+\item 
+U\+Arrow\+Component $\ast$ \mbox{\hyperlink{class_a_slidable_actor_a053aa015af2353bd63235151722d3176}{slidable\+X\+Direction}}
+\item 
+U\+Physics\+Constraint\+Component $\ast$ \mbox{\hyperlink{class_a_slidable_actor_a3dade53b48c426decb54f448c850976f}{pivot}}
+\item 
+A\+V\+R\+Hand $\ast$ \mbox{\hyperlink{class_a_slidable_actor_a36ce27037e12d138ed9d562f62358d3c}{hand\+Ref}}
+\item 
+E\+Slidable\+Mode \mbox{\hyperlink{class_a_slidable_actor_a530eb9a9dcf3cb5dcd0df5159144fd3e}{current\+Slidable\+Mode}}
+\item 
+F\+Name \mbox{\hyperlink{class_a_slidable_actor_a18c04d9f88b768a050691e677a2424a7}{comp\+To\+Grab}}
+\item 
+F\+Name \mbox{\hyperlink{class_a_slidable_actor_a388c59acf40172d54220ecb312b97f2d}{bone\+To\+Grab}}
+\item 
+bool \mbox{\hyperlink{class_a_slidable_actor_a5a0267927b96ce6e9f0d6175022c820e}{simulate\+Physics}}
+\item 
+float \mbox{\hyperlink{class_a_slidable_actor_a1c9bc55f60e794869e4ad98ba7836d83}{friction}}
+\item 
+float \mbox{\hyperlink{class_a_slidable_actor_af9cbef0ef76a02c815bb5aafc534a8ef}{restitution}}
+\item 
+F\+Vector \mbox{\hyperlink{class_a_slidable_actor_ae06f171287d0d28d604647cc71beb4a4}{slider\+Limit}}
+\item 
+F\+Vector \mbox{\hyperlink{class_a_slidable_actor_a8f96d25ec7976e63965df01424011491}{slider\+Relative\+Position}}
+\item 
+bool \mbox{\hyperlink{class_a_slidable_actor_a20cd2b51911cbc44f3e3a2dc2964e1f6}{center\+Constraint}}
+\item 
+F\+Vector \mbox{\hyperlink{class_a_slidable_actor_a4ad3ac99184fc478457ad062c227026c}{refference\+Offset}}
+\item 
+T\+Array$<$ A\+Actor $\ast$ $>$ \mbox{\hyperlink{class_a_slidable_actor_a2e1aa73eeaede4ff6ffe72e79706057a}{ignored\+Actors}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_a_slidable_actor_af2681caddb2aeb6a2ad9d5c01f9c853b}{sliding\+Sound}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_a_slidable_actor_ae105efe355e3b3b0b9601b3958624bb9}{impact\+Sound}}
+\item 
+float \mbox{\hyperlink{class_a_slidable_actor_af385a0e616810ac9527eea8fade8ca24}{impact\+Sound\+Intensity}}
+\item 
+U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_a_slidable_actor_acf117b653b4e489218dceba822bc4ee4}{sliding\+Haptic\+Effect}}
+\item 
+U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_a_slidable_actor_a3e6ee0b6b91b8764357ead908f72cb4b}{impact\+Haptic\+Effect}}
+\item 
+float \mbox{\hyperlink{class_a_slidable_actor_a16d30fa83c116d92e55c6c113b1788ad}{haptic\+Slide\+Delay}}
+\item 
+float \mbox{\hyperlink{class_a_slidable_actor_a22a07271d86078b6f7bc160e53daab82}{haptic\+Intensity}}
+\item 
+bool \mbox{\hyperlink{class_a_slidable_actor_a39a6024848525af0956570113e3810fa}{debug}}
+\item 
+\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_a_slidable_actor_a88b3dec0177459dce4d7e6b3187f63f2}{interactable\+Settings}}
+\item 
+U\+Primitive\+Component $\ast$ \mbox{\hyperlink{class_a_slidable_actor_a71ac557957599ab5fc2e0fe3ada1a5b5}{target\+Component}}
+\item 
+U\+Primitive\+Component $\ast$ \mbox{\hyperlink{class_a_slidable_actor_ad1d8e26c5658d415d856a0968f92e14f}{component\+To\+Grab}}
+\item 
+F\+Grabbed \mbox{\hyperlink{class_a_slidable_actor_a5912bdd98b4273574075fab148dbbf20}{On\+Mesh\+Grabbed}}
+\item 
+F\+Grabbed \mbox{\hyperlink{class_a_slidable_actor_a4dc222c95977a07ca75f70e27bf597b8}{On\+Mesh\+Released}}
+\item 
+F\+Grabbed\+Locked \mbox{\hyperlink{class_a_slidable_actor_a52c8e4ccb0df101bbb7a85407e9f969b}{On\+Grabbed\+While\+Locked}}
+\item 
+F\+Grabbed\+Locked \mbox{\hyperlink{class_a_slidable_actor_a90263a91ad917d032537c3248bc20043}{On\+Released\+While\+Locked}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_slidable_actor_ab085bcbe245d32e4911550e76db9ae10}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_a_slidable_actor_a4868075b24d9fd347515145d1cda448c}{Update\+Limit}} (float original\+Limit, float \&pos\+Limit)
+\item 
+float \mbox{\hyperlink{class_a_slidable_actor_ac8631a58e536bfb40751f35d5be8213a}{Get\+Refference\+Offset}} (float axis)
+\item 
+void \mbox{\hyperlink{class_a_slidable_actor_afc8e845450255332005318cf2a703811}{Setup\+Constraint}} ()
+\item 
+void \mbox{\hyperlink{class_a_slidable_actor_abfb648ef571151656fa8fe8e784d22cc}{In\+Range}} (bool \&in\+Range\+X\+Pointer, bool \&in\+Range\+Y\+Pointer, bool \&in\+Range\+Z\+Pointer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+Vector \mbox{\hyperlink{class_a_slidable_actor_a44e6e866f3bbfe620f8149fc9da8dfc7}{current\+Slider\+Limit}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main slidable class without an initialized sliding\+Mesh component. Used to create virtual reality drawers etc. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_slidable_actor_a03d01d21e890890727c53fda3b80442c}\label{class_a_slidable_actor_a03d01d21e890890727c53fda3b80442c}} 
+\index{ASlidableActor@{ASlidableActor}!ASlidableActor@{ASlidableActor}}
+\index{ASlidableActor@{ASlidableActor}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{ASlidableActor()}{ASlidableActor()}}
+{\footnotesize\ttfamily A\+Slidable\+Actor\+::\+A\+Slidable\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_slidable_actor_ab085bcbe245d32e4911550e76db9ae10}\label{class_a_slidable_actor_ab085bcbe245d32e4911550e76db9ae10}} 
+\index{ASlidableActor@{ASlidableActor}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Level start. \mbox{\Hypertarget{class_a_slidable_actor_aefb5fb73fd4761cd082b2af34600d9bc}\label{class_a_slidable_actor_aefb5fb73fd4761cd082b2af34600d9bc}} 
+\index{ASlidableActor@{ASlidableActor}!CheckConstraintBounds@{CheckConstraintBounds}}
+\index{CheckConstraintBounds@{CheckConstraintBounds}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{CheckConstraintBounds()}{CheckConstraintBounds()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Check\+Constraint\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks the mesh is within the bounds of the constraint at all times. If not the mesh is moved back to the closest constrained position. \mbox{\Hypertarget{class_a_slidable_actor_ac97df84a47ff9a965d65bfb865f8df66}\label{class_a_slidable_actor_ac97df84a47ff9a965d65bfb865f8df66}} 
+\index{ASlidableActor@{ASlidableActor}!ClampPosition@{ClampPosition}}
+\index{ClampPosition@{ClampPosition}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{ClampPosition()}{ClampPosition()}}
+{\footnotesize\ttfamily F\+Vector A\+Slidable\+Actor\+::\+Clamp\+Position (\begin{DoxyParamCaption}\item[{F\+Vector}]{position }\end{DoxyParamCaption})}
+
+Clamp the given position within the constraint. \mbox{\Hypertarget{class_a_slidable_actor_ac39cb3ed9a3950e02263b7509a30c04b}\label{class_a_slidable_actor_ac39cb3ed9a3950e02263b7509a30c04b}} 
+\index{ASlidableActor@{ASlidableActor}!Dragging\_Implementation@{Dragging\_Implementation}}
+\index{Dragging\_Implementation@{Dragging\_Implementation}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{Dragging\_Implementation()}{Dragging\_Implementation()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Dragging\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ticking function that is ran while an interactable is grabbed. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae97908dd8838ff7157fdf8d61aeae1e6}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_slidable_actor_ab263b3bef620284ad8855e8f459ce5e8}\label{class_a_slidable_actor_ab263b3bef620284ad8855e8f459ce5e8}} 
+\index{ASlidableActor@{ASlidableActor}!EndOverlapping\_Implementation@{EndOverlapping\_Implementation}}
+\index{EndOverlapping\_Implementation@{EndOverlapping\_Implementation}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{EndOverlapping\_Implementation()}{EndOverlapping\_Implementation()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+End\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed is removed. N\+O\+TE\+: Handles un-\/highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a4f3dfa15eb379b4c9fd7f2dbe3aca9bd}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_slidable_actor_af23b34d845c92568be359c44ddb10d0c}\label{class_a_slidable_actor_af23b34d845c92568be359c44ddb10d0c}} 
+\index{ASlidableActor@{ASlidableActor}!GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}}
+\index{GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{GetInterfaceSettings\_Implementation()}{GetInterfaceSettings\_Implementation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} A\+Slidable\+Actor\+::\+Get\+Interface\+Settings\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get and set functions to allow changes from blueprint. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a445029683d12cb13b8bddff6dd093993}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_slidable_actor_ac8631a58e536bfb40751f35d5be8213a}\label{class_a_slidable_actor_ac8631a58e536bfb40751f35d5be8213a}} 
+\index{ASlidableActor@{ASlidableActor}!GetRefferenceOffset@{GetRefferenceOffset}}
+\index{GetRefferenceOffset@{GetRefferenceOffset}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{GetRefferenceOffset()}{GetRefferenceOffset()}}
+{\footnotesize\ttfamily float A\+Slidable\+Actor\+::\+Get\+Refference\+Offset (\begin{DoxyParamCaption}\item[{float}]{axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Return the correct reference offset for the given axis, either return half or minus half. \mbox{\Hypertarget{class_a_slidable_actor_abfde92bb4bfdf740e20fa390f968d106}\label{class_a_slidable_actor_abfde92bb4bfdf740e20fa390f968d106}} 
+\index{ASlidableActor@{ASlidableActor}!GrabbedWhileLocked\_Implementation@{GrabbedWhileLocked\_Implementation}}
+\index{GrabbedWhileLocked\_Implementation@{GrabbedWhileLocked\_Implementation}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{GrabbedWhileLocked\_Implementation()}{GrabbedWhileLocked\_Implementation()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Grabbed\+While\+Locked\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran if the grabbable is locked to the hand and the trigger is pressed all the way down. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a793723aaeaf88c1d3b225aa9464dc746}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_slidable_actor_a455e7afc86e9467ae23552ad81266aa3}\label{class_a_slidable_actor_a455e7afc86e9467ae23552ad81266aa3}} 
+\index{ASlidableActor@{ASlidableActor}!GrabPressed\_Implementation@{GrabPressed\_Implementation}}
+\index{GrabPressed\_Implementation@{GrabPressed\_Implementation}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{GrabPressed\_Implementation()}{GrabPressed\_Implementation()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Grab\+Pressed\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Implementation of the hands interface. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a904db7e568a399ef503d68e40cf4d4eb}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_slidable_actor_aa9854aeb5148734871fb89476b0c0f06}\label{class_a_slidable_actor_aa9854aeb5148734871fb89476b0c0f06}} 
+\index{ASlidableActor@{ASlidableActor}!GrabReleased\_Implementation@{GrabReleased\_Implementation}}
+\index{GrabReleased\_Implementation@{GrabReleased\_Implementation}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{GrabReleased\_Implementation()}{GrabReleased\_Implementation()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Grab\+Released\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran when the trigger is released. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae50003621758b8836e206bff33003ab8}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_slidable_actor_abfb648ef571151656fa8fe8e784d22cc}\label{class_a_slidable_actor_abfb648ef571151656fa8fe8e784d22cc}} 
+\index{ASlidableActor@{ASlidableActor}!InRange@{InRange}}
+\index{InRange@{InRange}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{InRange()}{InRange()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+In\+Range (\begin{DoxyParamCaption}\item[{bool \&}]{in\+Range\+X\+Pointer,  }\item[{bool \&}]{in\+Range\+Y\+Pointer,  }\item[{bool \&}]{in\+Range\+Z\+Pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Return booleans of if the slidable\+Mesh is within its constrained X, Y and Z axis limits. \mbox{\Hypertarget{class_a_slidable_actor_aeba747c6e6db5d96856d277d275a3121}\label{class_a_slidable_actor_aeba747c6e6db5d96856d277d275a3121}} 
+\index{ASlidableActor@{ASlidableActor}!Overlapping\_Implementation@{Overlapping\_Implementation}}
+\index{Overlapping\_Implementation@{Overlapping\_Implementation}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{Overlapping\_Implementation()}{Overlapping\_Implementation()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed. N\+O\+TE\+: Handles highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a06805a0a6903417322d5bda009bf8fa4}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_slidable_actor_a873ac9bf01924f9e3c3a6389c31ffb0b}\label{class_a_slidable_actor_a873ac9bf01924f9e3c3a6389c31ffb0b}} 
+\index{ASlidableActor@{ASlidableActor}!ReleasedWhileLocked\_Implementation@{ReleasedWhileLocked\_Implementation}}
+\index{ReleasedWhileLocked\_Implementation@{ReleasedWhileLocked\_Implementation}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{ReleasedWhileLocked\_Implementation()}{ReleasedWhileLocked\_Implementation()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Released\+While\+Locked\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran if the hand is locked to an interactable and the trigger is released. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a8001f0337ece3e311b7b52fca477971e}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_slidable_actor_afc8e845450255332005318cf2a703811}\label{class_a_slidable_actor_afc8e845450255332005318cf2a703811}} 
+\index{ASlidableActor@{ASlidableActor}!SetupConstraint@{SetupConstraint}}
+\index{SetupConstraint@{SetupConstraint}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{SetupConstraint()}{SetupConstraint()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Setup\+Constraint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Setup this constraints values to the mesh... \mbox{\Hypertarget{class_a_slidable_actor_a48bc8b4e77d590e8b6ea3428c52fb3c1}\label{class_a_slidable_actor_a48bc8b4e77d590e8b6ea3428c52fb3c1}} 
+\index{ASlidableActor@{ASlidableActor}!Tick@{Tick}}
+\index{Tick@{Tick}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Used to update the current values for the constraints position if linear velocity is greater than 0. \mbox{\Hypertarget{class_a_slidable_actor_a4df50a871cec18765ce42f942df58b63}\label{class_a_slidable_actor_a4df50a871cec18765ce42f942df58b63}} 
+\index{ASlidableActor@{ASlidableActor}!UpdateAudioAndHaptics@{UpdateAudioAndHaptics}}
+\index{UpdateAudioAndHaptics@{UpdateAudioAndHaptics}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateAudioAndHaptics()}{UpdateAudioAndHaptics()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Update\+Audio\+And\+Haptics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Update the audio for this slidable when sliding or impacting the constrained limits. \mbox{\Hypertarget{class_a_slidable_actor_a4868075b24d9fd347515145d1cda448c}\label{class_a_slidable_actor_a4868075b24d9fd347515145d1cda448c}} 
+\index{ASlidableActor@{ASlidableActor}!UpdateLimit@{UpdateLimit}}
+\index{UpdateLimit@{UpdateLimit}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateLimit()}{UpdateLimit()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Update\+Limit (\begin{DoxyParamCaption}\item[{float}]{original\+Limit,  }\item[{float \&}]{pos\+Limit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update the positive limit for given values. \mbox{\Hypertarget{class_a_slidable_actor_ac1f6b8351ee5e4a746d537b44cd6ef70}\label{class_a_slidable_actor_ac1f6b8351ee5e4a746d537b44cd6ef70}} 
+\index{ASlidableActor@{ASlidableActor}!UpdateSlidable@{UpdateSlidable}}
+\index{UpdateSlidable@{UpdateSlidable}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateSlidable()}{UpdateSlidable()}}
+{\footnotesize\ttfamily void A\+Slidable\+Actor\+::\+Update\+Slidable (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})}
+
+Update the slidables position, starts by running the Update\+Values function to get hand positions etc. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_slidable_actor_a388c59acf40172d54220ecb312b97f2d}\label{class_a_slidable_actor_a388c59acf40172d54220ecb312b97f2d}} 
+\index{ASlidableActor@{ASlidableActor}!boneToGrab@{boneToGrab}}
+\index{boneToGrab@{boneToGrab}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{boneToGrab}{boneToGrab}}
+{\footnotesize\ttfamily F\+Name A\+Slidable\+Actor\+::bone\+To\+Grab}
+
+The bone to grab the slidable by. \mbox{\Hypertarget{class_a_slidable_actor_a20cd2b51911cbc44f3e3a2dc2964e1f6}\label{class_a_slidable_actor_a20cd2b51911cbc44f3e3a2dc2964e1f6}} 
+\index{ASlidableActor@{ASlidableActor}!centerConstraint@{centerConstraint}}
+\index{centerConstraint@{centerConstraint}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{centerConstraint}{centerConstraint}}
+{\footnotesize\ttfamily bool A\+Slidable\+Actor\+::center\+Constraint}
+
+Position the constraint (pivot components) reference position at the pivot components location. (Acts more like regular constraint this way) \mbox{\Hypertarget{class_a_slidable_actor_ad1d8e26c5658d415d856a0968f92e14f}\label{class_a_slidable_actor_ad1d8e26c5658d415d856a0968f92e14f}} 
+\index{ASlidableActor@{ASlidableActor}!componentToGrab@{componentToGrab}}
+\index{componentToGrab@{componentToGrab}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{componentToGrab}{componentToGrab}}
+{\footnotesize\ttfamily U\+Primitive\+Component$\ast$ A\+Slidable\+Actor\+::component\+To\+Grab}
+
+Used for physics grabbing, if there is a different component that requires grabbing. \mbox{\Hypertarget{class_a_slidable_actor_a18c04d9f88b768a050691e677a2424a7}\label{class_a_slidable_actor_a18c04d9f88b768a050691e677a2424a7}} 
+\index{ASlidableActor@{ASlidableActor}!compToGrab@{compToGrab}}
+\index{compToGrab@{compToGrab}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{compToGrab}{compToGrab}}
+{\footnotesize\ttfamily F\+Name A\+Slidable\+Actor\+::comp\+To\+Grab}
+
+Component name to grab on this slidable actor. If N\+A\+M\+E\+\_\+\+None grab the sliding\+Mesh component. \mbox{\Hypertarget{class_a_slidable_actor_a530eb9a9dcf3cb5dcd0df5159144fd3e}\label{class_a_slidable_actor_a530eb9a9dcf3cb5dcd0df5159144fd3e}} 
+\index{ASlidableActor@{ASlidableActor}!currentSlidableMode@{currentSlidableMode}}
+\index{currentSlidableMode@{currentSlidableMode}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{currentSlidableMode}{currentSlidableMode}}
+{\footnotesize\ttfamily E\+Slidable\+Mode A\+Slidable\+Actor\+::current\+Slidable\+Mode}
+
+The current Slidable mode, mainly used to describe how this Slidable is grabbed and interactables with collisions and other physics objects. \mbox{\Hypertarget{class_a_slidable_actor_a44e6e866f3bbfe620f8149fc9da8dfc7}\label{class_a_slidable_actor_a44e6e866f3bbfe620f8149fc9da8dfc7}} 
+\index{ASlidableActor@{ASlidableActor}!currentSliderLimit@{currentSliderLimit}}
+\index{currentSliderLimit@{currentSliderLimit}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{currentSliderLimit}{currentSliderLimit}}
+{\footnotesize\ttfamily F\+Vector A\+Slidable\+Actor\+::current\+Slider\+Limit\hspace{0.3cm}{\ttfamily [protected]}}
+
+Used to determine if there is only a single axis. The absolute slider limit on both the X and Y axis. \mbox{\Hypertarget{class_a_slidable_actor_a39a6024848525af0956570113e3810fa}\label{class_a_slidable_actor_a39a6024848525af0956570113e3810fa}} 
+\index{ASlidableActor@{ASlidableActor}!debug@{debug}}
+\index{debug@{debug}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily bool A\+Slidable\+Actor\+::debug}
+
+Debug boolean variable \mbox{\Hypertarget{class_a_slidable_actor_a1c9bc55f60e794869e4ad98ba7836d83}\label{class_a_slidable_actor_a1c9bc55f60e794869e4ad98ba7836d83}} 
+\index{ASlidableActor@{ASlidableActor}!friction@{friction}}
+\index{friction@{friction}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{friction}{friction}}
+{\footnotesize\ttfamily float A\+Slidable\+Actor\+::friction}
+
+The linear damping value but it can really be seen as friction. \mbox{\Hypertarget{class_a_slidable_actor_a36ce27037e12d138ed9d562f62358d3c}\label{class_a_slidable_actor_a36ce27037e12d138ed9d562f62358d3c}} 
+\index{ASlidableActor@{ASlidableActor}!handRef@{handRef}}
+\index{handRef@{handRef}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{handRef}{handRef}}
+{\footnotesize\ttfamily A\+V\+R\+Hand$\ast$ A\+Slidable\+Actor\+::hand\+Ref}
+
+Reference to the hand currently grabbing this component. Also can be used as a bool to check if this is in a hand. \mbox{\Hypertarget{class_a_slidable_actor_a22a07271d86078b6f7bc160e53daab82}\label{class_a_slidable_actor_a22a07271d86078b6f7bc160e53daab82}} 
+\index{ASlidableActor@{ASlidableActor}!hapticIntensity@{hapticIntensity}}
+\index{hapticIntensity@{hapticIntensity}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{hapticIntensity}{hapticIntensity}}
+{\footnotesize\ttfamily float A\+Slidable\+Actor\+::haptic\+Intensity}
+
+Intensity multiplier for the haptic effect on this slidable actor. \mbox{\Hypertarget{class_a_slidable_actor_a16d30fa83c116d92e55c6c113b1788ad}\label{class_a_slidable_actor_a16d30fa83c116d92e55c6c113b1788ad}} 
+\index{ASlidableActor@{ASlidableActor}!hapticSlideDelay@{hapticSlideDelay}}
+\index{hapticSlideDelay@{hapticSlideDelay}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{hapticSlideDelay}{hapticSlideDelay}}
+{\footnotesize\ttfamily float A\+Slidable\+Actor\+::haptic\+Slide\+Delay}
+
+Play sliding haptic effect/\+Sound if not null every haptic\+Slide\+Delay units. N\+O\+TE\+: If set to 0.\+0f it will play the haptic effect constantly. \mbox{\Hypertarget{class_a_slidable_actor_a2e1aa73eeaede4ff6ffe72e79706057a}\label{class_a_slidable_actor_a2e1aa73eeaede4ff6ffe72e79706057a}} 
+\index{ASlidableActor@{ASlidableActor}!ignoredActors@{ignoredActors}}
+\index{ignoredActors@{ignoredActors}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{ignoredActors}{ignoredActors}}
+{\footnotesize\ttfamily T\+Array$<$A\+Actor$\ast$$>$ A\+Slidable\+Actor\+::ignored\+Actors}
+
+Ignored Actors... \mbox{\Hypertarget{class_a_slidable_actor_a3e6ee0b6b91b8764357ead908f72cb4b}\label{class_a_slidable_actor_a3e6ee0b6b91b8764357ead908f72cb4b}} 
+\index{ASlidableActor@{ASlidableActor}!impactHapticEffect@{impactHapticEffect}}
+\index{impactHapticEffect@{impactHapticEffect}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{impactHapticEffect}{impactHapticEffect}}
+{\footnotesize\ttfamily U\+Haptic\+Feedback\+Effect\+\_\+\+Base$\ast$ A\+Slidable\+Actor\+::impact\+Haptic\+Effect}
+
+Haptic effect override for impacts. \mbox{\Hypertarget{class_a_slidable_actor_ae105efe355e3b3b0b9601b3958624bb9}\label{class_a_slidable_actor_ae105efe355e3b3b0b9601b3958624bb9}} 
+\index{ASlidableActor@{ASlidableActor}!impactSound@{impactSound}}
+\index{impactSound@{impactSound}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{impactSound}{impactSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ A\+Slidable\+Actor\+::impact\+Sound}
+
+Sound to play when slidable hits its constraint limits. N\+O\+TE\+: Default collision haptic feedback is used from the A\+V\+R\+Hand grabbing this component. Sound will not play if null. \mbox{\Hypertarget{class_a_slidable_actor_af385a0e616810ac9527eea8fade8ca24}\label{class_a_slidable_actor_af385a0e616810ac9527eea8fade8ca24}} 
+\index{ASlidableActor@{ASlidableActor}!impactSoundIntensity@{impactSoundIntensity}}
+\index{impactSoundIntensity@{impactSoundIntensity}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{impactSoundIntensity}{impactSoundIntensity}}
+{\footnotesize\ttfamily float A\+Slidable\+Actor\+::impact\+Sound\+Intensity}
+
+Intensity multiplier for the sound effect on this slidable actor on an impact. \mbox{\Hypertarget{class_a_slidable_actor_a88b3dec0177459dce4d7e6b3187f63f2}\label{class_a_slidable_actor_a88b3dec0177459dce4d7e6b3187f63f2}} 
+\index{ASlidableActor@{ASlidableActor}!interactableSettings@{interactableSettings}}
+\index{interactableSettings@{interactableSettings}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{interactableSettings}{interactableSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} A\+Slidable\+Actor\+::interactable\+Settings}
+
+The interfaces interactable settings for how to interact with VR controllers/hands. \mbox{\Hypertarget{class_a_slidable_actor_a52c8e4ccb0df101bbb7a85407e9f969b}\label{class_a_slidable_actor_a52c8e4ccb0df101bbb7a85407e9f969b}} 
+\index{ASlidableActor@{ASlidableActor}!OnGrabbedWhileLocked@{OnGrabbedWhileLocked}}
+\index{OnGrabbedWhileLocked@{OnGrabbedWhileLocked}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{OnGrabbedWhileLocked}{OnGrabbedWhileLocked}}
+{\footnotesize\ttfamily F\+Grabbed\+Locked A\+Slidable\+Actor\+::\+On\+Grabbed\+While\+Locked}
+
+Grabbed while locked to the hand, useful for triggering further events while grabbed. \mbox{\Hypertarget{class_a_slidable_actor_a5912bdd98b4273574075fab148dbbf20}\label{class_a_slidable_actor_a5912bdd98b4273574075fab148dbbf20}} 
+\index{ASlidableActor@{ASlidableActor}!OnMeshGrabbed@{OnMeshGrabbed}}
+\index{OnMeshGrabbed@{OnMeshGrabbed}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{OnMeshGrabbed}{OnMeshGrabbed}}
+{\footnotesize\ttfamily F\+Grabbed A\+Slidable\+Actor\+::\+On\+Mesh\+Grabbed}
+
+Mesh grabbed by hand. \mbox{\Hypertarget{class_a_slidable_actor_a4dc222c95977a07ca75f70e27bf597b8}\label{class_a_slidable_actor_a4dc222c95977a07ca75f70e27bf597b8}} 
+\index{ASlidableActor@{ASlidableActor}!OnMeshReleased@{OnMeshReleased}}
+\index{OnMeshReleased@{OnMeshReleased}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{OnMeshReleased}{OnMeshReleased}}
+{\footnotesize\ttfamily F\+Grabbed A\+Slidable\+Actor\+::\+On\+Mesh\+Released}
+
+Mesh released from hand. \mbox{\Hypertarget{class_a_slidable_actor_a90263a91ad917d032537c3248bc20043}\label{class_a_slidable_actor_a90263a91ad917d032537c3248bc20043}} 
+\index{ASlidableActor@{ASlidableActor}!OnReleasedWhileLocked@{OnReleasedWhileLocked}}
+\index{OnReleasedWhileLocked@{OnReleasedWhileLocked}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{OnReleasedWhileLocked}{OnReleasedWhileLocked}}
+{\footnotesize\ttfamily F\+Grabbed\+Locked A\+Slidable\+Actor\+::\+On\+Released\+While\+Locked}
+
+Released while locked to the hand, useful for triggering further events while grabbed. \mbox{\Hypertarget{class_a_slidable_actor_a3dade53b48c426decb54f448c850976f}\label{class_a_slidable_actor_a3dade53b48c426decb54f448c850976f}} 
+\index{ASlidableActor@{ASlidableActor}!pivot@{pivot}}
+\index{pivot@{pivot}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{pivot}{pivot}}
+{\footnotesize\ttfamily U\+Physics\+Constraint\+Component$\ast$ A\+Slidable\+Actor\+::pivot}
+
+Physics constraint to keep collisions active. \mbox{\Hypertarget{class_a_slidable_actor_a4ad3ac99184fc478457ad062c227026c}\label{class_a_slidable_actor_a4ad3ac99184fc478457ad062c227026c}} 
+\index{ASlidableActor@{ASlidableActor}!refferenceOffset@{refferenceOffset}}
+\index{refferenceOffset@{refferenceOffset}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{refferenceOffset}{refferenceOffset}}
+{\footnotesize\ttfamily F\+Vector A\+Slidable\+Actor\+::refference\+Offset}
+
+Reference position offset made visible to blueprint for finding constraint origin point from actors root location. \mbox{\Hypertarget{class_a_slidable_actor_af9cbef0ef76a02c815bb5aafc534a8ef}\label{class_a_slidable_actor_af9cbef0ef76a02c815bb5aafc534a8ef}} 
+\index{ASlidableActor@{ASlidableActor}!restitution@{restitution}}
+\index{restitution@{restitution}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{restitution}{restitution}}
+{\footnotesize\ttfamily float A\+Slidable\+Actor\+::restitution}
+
+Amount of velocity to keep after bouncing off something like the end of the constraint for example. \mbox{\Hypertarget{class_a_slidable_actor_ac113afa048a5a7d4eb7ba2f8c3139d76}\label{class_a_slidable_actor_ac113afa048a5a7d4eb7ba2f8c3139d76}} 
+\index{ASlidableActor@{ASlidableActor}!root@{root}}
+\index{root@{root}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily U\+Scene\+Component$\ast$ A\+Slidable\+Actor\+::root}
+
+Root component of the slidable. \mbox{\Hypertarget{class_a_slidable_actor_a5a0267927b96ce6e9f0d6175022c820e}\label{class_a_slidable_actor_a5a0267927b96ce6e9f0d6175022c820e}} 
+\index{ASlidableActor@{ASlidableActor}!simulatePhysics@{simulatePhysics}}
+\index{simulatePhysics@{simulatePhysics}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{simulatePhysics}{simulatePhysics}}
+{\footnotesize\ttfamily bool A\+Slidable\+Actor\+::simulate\+Physics}
+
+Is the physics constraint active on the mesh. \mbox{\Hypertarget{class_a_slidable_actor_a730210943dfcc31c2632af23bd6fa435}\label{class_a_slidable_actor_a730210943dfcc31c2632af23bd6fa435}} 
+\index{ASlidableActor@{ASlidableActor}!slidableAudio@{slidableAudio}}
+\index{slidableAudio@{slidableAudio}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{slidableAudio}{slidableAudio}}
+{\footnotesize\ttfamily U\+Audio\+Component$\ast$ A\+Slidable\+Actor\+::slidable\+Audio}
+
+Slidables audio component to play locking and dragging sounds. ~\newline
+ \mbox{\Hypertarget{class_a_slidable_actor_a053aa015af2353bd63235151722d3176}\label{class_a_slidable_actor_a053aa015af2353bd63235151722d3176}} 
+\index{ASlidableActor@{ASlidableActor}!slidableXDirection@{slidableXDirection}}
+\index{slidableXDirection@{slidableXDirection}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{slidableXDirection}{slidableXDirection}}
+{\footnotesize\ttfamily U\+Arrow\+Component$\ast$ A\+Slidable\+Actor\+::slidable\+X\+Direction}
+
+Arrow to point in the X-\/axis direction. \mbox{\Hypertarget{class_a_slidable_actor_ae06f171287d0d28d604647cc71beb4a4}\label{class_a_slidable_actor_ae06f171287d0d28d604647cc71beb4a4}} 
+\index{ASlidableActor@{ASlidableActor}!sliderLimit@{sliderLimit}}
+\index{sliderLimit@{sliderLimit}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{sliderLimit}{sliderLimit}}
+{\footnotesize\ttfamily F\+Vector A\+Slidable\+Actor\+::slider\+Limit}
+
+The max translation limit for each axis. \mbox{\Hypertarget{class_a_slidable_actor_a8f96d25ec7976e63965df01424011491}\label{class_a_slidable_actor_a8f96d25ec7976e63965df01424011491}} 
+\index{ASlidableActor@{ASlidableActor}!sliderRelativePosition@{sliderRelativePosition}}
+\index{sliderRelativePosition@{sliderRelativePosition}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{sliderRelativePosition}{sliderRelativePosition}}
+{\footnotesize\ttfamily F\+Vector A\+Slidable\+Actor\+::slider\+Relative\+Position}
+
+Current slider position relative to the actor position. Needed as simulating physics breaks parent relative locations. \mbox{\Hypertarget{class_a_slidable_actor_acf117b653b4e489218dceba822bc4ee4}\label{class_a_slidable_actor_acf117b653b4e489218dceba822bc4ee4}} 
+\index{ASlidableActor@{ASlidableActor}!slidingHapticEffect@{slidingHapticEffect}}
+\index{slidingHapticEffect@{slidingHapticEffect}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{slidingHapticEffect}{slidingHapticEffect}}
+{\footnotesize\ttfamily U\+Haptic\+Feedback\+Effect\+\_\+\+Base$\ast$ A\+Slidable\+Actor\+::sliding\+Haptic\+Effect}
+
+Haptic effect to play on hand when grabbed and rotating this component every haptic\+Rotation\+Delay. N\+O\+TE\+: Will not play haptic effect if this in null. \mbox{\Hypertarget{class_a_slidable_actor_ac99c7f2c5a0fa9fd1d69d61fda7cb99d}\label{class_a_slidable_actor_ac99c7f2c5a0fa9fd1d69d61fda7cb99d}} 
+\index{ASlidableActor@{ASlidableActor}!slidingMesh@{slidingMesh}}
+\index{slidingMesh@{slidingMesh}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{slidingMesh}{slidingMesh}}
+{\footnotesize\ttfamily U\+Primitive\+Component$\ast$ A\+Slidable\+Actor\+::sliding\+Mesh}
+
+Constrained sliding component. \mbox{\Hypertarget{class_a_slidable_actor_af2681caddb2aeb6a2ad9d5c01f9c853b}\label{class_a_slidable_actor_af2681caddb2aeb6a2ad9d5c01f9c853b}} 
+\index{ASlidableActor@{ASlidableActor}!slidingSound@{slidingSound}}
+\index{slidingSound@{slidingSound}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{slidingSound}{slidingSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ A\+Slidable\+Actor\+::sliding\+Sound}
+
+Sound to play when sliding this slidable. \mbox{\Hypertarget{class_a_slidable_actor_a71ac557957599ab5fc2e0fe3ada1a5b5}\label{class_a_slidable_actor_a71ac557957599ab5fc2e0fe3ada1a5b5}} 
+\index{ASlidableActor@{ASlidableActor}!targetComponent@{targetComponent}}
+\index{targetComponent@{targetComponent}!ASlidableActor@{ASlidableActor}}
+\doxysubsubsection{\texorpdfstring{targetComponent}{targetComponent}}
+{\footnotesize\ttfamily U\+Primitive\+Component$\ast$ A\+Slidable\+Actor\+::target\+Component}
+
+Target component used to check offset from hand\+Ref etc. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Slidable\+Actor.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Slidable\+Actor.\+cpp\end{DoxyCompactItemize}

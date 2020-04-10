@@ -1,0 +1,223 @@
+\hypertarget{class_u_snapping_rotatable_component}{}\doxysection{U\+Snapping\+Rotatable\+Component Class Reference}
+\label{class_u_snapping_rotatable_component}\index{USnappingRotatableComponent@{USnappingRotatableComponent}}
+
+
+{\ttfamily \#include $<$Snapping\+Rotatable\+Component.\+h$>$}
+
+Inheritance diagram for U\+Snapping\+Rotatable\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_snapping_rotatable_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_snapping_rotatable_component_aa7c6368de1d70241d106b77cf62be08b}{U\+Snapping\+Rotatable\+Component}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_snapping_rotatable_component_a0012201a7e16852bc022184dbaab906b}{Tick\+Component}} (float Delta\+Time, enum E\+Level\+Tick Tick\+Type, F\+Actor\+Component\+Tick\+Function $\ast$This\+Tick\+Function) override
+\item 
+void \mbox{\hyperlink{class_u_snapping_rotatable_component_aea0ae5530b6b859803f9989e5140f9c8}{Update\+Rotatable\+State}} ()
+\item 
+void \mbox{\hyperlink{class_u_snapping_rotatable_component_a398833e79bba392a2d3436ff95ab2923}{Overlap\+Begin}} (U\+Primitive\+Component $\ast$Overlapped\+Component, A\+Actor $\ast$Other\+Actor, U\+Primitive\+Component $\ast$Other\+Comp, int32 Other\+Body\+Index, bool b\+From\+Sweep, const F\+Hit\+Result \&Sweep\+Result)
+\item 
+void \mbox{\hyperlink{class_u_snapping_rotatable_component_a6fb937622b81ff815c61f4ad7560772c}{Force\+Snap}} (\mbox{\hyperlink{class_a_grabbable_actor}{A\+Grabbable\+Actor}} $\ast$actor\+To\+Snap)
+\item 
+void \mbox{\hyperlink{class_u_snapping_rotatable_component_ae136cee7180a329fb7308ce2601f88fb}{Force\+Release}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+Vector \mbox{\hyperlink{class_u_snapping_rotatable_component_a45642417f24f6f11873fbe3405ca6362}{location\+Offset}}
+\item 
+F\+Rotator \mbox{\hyperlink{class_u_snapping_rotatable_component_a7e598ee19278f690af8bc49ba73209ec}{rotation\+Offset}}
+\item 
+F\+Name \mbox{\hyperlink{class_u_snapping_rotatable_component_a227f462c1031eb4c8208050bb19acc64}{snapping\+Tag}}
+\item 
+A\+V\+R\+Hand $\ast$ \mbox{\hyperlink{class_u_snapping_rotatable_component_abbfa4a6c1c5c3b72fa0ea28642d73e49}{hand\+Regrab}}
+\item 
+\mbox{\hyperlink{class_u_rotatable_static_mesh}{U\+Rotatable\+Static\+Mesh}} $\ast$ \mbox{\hyperlink{class_u_snapping_rotatable_component_a627deeac4b03a9ccc350c80e35899bf8}{rotatable\+Mesh}}
+\item 
+\mbox{\hyperlink{class_a_grabbable_actor}{A\+Grabbable\+Actor}} $\ast$ \mbox{\hyperlink{class_u_snapping_rotatable_component_ad2989a807484c10c02c55e33d2ccbd3d}{snapped\+Grabbable}}
+\item 
+bool \mbox{\hyperlink{class_u_snapping_rotatable_component_acf9bf578084b2c16293ab9a4ae477aa9}{lock\+On\+Limit}}
+\item 
+float \mbox{\hyperlink{class_u_snapping_rotatable_component_a4f2ce3dd137bf5bf04315f9cc39aca81}{rotating\+Limit}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_u_snapping_rotatable_component_a7d170f8babbb73ba3c6a75e37bf104a9}{limit\+Reached\+Sound}}
+\item 
+U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_u_snapping_rotatable_component_a9e0f267b1a90223e0952b95eca97656b}{limit\+Reached\+Haptics}}
+\item 
+F\+Limit\+Reached \mbox{\hyperlink{class_u_snapping_rotatable_component_a05c1b2fa874a2c95ba22f766206b14db}{limit\+Reached}}
+\item 
+F\+On\+Rotating\+Comp\+Snapped \mbox{\hyperlink{class_u_snapping_rotatable_component_a39106777721902efa90cc4961539054f}{On\+Snap\+Connect}}
+\item 
+F\+On\+Rotating\+Comp\+Snapped \mbox{\hyperlink{class_u_snapping_rotatable_component_a52346710209f1c2150f460f633826781}{On\+Snap\+Disconnect}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_snapping_rotatable_component_a7821fe1d68628601da505fa6f9cfa767}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_u_snapping_rotatable_component_af0320504de738ac59c31b744929bb3b1}{Init\+Rotatable\+Component}} ()
+\item 
+void \mbox{\hyperlink{class_u_snapping_rotatable_component_a5055d7b2c6c2adda5719d616d78fa9fd}{On\+Rotatable\+Locked}} (float angle, \mbox{\hyperlink{class_u_rotatable_static_mesh}{U\+Rotatable\+Static\+Mesh}} $\ast$rotatable)
+\item 
+void \mbox{\hyperlink{class_u_snapping_rotatable_component_a3453cfd1927065e30b2b123d41438d8a}{On\+Grabbable\+Grabbed}} (A\+V\+R\+Hand $\ast$hand, U\+Primitive\+Component $\ast$comp\+Pressed)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class designed to snap a grabbable actor to a rotatable mesh that can be twisted to a given rotation to unlock things etc. For example its good for keys in locks. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_snapping_rotatable_component_aa7c6368de1d70241d106b77cf62be08b}\label{class_u_snapping_rotatable_component_aa7c6368de1d70241d106b77cf62be08b}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{USnappingRotatableComponent()}{USnappingRotatableComponent()}}
+{\footnotesize\ttfamily U\+Snapping\+Rotatable\+Component\+::\+U\+Snapping\+Rotatable\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_snapping_rotatable_component_a7821fe1d68628601da505fa6f9cfa767}\label{class_u_snapping_rotatable_component_a7821fe1d68628601da505fa6f9cfa767}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void U\+Snapping\+Rotatable\+Component\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Timer to check the state of the hand relative to this rotatable interactable. Level start. \mbox{\Hypertarget{class_u_snapping_rotatable_component_ae136cee7180a329fb7308ce2601f88fb}\label{class_u_snapping_rotatable_component_ae136cee7180a329fb7308ce2601f88fb}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!ForceRelease@{ForceRelease}}
+\index{ForceRelease@{ForceRelease}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{ForceRelease()}{ForceRelease()}}
+{\footnotesize\ttfamily void U\+Snapping\+Rotatable\+Component\+::\+Force\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function used to force snap release a grabbable from this component. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a6fb937622b81ff815c61f4ad7560772c}\label{class_u_snapping_rotatable_component_a6fb937622b81ff815c61f4ad7560772c}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!ForceSnap@{ForceSnap}}
+\index{ForceSnap@{ForceSnap}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{ForceSnap()}{ForceSnap()}}
+{\footnotesize\ttfamily void U\+Snapping\+Rotatable\+Component\+::\+Force\+Snap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_grabbable_actor}{A\+Grabbable\+Actor}} $\ast$}]{actor\+To\+Snap }\end{DoxyParamCaption})}
+
+Function used to force snap a component into this snapping component. N\+O\+TE\+: So components can be snapped on begin\+Play. For example having a key start in a lock without someone having to put it there. \mbox{\Hypertarget{class_u_snapping_rotatable_component_af0320504de738ac59c31b744929bb3b1}\label{class_u_snapping_rotatable_component_af0320504de738ac59c31b744929bb3b1}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!InitRotatableComponent@{InitRotatableComponent}}
+\index{InitRotatableComponent@{InitRotatableComponent}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{InitRotatableComponent()}{InitRotatableComponent()}}
+{\footnotesize\ttfamily void U\+Snapping\+Rotatable\+Component\+::\+Init\+Rotatable\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initialise the rotatable component to connect to on snap connected. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a3453cfd1927065e30b2b123d41438d8a}\label{class_u_snapping_rotatable_component_a3453cfd1927065e30b2b123d41438d8a}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!OnGrabbableGrabbed@{OnGrabbableGrabbed}}
+\index{OnGrabbableGrabbed@{OnGrabbableGrabbed}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{OnGrabbableGrabbed()}{OnGrabbableGrabbed()}}
+{\footnotesize\ttfamily void U\+Snapping\+Rotatable\+Component\+::\+On\+Grabbable\+Grabbed (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand,  }\item[{U\+Primitive\+Component $\ast$}]{comp\+Pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Called when the snapped\+Grabbable is grabbed by a hand. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a5055d7b2c6c2adda5719d616d78fa9fd}\label{class_u_snapping_rotatable_component_a5055d7b2c6c2adda5719d616d78fa9fd}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!OnRotatableLocked@{OnRotatableLocked}}
+\index{OnRotatableLocked@{OnRotatableLocked}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{OnRotatableLocked()}{OnRotatableLocked()}}
+{\footnotesize\ttfamily void U\+Snapping\+Rotatable\+Component\+::\+On\+Rotatable\+Locked (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{\mbox{\hyperlink{class_u_rotatable_static_mesh}{U\+Rotatable\+Static\+Mesh}} $\ast$}]{rotatable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function called if in twisting snap mode and a twistable is snapped in then locked while snapped in. @\+Param angle, The angle that the rotatable mesh was locked. @\+Param rotatable, The rotatable mesh that was locked. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a398833e79bba392a2d3436ff95ab2923}\label{class_u_snapping_rotatable_component_a398833e79bba392a2d3436ff95ab2923}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!OverlapBegin@{OverlapBegin}}
+\index{OverlapBegin@{OverlapBegin}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{OverlapBegin()}{OverlapBegin()}}
+{\footnotesize\ttfamily void U\+Snapping\+Rotatable\+Component\+::\+Overlap\+Begin (\begin{DoxyParamCaption}\item[{U\+Primitive\+Component $\ast$}]{Overlapped\+Component,  }\item[{A\+Actor $\ast$}]{Other\+Actor,  }\item[{U\+Primitive\+Component $\ast$}]{Other\+Comp,  }\item[{int32}]{Other\+Body\+Index,  }\item[{bool}]{b\+From\+Sweep,  }\item[{const F\+Hit\+Result \&}]{Sweep\+Result }\end{DoxyParamCaption})}
+
+This components overlap begin event. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a0012201a7e16852bc022184dbaab906b}\label{class_u_snapping_rotatable_component_a0012201a7e16852bc022184dbaab906b}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!TickComponent@{TickComponent}}
+\index{TickComponent@{TickComponent}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{TickComponent()}{TickComponent()}}
+{\footnotesize\ttfamily void U\+Snapping\+Rotatable\+Component\+::\+Tick\+Component (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{enum E\+Level\+Tick}]{Tick\+Type,  }\item[{F\+Actor\+Component\+Tick\+Function $\ast$}]{This\+Tick\+Function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Frame. \mbox{\Hypertarget{class_u_snapping_rotatable_component_aea0ae5530b6b859803f9989e5140f9c8}\label{class_u_snapping_rotatable_component_aea0ae5530b6b859803f9989e5140f9c8}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!UpdateRotatableState@{UpdateRotatableState}}
+\index{UpdateRotatableState@{UpdateRotatableState}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{UpdateRotatableState()}{UpdateRotatableState()}}
+{\footnotesize\ttfamily void U\+Snapping\+Rotatable\+Component\+::\+Update\+Rotatable\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function to update any changes in hand rotation relative to the rotatable. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_snapping_rotatable_component_abbfa4a6c1c5c3b72fa0ea28642d73e49}\label{class_u_snapping_rotatable_component_abbfa4a6c1c5c3b72fa0ea28642d73e49}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!handRegrab@{handRegrab}}
+\index{handRegrab@{handRegrab}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{handRegrab}{handRegrab}}
+{\footnotesize\ttfamily A\+V\+R\+Hand$\ast$ U\+Snapping\+Rotatable\+Component\+::hand\+Regrab}
+
+The hand that just released the rotatable or grabbable actor. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a05c1b2fa874a2c95ba22f766206b14db}\label{class_u_snapping_rotatable_component_a05c1b2fa874a2c95ba22f766206b14db}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!limitReached@{limitReached}}
+\index{limitReached@{limitReached}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{limitReached}{limitReached}}
+{\footnotesize\ttfamily F\+Limit\+Reached U\+Snapping\+Rotatable\+Component\+::limit\+Reached}
+
+Called when the twistable has been inserted and twisted to the correct limit. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a9e0f267b1a90223e0952b95eca97656b}\label{class_u_snapping_rotatable_component_a9e0f267b1a90223e0952b95eca97656b}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!limitReachedHaptics@{limitReachedHaptics}}
+\index{limitReachedHaptics@{limitReachedHaptics}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{limitReachedHaptics}{limitReachedHaptics}}
+{\footnotesize\ttfamily U\+Haptic\+Feedback\+Effect\+\_\+\+Base$\ast$ U\+Snapping\+Rotatable\+Component\+::limit\+Reached\+Haptics}
+
+Haptic effect to use when the rotatable mesh\textquotesingle{}s limit is reached. N\+O\+TE\+: If nullptr then no haptic event will be played. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a7d170f8babbb73ba3c6a75e37bf104a9}\label{class_u_snapping_rotatable_component_a7d170f8babbb73ba3c6a75e37bf104a9}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!limitReachedSound@{limitReachedSound}}
+\index{limitReachedSound@{limitReachedSound}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{limitReachedSound}{limitReachedSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ U\+Snapping\+Rotatable\+Component\+::limit\+Reached\+Sound}
+
+Sound to play when the rotatable mesh\textquotesingle{}s limit is reached. If nullptr, no unlocking sound will be played. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a45642417f24f6f11873fbe3405ca6362}\label{class_u_snapping_rotatable_component_a45642417f24f6f11873fbe3405ca6362}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!locationOffset@{locationOffset}}
+\index{locationOffset@{locationOffset}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{locationOffset}{locationOffset}}
+{\footnotesize\ttfamily F\+Vector U\+Snapping\+Rotatable\+Component\+::location\+Offset}
+
+The location offset from this box components center location to snap the grabbable to. \mbox{\Hypertarget{class_u_snapping_rotatable_component_acf9bf578084b2c16293ab9a4ae477aa9}\label{class_u_snapping_rotatable_component_acf9bf578084b2c16293ab9a4ae477aa9}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!lockOnLimit@{lockOnLimit}}
+\index{lockOnLimit@{lockOnLimit}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{lockOnLimit}{lockOnLimit}}
+{\footnotesize\ttfamily bool U\+Snapping\+Rotatable\+Component\+::lock\+On\+Limit}
+
+Lock at the rotatable\textquotesingle{}s limit. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a39106777721902efa90cc4961539054f}\label{class_u_snapping_rotatable_component_a39106777721902efa90cc4961539054f}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!OnSnapConnect@{OnSnapConnect}}
+\index{OnSnapConnect@{OnSnapConnect}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{OnSnapConnect}{OnSnapConnect}}
+{\footnotesize\ttfamily F\+On\+Rotating\+Comp\+Snapped U\+Snapping\+Rotatable\+Component\+::\+On\+Snap\+Connect}
+
+Called when something is snapped. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a52346710209f1c2150f460f633826781}\label{class_u_snapping_rotatable_component_a52346710209f1c2150f460f633826781}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!OnSnapDisconnect@{OnSnapDisconnect}}
+\index{OnSnapDisconnect@{OnSnapDisconnect}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{OnSnapDisconnect}{OnSnapDisconnect}}
+{\footnotesize\ttfamily F\+On\+Rotating\+Comp\+Snapped U\+Snapping\+Rotatable\+Component\+::\+On\+Snap\+Disconnect}
+
+Called when something is unsnapped. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a627deeac4b03a9ccc350c80e35899bf8}\label{class_u_snapping_rotatable_component_a627deeac4b03a9ccc350c80e35899bf8}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!rotatableMesh@{rotatableMesh}}
+\index{rotatableMesh@{rotatableMesh}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{rotatableMesh}{rotatableMesh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_u_rotatable_static_mesh}{U\+Rotatable\+Static\+Mesh}}$\ast$ U\+Snapping\+Rotatable\+Component\+::rotatable\+Mesh}
+
+The intialised rotatable static mesh. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a4f2ce3dd137bf5bf04315f9cc39aca81}\label{class_u_snapping_rotatable_component_a4f2ce3dd137bf5bf04315f9cc39aca81}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!rotatingLimit@{rotatingLimit}}
+\index{rotatingLimit@{rotatingLimit}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{rotatingLimit}{rotatingLimit}}
+{\footnotesize\ttfamily float U\+Snapping\+Rotatable\+Component\+::rotating\+Limit}
+
+The current rotational limit that the rotatable static mesh will move in. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a7e598ee19278f690af8bc49ba73209ec}\label{class_u_snapping_rotatable_component_a7e598ee19278f690af8bc49ba73209ec}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!rotationOffset@{rotationOffset}}
+\index{rotationOffset@{rotationOffset}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{rotationOffset}{rotationOffset}}
+{\footnotesize\ttfamily F\+Rotator U\+Snapping\+Rotatable\+Component\+::rotation\+Offset}
+
+The rotation offset from this box components rotation to snap the grabbable to. \mbox{\Hypertarget{class_u_snapping_rotatable_component_ad2989a807484c10c02c55e33d2ccbd3d}\label{class_u_snapping_rotatable_component_ad2989a807484c10c02c55e33d2ccbd3d}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!snappedGrabbable@{snappedGrabbable}}
+\index{snappedGrabbable@{snappedGrabbable}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{snappedGrabbable}{snappedGrabbable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_grabbable_actor}{A\+Grabbable\+Actor}}$\ast$ U\+Snapping\+Rotatable\+Component\+::snapped\+Grabbable}
+
+The current grabbable snapped to the snapping component. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a227f462c1031eb4c8208050bb19acc64}\label{class_u_snapping_rotatable_component_a227f462c1031eb4c8208050bb19acc64}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!snappingTag@{snappingTag}}
+\index{snappingTag@{snappingTag}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{snappingTag}{snappingTag}}
+{\footnotesize\ttfamily F\+Name U\+Snapping\+Rotatable\+Component\+::snapping\+Tag}
+
+The tag required on a grabbable actor to be snapped into this component. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Snapping\+Rotatable\+Component.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Snapping\+Rotatable\+Component.\+cpp\end{DoxyCompactItemize}

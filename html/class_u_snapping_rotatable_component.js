@@ -1,0 +1,26 @@
+var class_u_snapping_rotatable_component =
+[
+    [ "USnappingRotatableComponent", "class_u_snapping_rotatable_component.html#aa7c6368de1d70241d106b77cf62be08b", null ],
+    [ "BeginPlay", "class_u_snapping_rotatable_component.html#a7821fe1d68628601da505fa6f9cfa767", null ],
+    [ "ForceRelease", "class_u_snapping_rotatable_component.html#ae136cee7180a329fb7308ce2601f88fb", null ],
+    [ "ForceSnap", "class_u_snapping_rotatable_component.html#a6fb937622b81ff815c61f4ad7560772c", null ],
+    [ "InitRotatableComponent", "class_u_snapping_rotatable_component.html#af0320504de738ac59c31b744929bb3b1", null ],
+    [ "OnGrabbableGrabbed", "class_u_snapping_rotatable_component.html#a3453cfd1927065e30b2b123d41438d8a", null ],
+    [ "OnRotatableLocked", "class_u_snapping_rotatable_component.html#a5055d7b2c6c2adda5719d616d78fa9fd", null ],
+    [ "OverlapBegin", "class_u_snapping_rotatable_component.html#a398833e79bba392a2d3436ff95ab2923", null ],
+    [ "TickComponent", "class_u_snapping_rotatable_component.html#a0012201a7e16852bc022184dbaab906b", null ],
+    [ "UpdateRotatableState", "class_u_snapping_rotatable_component.html#aea0ae5530b6b859803f9989e5140f9c8", null ],
+    [ "handRegrab", "class_u_snapping_rotatable_component.html#abbfa4a6c1c5c3b72fa0ea28642d73e49", null ],
+    [ "limitReached", "class_u_snapping_rotatable_component.html#a05c1b2fa874a2c95ba22f766206b14db", null ],
+    [ "limitReachedHaptics", "class_u_snapping_rotatable_component.html#a9e0f267b1a90223e0952b95eca97656b", null ],
+    [ "limitReachedSound", "class_u_snapping_rotatable_component.html#a7d170f8babbb73ba3c6a75e37bf104a9", null ],
+    [ "locationOffset", "class_u_snapping_rotatable_component.html#a45642417f24f6f11873fbe3405ca6362", null ],
+    [ "lockOnLimit", "class_u_snapping_rotatable_component.html#acf9bf578084b2c16293ab9a4ae477aa9", null ],
+    [ "OnSnapConnect", "class_u_snapping_rotatable_component.html#a39106777721902efa90cc4961539054f", null ],
+    [ "OnSnapDisconnect", "class_u_snapping_rotatable_component.html#a52346710209f1c2150f460f633826781", null ],
+    [ "rotatableMesh", "class_u_snapping_rotatable_component.html#a627deeac4b03a9ccc350c80e35899bf8", null ],
+    [ "rotatingLimit", "class_u_snapping_rotatable_component.html#a4f2ce3dd137bf5bf04315f9cc39aca81", null ],
+    [ "rotationOffset", "class_u_snapping_rotatable_component.html#a7e598ee19278f690af8bc49ba73209ec", null ],
+    [ "snappedGrabbable", "class_u_snapping_rotatable_component.html#ad2989a807484c10c02c55e33d2ccbd3d", null ],
+    [ "snappingTag", "class_u_snapping_rotatable_component.html#a227f462c1031eb4c8208050bb19acc64", null ]
+];

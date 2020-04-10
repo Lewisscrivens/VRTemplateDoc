@@ -1,0 +1,594 @@
+\hypertarget{class_a_rotatable_actor}{}\doxysection{A\+Rotatable\+Actor Class Reference}
+\label{class_a_rotatable_actor}\index{ARotatableActor@{ARotatableActor}}
+
+
+{\ttfamily \#include $<$Rotatable\+Actor.\+h$>$}
+
+Inheritance diagram for A\+Rotatable\+Actor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_rotatable_actor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_rotatable_actor_a94732aece3847fa563539537425ba97e}{A\+Rotatable\+Actor}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_rotatable_actor_ab1167d798896b0578a2cac474e59b57c}{Tick}} (float Delta\+Time) override
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_a29a43e0cbc1a9c1bb2fc50ac25c796a8}{Set\+Rotatable\+Rotation}} (float new\+Rotation, bool use\+Timeine=false, bool lock\+At\+New\+Rotation=false)
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_ad425564fbfe2f683c4532a043d3bfdbe}{Returning}} (float val)
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_a1941809fdc2ba70169223b70c69fe2e1}{Returning\+End}} ()
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_a5dadf788b4e42355d05eeb03e85335f0}{Interpolate\+To\+Locked\+Rotation}} (float locked\+Rotation)
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_a0e0e5e06db007d923f4d29c54d9c9ff9}{Lock}} (float locking\+Angle)
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_ab5c7d624e74b899927652c8fea1aa4d7}{Unlock}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_rotatable_actor_a43ef39647dd8166f915121463ede98bb}{Grab\+Pressed\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_rotatable_actor_a7700d1bbd8ed36dbb57923948f85cb16}{Grab\+Released\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_rotatable_actor_ad1b9063adc83239eccb24a001432f3b1}{Grabbed\+While\+Locked\+\_\+\+Implementation}} () override
+\item 
+virtual void \mbox{\hyperlink{class_a_rotatable_actor_aeec31eb1ebb1caea158bc97a3450cd0e}{Dragging\+\_\+\+Implementation}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{class_a_rotatable_actor_a5c684a60caa61f13c58d06fa20423a19}{Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_rotatable_actor_a75077d4872020117ca66da7b7c168b30}{End\+Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_a_rotatable_actor_a718578f6b76e73672eaae2d3fd2bbf61}{Get\+Interface\+Settings\+\_\+\+Implementation}} () override
+\item 
+\mbox{\Hypertarget{class_a_rotatable_actor_a16eb6d7eb13e155f92d71a06b4b91f88}\label{class_a_rotatable_actor_a16eb6d7eb13e155f92d71a06b4b91f88}} 
+virtual void {\bfseries Set\+Interface\+Settings\+\_\+\+Implementation} (\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} new\+Interface\+Settings) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\+Box\+Component $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_a3be3c0c28a458798a64999bf253721a3}{rotator}}
+\item 
+U\+Arrow\+Component $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_ae6a6ba15dea33e12f9b6738da7ab2f65}{rotation\+Start}}
+\item 
+U\+Arrow\+Component $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_a5c00bc4f2c13d7a05df36c2d87b4578d}{rotation\+Axis}}
+\item 
+U\+Physics\+Constraint\+Component $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_a6ca225b4a6d5781cdd08ffac872d9c8b}{pivot}}
+\item 
+U\+Audio\+Component $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_ae25bce76b143266ae8c06e47bc667550}{rotator\+Audio}}
+\item 
+A\+V\+R\+Hand $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_a7e4dbf3c5fb719de7acb64d92fc3b755}{hand\+Ref}}
+\item 
+E\+Rotate\+Mode \mbox{\hyperlink{class_a_rotatable_actor_af7f86bce827a133bae33059587dc9da8}{rotate\+Mode}}
+\item 
+bool \mbox{\hyperlink{class_a_rotatable_actor_a12836dda2b5eb7306bc2ef59d898ee0c}{simulate\+Physics}}
+\item 
+bool \mbox{\hyperlink{class_a_rotatable_actor_a326f7c233cbacbcf61f6d077e1ecfd50}{release\+On\+Over\+Rotation}}
+\item 
+U\+Curve\+Float $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_af52021553f564e0bb2188059bb1231f7}{return\+Curve}}
+\item 
+U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_ab13441b2b732e33957768f169976b2ef}{lock\+Haptic\+Effect}}
+\item 
+U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_ac8f00fdd70fb0f433fc9d72e785301bf}{rotating\+Haptic\+Effect}}
+\item 
+float \mbox{\hyperlink{class_a_rotatable_actor_aaaef498327e00e296a7d4c2418ab5f56}{haptic\+Rotation\+Delay}}
+\item 
+float \mbox{\hyperlink{class_a_rotatable_actor_a8150155665ca5cb78397107a92313096}{haptic\+Intensity\+Multiplier}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_a1057cae675b1e28047180506baf57df2}{rotating\+Sound}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_a88b226a985b595f6450b28c85a3827ac}{lock\+Sound}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_a5bb91d6a6452333023ec3e582b43514b}{impact\+Sound}}
+\item 
+bool \mbox{\hyperlink{class_a_rotatable_actor_a8d833ca5819095496fe62ca983b7c2e1}{lockable}}
+\item 
+bool \mbox{\hyperlink{class_a_rotatable_actor_a0b20b1176225fd6246f2e0faed46d8a2}{locked}}
+\item 
+bool \mbox{\hyperlink{class_a_rotatable_actor_af7ce3abc65d93e271855f047db06e86b}{lock\+While\+Grabbed}}
+\item 
+bool \mbox{\hyperlink{class_a_rotatable_actor_a8b0e908d1d7cd8bfa32065a378ea6804}{grab\+While\+Locked}}
+\item 
+float \mbox{\hyperlink{class_a_rotatable_actor_a1b1b59f0006f99689377b5f450568616}{locking\+Distance}}
+\item 
+float \mbox{\hyperlink{class_a_rotatable_actor_a688488e1fb5ec742c7049892651f1b62}{unlocking\+Distance}}
+\item 
+T\+Array$<$ float $>$ \mbox{\hyperlink{class_a_rotatable_actor_ab03686b406704a104ee8d5dd7443fd9f}{locking\+Points}}
+\item 
+float \mbox{\hyperlink{class_a_rotatable_actor_a9782cbfc64b4b82c740798de6357a808}{start\+Rotation}}
+\item 
+float \mbox{\hyperlink{class_a_rotatable_actor_a65ba121d3650133e12f56ab732db2e60}{rotation\+Limit}}
+\item 
+float \mbox{\hyperlink{class_a_rotatable_actor_aea9ba9262476d74f2f59338f16f3910b}{over\+Rotation\+Limit}}
+\item 
+float \mbox{\hyperlink{class_a_rotatable_actor_ab3174395d9594b1b498f05aa1b042897}{friction}}
+\item 
+float \mbox{\hyperlink{class_a_rotatable_actor_a1e748df968528d56799c52f51084563b}{current\+Relative\+Angle}}
+\item 
+float \mbox{\hyperlink{class_a_rotatable_actor_adcea67723aa327b1289d72315df6b781}{cumulative\+Angle}}
+\item 
+int \mbox{\hyperlink{class_a_rotatable_actor_a7c6eb93e1a76ce271d26120045cabb73}{revolution\+Count}}
+\item 
+bool \mbox{\hyperlink{class_a_rotatable_actor_aecf48fa7de4cfeba25a972a55170636a}{is\+Returning}}
+\item 
+bool \mbox{\hyperlink{class_a_rotatable_actor_afb43b6254e45ee3f29649c86922b8edc}{debug}}
+\item 
+\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_a_rotatable_actor_a1f7e0d99444b315ba199df6825cab838}{interactable\+Settings}}
+\item 
+U\+Scene\+Component $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_a6d6a35948cf03faacafe20b8d0fcad32}{grab\+Location}}
+\item 
+\mbox{\hyperlink{class_u_simple_timeline}{U\+Simple\+Timeline}} $\ast$ \mbox{\hyperlink{class_a_rotatable_actor_a103ea845edfce7514e5c86485d108745}{return\+Timeline}}
+\item 
+F\+Grabbed \mbox{\hyperlink{class_a_rotatable_actor_a3cd6a20f8333f971abd9baaba0846f5d}{On\+Mesh\+Grabbed}}
+\item 
+F\+Grabbed \mbox{\hyperlink{class_a_rotatable_actor_a9fc2007240d6eb45f31bea848227afe2}{On\+Mesh\+Released}}
+\item 
+F\+On\+Rotatable\+Lock \mbox{\hyperlink{class_a_rotatable_actor_a5beeb6ceec45b1a305908f6cdfa9b6e7}{On\+Rotatable\+Lock}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_rotatable_actor_ad239826df65d27d81781601307013dcb}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_a739fb3eac84f34826dde5bf543a044f5}{Update\+Constraint\+Mode}} ()
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_aaa0da0d3086a7df162c5f187c7fca116}{Update\+Constraint}} (E\+Constraint\+State state)
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_aae791ec49ed589af995d8640488e180d}{Update\+Constraint\+Refference}} (float constraint\+Angle)
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_a707c941b9de20af111d6752551d360c8}{Update\+Grabbed\+Rotation}} ()
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_a37eb653556585f8154c350efb0a3856a}{Update\+Hand\+Grab\+Distance}} ()
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_a716e21e07b97415758d7a99aff535107}{Update\+Rotatable}} (float Delta\+Time)
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_a2388de4df4eadf7fe1e0437ad5677586}{Update\+Audio\+And\+Haptics}} ()
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_ad853a437521a0212e2c9275af281744f}{Update\+Rotatable\+Lock}} ()
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_a9f82c6115d019b6dc14107aefb203e0d}{Update\+Rotation}} ()
+\item 
+void \mbox{\hyperlink{class_a_rotatable_actor_afa627a29da8076fe9335f87ce93c7479}{Spawn\+Grab\+Location}} (U\+Primitive\+Component $\ast$to\+Attach, F\+Vector location)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Mixture between physics constraint and static rotation to allow angles greater than 180 degrees. N\+O\+TE\+: Pivot in place needs to have collision enabled with everything ignored for it to work correctly when created physics bodies for this constrained rotatable. N\+O\+TE\+: Grabbable rotating component must be a child of the rotatable box component and have a \char`\"{}\+Grabbable\char`\"{} tag. N\+O\+TE\+: This class is best suited to things that need a rotation limit above 180 degrees and need physical collisions like a door etc. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_rotatable_actor_a94732aece3847fa563539537425ba97e}\label{class_a_rotatable_actor_a94732aece3847fa563539537425ba97e}} 
+\index{ARotatableActor@{ARotatableActor}!ARotatableActor@{ARotatableActor}}
+\index{ARotatableActor@{ARotatableActor}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{ARotatableActor()}{ARotatableActor()}}
+{\footnotesize\ttfamily A\+Rotatable\+Actor\+::\+A\+Rotatable\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_rotatable_actor_ad239826df65d27d81781601307013dcb}\label{class_a_rotatable_actor_ad239826df65d27d81781601307013dcb}} 
+\index{ARotatableActor@{ARotatableActor}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Locking interpolation timer. Level start. \mbox{\Hypertarget{class_a_rotatable_actor_aeec31eb1ebb1caea158bc97a3450cd0e}\label{class_a_rotatable_actor_aeec31eb1ebb1caea158bc97a3450cd0e}} 
+\index{ARotatableActor@{ARotatableActor}!Dragging\_Implementation@{Dragging\_Implementation}}
+\index{Dragging\_Implementation@{Dragging\_Implementation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{Dragging\_Implementation()}{Dragging\_Implementation()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Dragging\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ticking function that is ran while an interactable is grabbed. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae97908dd8838ff7157fdf8d61aeae1e6}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_rotatable_actor_a75077d4872020117ca66da7b7c168b30}\label{class_a_rotatable_actor_a75077d4872020117ca66da7b7c168b30}} 
+\index{ARotatableActor@{ARotatableActor}!EndOverlapping\_Implementation@{EndOverlapping\_Implementation}}
+\index{EndOverlapping\_Implementation@{EndOverlapping\_Implementation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{EndOverlapping\_Implementation()}{EndOverlapping\_Implementation()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+End\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed is removed. N\+O\+TE\+: Handles un-\/highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a4f3dfa15eb379b4c9fd7f2dbe3aca9bd}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_rotatable_actor_a718578f6b76e73672eaae2d3fd2bbf61}\label{class_a_rotatable_actor_a718578f6b76e73672eaae2d3fd2bbf61}} 
+\index{ARotatableActor@{ARotatableActor}!GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}}
+\index{GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{GetInterfaceSettings\_Implementation()}{GetInterfaceSettings\_Implementation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} A\+Rotatable\+Actor\+::\+Get\+Interface\+Settings\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get and set functions to allow changes from blueprint. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a445029683d12cb13b8bddff6dd093993}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_rotatable_actor_ad1b9063adc83239eccb24a001432f3b1}\label{class_a_rotatable_actor_ad1b9063adc83239eccb24a001432f3b1}} 
+\index{ARotatableActor@{ARotatableActor}!GrabbedWhileLocked\_Implementation@{GrabbedWhileLocked\_Implementation}}
+\index{GrabbedWhileLocked\_Implementation@{GrabbedWhileLocked\_Implementation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{GrabbedWhileLocked\_Implementation()}{GrabbedWhileLocked\_Implementation()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Grabbed\+While\+Locked\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran if the grabbable is locked to the hand and the trigger is pressed all the way down. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a793723aaeaf88c1d3b225aa9464dc746}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_rotatable_actor_a43ef39647dd8166f915121463ede98bb}\label{class_a_rotatable_actor_a43ef39647dd8166f915121463ede98bb}} 
+\index{ARotatableActor@{ARotatableActor}!GrabPressed\_Implementation@{GrabPressed\_Implementation}}
+\index{GrabPressed\_Implementation@{GrabPressed\_Implementation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{GrabPressed\_Implementation()}{GrabPressed\_Implementation()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Grab\+Pressed\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Implementation of the hands interface. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a904db7e568a399ef503d68e40cf4d4eb}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_rotatable_actor_a7700d1bbd8ed36dbb57923948f85cb16}\label{class_a_rotatable_actor_a7700d1bbd8ed36dbb57923948f85cb16}} 
+\index{ARotatableActor@{ARotatableActor}!GrabReleased\_Implementation@{GrabReleased\_Implementation}}
+\index{GrabReleased\_Implementation@{GrabReleased\_Implementation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{GrabReleased\_Implementation()}{GrabReleased\_Implementation()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Grab\+Released\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran when the trigger is released. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae50003621758b8836e206bff33003ab8}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_rotatable_actor_a5dadf788b4e42355d05eeb03e85335f0}\label{class_a_rotatable_actor_a5dadf788b4e42355d05eeb03e85335f0}} 
+\index{ARotatableActor@{ARotatableActor}!InterpolateToLockedRotation@{InterpolateToLockedRotation}}
+\index{InterpolateToLockedRotation@{InterpolateToLockedRotation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{InterpolateToLockedRotation()}{InterpolateToLockedRotation()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Interpolate\+To\+Locked\+Rotation (\begin{DoxyParamCaption}\item[{float}]{locked\+Rotation }\end{DoxyParamCaption})}
+
+Rotatable locked rotation interpolation function. \mbox{\Hypertarget{class_a_rotatable_actor_a0e0e5e06db007d923f4d29c54d9c9ff9}\label{class_a_rotatable_actor_a0e0e5e06db007d923f4d29c54d9c9ff9}} 
+\index{ARotatableActor@{ARotatableActor}!Lock@{Lock}}
+\index{Lock@{Lock}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{Lock()}{Lock()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Lock (\begin{DoxyParamCaption}\item[{float}]{locking\+Angle }\end{DoxyParamCaption})}
+
+Lock this rotatable if it is not already locked. @\+Param locking\+Angle, The angle to lock the rotatable at. \mbox{\Hypertarget{class_a_rotatable_actor_a5c684a60caa61f13c58d06fa20423a19}\label{class_a_rotatable_actor_a5c684a60caa61f13c58d06fa20423a19}} 
+\index{ARotatableActor@{ARotatableActor}!Overlapping\_Implementation@{Overlapping\_Implementation}}
+\index{Overlapping\_Implementation@{Overlapping\_Implementation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{Overlapping\_Implementation()}{Overlapping\_Implementation()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed. N\+O\+TE\+: Handles highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a06805a0a6903417322d5bda009bf8fa4}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_a_rotatable_actor_ad425564fbfe2f683c4532a043d3bfdbe}\label{class_a_rotatable_actor_ad425564fbfe2f683c4532a043d3bfdbe}} 
+\index{ARotatableActor@{ARotatableActor}!Returning@{Returning}}
+\index{Returning@{Returning}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{Returning()}{Returning()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Returning (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})}
+
+Callback function for the time line. @\+Param val, current curve float value to drive rotation speeds while lerping. \mbox{\Hypertarget{class_a_rotatable_actor_a1941809fdc2ba70169223b70c69fe2e1}\label{class_a_rotatable_actor_a1941809fdc2ba70169223b70c69fe2e1}} 
+\index{ARotatableActor@{ARotatableActor}!ReturningEnd@{ReturningEnd}}
+\index{ReturningEnd@{ReturningEnd}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{ReturningEnd()}{ReturningEnd()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Returning\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+End function for the time line, called when the Returning function is over or ended. \mbox{\Hypertarget{class_a_rotatable_actor_a29a43e0cbc1a9c1bb2fc50ac25c796a8}\label{class_a_rotatable_actor_a29a43e0cbc1a9c1bb2fc50ac25c796a8}} 
+\index{ARotatableActor@{ARotatableActor}!SetRotatableRotation@{SetRotatableRotation}}
+\index{SetRotatableRotation@{SetRotatableRotation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{SetRotatableRotation()}{SetRotatableRotation()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Set\+Rotatable\+Rotation (\begin{DoxyParamCaption}\item[{float}]{new\+Rotation,  }\item[{bool}]{use\+Timeine = {\ttfamily false},  }\item[{bool}]{lock\+At\+New\+Rotation = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Callback function for the time line. @\+Param new\+Rotation, The new rotation to set. @\+Param use\+Timeine, Adjust rotation using a time line and curve or instantly set the rotation. @\+Param lock\+At\+New\+Rotation, Should lock at new rotation. Enables lockable variable if true. N\+O\+TE\+: If lock\+At\+New\+Rotation is true and grab\+While\+Locked is false this rotatable will not be grabbable while returning and locked. \mbox{\Hypertarget{class_a_rotatable_actor_afa627a29da8076fe9335f87ce93c7479}\label{class_a_rotatable_actor_afa627a29da8076fe9335f87ce93c7479}} 
+\index{ARotatableActor@{ARotatableActor}!SpawnGrabLocation@{SpawnGrabLocation}}
+\index{SpawnGrabLocation@{SpawnGrabLocation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{SpawnGrabLocation()}{SpawnGrabLocation()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Spawn\+Grab\+Location (\begin{DoxyParamCaption}\item[{U\+Primitive\+Component $\ast$}]{to\+Attach,  }\item[{F\+Vector}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Spawn the grabbed location at the given location and attach to the given component to keep track of hand movement... @\+Param to\+Attach, the component to attach the spawned scene component to. @\+Param location, the location in world space to spawn the scene component. \mbox{\Hypertarget{class_a_rotatable_actor_ab1167d798896b0578a2cac474e59b57c}\label{class_a_rotatable_actor_ab1167d798896b0578a2cac474e59b57c}} 
+\index{ARotatableActor@{ARotatableActor}!Tick@{Tick}}
+\index{Tick@{Tick}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Updates the current rotational values and the physical rotation that uses those values. N\+O\+TE\+: Only ran when not grabbed. \mbox{\Hypertarget{class_a_rotatable_actor_ab5c7d624e74b899927652c8fea1aa4d7}\label{class_a_rotatable_actor_ab5c7d624e74b899927652c8fea1aa4d7}} 
+\index{ARotatableActor@{ARotatableActor}!Unlock@{Unlock}}
+\index{Unlock@{Unlock}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{Unlock()}{Unlock()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Unlock this rotatable if it is locked. \mbox{\Hypertarget{class_a_rotatable_actor_a2388de4df4eadf7fe1e0437ad5677586}\label{class_a_rotatable_actor_a2388de4df4eadf7fe1e0437ad5677586}} 
+\index{ARotatableActor@{ARotatableActor}!UpdateAudioAndHaptics@{UpdateAudioAndHaptics}}
+\index{UpdateAudioAndHaptics@{UpdateAudioAndHaptics}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateAudioAndHaptics()}{UpdateAudioAndHaptics()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Update\+Audio\+And\+Haptics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update the rotatable audio events and haptic feedback events if grabbed while rotating or impacting the constraint bounds. \mbox{\Hypertarget{class_a_rotatable_actor_aaa0da0d3086a7df162c5f187c7fca116}\label{class_a_rotatable_actor_aaa0da0d3086a7df162c5f187c7fca116}} 
+\index{ARotatableActor@{ARotatableActor}!UpdateConstraint@{UpdateConstraint}}
+\index{UpdateConstraint@{UpdateConstraint}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateConstraint()}{UpdateConstraint()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Update\+Constraint (\begin{DoxyParamCaption}\item[{E\+Constraint\+State}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Change the constraints current state, used to allow cumulative rotations while using the physics constraint. (As it is limited to 360 and has many other issues.) @\+Param state, state of constraint (E\+N\+UM) to swap to. ~\newline
+ \mbox{\Hypertarget{class_a_rotatable_actor_a739fb3eac84f34826dde5bf543a044f5}\label{class_a_rotatable_actor_a739fb3eac84f34826dde5bf543a044f5}} 
+\index{ARotatableActor@{ARotatableActor}!UpdateConstraintMode@{UpdateConstraintMode}}
+\index{UpdateConstraintMode@{UpdateConstraintMode}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateConstraintMode()}{UpdateConstraintMode()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Update\+Constraint\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update the constraint mode from the current cumulative angle. \mbox{\Hypertarget{class_a_rotatable_actor_aae791ec49ed589af995d8640488e180d}\label{class_a_rotatable_actor_aae791ec49ed589af995d8640488e180d}} 
+\index{ARotatableActor@{ARotatableActor}!UpdateConstraintRefference@{UpdateConstraintRefference}}
+\index{UpdateConstraintRefference@{UpdateConstraintRefference}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateConstraintRefference()}{UpdateConstraintRefference()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Update\+Constraint\+Refference (\begin{DoxyParamCaption}\item[{float}]{constraint\+Angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update the constraints reference position for the swing axis. N\+O\+TE\+: Should be half of the current\+Limit. @\+Param constraint\+Angle, the angle in the yaw-\/axis of the mesh that the constraints reference should be set to. \mbox{\Hypertarget{class_a_rotatable_actor_a707c941b9de20af111d6752551d360c8}\label{class_a_rotatable_actor_a707c941b9de20af111d6752551d360c8}} 
+\index{ARotatableActor@{ARotatableActor}!UpdateGrabbedRotation@{UpdateGrabbedRotation}}
+\index{UpdateGrabbedRotation@{UpdateGrabbedRotation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateGrabbedRotation()}{UpdateGrabbedRotation()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Update\+Grabbed\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+If grabbed this function will update the grabbed angle (current\+Yaw\+Angle) in the yaw using original grab offsets and trigonometry. Otherwise it will return the current local rotation which is calculated from the world and this actors original world transform. \mbox{\Hypertarget{class_a_rotatable_actor_a37eb653556585f8154c350efb0a3856a}\label{class_a_rotatable_actor_a37eb653556585f8154c350efb0a3856a}} 
+\index{ARotatableActor@{ARotatableActor}!UpdateHandGrabDistance@{UpdateHandGrabDistance}}
+\index{UpdateHandGrabDistance@{UpdateHandGrabDistance}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateHandGrabDistance()}{UpdateHandGrabDistance()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Update\+Hand\+Grab\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update the current distance between this rotatable current offset compared to the original grab offset ~\newline
+ \mbox{\Hypertarget{class_a_rotatable_actor_a716e21e07b97415758d7a99aff535107}\label{class_a_rotatable_actor_a716e21e07b97415758d7a99aff535107}} 
+\index{ARotatableActor@{ARotatableActor}!UpdateRotatable@{UpdateRotatable}}
+\index{UpdateRotatable@{UpdateRotatable}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateRotatable()}{UpdateRotatable()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Update\+Rotatable (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Updates the rotational values used in update rotation for keeping rotation offset from hand grabbed location, also updates the constraint from the cumulative angle. Also takes care of haptic effects and rotatable sounds while being dragged etc. N\+O\+TE\+: Ran while grabbed OR in this actors tick function when movement is detected. \mbox{\Hypertarget{class_a_rotatable_actor_ad853a437521a0212e2c9275af281744f}\label{class_a_rotatable_actor_ad853a437521a0212e2c9275af281744f}} 
+\index{ARotatableActor@{ARotatableActor}!UpdateRotatableLock@{UpdateRotatableLock}}
+\index{UpdateRotatableLock@{UpdateRotatableLock}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateRotatableLock()}{UpdateRotatableLock()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Update\+Rotatable\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update the locking functionality if enabled for this rotatable. Ran from Update\+Rotatable. \mbox{\Hypertarget{class_a_rotatable_actor_a9f82c6115d019b6dc14107aefb203e0d}\label{class_a_rotatable_actor_a9f82c6115d019b6dc14107aefb203e0d}} 
+\index{ARotatableActor@{ARotatableActor}!UpdateRotation@{UpdateRotation}}
+\index{UpdateRotation@{UpdateRotation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{UpdateRotation()}{UpdateRotation()}}
+{\footnotesize\ttfamily void A\+Rotatable\+Actor\+::\+Update\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update the current angle in the yaw axis from the cumulative angle calculated in Update\+Rotatable in this actors Ticking function. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_rotatable_actor_adcea67723aa327b1289d72315df6b781}\label{class_a_rotatable_actor_adcea67723aa327b1289d72315df6b781}} 
+\index{ARotatableActor@{ARotatableActor}!cumulativeAngle@{cumulativeAngle}}
+\index{cumulativeAngle@{cumulativeAngle}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{cumulativeAngle}{cumulativeAngle}}
+{\footnotesize\ttfamily float A\+Rotatable\+Actor\+::cumulative\+Angle}
+
+The current amount of times that the rotator has done a full rotation. \mbox{\Hypertarget{class_a_rotatable_actor_a1e748df968528d56799c52f51084563b}\label{class_a_rotatable_actor_a1e748df968528d56799c52f51084563b}} 
+\index{ARotatableActor@{ARotatableActor}!currentRelativeAngle@{currentRelativeAngle}}
+\index{currentRelativeAngle@{currentRelativeAngle}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{currentRelativeAngle}{currentRelativeAngle}}
+{\footnotesize\ttfamily float A\+Rotatable\+Actor\+::current\+Relative\+Angle}
+
+Current frames yaw angle relative to the pivot calculated from the cumulative angle and applied via world space to the rotator components. \mbox{\Hypertarget{class_a_rotatable_actor_afb43b6254e45ee3f29649c86922b8edc}\label{class_a_rotatable_actor_afb43b6254e45ee3f29649c86922b8edc}} 
+\index{ARotatableActor@{ARotatableActor}!debug@{debug}}
+\index{debug@{debug}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily bool A\+Rotatable\+Actor\+::debug}
+
+Shows cumulative\+Angle, revolution\+Count and draws the current expected grabbed position as a blue point in the scene. Also draws the current grabbed position as green... N\+O\+TE\+: Twist mode has a red point which represents the hand position for rotation calculations. \mbox{\Hypertarget{class_a_rotatable_actor_ab3174395d9594b1b498f05aa1b042897}\label{class_a_rotatable_actor_ab3174395d9594b1b498f05aa1b042897}} 
+\index{ARotatableActor@{ARotatableActor}!friction@{friction}}
+\index{friction@{friction}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{friction}{friction}}
+{\footnotesize\ttfamily float A\+Rotatable\+Actor\+::friction}
+
+Friction when rotating, uses angular motors on the pivot constraint. \mbox{\Hypertarget{class_a_rotatable_actor_a6d6a35948cf03faacafe20b8d0fcad32}\label{class_a_rotatable_actor_a6d6a35948cf03faacafe20b8d0fcad32}} 
+\index{ARotatableActor@{ARotatableActor}!grabLocation@{grabLocation}}
+\index{grabLocation@{grabLocation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{grabLocation}{grabLocation}}
+{\footnotesize\ttfamily U\+Scene\+Component$\ast$ A\+Rotatable\+Actor\+::grab\+Location}
+
+A scene component that is spawned and attatched to the hand with an offset right of the twistable relatively. \mbox{\Hypertarget{class_a_rotatable_actor_a8b0e908d1d7cd8bfa32065a378ea6804}\label{class_a_rotatable_actor_a8b0e908d1d7cd8bfa32065a378ea6804}} 
+\index{ARotatableActor@{ARotatableActor}!grabWhileLocked@{grabWhileLocked}}
+\index{grabWhileLocked@{grabWhileLocked}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{grabWhileLocked}{grabWhileLocked}}
+{\footnotesize\ttfamily bool A\+Rotatable\+Actor\+::grab\+While\+Locked}
+
+Grab while locked. \mbox{\Hypertarget{class_a_rotatable_actor_a7e4dbf3c5fb719de7acb64d92fc3b755}\label{class_a_rotatable_actor_a7e4dbf3c5fb719de7acb64d92fc3b755}} 
+\index{ARotatableActor@{ARotatableActor}!handRef@{handRef}}
+\index{handRef@{handRef}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{handRef}{handRef}}
+{\footnotesize\ttfamily A\+V\+R\+Hand$\ast$ A\+Rotatable\+Actor\+::hand\+Ref}
+
+Reference to the hand currently grabbing this component. Also can be used as a bool to check if this is in a hand. \mbox{\Hypertarget{class_a_rotatable_actor_a8150155665ca5cb78397107a92313096}\label{class_a_rotatable_actor_a8150155665ca5cb78397107a92313096}} 
+\index{ARotatableActor@{ARotatableActor}!hapticIntensityMultiplier@{hapticIntensityMultiplier}}
+\index{hapticIntensityMultiplier@{hapticIntensityMultiplier}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{hapticIntensityMultiplier}{hapticIntensityMultiplier}}
+{\footnotesize\ttfamily float A\+Rotatable\+Actor\+::haptic\+Intensity\+Multiplier}
+
+Multiply the intensity of the current haptic effect by the intensity multiplier. \mbox{\Hypertarget{class_a_rotatable_actor_aaaef498327e00e296a7d4c2418ab5f56}\label{class_a_rotatable_actor_aaaef498327e00e296a7d4c2418ab5f56}} 
+\index{ARotatableActor@{ARotatableActor}!hapticRotationDelay@{hapticRotationDelay}}
+\index{hapticRotationDelay@{hapticRotationDelay}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{hapticRotationDelay}{hapticRotationDelay}}
+{\footnotesize\ttfamily float A\+Rotatable\+Actor\+::haptic\+Rotation\+Delay}
+
+Play rotating haptic effect if not null every haptic\+Rotation\+Delay degrees. N\+O\+TE\+: If set to 0.\+0f it will play the haptic effect constantly. \mbox{\Hypertarget{class_a_rotatable_actor_a5bb91d6a6452333023ec3e582b43514b}\label{class_a_rotatable_actor_a5bb91d6a6452333023ec3e582b43514b}} 
+\index{ARotatableActor@{ARotatableActor}!impactSound@{impactSound}}
+\index{impactSound@{impactSound}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{impactSound}{impactSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ A\+Rotatable\+Actor\+::impact\+Sound}
+
+Sound to play when rotatable hits its constraint limits. N\+O\+TE\+: Default collision haptic feedback is used from the A\+V\+R\+Hand grabbing this component. Sound will not play if null. \mbox{\Hypertarget{class_a_rotatable_actor_a1f7e0d99444b315ba199df6825cab838}\label{class_a_rotatable_actor_a1f7e0d99444b315ba199df6825cab838}} 
+\index{ARotatableActor@{ARotatableActor}!interactableSettings@{interactableSettings}}
+\index{interactableSettings@{interactableSettings}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{interactableSettings}{interactableSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} A\+Rotatable\+Actor\+::interactable\+Settings}
+
+The interface settings for hand interaction with this interactable. \mbox{\Hypertarget{class_a_rotatable_actor_aecf48fa7de4cfeba25a972a55170636a}\label{class_a_rotatable_actor_aecf48fa7de4cfeba25a972a55170636a}} 
+\index{ARotatableActor@{ARotatableActor}!isReturning@{isReturning}}
+\index{isReturning@{isReturning}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{isReturning}{isReturning}}
+{\footnotesize\ttfamily bool A\+Rotatable\+Actor\+::is\+Returning}
+
+Is the rotatable still returning to a specified angle. \mbox{\Hypertarget{class_a_rotatable_actor_a8d833ca5819095496fe62ca983b7c2e1}\label{class_a_rotatable_actor_a8d833ca5819095496fe62ca983b7c2e1}} 
+\index{ARotatableActor@{ARotatableActor}!lockable@{lockable}}
+\index{lockable@{lockable}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{lockable}{lockable}}
+{\footnotesize\ttfamily bool A\+Rotatable\+Actor\+::lockable}
+
+Enable the rotatable to lock into certain positions. N\+O\+TE\+: On lock is a delegate that indicates which point has been locked to. \mbox{\Hypertarget{class_a_rotatable_actor_a0b20b1176225fd6246f2e0faed46d8a2}\label{class_a_rotatable_actor_a0b20b1176225fd6246f2e0faed46d8a2}} 
+\index{ARotatableActor@{ARotatableActor}!locked@{locked}}
+\index{locked@{locked}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{locked}{locked}}
+{\footnotesize\ttfamily bool A\+Rotatable\+Actor\+::locked}
+
+Is currently locked. If enabled on begin play the rotatable will be locked in its start rotation. \mbox{\Hypertarget{class_a_rotatable_actor_ab13441b2b732e33957768f169976b2ef}\label{class_a_rotatable_actor_ab13441b2b732e33957768f169976b2ef}} 
+\index{ARotatableActor@{ARotatableActor}!lockHapticEffect@{lockHapticEffect}}
+\index{lockHapticEffect@{lockHapticEffect}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{lockHapticEffect}{lockHapticEffect}}
+{\footnotesize\ttfamily U\+Haptic\+Feedback\+Effect\+\_\+\+Base$\ast$ A\+Rotatable\+Actor\+::lock\+Haptic\+Effect}
+
+Haptic effect to play on hand when locking while grabbed. N\+O\+TE\+: Will not play haptic effect if this in null. \mbox{\Hypertarget{class_a_rotatable_actor_a1b1b59f0006f99689377b5f450568616}\label{class_a_rotatable_actor_a1b1b59f0006f99689377b5f450568616}} 
+\index{ARotatableActor@{ARotatableActor}!lockingDistance@{lockingDistance}}
+\index{lockingDistance@{lockingDistance}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{lockingDistance}{lockingDistance}}
+{\footnotesize\ttfamily float A\+Rotatable\+Actor\+::locking\+Distance}
+
+How close to a locking point before locking into rotation. \mbox{\Hypertarget{class_a_rotatable_actor_ab03686b406704a104ee8d5dd7443fd9f}\label{class_a_rotatable_actor_ab03686b406704a104ee8d5dd7443fd9f}} 
+\index{ARotatableActor@{ARotatableActor}!lockingPoints@{lockingPoints}}
+\index{lockingPoints@{lockingPoints}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{lockingPoints}{lockingPoints}}
+{\footnotesize\ttfamily T\+Array$<$float$>$ A\+Rotatable\+Actor\+::locking\+Points}
+
+Rotatable locking points. N\+O\+TE\+: If you want the constraint to lock at (x) degrees add a float to the array set to (x)f. \mbox{\Hypertarget{class_a_rotatable_actor_a88b226a985b595f6450b28c85a3827ac}\label{class_a_rotatable_actor_a88b226a985b595f6450b28c85a3827ac}} 
+\index{ARotatableActor@{ARotatableActor}!lockSound@{lockSound}}
+\index{lockSound@{lockSound}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{lockSound}{lockSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ A\+Rotatable\+Actor\+::lock\+Sound}
+
+Sound to play when locking this rotatable. \mbox{\Hypertarget{class_a_rotatable_actor_af7ce3abc65d93e271855f047db06e86b}\label{class_a_rotatable_actor_af7ce3abc65d93e271855f047db06e86b}} 
+\index{ARotatableActor@{ARotatableActor}!lockWhileGrabbed@{lockWhileGrabbed}}
+\index{lockWhileGrabbed@{lockWhileGrabbed}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{lockWhileGrabbed}{lockWhileGrabbed}}
+{\footnotesize\ttfamily bool A\+Rotatable\+Actor\+::lock\+While\+Grabbed}
+
+Can lock while grabbed? \mbox{\Hypertarget{class_a_rotatable_actor_a3cd6a20f8333f971abd9baaba0846f5d}\label{class_a_rotatable_actor_a3cd6a20f8333f971abd9baaba0846f5d}} 
+\index{ARotatableActor@{ARotatableActor}!OnMeshGrabbed@{OnMeshGrabbed}}
+\index{OnMeshGrabbed@{OnMeshGrabbed}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{OnMeshGrabbed}{OnMeshGrabbed}}
+{\footnotesize\ttfamily F\+Grabbed A\+Rotatable\+Actor\+::\+On\+Mesh\+Grabbed}
+
+Mesh grabbed by hand. \mbox{\Hypertarget{class_a_rotatable_actor_a9fc2007240d6eb45f31bea848227afe2}\label{class_a_rotatable_actor_a9fc2007240d6eb45f31bea848227afe2}} 
+\index{ARotatableActor@{ARotatableActor}!OnMeshReleased@{OnMeshReleased}}
+\index{OnMeshReleased@{OnMeshReleased}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{OnMeshReleased}{OnMeshReleased}}
+{\footnotesize\ttfamily F\+Grabbed A\+Rotatable\+Actor\+::\+On\+Mesh\+Released}
+
+Mesh released from hand. \mbox{\Hypertarget{class_a_rotatable_actor_a5beeb6ceec45b1a305908f6cdfa9b6e7}\label{class_a_rotatable_actor_a5beeb6ceec45b1a305908f6cdfa9b6e7}} 
+\index{ARotatableActor@{ARotatableActor}!OnRotatableLock@{OnRotatableLock}}
+\index{OnRotatableLock@{OnRotatableLock}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{OnRotatableLock}{OnRotatableLock}}
+{\footnotesize\ttfamily F\+On\+Rotatable\+Lock A\+Rotatable\+Actor\+::\+On\+Rotatable\+Lock}
+
+Rotatable has been locked to a point in the locking\+Points array. \mbox{\Hypertarget{class_a_rotatable_actor_aea9ba9262476d74f2f59338f16f3910b}\label{class_a_rotatable_actor_aea9ba9262476d74f2f59338f16f3910b}} 
+\index{ARotatableActor@{ARotatableActor}!overRotationLimit@{overRotationLimit}}
+\index{overRotationLimit@{overRotationLimit}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{overRotationLimit}{overRotationLimit}}
+{\footnotesize\ttfamily float A\+Rotatable\+Actor\+::over\+Rotation\+Limit}
+
+How much rotation over the limit is needed to release from the hand. \mbox{\Hypertarget{class_a_rotatable_actor_a6ca225b4a6d5781cdd08ffac872d9c8b}\label{class_a_rotatable_actor_a6ca225b4a6d5781cdd08ffac872d9c8b}} 
+\index{ARotatableActor@{ARotatableActor}!pivot@{pivot}}
+\index{pivot@{pivot}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{pivot}{pivot}}
+{\footnotesize\ttfamily U\+Physics\+Constraint\+Component$\ast$ A\+Rotatable\+Actor\+::pivot}
+
+Physics constraint to keep collisions active and rotate. ~\newline
+ \mbox{\Hypertarget{class_a_rotatable_actor_a326f7c233cbacbcf61f6d077e1ecfd50}\label{class_a_rotatable_actor_a326f7c233cbacbcf61f6d077e1ecfd50}} 
+\index{ARotatableActor@{ARotatableActor}!releaseOnOverRotation@{releaseOnOverRotation}}
+\index{releaseOnOverRotation@{releaseOnOverRotation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{releaseOnOverRotation}{releaseOnOverRotation}}
+{\footnotesize\ttfamily bool A\+Rotatable\+Actor\+::release\+On\+Over\+Rotation}
+
+Should release actor when rotation over becomes too great. \mbox{\Hypertarget{class_a_rotatable_actor_af52021553f564e0bb2188059bb1231f7}\label{class_a_rotatable_actor_af52021553f564e0bb2188059bb1231f7}} 
+\index{ARotatableActor@{ARotatableActor}!returnCurve@{returnCurve}}
+\index{returnCurve@{returnCurve}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{returnCurve}{returnCurve}}
+{\footnotesize\ttfamily U\+Curve\+Float$\ast$ A\+Rotatable\+Actor\+::return\+Curve}
+
+Curve to drive the time line when returning to certain rotations smoothly. N\+O\+TE\+: Used in the Set\+Rotatable\+Rotation. \mbox{\Hypertarget{class_a_rotatable_actor_a103ea845edfce7514e5c86485d108745}\label{class_a_rotatable_actor_a103ea845edfce7514e5c86485d108745}} 
+\index{ARotatableActor@{ARotatableActor}!returnTimeline@{returnTimeline}}
+\index{returnTimeline@{returnTimeline}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{returnTimeline}{returnTimeline}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_u_simple_timeline}{U\+Simple\+Timeline}}$\ast$ A\+Rotatable\+Actor\+::return\+Timeline}
+
+Simple time line class to hold all time line functions etc. \mbox{\Hypertarget{class_a_rotatable_actor_a7c6eb93e1a76ce271d26120045cabb73}\label{class_a_rotatable_actor_a7c6eb93e1a76ce271d26120045cabb73}} 
+\index{ARotatableActor@{ARotatableActor}!revolutionCount@{revolutionCount}}
+\index{revolutionCount@{revolutionCount}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{revolutionCount}{revolutionCount}}
+{\footnotesize\ttfamily int A\+Rotatable\+Actor\+::revolution\+Count}
+
+The current amount of times that the rotator has done a full rotation. \mbox{\Hypertarget{class_a_rotatable_actor_af7f86bce827a133bae33059587dc9da8}\label{class_a_rotatable_actor_af7f86bce827a133bae33059587dc9da8}} 
+\index{ARotatableActor@{ARotatableActor}!rotateMode@{rotateMode}}
+\index{rotateMode@{rotateMode}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{rotateMode}{rotateMode}}
+{\footnotesize\ttfamily E\+Rotate\+Mode A\+Rotatable\+Actor\+::rotate\+Mode}
+
+What rotation mode is this rotatable. \mbox{\Hypertarget{class_a_rotatable_actor_ac8f00fdd70fb0f433fc9d72e785301bf}\label{class_a_rotatable_actor_ac8f00fdd70fb0f433fc9d72e785301bf}} 
+\index{ARotatableActor@{ARotatableActor}!rotatingHapticEffect@{rotatingHapticEffect}}
+\index{rotatingHapticEffect@{rotatingHapticEffect}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{rotatingHapticEffect}{rotatingHapticEffect}}
+{\footnotesize\ttfamily U\+Haptic\+Feedback\+Effect\+\_\+\+Base$\ast$ A\+Rotatable\+Actor\+::rotating\+Haptic\+Effect}
+
+Haptic effect to play on hand when grabbed and rotating this component every haptic\+Rotation\+Delay. N\+O\+TE\+: Will not play haptic effect if this in null. \mbox{\Hypertarget{class_a_rotatable_actor_a1057cae675b1e28047180506baf57df2}\label{class_a_rotatable_actor_a1057cae675b1e28047180506baf57df2}} 
+\index{ARotatableActor@{ARotatableActor}!rotatingSound@{rotatingSound}}
+\index{rotatingSound@{rotatingSound}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{rotatingSound}{rotatingSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ A\+Rotatable\+Actor\+::rotating\+Sound}
+
+Sound to play when rotating this rotatable. \mbox{\Hypertarget{class_a_rotatable_actor_a5c00bc4f2c13d7a05df36c2d87b4578d}\label{class_a_rotatable_actor_a5c00bc4f2c13d7a05df36c2d87b4578d}} 
+\index{ARotatableActor@{ARotatableActor}!rotationAxis@{rotationAxis}}
+\index{rotationAxis@{rotationAxis}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{rotationAxis}{rotationAxis}}
+{\footnotesize\ttfamily U\+Arrow\+Component$\ast$ A\+Rotatable\+Actor\+::rotation\+Axis}
+
+Arrow to point in the rotation axis direction that the mesh is current rotating around... \mbox{\Hypertarget{class_a_rotatable_actor_a65ba121d3650133e12f56ab732db2e60}\label{class_a_rotatable_actor_a65ba121d3650133e12f56ab732db2e60}} 
+\index{ARotatableActor@{ARotatableActor}!rotationLimit@{rotationLimit}}
+\index{rotationLimit@{rotationLimit}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{rotationLimit}{rotationLimit}}
+{\footnotesize\ttfamily float A\+Rotatable\+Actor\+::rotation\+Limit}
+
+The max rotation limit. \mbox{\Hypertarget{class_a_rotatable_actor_ae6a6ba15dea33e12f9b6738da7ab2f65}\label{class_a_rotatable_actor_ae6a6ba15dea33e12f9b6738da7ab2f65}} 
+\index{ARotatableActor@{ARotatableActor}!rotationStart@{rotationStart}}
+\index{rotationStart@{rotationStart}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{rotationStart}{rotationStart}}
+{\footnotesize\ttfamily U\+Arrow\+Component$\ast$ A\+Rotatable\+Actor\+::rotation\+Start}
+
+Arrow to point to the start rotation of this rotatable. \mbox{\Hypertarget{class_a_rotatable_actor_a3be3c0c28a458798a64999bf253721a3}\label{class_a_rotatable_actor_a3be3c0c28a458798a64999bf253721a3}} 
+\index{ARotatableActor@{ARotatableActor}!rotator@{rotator}}
+\index{rotator@{rotator}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{rotator}{rotator}}
+{\footnotesize\ttfamily U\+Box\+Component$\ast$ A\+Rotatable\+Actor\+::rotator}
+
+The component to rotate. N\+O\+TE\+: Do not change the pitch or roll rotation as it will be reset. \mbox{\Hypertarget{class_a_rotatable_actor_ae25bce76b143266ae8c06e47bc667550}\label{class_a_rotatable_actor_ae25bce76b143266ae8c06e47bc667550}} 
+\index{ARotatableActor@{ARotatableActor}!rotatorAudio@{rotatorAudio}}
+\index{rotatorAudio@{rotatorAudio}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{rotatorAudio}{rotatorAudio}}
+{\footnotesize\ttfamily U\+Audio\+Component$\ast$ A\+Rotatable\+Actor\+::rotator\+Audio}
+
+Rotator audio component to play locking and dragging sounds. ~\newline
+ \mbox{\Hypertarget{class_a_rotatable_actor_a12836dda2b5eb7306bc2ef59d898ee0c}\label{class_a_rotatable_actor_a12836dda2b5eb7306bc2ef59d898ee0c}} 
+\index{ARotatableActor@{ARotatableActor}!simulatePhysics@{simulatePhysics}}
+\index{simulatePhysics@{simulatePhysics}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{simulatePhysics}{simulatePhysics}}
+{\footnotesize\ttfamily bool A\+Rotatable\+Actor\+::simulate\+Physics}
+
+Is the physics constraint active on the mesh. \mbox{\Hypertarget{class_a_rotatable_actor_a9782cbfc64b4b82c740798de6357a808}\label{class_a_rotatable_actor_a9782cbfc64b4b82c740798de6357a808}} 
+\index{ARotatableActor@{ARotatableActor}!startRotation@{startRotation}}
+\index{startRotation@{startRotation}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{startRotation}{startRotation}}
+{\footnotesize\ttfamily float A\+Rotatable\+Actor\+::start\+Rotation}
+
+The start rotation of the rotatable. Updates in real time within editor when changed. \mbox{\Hypertarget{class_a_rotatable_actor_a688488e1fb5ec742c7049892651f1b62}\label{class_a_rotatable_actor_a688488e1fb5ec742c7049892651f1b62}} 
+\index{ARotatableActor@{ARotatableActor}!unlockingDistance@{unlockingDistance}}
+\index{unlockingDistance@{unlockingDistance}!ARotatableActor@{ARotatableActor}}
+\doxysubsubsection{\texorpdfstring{unlockingDistance}{unlockingDistance}}
+{\footnotesize\ttfamily float A\+Rotatable\+Actor\+::unlocking\+Distance}
+
+How far in the yaw axis after an unlock before this rotatable can be locked again. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Rotatable\+Actor.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Rotatable\+Actor.\+cpp\end{DoxyCompactItemize}

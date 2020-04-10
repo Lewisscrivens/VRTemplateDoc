@@ -1,0 +1,167 @@
+\hypertarget{class_a_render_target_input}{}\doxysection{A\+Render\+Target\+Input Class Reference}
+\label{class_a_render_target_input}\index{ARenderTargetInput@{ARenderTargetInput}}
+
+
+{\ttfamily \#include $<$Render\+Target\+Input.\+h$>$}
+
+Inheritance diagram for A\+Render\+Target\+Input\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_a_render_target_input}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_render_target_input_a67c0b6f8dd65b1c4e6dd8c3b699d5ab9}{A\+Render\+Target\+Input}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_render_target_input_a69a71c00ab5dd3fa289232a8742b7143}{Tick}} (float Delta\+Time) override
+\item 
+void \mbox{\hyperlink{class_a_render_target_input_a468e8c0f9374b9a48e53feb31234bfd9}{Update\+Input}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_render_target_input_a89e7ccdebe604a24b73b14bfbf26bca7}{Grab\+Pressed\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_a_render_target_input_ace8c9c1d34a0e3ac7c2f0554df0c986e}{Grab\+Released\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+E\+Board\+Input\+Type \mbox{\hyperlink{class_a_render_target_input_a87d494c7f92369ce501a34339280774d}{input\+Type}}
+\item 
+F\+Name \mbox{\hyperlink{class_a_render_target_input_aefe6129bb10f25613aae0dc5e814e1bd}{board\+Type}}
+\item 
+float \mbox{\hyperlink{class_a_render_target_input_ab30e64cc3c63dddd1cbd498e4034bbd3}{update\+Rate}}
+\item 
+float \mbox{\hyperlink{class_a_render_target_input_a463855d4be166cd79e4c030d3b54ff83}{input\+Size}}
+\item 
+float \mbox{\hyperlink{class_a_render_target_input_a7c14e83d2dd8eb965f451f7d86b38e93}{trace\+Distance}}
+\item 
+bool \mbox{\hyperlink{class_a_render_target_input_a9adde34191c275a274c28ed105239576}{debug\+Trace}}
+\item 
+\mbox{\hyperlink{class_a_render_target_board}{A\+Render\+Target\+Board}} $\ast$ \mbox{\hyperlink{class_a_render_target_input_a57dcd228ffe67de56315eca5e0d7d5b4}{current\+Board}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_render_target_input_a7074be80fe7b6cefb1071bb01e4e5aeb}{Begin\+Play}} () override
+\item 
+bool \mbox{\hyperlink{class_a_render_target_input_a01f62bb52b817b1f50905cfc75e89bef}{Input\+Trace}} (F\+Vector2D \&hit\+U\+V\+Loc)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Render target board input object for casting onto the Render Target Board\textquotesingle{}s mesh to allow drawing functionality. So for example this would be a pencil or a marker. N\+O\+TE\+: Would be much better to not use the grabbable actor class and make a separate collision class so that writing on the board is easier/feels more natural. For the sake of saving time I have used the grabbable actor but its a big improvement that could be made... 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_render_target_input_a67c0b6f8dd65b1c4e6dd8c3b699d5ab9}\label{class_a_render_target_input_a67c0b6f8dd65b1c4e6dd8c3b699d5ab9}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!ARenderTargetInput@{ARenderTargetInput}}
+\index{ARenderTargetInput@{ARenderTargetInput}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{ARenderTargetInput()}{ARenderTargetInput()}}
+{\footnotesize\ttfamily A\+Render\+Target\+Input\+::\+A\+Render\+Target\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_render_target_input_a7074be80fe7b6cefb1071bb01e4e5aeb}\label{class_a_render_target_input_a7074be80fe7b6cefb1071bb01e4e5aeb}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Render\+Target\+Input\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+The timer handle to update the trace function. Level start. 
+
+Reimplemented from \mbox{\hyperlink{class_a_grabbable_actor_a3df13c2e97ee80ed35ecb7e992473b73}{A\+Grabbable\+Actor}}.
+
+\mbox{\Hypertarget{class_a_render_target_input_a89e7ccdebe604a24b73b14bfbf26bca7}\label{class_a_render_target_input_a89e7ccdebe604a24b73b14bfbf26bca7}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!GrabPressed\_Implementation@{GrabPressed\_Implementation}}
+\index{GrabPressed\_Implementation@{GrabPressed\_Implementation}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{GrabPressed\_Implementation()}{GrabPressed\_Implementation()}}
+{\footnotesize\ttfamily void A\+Render\+Target\+Input\+::\+Grab\+Pressed\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Override grab and release functions to pause and un-\/pause the update trace function in this classes tick function. 
+
+Reimplemented from \mbox{\hyperlink{class_a_grabbable_actor_a87b8e09916fec0742bd5e669de003b25}{A\+Grabbable\+Actor}}.
+
+\mbox{\Hypertarget{class_a_render_target_input_ace8c9c1d34a0e3ac7c2f0554df0c986e}\label{class_a_render_target_input_ace8c9c1d34a0e3ac7c2f0554df0c986e}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!GrabReleased\_Implementation@{GrabReleased\_Implementation}}
+\index{GrabReleased\_Implementation@{GrabReleased\_Implementation}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{GrabReleased\_Implementation()}{GrabReleased\_Implementation()}}
+{\footnotesize\ttfamily void A\+Render\+Target\+Input\+::\+Grab\+Released\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran when the trigger is released. 
+
+Reimplemented from \mbox{\hyperlink{class_a_grabbable_actor_a11404b554c43fdc997645ca36d97f4c0}{A\+Grabbable\+Actor}}.
+
+\mbox{\Hypertarget{class_a_render_target_input_a01f62bb52b817b1f50905cfc75e89bef}\label{class_a_render_target_input_a01f62bb52b817b1f50905cfc75e89bef}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!InputTrace@{InputTrace}}
+\index{InputTrace@{InputTrace}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{InputTrace()}{InputTrace()}}
+{\footnotesize\ttfamily bool A\+Render\+Target\+Input\+::\+Input\+Trace (\begin{DoxyParamCaption}\item[{F\+Vector2D \&}]{hit\+U\+V\+Loc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Perform and input trace looking for a UV location on a Render\+Target\+Input class. \mbox{\Hypertarget{class_a_render_target_input_a69a71c00ab5dd3fa289232a8742b7143}\label{class_a_render_target_input_a69a71c00ab5dd3fa289232a8742b7143}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!Tick@{Tick}}
+\index{Tick@{Tick}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void A\+Render\+Target\+Input\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Frame. 
+
+Reimplemented from \mbox{\hyperlink{class_a_grabbable_actor_a1b6f70c3f1fc50eb9343c98a2f7b81eb}{A\+Grabbable\+Actor}}.
+
+\mbox{\Hypertarget{class_a_render_target_input_a468e8c0f9374b9a48e53feb31234bfd9}\label{class_a_render_target_input_a468e8c0f9374b9a48e53feb31234bfd9}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!UpdateInput@{UpdateInput}}
+\index{UpdateInput@{UpdateInput}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{UpdateInput()}{UpdateInput()}}
+{\footnotesize\ttfamily void A\+Render\+Target\+Input\+::\+Update\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Update the input check onto a render target board. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_render_target_input_aefe6129bb10f25613aae0dc5e814e1bd}\label{class_a_render_target_input_aefe6129bb10f25613aae0dc5e814e1bd}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!boardType@{boardType}}
+\index{boardType@{boardType}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{boardType}{boardType}}
+{\footnotesize\ttfamily F\+Name A\+Render\+Target\+Input\+::board\+Type}
+
+Checked when hitting a Render\+Target\+Board to see if its supported for this class. \mbox{\Hypertarget{class_a_render_target_input_a57dcd228ffe67de56315eca5e0d7d5b4}\label{class_a_render_target_input_a57dcd228ffe67de56315eca5e0d7d5b4}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!currentBoard@{currentBoard}}
+\index{currentBoard@{currentBoard}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{currentBoard}{currentBoard}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_render_target_board}{A\+Render\+Target\+Board}}$\ast$ A\+Render\+Target\+Input\+::current\+Board}
+
+The current colliding board. \mbox{\Hypertarget{class_a_render_target_input_a9adde34191c275a274c28ed105239576}\label{class_a_render_target_input_a9adde34191c275a274c28ed105239576}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!debugTrace@{debugTrace}}
+\index{debugTrace@{debugTrace}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{debugTrace}{debugTrace}}
+{\footnotesize\ttfamily bool A\+Render\+Target\+Input\+::debug\+Trace}
+
+Should show class debug information like the trace while grabbed. \mbox{\Hypertarget{class_a_render_target_input_a463855d4be166cd79e4c030d3b54ff83}\label{class_a_render_target_input_a463855d4be166cd79e4c030d3b54ff83}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!inputSize@{inputSize}}
+\index{inputSize@{inputSize}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{inputSize}{inputSize}}
+{\footnotesize\ttfamily float A\+Render\+Target\+Input\+::input\+Size}
+
+Input size of the marker. \mbox{\Hypertarget{class_a_render_target_input_a87d494c7f92369ce501a34339280774d}\label{class_a_render_target_input_a87d494c7f92369ce501a34339280774d}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!inputType@{inputType}}
+\index{inputType@{inputType}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{inputType}{inputType}}
+{\footnotesize\ttfamily E\+Board\+Input\+Type A\+Render\+Target\+Input\+::input\+Type}
+
+The input type of this render target input class. \mbox{\Hypertarget{class_a_render_target_input_a7c14e83d2dd8eb965f451f7d86b38e93}\label{class_a_render_target_input_a7c14e83d2dd8eb965f451f7d86b38e93}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!traceDistance@{traceDistance}}
+\index{traceDistance@{traceDistance}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{traceDistance}{traceDistance}}
+{\footnotesize\ttfamily float A\+Render\+Target\+Input\+::trace\+Distance}
+
+The distance to trace from the grabbable mesh down along the Z-\/\+Axis to look for a Render\+Target\+Board object. \mbox{\Hypertarget{class_a_render_target_input_ab30e64cc3c63dddd1cbd498e4034bbd3}\label{class_a_render_target_input_ab30e64cc3c63dddd1cbd498e4034bbd3}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!updateRate@{updateRate}}
+\index{updateRate@{updateRate}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{updateRate}{updateRate}}
+{\footnotesize\ttfamily float A\+Render\+Target\+Input\+::update\+Rate}
+
+The current update rate per second of the trace function. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Render\+Target\+Input.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Render\+Target\+Input.\+cpp\end{DoxyCompactItemize}

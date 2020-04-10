@@ -1,0 +1,118 @@
+\hypertarget{struct_f_hand_interface_settings}{}\doxysection{F\+Hand\+Interface\+Settings Struct Reference}
+\label{struct_f_hand_interface_settings}\index{FHandInterfaceSettings@{FHandInterfaceSettings}}
+
+
+{\ttfamily \#include $<$Hands\+Interface.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_f_hand_interface_settings_ab9af63d37bf1288e5d7cdeaa830ee9f9}{F\+Hand\+Interface\+Settings}} (\mbox{\hyperlink{struct_f_physics_handle_data}{F\+Physics\+Handle\+Data}} handle\+Data=\mbox{\hyperlink{struct_f_physics_handle_data}{F\+Physics\+Handle\+Data}}(), float release\+Dist=50.\+0f, float hand\+Min\+Rumble\+Dist=1.\+0f, bool release=true, bool two\+Handed=false, bool locked\+Hand=false, bool highlight=true, bool interact\+Enabled=true, float current\+Hand\+Dist=0.\+0f)
+\item 
+F\+String \mbox{\hyperlink{struct_f_hand_interface_settings_ac2ce89bc7fad844b70e9172d406bb5eb}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_f_physics_handle_data}{F\+Physics\+Handle\+Data}} \mbox{\hyperlink{struct_f_hand_interface_settings_a9404f3c2c91b34006c5673d5a7b46a2c}{grab\+Handle\+Data}}
+\item 
+float \mbox{\hyperlink{struct_f_hand_interface_settings_a9d5fd82a3869850330120c37be5c8735}{release\+Distance}}
+\item 
+float \mbox{\hyperlink{struct_f_hand_interface_settings_a9672d6ac9a654b14bc62fe78946fb9fb}{hand\+Min\+Rumble\+Distance}}
+\item 
+float \mbox{\hyperlink{struct_f_hand_interface_settings_a95bb560b7fc37595f36131e3712a6fe8}{hand\+Distance}}
+\item 
+bool \mbox{\hyperlink{struct_f_hand_interface_settings_a12c7cd343c192eda671eeadbf5a64ad6}{can\+Release}}
+\item 
+bool \mbox{\hyperlink{struct_f_hand_interface_settings_a985abf4c63471cb907c3d73dc7ecdda2}{two\+Handed\+Grabbing}}
+\item 
+bool \mbox{\hyperlink{struct_f_hand_interface_settings_a8ec4891f161da083ca7e03c164cf30e4}{locked\+To\+Hand}}
+\item 
+bool \mbox{\hyperlink{struct_f_hand_interface_settings_ae05fb77225779c148eaab914526d536a}{hightlight\+Interactable}}
+\item 
+bool \mbox{\hyperlink{struct_f_hand_interface_settings_a877c32f029cb8d1f0f6e315fb019413f}{can\+Interact}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface settings structure, used to hold any interface variables that will be changed and used in the hand class. Makes changing this interfaces variables in BP possible... 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_f_hand_interface_settings_ab9af63d37bf1288e5d7cdeaa830ee9f9}\label{struct_f_hand_interface_settings_ab9af63d37bf1288e5d7cdeaa830ee9f9}} 
+\index{FHandInterfaceSettings@{FHandInterfaceSettings}!FHandInterfaceSettings@{FHandInterfaceSettings}}
+\index{FHandInterfaceSettings@{FHandInterfaceSettings}!FHandInterfaceSettings@{FHandInterfaceSettings}}
+\doxysubsubsection{\texorpdfstring{FHandInterfaceSettings()}{FHandInterfaceSettings()}}
+{\footnotesize\ttfamily F\+Hand\+Interface\+Settings\+::\+F\+Hand\+Interface\+Settings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_f_physics_handle_data}{F\+Physics\+Handle\+Data}}}]{handle\+Data = {\ttfamily \mbox{\hyperlink{struct_f_physics_handle_data}{F\+Physics\+Handle\+Data}}()},  }\item[{float}]{release\+Dist = {\ttfamily 50.0f},  }\item[{float}]{hand\+Min\+Rumble\+Dist = {\ttfamily 1.0f},  }\item[{bool}]{release = {\ttfamily true},  }\item[{bool}]{two\+Handed = {\ttfamily false},  }\item[{bool}]{locked\+Hand = {\ttfamily false},  }\item[{bool}]{highlight = {\ttfamily true},  }\item[{bool}]{interact\+Enabled = {\ttfamily true},  }\item[{float}]{current\+Hand\+Dist = {\ttfamily 0.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for this struct. Defaults to default interface values... 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_f_hand_interface_settings_ac2ce89bc7fad844b70e9172d406bb5eb}\label{struct_f_hand_interface_settings_ac2ce89bc7fad844b70e9172d406bb5eb}} 
+\index{FHandInterfaceSettings@{FHandInterfaceSettings}!ToString@{ToString}}
+\index{ToString@{ToString}!FHandInterfaceSettings@{FHandInterfaceSettings}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily F\+String F\+Hand\+Interface\+Settings\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert the values of this struct into a printable message/string for debugging. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_f_hand_interface_settings_a877c32f029cb8d1f0f6e315fb019413f}\label{struct_f_hand_interface_settings_a877c32f029cb8d1f0f6e315fb019413f}} 
+\index{FHandInterfaceSettings@{FHandInterfaceSettings}!canInteract@{canInteract}}
+\index{canInteract@{canInteract}!FHandInterfaceSettings@{FHandInterfaceSettings}}
+\doxysubsubsection{\texorpdfstring{canInteract}{canInteract}}
+{\footnotesize\ttfamily bool F\+Hand\+Interface\+Settings\+::can\+Interact}
+
+Used to stop this interface from being interacted with. Useful for disabling things temporarily. \mbox{\Hypertarget{struct_f_hand_interface_settings_a12c7cd343c192eda671eeadbf5a64ad6}\label{struct_f_hand_interface_settings_a12c7cd343c192eda671eeadbf5a64ad6}} 
+\index{FHandInterfaceSettings@{FHandInterfaceSettings}!canRelease@{canRelease}}
+\index{canRelease@{canRelease}!FHandInterfaceSettings@{FHandInterfaceSettings}}
+\doxysubsubsection{\texorpdfstring{canRelease}{canRelease}}
+{\footnotesize\ttfamily bool F\+Hand\+Interface\+Settings\+::can\+Release}
+
+Should the hand class check the interactables hand grab distance. \mbox{\Hypertarget{struct_f_hand_interface_settings_a9404f3c2c91b34006c5673d5a7b46a2c}\label{struct_f_hand_interface_settings_a9404f3c2c91b34006c5673d5a7b46a2c}} 
+\index{FHandInterfaceSettings@{FHandInterfaceSettings}!grabHandleData@{grabHandleData}}
+\index{grabHandleData@{grabHandleData}!FHandInterfaceSettings@{FHandInterfaceSettings}}
+\doxysubsubsection{\texorpdfstring{grabHandleData}{grabHandleData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_physics_handle_data}{F\+Physics\+Handle\+Data}} F\+Hand\+Interface\+Settings\+::grab\+Handle\+Data}
+
+If this component is interacted with by a physics handle use these physics handle values. N\+O\+TE\+: This is disabled by default. \mbox{\Hypertarget{struct_f_hand_interface_settings_a95bb560b7fc37595f36131e3712a6fe8}\label{struct_f_hand_interface_settings_a95bb560b7fc37595f36131e3712a6fe8}} 
+\index{FHandInterfaceSettings@{FHandInterfaceSettings}!handDistance@{handDistance}}
+\index{handDistance@{handDistance}!FHandInterfaceSettings@{FHandInterfaceSettings}}
+\doxysubsubsection{\texorpdfstring{handDistance}{handDistance}}
+{\footnotesize\ttfamily float F\+Hand\+Interface\+Settings\+::hand\+Distance}
+
+Current Distance between the hand and intractable when first grabbed used to determine when to rumble the hand on too much distance. ~\newline
+ \mbox{\Hypertarget{struct_f_hand_interface_settings_a9672d6ac9a654b14bc62fe78946fb9fb}\label{struct_f_hand_interface_settings_a9672d6ac9a654b14bc62fe78946fb9fb}} 
+\index{FHandInterfaceSettings@{FHandInterfaceSettings}!handMinRumbleDistance@{handMinRumbleDistance}}
+\index{handMinRumbleDistance@{handMinRumbleDistance}!FHandInterfaceSettings@{FHandInterfaceSettings}}
+\doxysubsubsection{\texorpdfstring{handMinRumbleDistance}{handMinRumbleDistance}}
+{\footnotesize\ttfamily float F\+Hand\+Interface\+Settings\+::hand\+Min\+Rumble\+Distance}
+
+Distance that the hand must get away from the intractable before the rumble function is called. \mbox{\Hypertarget{struct_f_hand_interface_settings_ae05fb77225779c148eaab914526d536a}\label{struct_f_hand_interface_settings_ae05fb77225779c148eaab914526d536a}} 
+\index{FHandInterfaceSettings@{FHandInterfaceSettings}!hightlightInteractable@{hightlightInteractable}}
+\index{hightlightInteractable@{hightlightInteractable}!FHandInterfaceSettings@{FHandInterfaceSettings}}
+\doxysubsubsection{\texorpdfstring{hightlightInteractable}{hightlightInteractable}}
+{\footnotesize\ttfamily bool F\+Hand\+Interface\+Settings\+::hightlight\+Interactable}
+
+Enable and disable highlight material functionality thats implemented in the hands interface class. \mbox{\Hypertarget{struct_f_hand_interface_settings_a8ec4891f161da083ca7e03c164cf30e4}\label{struct_f_hand_interface_settings_a8ec4891f161da083ca7e03c164cf30e4}} 
+\index{FHandInterfaceSettings@{FHandInterfaceSettings}!lockedToHand@{lockedToHand}}
+\index{lockedToHand@{lockedToHand}!FHandInterfaceSettings@{FHandInterfaceSettings}}
+\doxysubsubsection{\texorpdfstring{lockedToHand}{lockedToHand}}
+{\footnotesize\ttfamily bool F\+Hand\+Interface\+Settings\+::locked\+To\+Hand}
+
+Locks the component to the hand so that the grip pressed event will release the component and not releasing the trigger. \mbox{\Hypertarget{struct_f_hand_interface_settings_a9d5fd82a3869850330120c37be5c8735}\label{struct_f_hand_interface_settings_a9d5fd82a3869850330120c37be5c8735}} 
+\index{FHandInterfaceSettings@{FHandInterfaceSettings}!releaseDistance@{releaseDistance}}
+\index{releaseDistance@{releaseDistance}!FHandInterfaceSettings@{FHandInterfaceSettings}}
+\doxysubsubsection{\texorpdfstring{releaseDistance}{releaseDistance}}
+{\footnotesize\ttfamily float F\+Hand\+Interface\+Settings\+::release\+Distance}
+
+Distance that the hand can be away from an interacting component. For example the component will be released from the hand if the distance becomes greater than this value. \mbox{\Hypertarget{struct_f_hand_interface_settings_a985abf4c63471cb907c3d73dc7ecdda2}\label{struct_f_hand_interface_settings_a985abf4c63471cb907c3d73dc7ecdda2}} 
+\index{FHandInterfaceSettings@{FHandInterfaceSettings}!twoHandedGrabbing@{twoHandedGrabbing}}
+\index{twoHandedGrabbing@{twoHandedGrabbing}!FHandInterfaceSettings@{FHandInterfaceSettings}}
+\doxysubsubsection{\texorpdfstring{twoHandedGrabbing}{twoHandedGrabbing}}
+{\footnotesize\ttfamily bool F\+Hand\+Interface\+Settings\+::two\+Handed\+Grabbing}
+
+Two handed grab mode, don\textquotesingle{}t release component from current grabbing hand when grabbed by another hand. N\+O\+TE\+: Best for weapons etc. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Player/Hands\+Interface.\+h\end{DoxyCompactItemize}

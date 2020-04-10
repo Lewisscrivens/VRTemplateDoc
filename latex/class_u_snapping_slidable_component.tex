@@ -1,0 +1,215 @@
+\hypertarget{class_u_snapping_slidable_component}{}\doxysection{U\+Snapping\+Slidable\+Component Class Reference}
+\label{class_u_snapping_slidable_component}\index{USnappingSlidableComponent@{USnappingSlidableComponent}}
+
+
+{\ttfamily \#include $<$Snapping\+Slidable\+Component.\+h$>$}
+
+Inheritance diagram for U\+Snapping\+Slidable\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_snapping_slidable_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_snapping_slidable_component_ad5d9c4a1794ef8d5a75bd2be804e0444}{U\+Snapping\+Slidable\+Component}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_snapping_slidable_component_abc367aadae14c8a8681cc0a4de18715b}{Tick\+Component}} (float Delta\+Time, enum E\+Level\+Tick Tick\+Type, F\+Actor\+Component\+Tick\+Function $\ast$This\+Tick\+Function) override
+\item 
+void \mbox{\hyperlink{class_u_snapping_slidable_component_a542fdef1128d1831ff5cf33a501b6471}{Update\+Slidable\+State}} ()
+\item 
+void \mbox{\hyperlink{class_u_snapping_slidable_component_af3b8c60de8f1dba0914c6ef1b24baac0}{Overlap\+Begin}} (U\+Primitive\+Component $\ast$Overlapped\+Component, A\+Actor $\ast$Other\+Actor, U\+Primitive\+Component $\ast$Other\+Comp, int32 Other\+Body\+Index, bool b\+From\+Sweep, const F\+Hit\+Result \&Sweep\+Result)
+\item 
+void \mbox{\hyperlink{class_u_snapping_slidable_component_a103ab7bde6a750cd1f27e5be7d3c8ea7}{Force\+Snap}} (\mbox{\hyperlink{class_a_grabbable_actor}{A\+Grabbable\+Actor}} $\ast$actor\+To\+Snap)
+\item 
+void \mbox{\hyperlink{class_u_snapping_slidable_component_aeb8d1880fadf03f9cfa8658cd45b85fd}{Force\+Release}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+Vector \mbox{\hyperlink{class_u_snapping_slidable_component_a118f6485c06934d887c64f3c60cc6fb8}{location\+Offset}}
+\item 
+F\+Rotator \mbox{\hyperlink{class_u_snapping_slidable_component_a9a314e1d2398cf14090e5ef31a84eeb0}{rotation\+Offset}}
+\item 
+F\+Name \mbox{\hyperlink{class_u_snapping_slidable_component_a26e86ec55580d769e7898aad04ca7462}{snapping\+Tag}}
+\item 
+E\+Slide\+Axis \mbox{\hyperlink{class_u_snapping_slidable_component_a39994054ffc8a1ef69a80c89f4827350}{axis\+To\+Slide}}
+\item 
+float \mbox{\hyperlink{class_u_snapping_slidable_component_a3ab82928abc5466e13a73d4cfff82135}{sliding\+Limit}}
+\item 
+float \mbox{\hyperlink{class_u_snapping_slidable_component_a41f41ed71a6f337370dec8daa5bd0682}{released\+Lerp\+Time}}
+\item 
+A\+V\+R\+Hand $\ast$ \mbox{\hyperlink{class_u_snapping_slidable_component_a129c84361832985a6328120b0fd285b9}{hand\+Regrab}}
+\item 
+\mbox{\hyperlink{class_u_slidable_static_mesh}{U\+Slidable\+Static\+Mesh}} $\ast$ \mbox{\hyperlink{class_u_snapping_slidable_component_ac1349e6d71c92eb2942ca4d5bfcaafd4}{sliding\+Mesh}}
+\item 
+\mbox{\hyperlink{class_a_grabbable_actor}{A\+Grabbable\+Actor}} $\ast$ \mbox{\hyperlink{class_u_snapping_slidable_component_a7d3a164f1973e6a5748ff36699458bc7}{snapped\+Grabbable}}
+\item 
+F\+On\+Sliding\+Comp\+Snapped \mbox{\hyperlink{class_u_snapping_slidable_component_a28bfe3b220a1bc4050823deea2afd6d2}{On\+Snap\+Connect}}
+\item 
+F\+On\+Sliding\+Comp\+Snapped \mbox{\hyperlink{class_u_snapping_slidable_component_a8aea1fa2c8e174dabd09fa3941c2cfc5}{On\+Snap\+Disconnect}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_snapping_slidable_component_aab88fa7ceb417b1b91aeaa36b3b7d745}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_u_snapping_slidable_component_a393c2494f120dc9c96abdfe15dba97bd}{Init\+Sliding\+Component}} ()
+\item 
+void \mbox{\hyperlink{class_u_snapping_slidable_component_ade22024d795e9e3f772cbc5c19e042c7}{On\+Slidable\+Grabbed}} (A\+V\+R\+Hand $\ast$hand)
+\item 
+void \mbox{\hyperlink{class_u_snapping_slidable_component_ac7c43de7e259e507414042590cc3c5bd}{On\+Slidable\+Released}} (A\+V\+R\+Hand $\ast$hand)
+\item 
+void \mbox{\hyperlink{class_u_snapping_slidable_component_aa4e4a8dfc2e2f954bc40fa3032499302}{On\+Grabbable\+Grabbed}} (A\+V\+R\+Hand $\ast$hand, U\+Primitive\+Component $\ast$comp\+Pressed)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class designed to snap a grabbable actor to a sliding mesh that can be released to insert things into a given location. N\+O\+TE\+: This class is good for creating floppy disc functionality or inserting coins etc. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_snapping_slidable_component_ad5d9c4a1794ef8d5a75bd2be804e0444}\label{class_u_snapping_slidable_component_ad5d9c4a1794ef8d5a75bd2be804e0444}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{USnappingSlidableComponent()}{USnappingSlidableComponent()}}
+{\footnotesize\ttfamily U\+Snapping\+Slidable\+Component\+::\+U\+Snapping\+Slidable\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_snapping_slidable_component_aab88fa7ceb417b1b91aeaa36b3b7d745}\label{class_u_snapping_slidable_component_aab88fa7ceb417b1b91aeaa36b3b7d745}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void U\+Snapping\+Slidable\+Component\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+The start time of the interpolation. Level start. \mbox{\Hypertarget{class_u_snapping_slidable_component_aeb8d1880fadf03f9cfa8658cd45b85fd}\label{class_u_snapping_slidable_component_aeb8d1880fadf03f9cfa8658cd45b85fd}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!ForceRelease@{ForceRelease}}
+\index{ForceRelease@{ForceRelease}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{ForceRelease()}{ForceRelease()}}
+{\footnotesize\ttfamily void U\+Snapping\+Slidable\+Component\+::\+Force\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function used to force snap release a grabbable from this component. \mbox{\Hypertarget{class_u_snapping_slidable_component_a103ab7bde6a750cd1f27e5be7d3c8ea7}\label{class_u_snapping_slidable_component_a103ab7bde6a750cd1f27e5be7d3c8ea7}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!ForceSnap@{ForceSnap}}
+\index{ForceSnap@{ForceSnap}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{ForceSnap()}{ForceSnap()}}
+{\footnotesize\ttfamily void U\+Snapping\+Slidable\+Component\+::\+Force\+Snap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_grabbable_actor}{A\+Grabbable\+Actor}} $\ast$}]{actor\+To\+Snap }\end{DoxyParamCaption})}
+
+Function used to force snap a component into this snapping component. \mbox{\Hypertarget{class_u_snapping_slidable_component_a393c2494f120dc9c96abdfe15dba97bd}\label{class_u_snapping_slidable_component_a393c2494f120dc9c96abdfe15dba97bd}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!InitSlidingComponent@{InitSlidingComponent}}
+\index{InitSlidingComponent@{InitSlidingComponent}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{InitSlidingComponent()}{InitSlidingComponent()}}
+{\footnotesize\ttfamily void U\+Snapping\+Slidable\+Component\+::\+Init\+Sliding\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initialise the sliding component to connect to on snap connected. \mbox{\Hypertarget{class_u_snapping_slidable_component_aa4e4a8dfc2e2f954bc40fa3032499302}\label{class_u_snapping_slidable_component_aa4e4a8dfc2e2f954bc40fa3032499302}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!OnGrabbableGrabbed@{OnGrabbableGrabbed}}
+\index{OnGrabbableGrabbed@{OnGrabbableGrabbed}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{OnGrabbableGrabbed()}{OnGrabbableGrabbed()}}
+{\footnotesize\ttfamily void U\+Snapping\+Slidable\+Component\+::\+On\+Grabbable\+Grabbed (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand,  }\item[{U\+Primitive\+Component $\ast$}]{comp\+Pressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Called when the snapped\+Grabbable is grabbed by a hand. \mbox{\Hypertarget{class_u_snapping_slidable_component_ade22024d795e9e3f772cbc5c19e042c7}\label{class_u_snapping_slidable_component_ade22024d795e9e3f772cbc5c19e042c7}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!OnSlidableGrabbed@{OnSlidableGrabbed}}
+\index{OnSlidableGrabbed@{OnSlidableGrabbed}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{OnSlidableGrabbed()}{OnSlidableGrabbed()}}
+{\footnotesize\ttfamily void U\+Snapping\+Slidable\+Component\+::\+On\+Slidable\+Grabbed (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Called when the slidable is grabbed by a hand. \mbox{\Hypertarget{class_u_snapping_slidable_component_ac7c43de7e259e507414042590cc3c5bd}\label{class_u_snapping_slidable_component_ac7c43de7e259e507414042590cc3c5bd}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!OnSlidableReleased@{OnSlidableReleased}}
+\index{OnSlidableReleased@{OnSlidableReleased}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{OnSlidableReleased()}{OnSlidableReleased()}}
+{\footnotesize\ttfamily void U\+Snapping\+Slidable\+Component\+::\+On\+Slidable\+Released (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Called when the slidable is released from a hand. \mbox{\Hypertarget{class_u_snapping_slidable_component_af3b8c60de8f1dba0914c6ef1b24baac0}\label{class_u_snapping_slidable_component_af3b8c60de8f1dba0914c6ef1b24baac0}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!OverlapBegin@{OverlapBegin}}
+\index{OverlapBegin@{OverlapBegin}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{OverlapBegin()}{OverlapBegin()}}
+{\footnotesize\ttfamily void U\+Snapping\+Slidable\+Component\+::\+Overlap\+Begin (\begin{DoxyParamCaption}\item[{U\+Primitive\+Component $\ast$}]{Overlapped\+Component,  }\item[{A\+Actor $\ast$}]{Other\+Actor,  }\item[{U\+Primitive\+Component $\ast$}]{Other\+Comp,  }\item[{int32}]{Other\+Body\+Index,  }\item[{bool}]{b\+From\+Sweep,  }\item[{const F\+Hit\+Result \&}]{Sweep\+Result }\end{DoxyParamCaption})}
+
+This components overlap begin event. \mbox{\Hypertarget{class_u_snapping_slidable_component_abc367aadae14c8a8681cc0a4de18715b}\label{class_u_snapping_slidable_component_abc367aadae14c8a8681cc0a4de18715b}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!TickComponent@{TickComponent}}
+\index{TickComponent@{TickComponent}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{TickComponent()}{TickComponent()}}
+{\footnotesize\ttfamily void U\+Snapping\+Slidable\+Component\+::\+Tick\+Component (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{enum E\+Level\+Tick}]{Tick\+Type,  }\item[{F\+Actor\+Component\+Tick\+Function $\ast$}]{This\+Tick\+Function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Frame. \mbox{\Hypertarget{class_u_snapping_slidable_component_a542fdef1128d1831ff5cf33a501b6471}\label{class_u_snapping_slidable_component_a542fdef1128d1831ff5cf33a501b6471}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!UpdateSlidableState@{UpdateSlidableState}}
+\index{UpdateSlidableState@{UpdateSlidableState}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{UpdateSlidableState()}{UpdateSlidableState()}}
+{\footnotesize\ttfamily void U\+Snapping\+Slidable\+Component\+::\+Update\+Slidable\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function to update any changes in hand distance or releasing interpolation. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_snapping_slidable_component_a39994054ffc8a1ef69a80c89f4827350}\label{class_u_snapping_slidable_component_a39994054ffc8a1ef69a80c89f4827350}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!axisToSlide@{axisToSlide}}
+\index{axisToSlide@{axisToSlide}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{axisToSlide}{axisToSlide}}
+{\footnotesize\ttfamily E\+Slide\+Axis U\+Snapping\+Slidable\+Component\+::axis\+To\+Slide}
+
+The current relative axis for this sliding component to slide in when grabbed. \mbox{\Hypertarget{class_u_snapping_slidable_component_a129c84361832985a6328120b0fd285b9}\label{class_u_snapping_slidable_component_a129c84361832985a6328120b0fd285b9}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!handRegrab@{handRegrab}}
+\index{handRegrab@{handRegrab}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{handRegrab}{handRegrab}}
+{\footnotesize\ttfamily A\+V\+R\+Hand$\ast$ U\+Snapping\+Slidable\+Component\+::hand\+Regrab}
+
+The hand that just released the slidable or grabbable actor. \mbox{\Hypertarget{class_u_snapping_slidable_component_a118f6485c06934d887c64f3c60cc6fb8}\label{class_u_snapping_slidable_component_a118f6485c06934d887c64f3c60cc6fb8}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!locationOffset@{locationOffset}}
+\index{locationOffset@{locationOffset}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{locationOffset}{locationOffset}}
+{\footnotesize\ttfamily F\+Vector U\+Snapping\+Slidable\+Component\+::location\+Offset}
+
+The location offset from this box components center location to snap the grabbable to. \mbox{\Hypertarget{class_u_snapping_slidable_component_a28bfe3b220a1bc4050823deea2afd6d2}\label{class_u_snapping_slidable_component_a28bfe3b220a1bc4050823deea2afd6d2}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!OnSnapConnect@{OnSnapConnect}}
+\index{OnSnapConnect@{OnSnapConnect}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{OnSnapConnect}{OnSnapConnect}}
+{\footnotesize\ttfamily F\+On\+Sliding\+Comp\+Snapped U\+Snapping\+Slidable\+Component\+::\+On\+Snap\+Connect}
+
+Called when something is snapped. \mbox{\Hypertarget{class_u_snapping_slidable_component_a8aea1fa2c8e174dabd09fa3941c2cfc5}\label{class_u_snapping_slidable_component_a8aea1fa2c8e174dabd09fa3941c2cfc5}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!OnSnapDisconnect@{OnSnapDisconnect}}
+\index{OnSnapDisconnect@{OnSnapDisconnect}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{OnSnapDisconnect}{OnSnapDisconnect}}
+{\footnotesize\ttfamily F\+On\+Sliding\+Comp\+Snapped U\+Snapping\+Slidable\+Component\+::\+On\+Snap\+Disconnect}
+
+Called when something is unsnapped. \mbox{\Hypertarget{class_u_snapping_slidable_component_a41f41ed71a6f337370dec8daa5bd0682}\label{class_u_snapping_slidable_component_a41f41ed71a6f337370dec8daa5bd0682}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!releasedLerpTime@{releasedLerpTime}}
+\index{releasedLerpTime@{releasedLerpTime}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{releasedLerpTime}{releasedLerpTime}}
+{\footnotesize\ttfamily float U\+Snapping\+Slidable\+Component\+::released\+Lerp\+Time}
+
+If lerp to limit is true then this is the time it takes to lerp to the limit position of the slidable static mesh. \mbox{\Hypertarget{class_u_snapping_slidable_component_a9a314e1d2398cf14090e5ef31a84eeb0}\label{class_u_snapping_slidable_component_a9a314e1d2398cf14090e5ef31a84eeb0}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!rotationOffset@{rotationOffset}}
+\index{rotationOffset@{rotationOffset}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{rotationOffset}{rotationOffset}}
+{\footnotesize\ttfamily F\+Rotator U\+Snapping\+Slidable\+Component\+::rotation\+Offset}
+
+The rotation offset from this box components rotation to snap the grabbable to. \mbox{\Hypertarget{class_u_snapping_slidable_component_a3ab82928abc5466e13a73d4cfff82135}\label{class_u_snapping_slidable_component_a3ab82928abc5466e13a73d4cfff82135}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!slidingLimit@{slidingLimit}}
+\index{slidingLimit@{slidingLimit}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{slidingLimit}{slidingLimit}}
+{\footnotesize\ttfamily float U\+Snapping\+Slidable\+Component\+::sliding\+Limit}
+
+The current slidable limit that the slidable will move in. \mbox{\Hypertarget{class_u_snapping_slidable_component_ac1349e6d71c92eb2942ca4d5bfcaafd4}\label{class_u_snapping_slidable_component_ac1349e6d71c92eb2942ca4d5bfcaafd4}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!slidingMesh@{slidingMesh}}
+\index{slidingMesh@{slidingMesh}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{slidingMesh}{slidingMesh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_u_slidable_static_mesh}{U\+Slidable\+Static\+Mesh}}$\ast$ U\+Snapping\+Slidable\+Component\+::sliding\+Mesh}
+
+The intialised sliding static mesh. \mbox{\Hypertarget{class_u_snapping_slidable_component_a7d3a164f1973e6a5748ff36699458bc7}\label{class_u_snapping_slidable_component_a7d3a164f1973e6a5748ff36699458bc7}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!snappedGrabbable@{snappedGrabbable}}
+\index{snappedGrabbable@{snappedGrabbable}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{snappedGrabbable}{snappedGrabbable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_grabbable_actor}{A\+Grabbable\+Actor}}$\ast$ U\+Snapping\+Slidable\+Component\+::snapped\+Grabbable}
+
+The current grabbable snapped to the snapping component. \mbox{\Hypertarget{class_u_snapping_slidable_component_a26e86ec55580d769e7898aad04ca7462}\label{class_u_snapping_slidable_component_a26e86ec55580d769e7898aad04ca7462}} 
+\index{USnappingSlidableComponent@{USnappingSlidableComponent}!snappingTag@{snappingTag}}
+\index{snappingTag@{snappingTag}!USnappingSlidableComponent@{USnappingSlidableComponent}}
+\doxysubsubsection{\texorpdfstring{snappingTag}{snappingTag}}
+{\footnotesize\ttfamily F\+Name U\+Snapping\+Slidable\+Component\+::snapping\+Tag}
+
+The tag required on a grabbable actor to be snapped into this component. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Snapping\+Slidable\+Component.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Snapping\+Slidable\+Component.\+cpp\end{DoxyCompactItemize}

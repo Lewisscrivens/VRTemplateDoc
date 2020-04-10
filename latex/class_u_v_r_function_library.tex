@@ -1,0 +1,145 @@
+\hypertarget{class_u_v_r_function_library}{}\doxysection{U\+V\+R\+Function\+Library Class Reference}
+\label{class_u_v_r_function_library}\index{UVRFunctionLibrary@{UVRFunctionLibrary}}
+
+
+{\ttfamily \#include $<$V\+R\+Function\+Library.\+h$>$}
+
+Inheritance diagram for U\+V\+R\+Function\+Library\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_v_r_function_library}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static F\+Rotator \mbox{\hyperlink{class_u_v_r_function_library_a67a8088d1f272e3f6690cfad98c70fdf}{Get\+Relative\+Rotation\+From\+World}} (F\+Rotator current\+World\+Rotation, F\+Transform parent\+Transform)
+\item 
+static F\+Rotator \mbox{\hyperlink{class_u_v_r_function_library_a62d6d2f1656f144d7f3fcb98f06a67ea}{Get\+World\+Rotation\+From\+Relative}} (F\+Rotator current\+Relative\+Rotation, F\+Transform parent\+Transform)
+\item 
+static float \mbox{\hyperlink{class_u_v_r_function_library_aa62703c2299c6ed6b14b1e8882ce49c2}{Get\+Yaw\+Angle}} (F\+Vector vector)
+\item 
+static float \mbox{\hyperlink{class_u_v_r_function_library_a0fa57a5aca9286d87e558a83fe89cace}{Get\+Angle\+From\+Cumulative\+Angle}} (float angle)
+\item 
+static F\+Vector \mbox{\hyperlink{class_u_v_r_function_library_a6cf547e201d2ecd5524e9ef10f936660}{Rotate\+Around}} (F\+Vector to\+Rotate, float amount\+To\+Rotate, F\+Vector axis, F\+Vector pivot\+Location=F\+Vector\+::\+Zero\+Vector)
+\item 
+static F\+Vector \mbox{\hyperlink{class_u_v_r_function_library_ae933b4cd96fa8aa4a5284cf810dbcb43}{Calculate\+Actor\+Local\+Extent}} (A\+Actor $\ast$actor)
+\item 
+static void \mbox{\hyperlink{class_u_v_r_function_library_a73c0e6421e7b8b51da41cd8c4fe1ac8b}{Fill\+Object\+Array}} (T\+Array$<$ T\+Enum\+As\+Byte$<$ E\+Object\+Type\+Query $>$$>$ \&array)
+\item 
+static void \mbox{\hyperlink{class_u_v_r_function_library_a45f1c67fb6e299a555d1fb1d6d6c62b6}{Reset\+Current\+Level}} (U\+Object $\ast$world\+Context)
+\item 
+static void \mbox{\hyperlink{class_u_v_r_function_library_a9fa5c67689c1dec3c0048797a0cc2f4a}{Set\+Angular\+Constraint\+Options}} (U\+Physics\+Constraint\+Component $\ast$constraint, float swing1\+Limit, E\+Angular\+Constraint\+Motion swing1\+Mode, float swing2\+Limit, E\+Angular\+Constraint\+Motion swing2\+Mode, float twist\+Limit, E\+Angular\+Constraint\+Motion twist\+Mode)
+\item 
+static void \mbox{\hyperlink{class_u_v_r_function_library_a819a56e84921f4831d92b3b608b6ebc2}{Set\+Linear\+Constraint\+Options}} (U\+Physics\+Constraint\+Component $\ast$constraint, float x\+Limit, E\+Linear\+Constraint\+Motion x\+Mode, float y\+Limit, E\+Linear\+Constraint\+Motion y\+Mode, float z\+Limit, E\+Linear\+Constraint\+Motion z\+Mode)
+\item 
+static F\+Transform \mbox{\hyperlink{class_u_v_r_function_library_ad67d37a77bd3b8795cbb3a3b3c7f97d7}{LerpT}} (F\+Transform start\+Transform, F\+Transform end\+Transform, float alpha)
+\item 
+static F\+Transform \mbox{\hyperlink{class_u_v_r_function_library_ad1db18544dee0a40e1031f14cd40b947}{Lerp\+T\+Speed}} (F\+Transform start\+Transform, F\+Transform end\+Transform, float speed, float delta\+Time)
+\item 
+static bool \mbox{\hyperlink{class_u_v_r_function_library_a688ee48c89bb7cca7ee13aa73d7aa8ba}{Component\+Overlap\+Components\+By\+Object}} (U\+Primitive\+Component $\ast$Component, const F\+Transform \&Component\+Transform, const T\+Array$<$ T\+Enum\+As\+Byte$<$ E\+Object\+Type\+Query $>$ $>$ \&Object\+Types, E\+Collision\+Channel blocking\+Channel, const T\+Array$<$ A\+Actor $\ast$ $>$ \&Actors\+To\+Ignore, T\+Array$<$ U\+Primitive\+Component $\ast$ $>$ \&Out\+Components)
+\item 
+static bool \mbox{\hyperlink{class_u_v_r_function_library_addfe13baa1d00ae4708f3106c9607b05}{Component\+Overlap\+Components\+By\+Channel}} (U\+Primitive\+Component $\ast$comp, const F\+Transform \&transform\+To\+Check, E\+Collision\+Channel channel, const T\+Array$<$ A\+Actor $\ast$ $>$ \&ignored\+Actors, T\+Array$<$ U\+Primitive\+Component $\ast$ $>$ \&overlapping\+Components, bool block\+Only=true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_u_v_r_function_library_a050bdf0a9a1b304f9b74ab77af0ebd82}\label{class_u_v_r_function_library_a050bdf0a9a1b304f9b74ab77af0ebd82}} 
+F\+Timer\+Handle {\bfseries col\+Delay}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class stores any re-\/usable code or static functions to call to protected events. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_v_r_function_library_ae933b4cd96fa8aa4a5284cf810dbcb43}\label{class_u_v_r_function_library_ae933b4cd96fa8aa4a5284cf810dbcb43}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!CalculateActorLocalExtent@{CalculateActorLocalExtent}}
+\index{CalculateActorLocalExtent@{CalculateActorLocalExtent}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{CalculateActorLocalExtent()}{CalculateActorLocalExtent()}}
+{\footnotesize\ttfamily F\+Vector U\+V\+R\+Function\+Library\+::\+Calculate\+Actor\+Local\+Extent (\begin{DoxyParamCaption}\item[{A\+Actor $\ast$}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the local extent of an actor where current rotation is taken into account. @\+Param actor, The actor to get the local extent of. \mbox{\Hypertarget{class_u_v_r_function_library_addfe13baa1d00ae4708f3106c9607b05}\label{class_u_v_r_function_library_addfe13baa1d00ae4708f3106c9607b05}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!ComponentOverlapComponentsByChannel@{ComponentOverlapComponentsByChannel}}
+\index{ComponentOverlapComponentsByChannel@{ComponentOverlapComponentsByChannel}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{ComponentOverlapComponentsByChannel()}{ComponentOverlapComponentsByChannel()}}
+{\footnotesize\ttfamily bool U\+V\+R\+Function\+Library\+::\+Component\+Overlap\+Components\+By\+Channel (\begin{DoxyParamCaption}\item[{U\+Primitive\+Component $\ast$}]{comp,  }\item[{const F\+Transform \&}]{transform\+To\+Check,  }\item[{E\+Collision\+Channel}]{channel,  }\item[{const T\+Array$<$ A\+Actor $\ast$ $>$ \&}]{ignored\+Actors,  }\item[{T\+Array$<$ U\+Primitive\+Component $\ast$ $>$ \&}]{overlapping\+Components,  }\item[{bool}]{block\+Only = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Function to check if a given component at a transform overlaps blocking collision in a specified trace channel. @\+Param comp, The component to check overlaps for. @\+Param transform\+To\+Check, The transform location/rotation to check the comp overlap at. @\+Param channel, The collision channel to check against. @\+Param ignored\+Actors, The actors to ignore. @\+Param @\+Output overlapping\+Components, The output array for each overlapped component. @\+Param block\+Only, Should the overlap check only take blocking collisions into account. @\+Return true if overlaps was detected, false otherwise. \mbox{\Hypertarget{class_u_v_r_function_library_a688ee48c89bb7cca7ee13aa73d7aa8ba}\label{class_u_v_r_function_library_a688ee48c89bb7cca7ee13aa73d7aa8ba}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!ComponentOverlapComponentsByObject@{ComponentOverlapComponentsByObject}}
+\index{ComponentOverlapComponentsByObject@{ComponentOverlapComponentsByObject}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{ComponentOverlapComponentsByObject()}{ComponentOverlapComponentsByObject()}}
+{\footnotesize\ttfamily bool U\+V\+R\+Function\+Library\+::\+Component\+Overlap\+Components\+By\+Object (\begin{DoxyParamCaption}\item[{U\+Primitive\+Component $\ast$}]{Component,  }\item[{const F\+Transform \&}]{Component\+Transform,  }\item[{const T\+Array$<$ T\+Enum\+As\+Byte$<$ E\+Object\+Type\+Query $>$ $>$ \&}]{Object\+Types,  }\item[{E\+Collision\+Channel}]{blocking\+Channel,  }\item[{const T\+Array$<$ A\+Actor $\ast$ $>$ \&}]{Actors\+To\+Ignore,  }\item[{T\+Array$<$ U\+Primitive\+Component $\ast$ $>$ \&}]{Out\+Components }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Copied from U\+Kismet\+System\+Library as it needed to only return things that are trying block a given channel. N\+O\+TE\+: Used to check new location of component against blocking collision... \mbox{\Hypertarget{class_u_v_r_function_library_a73c0e6421e7b8b51da41cd8c4fe1ac8b}\label{class_u_v_r_function_library_a73c0e6421e7b8b51da41cd8c4fe1ac8b}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!FillObjectArray@{FillObjectArray}}
+\index{FillObjectArray@{FillObjectArray}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{FillObjectArray()}{FillObjectArray()}}
+{\footnotesize\ttfamily void U\+V\+R\+Function\+Library\+::\+Fill\+Object\+Array (\begin{DoxyParamCaption}\item[{T\+Array$<$ T\+Enum\+As\+Byte$<$ E\+Object\+Type\+Query $>$$>$ \&}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Fill a E\+Object\+Type\+Query array. @\+Param array, array to fill. \mbox{\Hypertarget{class_u_v_r_function_library_a0fa57a5aca9286d87e558a83fe89cace}\label{class_u_v_r_function_library_a0fa57a5aca9286d87e558a83fe89cace}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!GetAngleFromCumulativeAngle@{GetAngleFromCumulativeAngle}}
+\index{GetAngleFromCumulativeAngle@{GetAngleFromCumulativeAngle}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{GetAngleFromCumulativeAngle()}{GetAngleFromCumulativeAngle()}}
+{\footnotesize\ttfamily float U\+V\+R\+Function\+Library\+::\+Get\+Angle\+From\+Cumulative\+Angle (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get an angle between 0 and 360 from a cumulative angle. @\+Param angle, The angle to convert into 0 to 360 format. \mbox{\Hypertarget{class_u_v_r_function_library_a67a8088d1f272e3f6690cfad98c70fdf}\label{class_u_v_r_function_library_a67a8088d1f272e3f6690cfad98c70fdf}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!GetRelativeRotationFromWorld@{GetRelativeRotationFromWorld}}
+\index{GetRelativeRotationFromWorld@{GetRelativeRotationFromWorld}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{GetRelativeRotationFromWorld()}{GetRelativeRotationFromWorld()}}
+{\footnotesize\ttfamily F\+Rotator U\+V\+R\+Function\+Library\+::\+Get\+Relative\+Rotation\+From\+World (\begin{DoxyParamCaption}\item[{F\+Rotator}]{current\+World\+Rotation,  }\item[{F\+Transform}]{parent\+Transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Timer handle for the collision delay function. Get the relative rotation from the world rotation and parent transform. @\+Param current\+World\+Rotation, The components current world rotation to get the relative rotation from. @\+Param parent\+Transform, The components parents transform to calculate relative rotation from. \mbox{\Hypertarget{class_u_v_r_function_library_a62d6d2f1656f144d7f3fcb98f06a67ea}\label{class_u_v_r_function_library_a62d6d2f1656f144d7f3fcb98f06a67ea}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!GetWorldRotationFromRelative@{GetWorldRotationFromRelative}}
+\index{GetWorldRotationFromRelative@{GetWorldRotationFromRelative}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{GetWorldRotationFromRelative()}{GetWorldRotationFromRelative()}}
+{\footnotesize\ttfamily F\+Rotator U\+V\+R\+Function\+Library\+::\+Get\+World\+Rotation\+From\+Relative (\begin{DoxyParamCaption}\item[{F\+Rotator}]{current\+Relative\+Rotation,  }\item[{F\+Transform}]{parent\+Transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the world rotation from the relative rotation and parent transform. @\+Param current\+Relative\+Rotation, The current relative rotation of the component to get the world rotation from. @\+Param parent\+Transform, The components parent transform to calculate world rotation from. \mbox{\Hypertarget{class_u_v_r_function_library_aa62703c2299c6ed6b14b1e8882ce49c2}\label{class_u_v_r_function_library_aa62703c2299c6ed6b14b1e8882ce49c2}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!GetYawAngle@{GetYawAngle}}
+\index{GetYawAngle@{GetYawAngle}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{GetYawAngle()}{GetYawAngle()}}
+{\footnotesize\ttfamily float U\+V\+R\+Function\+Library\+::\+Get\+Yaw\+Angle (\begin{DoxyParamCaption}\item[{F\+Vector}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the Yaw look at angle from a given vector. @\+Param vector, The vector to get the yaw angle rotation from. \mbox{\Hypertarget{class_u_v_r_function_library_ad67d37a77bd3b8795cbb3a3b3c7f97d7}\label{class_u_v_r_function_library_ad67d37a77bd3b8795cbb3a3b3c7f97d7}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!LerpT@{LerpT}}
+\index{LerpT@{LerpT}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{LerpT()}{LerpT()}}
+{\footnotesize\ttfamily F\+Transform U\+V\+R\+Function\+Library\+::\+LerpT (\begin{DoxyParamCaption}\item[{F\+Transform}]{start\+Transform,  }\item[{F\+Transform}]{end\+Transform,  }\item[{float}]{alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Function to lerp a transform for cleaner look in code. @\+Param start\+Transform, The start transform to lerp from. @\+Param end\+Transform, The end transform to lerp the start\+Transform to. @\+Param alpha, @\+Return F\+Transform, The current lerped progress transform. \mbox{\Hypertarget{class_u_v_r_function_library_ad1db18544dee0a40e1031f14cd40b947}\label{class_u_v_r_function_library_ad1db18544dee0a40e1031f14cd40b947}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!LerpTSpeed@{LerpTSpeed}}
+\index{LerpTSpeed@{LerpTSpeed}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{LerpTSpeed()}{LerpTSpeed()}}
+{\footnotesize\ttfamily F\+Transform U\+V\+R\+Function\+Library\+::\+Lerp\+T\+Speed (\begin{DoxyParamCaption}\item[{F\+Transform}]{start\+Transform,  }\item[{F\+Transform}]{end\+Transform,  }\item[{float}]{speed,  }\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Function to lerp a transform at a given speed. @\+Param start\+Transform, The start transform to lerp from. @\+Param end\+Transform, The end transform to lerp the start\+Transform to. @\+Param speed, The speed to lerp between start and end. @\+Param delta\+Time, The worlds delta seconds value. @\+Return F\+Transform, The current lerped progress transform. \mbox{\Hypertarget{class_u_v_r_function_library_a45f1c67fb6e299a555d1fb1d6d6c62b6}\label{class_u_v_r_function_library_a45f1c67fb6e299a555d1fb1d6d6c62b6}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!ResetCurrentLevel@{ResetCurrentLevel}}
+\index{ResetCurrentLevel@{ResetCurrentLevel}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{ResetCurrentLevel()}{ResetCurrentLevel()}}
+{\footnotesize\ttfamily void U\+V\+R\+Function\+Library\+::\+Reset\+Current\+Level (\begin{DoxyParamCaption}\item[{U\+Object $\ast$}]{world\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Reset the current level. @\+Param world\+Context, object in level that should be reset. \mbox{\Hypertarget{class_u_v_r_function_library_a6cf547e201d2ecd5524e9ef10f936660}\label{class_u_v_r_function_library_a6cf547e201d2ecd5524e9ef10f936660}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!RotateAround@{RotateAround}}
+\index{RotateAround@{RotateAround}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{RotateAround()}{RotateAround()}}
+{\footnotesize\ttfamily F\+Vector U\+V\+R\+Function\+Library\+::\+Rotate\+Around (\begin{DoxyParamCaption}\item[{F\+Vector}]{to\+Rotate,  }\item[{float}]{amount\+To\+Rotate,  }\item[{F\+Vector}]{axis,  }\item[{F\+Vector}]{pivot\+Location = {\ttfamily FVector\+:\+:ZeroVector} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Rotates a vector location around a given axis and world location (pivot\+Location). @\+Param to\+Rotate, The vector to be rotated around the axis. @\+Param amount\+To\+Rotate, The angle to rotate around the axis at the pivot location. @\+Param axis, The axis to rotate around. @\+Param pivot\+Location, The world location of the pivot to be rotated around. \mbox{\Hypertarget{class_u_v_r_function_library_a9fa5c67689c1dec3c0048797a0cc2f4a}\label{class_u_v_r_function_library_a9fa5c67689c1dec3c0048797a0cc2f4a}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!SetAngularConstraintOptions@{SetAngularConstraintOptions}}
+\index{SetAngularConstraintOptions@{SetAngularConstraintOptions}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{SetAngularConstraintOptions()}{SetAngularConstraintOptions()}}
+{\footnotesize\ttfamily void U\+V\+R\+Function\+Library\+::\+Set\+Angular\+Constraint\+Options (\begin{DoxyParamCaption}\item[{U\+Physics\+Constraint\+Component $\ast$}]{constraint,  }\item[{float}]{swing1\+Limit,  }\item[{E\+Angular\+Constraint\+Motion}]{swing1\+Mode,  }\item[{float}]{swing2\+Limit,  }\item[{E\+Angular\+Constraint\+Motion}]{swing2\+Mode,  }\item[{float}]{twist\+Limit,  }\item[{E\+Angular\+Constraint\+Motion}]{twist\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Single function for setting constraint drive angular parameters. @\+Param constraint, constraint to change parameters on. @\+Param swing1\+Limit, swing1\+Limit to use. @\+Param swing1\+Mode, Type of motion to have in the swing1 axis. @\+Param swing2\+Limit, swing2\+Limit to use. @\+Param swing2\+Mode, Type of motion to have in the swing2 axis. @\+Param twist\+Limit, twist\+Limit to use. @\+Param twist\+Mode, Type of motion to have in the twist axis. \mbox{\Hypertarget{class_u_v_r_function_library_a819a56e84921f4831d92b3b608b6ebc2}\label{class_u_v_r_function_library_a819a56e84921f4831d92b3b608b6ebc2}} 
+\index{UVRFunctionLibrary@{UVRFunctionLibrary}!SetLinearConstraintOptions@{SetLinearConstraintOptions}}
+\index{SetLinearConstraintOptions@{SetLinearConstraintOptions}!UVRFunctionLibrary@{UVRFunctionLibrary}}
+\doxysubsubsection{\texorpdfstring{SetLinearConstraintOptions()}{SetLinearConstraintOptions()}}
+{\footnotesize\ttfamily void U\+V\+R\+Function\+Library\+::\+Set\+Linear\+Constraint\+Options (\begin{DoxyParamCaption}\item[{U\+Physics\+Constraint\+Component $\ast$}]{constraint,  }\item[{float}]{x\+Limit,  }\item[{E\+Linear\+Constraint\+Motion}]{x\+Mode,  }\item[{float}]{y\+Limit,  }\item[{E\+Linear\+Constraint\+Motion}]{y\+Mode,  }\item[{float}]{z\+Limit,  }\item[{E\+Linear\+Constraint\+Motion}]{z\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Single function for setting constraint drive linear parameters. @\+Param constraint, constraint to change parameters on. @\+Param x\+Limit, x limit to use. @\+Param x\+Mode, Type of motion to have in the x axis. @\+Param y\+Limit, y limit to use. @\+Param y\+Mode, Type of motion to have in the y axis. @\+Param z\+Limit, z limit to use. @\+Param z\+Mode, Type of motion to have in the z axis. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/V\+R\+Function\+Library.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/V\+R\+Function\+Library.\+cpp\end{DoxyCompactItemize}

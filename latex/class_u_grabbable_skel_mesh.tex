@@ -1,0 +1,398 @@
+\hypertarget{class_u_grabbable_skel_mesh}{}\doxysection{U\+Grabbable\+Skel\+Mesh Class Reference}
+\label{class_u_grabbable_skel_mesh}\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+
+
+{\ttfamily \#include $<$Grabbable\+Skel\+Mesh.\+h$>$}
+
+Inheritance diagram for U\+Grabbable\+Skel\+Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_grabbable_skel_mesh}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_grabbable_skel_mesh_adf0c2dd00a582a77254d4c09df1037dc}{U\+Grabbable\+Skel\+Mesh}} ()
+\item 
+void \mbox{\hyperlink{class_u_grabbable_skel_mesh_abfec54dcdfd1c254293f7c351a5f3dd4}{On\+Hit}} (U\+Primitive\+Component $\ast$Hit\+Comp, A\+Actor $\ast$Other\+Actor, U\+Primitive\+Component $\ast$Other\+Comp, F\+Vector Normal\+Impulse, const F\+Hit\+Result \&Hit)
+\item 
+void \mbox{\hyperlink{class_u_grabbable_skel_mesh_a6e1fcda8c9ec077cfc8de43a69dfb568}{Reset\+Last\+Rumble\+Intensity}} ()
+\item 
+void \mbox{\hyperlink{class_u_grabbable_skel_mesh_adf2caa498063ca662ee7e48c4bb5eda6}{Pickup\+Physics\+Handle}} (A\+V\+R\+Hand $\ast$hand)
+\item 
+void \mbox{\hyperlink{class_u_grabbable_skel_mesh_a5309306f11286a77069c7df5ea6532dc}{Drop\+Physics\+Handle}} (A\+V\+R\+Hand $\ast$hand)
+\item 
+F\+Name \mbox{\hyperlink{class_u_grabbable_skel_mesh_a6933f5d40c713414ce490a0595a07379}{Update\+Components\+Closest\+Body}} (A\+V\+R\+Hand $\ast$hand)
+\item 
+bool \mbox{\hyperlink{class_u_grabbable_skel_mesh_ab900d59ce6ba0898e0623d8f67baddef}{Is\+Mesh\+Grabbed}} ()
+\item 
+F\+Transform \mbox{\hyperlink{class_u_grabbable_skel_mesh_acaa9199777be5c42e3022c1d576ffe63}{Get\+Grabbed\+Transform}} ()
+\item 
+bool \mbox{\hyperlink{class_u_grabbable_skel_mesh_ae47c83a37a331c1ec44ab189d7f40423}{Get\+Recently\+Hit}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_grabbable_skel_mesh_af9d98aa95e2d048e6f5d34f631111aaf}{Grab\+Pressed\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_u_grabbable_skel_mesh_a616534e5bed436dd9b845d71638e8267}{Grab\+Released\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_u_grabbable_skel_mesh_af60d6f4f54972dc6fb58be9a5cb39a2a}{Dragging\+\_\+\+Implementation}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{class_u_grabbable_skel_mesh_a5030b4fc948f424336a9edc543928ccd}{Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_u_grabbable_skel_mesh_a6fe562c8c90ae78a142963490aa31fd2}{End\+Overlapping\+\_\+\+Implementation}} (A\+V\+R\+Hand $\ast$hand) override
+\item 
+virtual void \mbox{\hyperlink{class_u_grabbable_skel_mesh_abb3a6c27d1fe0a120c95d73a25c75d42}{Teleported\+\_\+\+Implementation}} () override
+\item 
+virtual \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_u_grabbable_skel_mesh_a73f9845a4a23b9fd06c1e196f50f4622}{Get\+Interface\+Settings\+\_\+\+Implementation}} () override
+\item 
+\mbox{\Hypertarget{class_u_grabbable_skel_mesh_a1e81a2cd83134014aaa21acc7af5a9cf}\label{class_u_grabbable_skel_mesh_a1e81a2cd83134014aaa21acc7af5a9cf}} 
+virtual void {\bfseries Set\+Interface\+Settings\+\_\+\+Implementation} (\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} new\+Interface\+Settings) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\+Animation\+Asset $\ast$ \mbox{\hyperlink{class_u_grabbable_skel_mesh_a57a608295aa42cd8b402d95ad174be23}{snapped\+Animation}}
+\item 
+A\+V\+R\+Hand $\ast$ \mbox{\hyperlink{class_u_grabbable_skel_mesh_ab8de2501a36e25f51acacceb430c0461}{hand\+Ref}}
+\item 
+A\+V\+R\+Hand $\ast$ \mbox{\hyperlink{class_u_grabbable_skel_mesh_ad664083386e698a3c525f75cc3aefe81}{other\+Hand\+Ref}}
+\item 
+F\+Name \mbox{\hyperlink{class_u_grabbable_skel_mesh_aa05dfb43a90145be02d07e91ef610cf9}{bone\+To\+Grab}}
+\item 
+F\+Name \mbox{\hyperlink{class_u_grabbable_skel_mesh_ac2348bc7e75327e0c4ada070aaa7d330}{bone\+To\+Snap}}
+\item 
+bool \mbox{\hyperlink{class_u_grabbable_skel_mesh_a0899c3a9c6597acbe6f09b8e0d4eff07}{center\+Physics\+Joint}}
+\item 
+bool \mbox{\hyperlink{class_u_grabbable_skel_mesh_a6497c2c4eaeb8cd9fce7c0b1fc72e5aa}{adjust\+Inertia\+From\+Array}}
+\item 
+bool \mbox{\hyperlink{class_u_grabbable_skel_mesh_aa45bdf4fd8c6a037ad1d3540589f968d}{check\+Collision}}
+\item 
+float \mbox{\hyperlink{class_u_grabbable_skel_mesh_a0b0aa94d9b0bdf020b493c68d7f67173}{time\+To\+Lerp}}
+\item 
+F\+Rotator \mbox{\hyperlink{class_u_grabbable_skel_mesh_a34c5fb5f79030cc814c1a35a6509851a}{snap\+To\+Hand\+Rotation\+Offset}}
+\item 
+F\+Vector \mbox{\hyperlink{class_u_grabbable_skel_mesh_aa7b7214aad8de1d2947d4f7b760a859e}{snap\+To\+Hand\+Location\+Offset}}
+\item 
+float \mbox{\hyperlink{class_u_grabbable_skel_mesh_a551aa0ba94c923fbac251261e2ba1c37}{haptic\+Intensity\+Multiplier}}
+\item 
+U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_u_grabbable_skel_mesh_ab01286fae895b5ab7a62d6836970971e}{collision\+Feedback\+Override}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_u_grabbable_skel_mesh_a1b3fcd0000d4adac43c6fac6446ba259}{impact\+Sound\+Override}}
+\item 
+bool \mbox{\hyperlink{class_u_grabbable_skel_mesh_a84e592881542a30d6b934bd96809046c}{debug}}
+\item 
+\mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} \mbox{\hyperlink{class_u_grabbable_skel_mesh_aa04d153bd63077a0fdd4009de8e0674a}{interactable\+Settings}}
+\item 
+T\+Array$<$ A\+Actor $\ast$ $>$ \mbox{\hyperlink{class_u_grabbable_skel_mesh_a40d2d5f443470acd2c00250f233d139f}{ignored}}
+\item 
+U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_u_grabbable_skel_mesh_a29db03b75561691b6799302469fb7dea}{impact\+Sound}}
+\item 
+U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_u_grabbable_skel_mesh_a86332eca660f942484fcc7320ded8459}{collision\+Feedback}}
+\item 
+F\+Grabbed\+Component \mbox{\hyperlink{class_u_grabbable_skel_mesh_a894c856f9267945ff86add7c8c8b2d6b}{On\+Mesh\+Grabbed}}
+\item 
+F\+Grabbed\+Component \mbox{\hyperlink{class_u_grabbable_skel_mesh_afae15ecf21ef3f7c3b9fad30f59f25a8}{On\+Mesh\+Released}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_grabbable_skel_mesh_a0861c070669a2d13f041978522acad15}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_u_grabbable_skel_mesh_ace3586798570b1205c54183976eb08b6}{Toggle\+Soft\+Physics\+Handle}} (bool on)
+\item 
+void \mbox{\hyperlink{class_u_grabbable_skel_mesh_a30fc78a9a15d4f3f1e6bc630f62697e4}{Lerping\+Back}} (float delta\+Time)
+\item 
+void \mbox{\hyperlink{class_u_grabbable_skel_mesh_ad9b60174b84686927b7653f4ab1af668}{Toggle\+Lerping}} (bool on)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Grabbable skeletal mesh which will control grabbing bones and teleporting with a physics handle grabbed component. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_grabbable_skel_mesh_adf0c2dd00a582a77254d4c09df1037dc}\label{class_u_grabbable_skel_mesh_adf0c2dd00a582a77254d4c09df1037dc}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{UGrabbableSkelMesh()}{UGrabbableSkelMesh()}}
+{\footnotesize\ttfamily U\+Grabbable\+Skel\+Mesh\+::\+U\+Grabbable\+Skel\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_grabbable_skel_mesh_a0861c070669a2d13f041978522acad15}\label{class_u_grabbable_skel_mesh_a0861c070669a2d13f041978522acad15}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Is lerping from last collided position back to the hand grab world offset and rotation offset. Level Start. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_af60d6f4f54972dc6fb58be9a5cb39a2a}\label{class_u_grabbable_skel_mesh_af60d6f4f54972dc6fb58be9a5cb39a2a}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!Dragging\_Implementation@{Dragging\_Implementation}}
+\index{Dragging\_Implementation@{Dragging\_Implementation}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{Dragging\_Implementation()}{Dragging\_Implementation()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+Dragging\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ticking function that is ran while an interactable is grabbed. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae97908dd8838ff7157fdf8d61aeae1e6}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_grabbable_skel_mesh_a5309306f11286a77069c7df5ea6532dc}\label{class_u_grabbable_skel_mesh_a5309306f11286a77069c7df5ea6532dc}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!DropPhysicsHandle@{DropPhysicsHandle}}
+\index{DropPhysicsHandle@{DropPhysicsHandle}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{DropPhysicsHandle()}{DropPhysicsHandle()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+Drop\+Physics\+Handle (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})}
+
+Called to detach the grabbable from the hands collision physics handle. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a6fe562c8c90ae78a142963490aa31fd2}\label{class_u_grabbable_skel_mesh_a6fe562c8c90ae78a142963490aa31fd2}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!EndOverlapping\_Implementation@{EndOverlapping\_Implementation}}
+\index{EndOverlapping\_Implementation@{EndOverlapping\_Implementation}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{EndOverlapping\_Implementation()}{EndOverlapping\_Implementation()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+End\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed is removed. N\+O\+TE\+: Handles un-\/highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a4f3dfa15eb379b4c9fd7f2dbe3aca9bd}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_grabbable_skel_mesh_acaa9199777be5c42e3022c1d576ffe63}\label{class_u_grabbable_skel_mesh_acaa9199777be5c42e3022c1d576ffe63}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!GetGrabbedTransform@{GetGrabbedTransform}}
+\index{GetGrabbedTransform@{GetGrabbedTransform}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{GetGrabbedTransform()}{GetGrabbedTransform()}}
+{\footnotesize\ttfamily F\+Transform U\+Grabbable\+Skel\+Mesh\+::\+Get\+Grabbed\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current grabbed transform. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a73f9845a4a23b9fd06c1e196f50f4622}\label{class_u_grabbable_skel_mesh_a73f9845a4a23b9fd06c1e196f50f4622}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}}
+\index{GetInterfaceSettings\_Implementation@{GetInterfaceSettings\_Implementation}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{GetInterfaceSettings\_Implementation()}{GetInterfaceSettings\_Implementation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} U\+Grabbable\+Skel\+Mesh\+::\+Get\+Interface\+Settings\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get and set functions to allow changes from blueprint. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a445029683d12cb13b8bddff6dd093993}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_grabbable_skel_mesh_ae47c83a37a331c1ec44ab189d7f40423}\label{class_u_grabbable_skel_mesh_ae47c83a37a331c1ec44ab189d7f40423}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!GetRecentlyHit@{GetRecentlyHit}}
+\index{GetRecentlyHit@{GetRecentlyHit}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{GetRecentlyHit()}{GetRecentlyHit()}}
+{\footnotesize\ttfamily bool U\+Grabbable\+Skel\+Mesh\+::\+Get\+Recently\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Was this grabbable skeletal mesh recently hit. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_af9d98aa95e2d048e6f5d34f631111aaf}\label{class_u_grabbable_skel_mesh_af9d98aa95e2d048e6f5d34f631111aaf}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!GrabPressed\_Implementation@{GrabPressed\_Implementation}}
+\index{GrabPressed\_Implementation@{GrabPressed\_Implementation}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{GrabPressed\_Implementation()}{GrabPressed\_Implementation()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+Grab\+Pressed\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Implementation of the hands interface. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a904db7e568a399ef503d68e40cf4d4eb}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_grabbable_skel_mesh_a616534e5bed436dd9b845d71638e8267}\label{class_u_grabbable_skel_mesh_a616534e5bed436dd9b845d71638e8267}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!GrabReleased\_Implementation@{GrabReleased\_Implementation}}
+\index{GrabReleased\_Implementation@{GrabReleased\_Implementation}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{GrabReleased\_Implementation()}{GrabReleased\_Implementation()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+Grab\+Released\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran when the trigger is released. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_ae50003621758b8836e206bff33003ab8}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_grabbable_skel_mesh_ab900d59ce6ba0898e0623d8f67baddef}\label{class_u_grabbable_skel_mesh_ab900d59ce6ba0898e0623d8f67baddef}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!IsMeshGrabbed@{IsMeshGrabbed}}
+\index{IsMeshGrabbed@{IsMeshGrabbed}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{IsMeshGrabbed()}{IsMeshGrabbed()}}
+{\footnotesize\ttfamily bool U\+Grabbable\+Skel\+Mesh\+::\+Is\+Mesh\+Grabbed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns whether the mesh is currently in a hand \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a30fc78a9a15d4f3f1e6bc630f62697e4}\label{class_u_grabbable_skel_mesh_a30fc78a9a15d4f3f1e6bc630f62697e4}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!LerpingBack@{LerpingBack}}
+\index{LerpingBack@{LerpingBack}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{LerpingBack()}{LerpingBack()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+Lerping\+Back (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Lerp the current grabbed bone position to the grabbed bone offset location from the hand after a collision. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_abfec54dcdfd1c254293f7c351a5f3dd4}\label{class_u_grabbable_skel_mesh_abfec54dcdfd1c254293f7c351a5f3dd4}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!OnHit@{OnHit}}
+\index{OnHit@{OnHit}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{OnHit()}{OnHit()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+On\+Hit (\begin{DoxyParamCaption}\item[{U\+Primitive\+Component $\ast$}]{Hit\+Comp,  }\item[{A\+Actor $\ast$}]{Other\+Actor,  }\item[{U\+Primitive\+Component $\ast$}]{Other\+Comp,  }\item[{F\+Vector}]{Normal\+Impulse,  }\item[{const F\+Hit\+Result \&}]{Hit }\end{DoxyParamCaption})}
+
+Hit event for this skeletal component. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a5030b4fc948f424336a9edc543928ccd}\label{class_u_grabbable_skel_mesh_a5030b4fc948f424336a9edc543928ccd}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!Overlapping\_Implementation@{Overlapping\_Implementation}}
+\index{Overlapping\_Implementation@{Overlapping\_Implementation}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{Overlapping\_Implementation()}{Overlapping\_Implementation()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+Overlapping\+\_\+\+Implementation (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand has selected it as the overlapping\+Grabbable to grab when grab is pressed. N\+O\+TE\+: Handles highlighting of interactables that are grabbable within the world. Be sure to call the super if overridden. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a06805a0a6903417322d5bda009bf8fa4}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_grabbable_skel_mesh_adf2caa498063ca662ee7e48c4bb5eda6}\label{class_u_grabbable_skel_mesh_adf2caa498063ca662ee7e48c4bb5eda6}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!PickupPhysicsHandle@{PickupPhysicsHandle}}
+\index{PickupPhysicsHandle@{PickupPhysicsHandle}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{PickupPhysicsHandle()}{PickupPhysicsHandle()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+Pickup\+Physics\+Handle (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})}
+
+Called to attach the grabbable to the hand using physics handle. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a6e1fcda8c9ec077cfc8de43a69dfb568}\label{class_u_grabbable_skel_mesh_a6e1fcda8c9ec077cfc8de43a69dfb568}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!ResetLastRumbleIntensity@{ResetLastRumbleIntensity}}
+\index{ResetLastRumbleIntensity@{ResetLastRumbleIntensity}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{ResetLastRumbleIntensity()}{ResetLastRumbleIntensity()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+Reset\+Last\+Rumble\+Intensity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Timer event to reset the last rumble intensity after a sound or haptic effect has finished playing. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_abb3a6c27d1fe0a120c95d73a25c75d42}\label{class_u_grabbable_skel_mesh_abb3a6c27d1fe0a120c95d73a25c75d42}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!Teleported\_Implementation@{Teleported\_Implementation}}
+\index{Teleported\_Implementation@{Teleported\_Implementation}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{Teleported\_Implementation()}{Teleported\_Implementation()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+Teleported\+\_\+\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Ran on an interactable when the hand is teleported. 
+
+Reimplemented from \mbox{\hyperlink{class_i_hands_interface_a8db4165f23e93d3889e89ff4f5057016}{I\+Hands\+Interface}}.
+
+\mbox{\Hypertarget{class_u_grabbable_skel_mesh_ad9b60174b84686927b7653f4ab1af668}\label{class_u_grabbable_skel_mesh_ad9b60174b84686927b7653f4ab1af668}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!ToggleLerping@{ToggleLerping}}
+\index{ToggleLerping@{ToggleLerping}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{ToggleLerping()}{ToggleLerping()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+Toggle\+Lerping (\begin{DoxyParamCaption}\item[{bool}]{on }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Used to start and stop/initiate the lerp of this component back to the grabbed offset location/rotation. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_ace3586798570b1205c54183976eb08b6}\label{class_u_grabbable_skel_mesh_ace3586798570b1205c54183976eb08b6}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!ToggleSoftPhysicsHandle@{ToggleSoftPhysicsHandle}}
+\index{ToggleSoftPhysicsHandle@{ToggleSoftPhysicsHandle}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{ToggleSoftPhysicsHandle()}{ToggleSoftPhysicsHandle()}}
+{\footnotesize\ttfamily void U\+Grabbable\+Skel\+Mesh\+::\+Toggle\+Soft\+Physics\+Handle (\begin{DoxyParamCaption}\item[{bool}]{on }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+E\+N\+A\+B\+LE S\+O\+F\+T\+ER H\+A\+N\+D\+L\+I\+NG F\+OR W\+H\+EN C\+O\+L\+L\+I\+D\+I\+NG... \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a6933f5d40c713414ce490a0595a07379}\label{class_u_grabbable_skel_mesh_a6933f5d40c713414ce490a0595a07379}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!UpdateComponentsClosestBody@{UpdateComponentsClosestBody}}
+\index{UpdateComponentsClosestBody@{UpdateComponentsClosestBody}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{UpdateComponentsClosestBody()}{UpdateComponentsClosestBody()}}
+{\footnotesize\ttfamily F\+Name U\+Grabbable\+Skel\+Mesh\+::\+Update\+Components\+Closest\+Body (\begin{DoxyParamCaption}\item[{A\+V\+R\+Hand $\ast$}]{hand }\end{DoxyParamCaption})}
+
+Updates the component body\textquotesingle{}s inertia tensor scale, mass values etc. when grabbed. This is all reset in grab release. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_grabbable_skel_mesh_a6497c2c4eaeb8cd9fce7c0b1fc72e5aa}\label{class_u_grabbable_skel_mesh_a6497c2c4eaeb8cd9fce7c0b1fc72e5aa}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!adjustInertiaFromArray@{adjustInertiaFromArray}}
+\index{adjustInertiaFromArray@{adjustInertiaFromArray}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{adjustInertiaFromArray}{adjustInertiaFromArray}}
+{\footnotesize\ttfamily bool U\+Grabbable\+Skel\+Mesh\+::adjust\+Inertia\+From\+Array}
+
+Increase inertia tensor scale of the current grabbed body to the value in intertia\+Bone\+Values. N\+O\+TE\+: Prevents soft constraint mode of the physics handle not working correctly due smaller bones not keeping hand position correctly. By default bones are set to 2.\+2 inertia scale if not in array. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_aa05dfb43a90145be02d07e91ef610cf9}\label{class_u_grabbable_skel_mesh_aa05dfb43a90145be02d07e91ef610cf9}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!boneToGrab@{boneToGrab}}
+\index{boneToGrab@{boneToGrab}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{boneToGrab}{boneToGrab}}
+{\footnotesize\ttfamily F\+Name U\+Grabbable\+Skel\+Mesh\+::bone\+To\+Grab}
+
+Storage of the current bone to grab for this actor component. N\+O\+TE\+: If N\+A\+M\+E\+\_\+\+None then it will find the closest bone and grab from their. N\+O\+TE\+: If two handed grab mode is enabled this will only work for the first hand to grab this component. Second hand will grab the closest bone. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_ac2348bc7e75327e0c4ada070aaa7d330}\label{class_u_grabbable_skel_mesh_ac2348bc7e75327e0c4ada070aaa7d330}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!boneToSnap@{boneToSnap}}
+\index{boneToSnap@{boneToSnap}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{boneToSnap}{boneToSnap}}
+{\footnotesize\ttfamily F\+Name U\+Grabbable\+Skel\+Mesh\+::bone\+To\+Snap}
+
+Storage of the bone to snap this component from, when overlapping with a snappable actor. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a0899c3a9c6597acbe6f09b8e0d4eff07}\label{class_u_grabbable_skel_mesh_a0899c3a9c6597acbe6f09b8e0d4eff07}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!centerPhysicsJoint@{centerPhysicsJoint}}
+\index{centerPhysicsJoint@{centerPhysicsJoint}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{centerPhysicsJoint}{centerPhysicsJoint}}
+{\footnotesize\ttfamily bool U\+Grabbable\+Skel\+Mesh\+::center\+Physics\+Joint}
+
+Should the physics joint when created in physics handle modes, be placed at the center of the mesh or at the grabbing controller position. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_aa45bdf4fd8c6a037ad1d3540589f968d}\label{class_u_grabbable_skel_mesh_aa45bdf4fd8c6a037ad1d3540589f968d}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{checkCollision}{checkCollision}}
+{\footnotesize\ttfamily bool U\+Grabbable\+Skel\+Mesh\+::check\+Collision}
+
+Check for collisions and switch between soft and stiff constraint modes depending on result. N\+O\+TE\+: Disables hand grab distance as it just flys out of the hand on collision due to physX calculation error. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a86332eca660f942484fcc7320ded8459}\label{class_u_grabbable_skel_mesh_a86332eca660f942484fcc7320ded8459}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!collisionFeedback@{collisionFeedback}}
+\index{collisionFeedback@{collisionFeedback}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{collisionFeedback}{collisionFeedback}}
+{\footnotesize\ttfamily U\+Haptic\+Feedback\+Effect\+\_\+\+Base$\ast$ U\+Grabbable\+Skel\+Mesh\+::collision\+Feedback}
+
+Stored collision haptic feedback pointer. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_ab01286fae895b5ab7a62d6836970971e}\label{class_u_grabbable_skel_mesh_ab01286fae895b5ab7a62d6836970971e}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!collisionFeedbackOverride@{collisionFeedbackOverride}}
+\index{collisionFeedbackOverride@{collisionFeedbackOverride}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{collisionFeedbackOverride}{collisionFeedbackOverride}}
+{\footnotesize\ttfamily U\+Haptic\+Feedback\+Effect\+\_\+\+Base$\ast$ U\+Grabbable\+Skel\+Mesh\+::collision\+Feedback\+Override}
+
+The haptic feedback collision effect to play override. If null it will use the default collision feedback in the A\+V\+R\+Hands grabbing this grabbable. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a84e592881542a30d6b934bd96809046c}\label{class_u_grabbable_skel_mesh_a84e592881542a30d6b934bd96809046c}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!debug@{debug}}
+\index{debug@{debug}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily bool U\+Grabbable\+Skel\+Mesh\+::debug}
+
+Show any debugging information for this class. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_ab8de2501a36e25f51acacceb430c0461}\label{class_u_grabbable_skel_mesh_ab8de2501a36e25f51acacceb430c0461}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!handRef@{handRef}}
+\index{handRef@{handRef}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{handRef}{handRef}}
+{\footnotesize\ttfamily A\+V\+R\+Hand$\ast$ U\+Grabbable\+Skel\+Mesh\+::hand\+Ref}
+
+Storage value of the player controller. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a551aa0ba94c923fbac251261e2ba1c37}\label{class_u_grabbable_skel_mesh_a551aa0ba94c923fbac251261e2ba1c37}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!hapticIntensityMultiplier@{hapticIntensityMultiplier}}
+\index{hapticIntensityMultiplier@{hapticIntensityMultiplier}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{hapticIntensityMultiplier}{hapticIntensityMultiplier}}
+{\footnotesize\ttfamily float U\+Grabbable\+Skel\+Mesh\+::haptic\+Intensity\+Multiplier}
+
+The haptic feedback intensity multiplier. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a40d2d5f443470acd2c00250f233d139f}\label{class_u_grabbable_skel_mesh_a40d2d5f443470acd2c00250f233d139f}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!ignored@{ignored}}
+\index{ignored@{ignored}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{ignored}{ignored}}
+{\footnotesize\ttfamily T\+Array$<$A\+Actor$\ast$$>$ U\+Grabbable\+Skel\+Mesh\+::ignored}
+
+Holds ignored actors for when performing traces in the collision check functions. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a29db03b75561691b6799302469fb7dea}\label{class_u_grabbable_skel_mesh_a29db03b75561691b6799302469fb7dea}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!impactSound@{impactSound}}
+\index{impactSound@{impactSound}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{impactSound}{impactSound}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ U\+Grabbable\+Skel\+Mesh\+::impact\+Sound}
+
+Stored impact sound pointer. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a1b3fcd0000d4adac43c6fac6446ba259}\label{class_u_grabbable_skel_mesh_a1b3fcd0000d4adac43c6fac6446ba259}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!impactSoundOverride@{impactSoundOverride}}
+\index{impactSoundOverride@{impactSoundOverride}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{impactSoundOverride}{impactSoundOverride}}
+{\footnotesize\ttfamily U\+Sound\+Base$\ast$ U\+Grabbable\+Skel\+Mesh\+::impact\+Sound\+Override}
+
+Sound to play on collision if null it will use the A\+V\+R\+Hands default collision sound. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_aa04d153bd63077a0fdd4009de8e0674a}\label{class_u_grabbable_skel_mesh_aa04d153bd63077a0fdd4009de8e0674a}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!interactableSettings@{interactableSettings}}
+\index{interactableSettings@{interactableSettings}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{interactableSettings}{interactableSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_hand_interface_settings}{F\+Hand\+Interface\+Settings}} U\+Grabbable\+Skel\+Mesh\+::interactable\+Settings}
+
+The interfaces interactable settings for how to interact with VR controllers/hands. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a894c856f9267945ff86add7c8c8b2d6b}\label{class_u_grabbable_skel_mesh_a894c856f9267945ff86add7c8c8b2d6b}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!OnMeshGrabbed@{OnMeshGrabbed}}
+\index{OnMeshGrabbed@{OnMeshGrabbed}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{OnMeshGrabbed}{OnMeshGrabbed}}
+{\footnotesize\ttfamily F\+Grabbed\+Component U\+Grabbable\+Skel\+Mesh\+::\+On\+Mesh\+Grabbed}
+
+Mesh grabbed by hand. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_afae15ecf21ef3f7c3b9fad30f59f25a8}\label{class_u_grabbable_skel_mesh_afae15ecf21ef3f7c3b9fad30f59f25a8}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!OnMeshReleased@{OnMeshReleased}}
+\index{OnMeshReleased@{OnMeshReleased}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{OnMeshReleased}{OnMeshReleased}}
+{\footnotesize\ttfamily F\+Grabbed\+Component U\+Grabbable\+Skel\+Mesh\+::\+On\+Mesh\+Released}
+
+Mesh released from hand. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_ad664083386e698a3c525f75cc3aefe81}\label{class_u_grabbable_skel_mesh_ad664083386e698a3c525f75cc3aefe81}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!otherHandRef@{otherHandRef}}
+\index{otherHandRef@{otherHandRef}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{otherHandRef}{otherHandRef}}
+{\footnotesize\ttfamily A\+V\+R\+Hand$\ast$ U\+Grabbable\+Skel\+Mesh\+::other\+Hand\+Ref}
+
+Other hand reference to second hand to grab this component if two\+Handed\+Grabbing is enabled in the interface settings. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a57a608295aa42cd8b402d95ad174be23}\label{class_u_grabbable_skel_mesh_a57a608295aa42cd8b402d95ad174be23}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!snappedAnimation@{snappedAnimation}}
+\index{snappedAnimation@{snappedAnimation}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{snappedAnimation}{snappedAnimation}}
+{\footnotesize\ttfamily U\+Animation\+Asset$\ast$ U\+Grabbable\+Skel\+Mesh\+::snapped\+Animation}
+
+Snapped animation to play. When snapped into a snappable component. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_aa7b7214aad8de1d2947d4f7b760a859e}\label{class_u_grabbable_skel_mesh_aa7b7214aad8de1d2947d4f7b760a859e}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!snapToHandLocationOffset@{snapToHandLocationOffset}}
+\index{snapToHandLocationOffset@{snapToHandLocationOffset}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{snapToHandLocationOffset}{snapToHandLocationOffset}}
+{\footnotesize\ttfamily F\+Vector U\+Grabbable\+Skel\+Mesh\+::snap\+To\+Hand\+Location\+Offset}
+
+Used for snap to hand so the location for each object can be adjusted to an offset. N\+O\+TE\+: If snap\+To\+Hand is false then this will not be used. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a34c5fb5f79030cc814c1a35a6509851a}\label{class_u_grabbable_skel_mesh_a34c5fb5f79030cc814c1a35a6509851a}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!snapToHandRotationOffset@{snapToHandRotationOffset}}
+\index{snapToHandRotationOffset@{snapToHandRotationOffset}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{snapToHandRotationOffset}{snapToHandRotationOffset}}
+{\footnotesize\ttfamily F\+Rotator U\+Grabbable\+Skel\+Mesh\+::snap\+To\+Hand\+Rotation\+Offset}
+
+Used for snap to hand so the rotation for each object can be adjusted to an offset. N\+O\+TE\+: If snap\+To\+Hand is false then this will not be used. \mbox{\Hypertarget{class_u_grabbable_skel_mesh_a0b0aa94d9b0bdf020b493c68d7f67173}\label{class_u_grabbable_skel_mesh_a0b0aa94d9b0bdf020b493c68d7f67173}} 
+\index{UGrabbableSkelMesh@{UGrabbableSkelMesh}!timeToLerp@{timeToLerp}}
+\index{timeToLerp@{timeToLerp}!UGrabbableSkelMesh@{UGrabbableSkelMesh}}
+\doxysubsubsection{\texorpdfstring{timeToLerp}{timeToLerp}}
+{\footnotesize\ttfamily float U\+Grabbable\+Skel\+Mesh\+::time\+To\+Lerp}
+
+The time it takes to return to the hand via lerp. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Grabbable\+Skel\+Mesh.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Interactables/Grabbable\+Skel\+Mesh.\+cpp\end{DoxyCompactItemize}

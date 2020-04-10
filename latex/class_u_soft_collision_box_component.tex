@@ -1,0 +1,84 @@
+\hypertarget{class_u_soft_collision_box_component}{}\doxysection{U\+Soft\+Collision\+Box\+Component Class Reference}
+\label{class_u_soft_collision_box_component}\index{USoftCollisionBoxComponent@{USoftCollisionBoxComponent}}
+
+
+{\ttfamily \#include $<$Soft\+Collision\+Box\+Component.\+h$>$}
+
+Inheritance diagram for U\+Soft\+Collision\+Box\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_soft_collision_box_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_soft_collision_box_component_a31aa152234500dab0bc5262b5f715cc9}{U\+Soft\+Collision\+Box\+Component}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_soft_collision_box_component_aedbe7d15fb6e0aaa695041dbd440b774}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_u_soft_collision_box_component_a0e81897fa019c6ca892e6d9c3645d00b}{Begin\+Overlap}} (class U\+Primitive\+Component $\ast$Overlapped\+Comp, class A\+Actor $\ast$Other\+Actor, class U\+Primitive\+Component $\ast$Other\+Comp, int32 Other\+Body\+Index, bool b\+From\+Sweep, const F\+Hit\+Result \&Sweep\+Result)
+\item 
+void \mbox{\hyperlink{class_u_soft_collision_box_component_a150ac0d53374de00cdf29ee30802ef89}{End\+Overlap}} (class U\+Primitive\+Component $\ast$Overlapped\+Comp, class A\+Actor $\ast$Other\+Actor, class U\+Primitive\+Component $\ast$Other\+Comp, int32 Other\+Body\+Index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_u_soft_collision_box_component_ad619f13d498d728e3449e31eb43008e2}{debug}}
+\item 
+T\+Map$<$ U\+Primitive\+Component $\ast$, T\+Enum\+As\+Byte$<$ E\+Collision\+Response $>$ $>$ \mbox{\hyperlink{class_u_soft_collision_box_component_ab297c196864c46dd500f7740acea38c1}{original\+Values}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Box collision component. Used to enable soft collision only from the hand class for any interactables that can be picked up. N\+O\+TE\+: Use-\/full for preventing things being forces through collisions due to the hand\+Skel having infinite mass and force as it does not simulate physics. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_soft_collision_box_component_a31aa152234500dab0bc5262b5f715cc9}\label{class_u_soft_collision_box_component_a31aa152234500dab0bc5262b5f715cc9}} 
+\index{USoftCollisionBoxComponent@{USoftCollisionBoxComponent}!USoftCollisionBoxComponent@{USoftCollisionBoxComponent}}
+\index{USoftCollisionBoxComponent@{USoftCollisionBoxComponent}!USoftCollisionBoxComponent@{USoftCollisionBoxComponent}}
+\doxysubsubsection{\texorpdfstring{USoftCollisionBoxComponent()}{USoftCollisionBoxComponent()}}
+{\footnotesize\ttfamily U\+Soft\+Collision\+Box\+Component\+::\+U\+Soft\+Collision\+Box\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_soft_collision_box_component_a0e81897fa019c6ca892e6d9c3645d00b}\label{class_u_soft_collision_box_component_a0e81897fa019c6ca892e6d9c3645d00b}} 
+\index{USoftCollisionBoxComponent@{USoftCollisionBoxComponent}!BeginOverlap@{BeginOverlap}}
+\index{BeginOverlap@{BeginOverlap}!USoftCollisionBoxComponent@{USoftCollisionBoxComponent}}
+\doxysubsubsection{\texorpdfstring{BeginOverlap()}{BeginOverlap()}}
+{\footnotesize\ttfamily void U\+Soft\+Collision\+Box\+Component\+::\+Begin\+Overlap (\begin{DoxyParamCaption}\item[{class U\+Primitive\+Component $\ast$}]{Overlapped\+Comp,  }\item[{class A\+Actor $\ast$}]{Other\+Actor,  }\item[{class U\+Primitive\+Component $\ast$}]{Other\+Comp,  }\item[{int32}]{Other\+Body\+Index,  }\item[{bool}]{b\+From\+Sweep,  }\item[{const F\+Hit\+Result \&}]{Sweep\+Result }\end{DoxyParamCaption})}
+
+Binded function to overlap begin for this component. \mbox{\Hypertarget{class_u_soft_collision_box_component_aedbe7d15fb6e0aaa695041dbd440b774}\label{class_u_soft_collision_box_component_aedbe7d15fb6e0aaa695041dbd440b774}} 
+\index{USoftCollisionBoxComponent@{USoftCollisionBoxComponent}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!USoftCollisionBoxComponent@{USoftCollisionBoxComponent}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void U\+Soft\+Collision\+Box\+Component\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Level start. \mbox{\Hypertarget{class_u_soft_collision_box_component_a150ac0d53374de00cdf29ee30802ef89}\label{class_u_soft_collision_box_component_a150ac0d53374de00cdf29ee30802ef89}} 
+\index{USoftCollisionBoxComponent@{USoftCollisionBoxComponent}!EndOverlap@{EndOverlap}}
+\index{EndOverlap@{EndOverlap}!USoftCollisionBoxComponent@{USoftCollisionBoxComponent}}
+\doxysubsubsection{\texorpdfstring{EndOverlap()}{EndOverlap()}}
+{\footnotesize\ttfamily void U\+Soft\+Collision\+Box\+Component\+::\+End\+Overlap (\begin{DoxyParamCaption}\item[{class U\+Primitive\+Component $\ast$}]{Overlapped\+Comp,  }\item[{class A\+Actor $\ast$}]{Other\+Actor,  }\item[{class U\+Primitive\+Component $\ast$}]{Other\+Comp,  }\item[{int32}]{Other\+Body\+Index }\end{DoxyParamCaption})}
+
+Binded function to overlap end for this component. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_soft_collision_box_component_ad619f13d498d728e3449e31eb43008e2}\label{class_u_soft_collision_box_component_ad619f13d498d728e3449e31eb43008e2}} 
+\index{USoftCollisionBoxComponent@{USoftCollisionBoxComponent}!debug@{debug}}
+\index{debug@{debug}!USoftCollisionBoxComponent@{USoftCollisionBoxComponent}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily bool U\+Soft\+Collision\+Box\+Component\+::debug}
+
+Debugging messages enabled for what collision responses were changed. \mbox{\Hypertarget{class_u_soft_collision_box_component_ab297c196864c46dd500f7740acea38c1}\label{class_u_soft_collision_box_component_ab297c196864c46dd500f7740acea38c1}} 
+\index{USoftCollisionBoxComponent@{USoftCollisionBoxComponent}!originalValues@{originalValues}}
+\index{originalValues@{originalValues}!USoftCollisionBoxComponent@{USoftCollisionBoxComponent}}
+\doxysubsubsection{\texorpdfstring{originalValues}{originalValues}}
+{\footnotesize\ttfamily T\+Map$<$U\+Primitive\+Component$\ast$, T\+Enum\+As\+Byte$<$E\+Collision\+Response$>$ $>$ U\+Soft\+Collision\+Box\+Component\+::original\+Values}
+
+The original values of each overlapped and changed interactable collision value in respect to the hand\+Skel/hand collision channel. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Soft\+Collision\+Box\+Component.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Soft\+Collision\+Box\+Component.\+cpp\end{DoxyCompactItemize}

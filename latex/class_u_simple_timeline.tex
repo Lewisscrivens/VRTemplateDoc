@@ -1,0 +1,143 @@
+\hypertarget{class_u_simple_timeline}{}\doxysection{U\+Simple\+Timeline Class Reference}
+\label{class_u_simple_timeline}\index{USimpleTimeline@{USimpleTimeline}}
+
+
+{\ttfamily \#include $<$Simple\+Timeline.\+h$>$}
+
+Inheritance diagram for U\+Simple\+Timeline\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_simple_timeline}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_simple_timeline_a08ef7ab7f1e600a687f65f7f38a6d330}{U\+Simple\+Timeline}} ()
+\item 
+bool \mbox{\hyperlink{class_u_simple_timeline_a497fb440fa84d020abfa7a898d2946be}{Is\+Playing}} () const
+\item 
+bool \mbox{\hyperlink{class_u_simple_timeline_ad544a0ecfb82d10a7ddb0848ee7c0565}{Is\+Reversing}} () const
+\item 
+void \mbox{\hyperlink{class_u_simple_timeline_acf1b39babc90aad0099110c4850ec1da}{Stop}} ()
+\item 
+void \mbox{\hyperlink{class_u_simple_timeline_abcb413a93727d04ea14c5a9d0c013f4d}{Pause}} ()
+\item 
+void \mbox{\hyperlink{class_u_simple_timeline_ae2a29f8c5ba8dfc155b91c97fef25bb8}{Play\+From\+Start}} ()
+\item 
+void \mbox{\hyperlink{class_u_simple_timeline_a98f7a53a79571bb1bd6342f563bc4b76}{Play\+From\+Current\+Location}} ()
+\item 
+void \mbox{\hyperlink{class_u_simple_timeline_a54eae002124c15b4ff3f1750497730f5}{Reverse}} ()
+\item 
+void \mbox{\hyperlink{class_u_simple_timeline_a713608862386060ee57b75843697f82e}{Set\+Position}} (int position, bool fire\+Events=false, bool fire\+Update\+Event=false)
+\item 
+void \mbox{\hyperlink{class_u_simple_timeline_a384e910c3fe7d37525334f48867075df}{Set\+Play\+Rate}} (float playrate)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_u_simple_timeline}{U\+Simple\+Timeline}} $\ast$ \mbox{\hyperlink{class_u_simple_timeline_adb81af2c6a28556c251d9f5dc88c791f}{Create\+Simple\+Timeline}} (U\+Curve\+Float $\ast$timeline\+Curve, F\+Name timeline\+Name, U\+Object $\ast$property\+Set\+Object, F\+Name callback\+Function, F\+Name finish\+Function, A\+Actor $\ast$owning\+Actor, F\+Name timeline\+Variable\+Name=N\+A\+M\+E\+\_\+\+None, bool looping=false, E\+Timeline\+Length\+Mode timeline\+Length=E\+Timeline\+Length\+Mode\+::\+T\+L\+\_\+\+Last\+Key\+Frame, T\+Enum\+As\+Byte$<$ E\+Timeline\+Direction\+::\+Type $>$ timeline\+Direction=E\+Timeline\+Direction\+::\+Forward)
+\item 
+static \mbox{\hyperlink{class_u_simple_timeline}{U\+Simple\+Timeline}} $\ast$ \mbox{\hyperlink{class_u_simple_timeline_a3f6c1f48af8b210ca60f1c0fb37ee860}{Create\+Linear\+Simple\+Timeline}} (F\+Name timeline\+Name, U\+Object $\ast$property\+Set\+Object, F\+Name callback\+Function, F\+Name finish\+Function, A\+Actor $\ast$owning\+Actor, F\+Name timeline\+Variable\+Name=N\+A\+M\+E\+\_\+\+None, bool looping=false, E\+Timeline\+Length\+Mode timeline\+Length=E\+Timeline\+Length\+Mode\+::\+T\+L\+\_\+\+Last\+Key\+Frame, T\+Enum\+As\+Byte$<$ E\+Timeline\+Direction\+::\+Type $>$ timeline\+Direction=E\+Timeline\+Direction\+::\+Forward)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\+Timeline\+Component $\ast$ \mbox{\hyperlink{class_u_simple_timeline_a2435787a17f7a64002809a3ff2a2b796}{timeline\+Component}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simpler class for implementing a time line via C++. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_simple_timeline_a08ef7ab7f1e600a687f65f7f38a6d330}\label{class_u_simple_timeline_a08ef7ab7f1e600a687f65f7f38a6d330}} 
+\index{USimpleTimeline@{USimpleTimeline}!USimpleTimeline@{USimpleTimeline}}
+\index{USimpleTimeline@{USimpleTimeline}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{USimpleTimeline()}{USimpleTimeline()}}
+{\footnotesize\ttfamily U\+Simple\+Timeline\+::\+U\+Simple\+Timeline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_simple_timeline_a3f6c1f48af8b210ca60f1c0fb37ee860}\label{class_u_simple_timeline_a3f6c1f48af8b210ca60f1c0fb37ee860}} 
+\index{USimpleTimeline@{USimpleTimeline}!CreateLinearSimpleTimeline@{CreateLinearSimpleTimeline}}
+\index{CreateLinearSimpleTimeline@{CreateLinearSimpleTimeline}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{CreateLinearSimpleTimeline()}{CreateLinearSimpleTimeline()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_u_simple_timeline}{U\+Simple\+Timeline}} $\ast$ U\+Simple\+Timeline\+::\+Create\+Linear\+Simple\+Timeline (\begin{DoxyParamCaption}\item[{F\+Name}]{timeline\+Name,  }\item[{U\+Object $\ast$}]{property\+Set\+Object,  }\item[{F\+Name}]{callback\+Function,  }\item[{F\+Name}]{finish\+Function,  }\item[{A\+Actor $\ast$}]{owning\+Actor,  }\item[{F\+Name}]{timeline\+Variable\+Name = {\ttfamily NAME\+\_\+None},  }\item[{bool}]{looping = {\ttfamily false},  }\item[{E\+Timeline\+Length\+Mode}]{timeline\+Length = {\ttfamily ETimelineLengthMode\+:\+:TL\+\_\+LastKeyFrame},  }\item[{T\+Enum\+As\+Byte$<$ E\+Timeline\+Direction\+::\+Type $>$}]{timeline\+Direction = {\ttfamily ETimelineDirection\+:\+:Forward} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initializes a linear time line and returns it. @\+Param timeline\+Curve, initializes a time line. @\+Param property\+Set\+Object, The object that the time line callbacks will be called to. @\+Param callback\+Function, The function name to call for each tick of the time line. @\+Param finish\+Function, The function name to call at the end of the time line. @\+Param owning\+Actor, The actor that this time line will be attached to. @\+Param timeline\+Variable\+Name, The name of the variable located in the property set object that the time line will change if none = N\+A\+M\+E\+\_\+\+None. @\+Param looping, should loop the time line after playing. @\+Param timeline\+Length, The length of the time line can be the total length of the curve of between the key points. \mbox{\Hypertarget{class_u_simple_timeline_adb81af2c6a28556c251d9f5dc88c791f}\label{class_u_simple_timeline_adb81af2c6a28556c251d9f5dc88c791f}} 
+\index{USimpleTimeline@{USimpleTimeline}!CreateSimpleTimeline@{CreateSimpleTimeline}}
+\index{CreateSimpleTimeline@{CreateSimpleTimeline}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{CreateSimpleTimeline()}{CreateSimpleTimeline()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_u_simple_timeline}{U\+Simple\+Timeline}} $\ast$ U\+Simple\+Timeline\+::\+Create\+Simple\+Timeline (\begin{DoxyParamCaption}\item[{U\+Curve\+Float $\ast$}]{timeline\+Curve,  }\item[{F\+Name}]{timeline\+Name,  }\item[{U\+Object $\ast$}]{property\+Set\+Object,  }\item[{F\+Name}]{callback\+Function,  }\item[{F\+Name}]{finish\+Function,  }\item[{A\+Actor $\ast$}]{owning\+Actor,  }\item[{F\+Name}]{timeline\+Variable\+Name = {\ttfamily NAME\+\_\+None},  }\item[{bool}]{looping = {\ttfamily false},  }\item[{E\+Timeline\+Length\+Mode}]{timeline\+Length = {\ttfamily ETimelineLengthMode\+:\+:TL\+\_\+LastKeyFrame},  }\item[{T\+Enum\+As\+Byte$<$ E\+Timeline\+Direction\+::\+Type $>$}]{timeline\+Direction = {\ttfamily ETimelineDirection\+:\+:Forward} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return a time line and setup from single function. @\+Param timeline\+Curve, initializes a time line. @\+Param timeline\+Name, The name of the time line. @\+Param property\+Set\+Object, The object that the time line callbacks will be called to. @\+Param callback\+Function, The function name to call for each tick of the time line. @\+Param finish\+Function, The function name to call at the end of the time line. @\+Param owning\+Actor, The actor that this time line will be attached to. @\+Param timeline\+Variable\+Name, The name of the variable located in the property set object that the time line will change if none = N\+A\+M\+E\+\_\+\+None. @\+Param looping, should loop the time line after playing. @\+Param timeline\+Length, The length of the time line can be the total length of the curve of between the key points. \mbox{\Hypertarget{class_u_simple_timeline_a497fb440fa84d020abfa7a898d2946be}\label{class_u_simple_timeline_a497fb440fa84d020abfa7a898d2946be}} 
+\index{USimpleTimeline@{USimpleTimeline}!IsPlaying@{IsPlaying}}
+\index{IsPlaying@{IsPlaying}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{IsPlaying()}{IsPlaying()}}
+{\footnotesize\ttfamily bool U\+Simple\+Timeline\+::\+Is\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Is the time line playing? \mbox{\Hypertarget{class_u_simple_timeline_ad544a0ecfb82d10a7ddb0848ee7c0565}\label{class_u_simple_timeline_ad544a0ecfb82d10a7ddb0848ee7c0565}} 
+\index{USimpleTimeline@{USimpleTimeline}!IsReversing@{IsReversing}}
+\index{IsReversing@{IsReversing}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{IsReversing()}{IsReversing()}}
+{\footnotesize\ttfamily bool U\+Simple\+Timeline\+::\+Is\+Reversing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Is the time line playing in reverse? \mbox{\Hypertarget{class_u_simple_timeline_abcb413a93727d04ea14c5a9d0c013f4d}\label{class_u_simple_timeline_abcb413a93727d04ea14c5a9d0c013f4d}} 
+\index{USimpleTimeline@{USimpleTimeline}!Pause@{Pause}}
+\index{Pause@{Pause}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{Pause()}{Pause()}}
+{\footnotesize\ttfamily void U\+Simple\+Timeline\+::\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Pause the time line playback in its current location. \mbox{\Hypertarget{class_u_simple_timeline_a98f7a53a79571bb1bd6342f563bc4b76}\label{class_u_simple_timeline_a98f7a53a79571bb1bd6342f563bc4b76}} 
+\index{USimpleTimeline@{USimpleTimeline}!PlayFromCurrentLocation@{PlayFromCurrentLocation}}
+\index{PlayFromCurrentLocation@{PlayFromCurrentLocation}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{PlayFromCurrentLocation()}{PlayFromCurrentLocation()}}
+{\footnotesize\ttfamily void U\+Simple\+Timeline\+::\+Play\+From\+Current\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Continue playing from the current location of the time line state. \mbox{\Hypertarget{class_u_simple_timeline_ae2a29f8c5ba8dfc155b91c97fef25bb8}\label{class_u_simple_timeline_ae2a29f8c5ba8dfc155b91c97fef25bb8}} 
+\index{USimpleTimeline@{USimpleTimeline}!PlayFromStart@{PlayFromStart}}
+\index{PlayFromStart@{PlayFromStart}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{PlayFromStart()}{PlayFromStart()}}
+{\footnotesize\ttfamily void U\+Simple\+Timeline\+::\+Play\+From\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Play the time line from the start. \mbox{\Hypertarget{class_u_simple_timeline_a54eae002124c15b4ff3f1750497730f5}\label{class_u_simple_timeline_a54eae002124c15b4ff3f1750497730f5}} 
+\index{USimpleTimeline@{USimpleTimeline}!Reverse@{Reverse}}
+\index{Reverse@{Reverse}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{Reverse()}{Reverse()}}
+{\footnotesize\ttfamily void U\+Simple\+Timeline\+::\+Reverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Play the time line in reverse. \mbox{\Hypertarget{class_u_simple_timeline_a384e910c3fe7d37525334f48867075df}\label{class_u_simple_timeline_a384e910c3fe7d37525334f48867075df}} 
+\index{USimpleTimeline@{USimpleTimeline}!SetPlayRate@{SetPlayRate}}
+\index{SetPlayRate@{SetPlayRate}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{SetPlayRate()}{SetPlayRate()}}
+{\footnotesize\ttfamily void U\+Simple\+Timeline\+::\+Set\+Play\+Rate (\begin{DoxyParamCaption}\item[{float}]{playrate }\end{DoxyParamCaption})}
+
+Set playrate of the time line. \mbox{\Hypertarget{class_u_simple_timeline_a713608862386060ee57b75843697f82e}\label{class_u_simple_timeline_a713608862386060ee57b75843697f82e}} 
+\index{USimpleTimeline@{USimpleTimeline}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void U\+Simple\+Timeline\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{bool}]{fire\+Events = {\ttfamily false},  }\item[{bool}]{fire\+Update\+Event = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Set the position of the time line. \mbox{\Hypertarget{class_u_simple_timeline_acf1b39babc90aad0099110c4850ec1da}\label{class_u_simple_timeline_acf1b39babc90aad0099110c4850ec1da}} 
+\index{USimpleTimeline@{USimpleTimeline}!Stop@{Stop}}
+\index{Stop@{Stop}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void U\+Simple\+Timeline\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stop and reset the time line. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_simple_timeline_a2435787a17f7a64002809a3ff2a2b796}\label{class_u_simple_timeline_a2435787a17f7a64002809a3ff2a2b796}} 
+\index{USimpleTimeline@{USimpleTimeline}!timelineComponent@{timelineComponent}}
+\index{timelineComponent@{timelineComponent}!USimpleTimeline@{USimpleTimeline}}
+\doxysubsubsection{\texorpdfstring{timelineComponent}{timelineComponent}}
+{\footnotesize\ttfamily U\+Timeline\+Component$\ast$ U\+Simple\+Timeline\+::timeline\+Component}
+
+Time line used to morph the player. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Simple\+Timeline.\+h\item 
+E\+:/\+Documents/\+Unreal Projects/\+V\+R\+Template/\+Source/\+V\+R\+Template/\+Project/Simple\+Timeline.\+cpp\end{DoxyCompactItemize}
