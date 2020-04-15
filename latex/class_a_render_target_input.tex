@@ -36,6 +36,8 @@ float \mbox{\hyperlink{class_a_render_target_input_a463855d4be166cd79e4c030d3b54
 \item 
 float \mbox{\hyperlink{class_a_render_target_input_a7c14e83d2dd8eb965f451f7d86b38e93}{trace\+Distance}}
 \item 
+bool \mbox{\hyperlink{class_a_render_target_input_ad632600f3ea0a3ee00a59f7ca5362f52}{trace\+Enabled}}
+\item 
 bool \mbox{\hyperlink{class_a_render_target_input_a9adde34191c275a274c28ed105239576}{debug\+Trace}}
 \item 
 \mbox{\hyperlink{class_a_render_target_board}{A\+Render\+Target\+Board}} $\ast$ \mbox{\hyperlink{class_a_render_target_input_a57dcd228ffe67de56315eca5e0d7d5b4}{current\+Board}}
@@ -153,7 +155,13 @@ The input type of this render target input class. \mbox{\Hypertarget{class_a_ren
 \doxysubsubsection{\texorpdfstring{traceDistance}{traceDistance}}
 {\footnotesize\ttfamily float A\+Render\+Target\+Input\+::trace\+Distance}
 
-The distance to trace from the grabbable mesh down along the Z-\/\+Axis to look for a Render\+Target\+Board object. \mbox{\Hypertarget{class_a_render_target_input_ab30e64cc3c63dddd1cbd498e4034bbd3}\label{class_a_render_target_input_ab30e64cc3c63dddd1cbd498e4034bbd3}} 
+The distance to trace from the grabbable mesh down along the Z-\/\+Axis to look for a Render\+Target\+Board object. \mbox{\Hypertarget{class_a_render_target_input_ad632600f3ea0a3ee00a59f7ca5362f52}\label{class_a_render_target_input_ad632600f3ea0a3ee00a59f7ca5362f52}} 
+\index{ARenderTargetInput@{ARenderTargetInput}!traceEnabled@{traceEnabled}}
+\index{traceEnabled@{traceEnabled}!ARenderTargetInput@{ARenderTargetInput}}
+\doxysubsubsection{\texorpdfstring{traceEnabled}{traceEnabled}}
+{\footnotesize\ttfamily bool A\+Render\+Target\+Input\+::trace\+Enabled}
+
+This class is enabled? Needed for example in the marker the lid can be put on which would make this class functionality pointless. \mbox{\Hypertarget{class_a_render_target_input_ab30e64cc3c63dddd1cbd498e4034bbd3}\label{class_a_render_target_input_ab30e64cc3c63dddd1cbd498e4034bbd3}} 
 \index{ARenderTargetInput@{ARenderTargetInput}!updateRate@{updateRate}}
 \index{updateRate@{updateRate}!ARenderTargetInput@{ARenderTargetInput}}
 \doxysubsubsection{\texorpdfstring{updateRate}{updateRate}}

@@ -122,48 +122,45 @@ $(document).ready(function(){initNavTree('_render_target_board_8h_source.html','
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = &quot;Board&quot;)</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_a_render_target_board.html#a88cdb88ae68084cf443b132ae8f99e83">   41</a></span>&#160;    UCanvasRenderTarget2D* blueRenderTarget;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = &quot;Board&quot;)</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_a_render_target_board.html#a72b7c471667dc26cacdf4bc0b9135a30">   45</a></span>&#160;    UCanvasRenderTarget2D* removalRenderTarget;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Board&quot;)</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_a_render_target_board.html#ae3b959e7942359e4a1a24d407afc9c00">   45</a></span>&#160;    UMaterialInterface* boardMeshMaterial;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Board&quot;)</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_a_render_target_board.html#ae3b959e7942359e4a1a24d407afc9c00">   49</a></span>&#160;    UMaterialInterface* boardMeshMaterial;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_a_render_target_board.html#ab5ccef54a2a56bb33b4458716643b564">   49</a></span>&#160;    UMaterialInterface* inputMaterial;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Board&quot;)</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_a_render_target_board.html#ab5ccef54a2a56bb33b4458716643b564">   53</a></span>&#160;    UMaterialInterface* inputMaterial;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Board&quot;)</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_a_render_target_board.html#aa2d866f2df19f6e50084b659d9d29d79">   57</a></span>&#160;    UMaterialInterface* removalMaterial;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_a_render_target_board.html#aa2d866f2df19f6e50084b659d9d29d79">   53</a></span>&#160;    UMaterialInterface* removalMaterial;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Board&quot;)</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_a_render_target_board.html#a4f356929872bd3b69c87b6f646ca646d">   58</a></span>&#160;    FVector2D renderTargetSize;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Board&quot;)</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_a_render_target_board.html#a4f356929872bd3b69c87b6f646ca646d">   62</a></span>&#160;    FVector2D renderTargetSize;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_a_render_target_board.html#a171356a6cdd0973d1b6c0f808a3baa80">   62</a></span>&#160;    FName boardType;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Board&quot;)</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_a_render_target_board.html#a171356a6cdd0973d1b6c0f808a3baa80">   66</a></span>&#160;    FName boardType;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;protected:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    virtual <span class="keywordtype">void</span> BeginPlay() override;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;public: </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="class_a_render_target_board.html">ARenderTargetBoard</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    virtual <span class="keywordtype">void</span> Tick(<span class="keywordtype">float</span> DeltaTime) override;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;protected:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    virtual <span class="keywordtype">void</span> BeginPlay() override;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;public: </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_a_render_target_board.html">ARenderTargetBoard</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    virtual <span class="keywordtype">void</span> Tick(<span class="keywordtype">float</span> DeltaTime) override;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> DrawOnBoard(FVector2D uvLocation, <span class="keywordtype">float</span> size);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> DrawOnBoard(FVector2D uvLocation, <span class="keywordtype">float</span> size);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> RemoveFromBoard(FVector2D uvLocation, <span class="keywordtype">float</span> size);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> RemoveFromBoard(FVector2D uvLocation, <span class="keywordtype">float</span> size);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    UFUNCTION(BlueprintCallable, Category = &quot;Board&quot;)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> ClearBoard();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    UFUNCTION(BlueprintCallable, Category = &quot;Board&quot;)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> ClearBoard();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_a_render_target_board_html"><div class="ttname"><a href="class_a_render_target_board.html">ARenderTargetBoard</a></div><div class="ttdef"><b>Definition:</b> RenderTargetBoard.h:17</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_6fd832a3d65363e09d8d597d0448c00b.html">Unreal Projects</a></li><li class="navelem"><a class="el" href="dir_3fff38bdce33944f7e219e822cbc5beb.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_0a163c88c69a69c7f2dcd29823167014.html">Source</a></li><li class="navelem"><a class="el" href="dir_1cfb3228dd2ecf18cd9e6aaec6c2525e.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_b5238b0afca055cb9af8367244e04e05.html">Project</a></li><li class="navelem"><b>RenderTargetBoard.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d6224041361f9d8b268ade4f6903f24f.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_86390bb43291fc71f7996aa055b88b36.html">Source</a></li><li class="navelem"><a class="el" href="dir_4659e6f3c597c93358935e8923de97ee.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_10cde3e11b09fb7afeb608dcde2c4ad7.html">Project</a></li><li class="navelem"><b>RenderTargetBoard.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

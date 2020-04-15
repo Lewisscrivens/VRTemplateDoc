@@ -38,6 +38,7 @@ var class_a_grabbable_actor =
     [ "grabMode", "class_a_grabbable_actor.html#a8565e63b897d4328837e49733129d306", null ],
     [ "handRefInfo", "class_a_grabbable_actor.html#aa3da397511bd88edadce7040d872d7f9", null ],
     [ "hapticIntensityMultiplier", "class_a_grabbable_actor.html#a2ff76a36b68a64e8969402d4591ea5f2", null ],
+    [ "hasSnappingActor", "class_a_grabbable_actor.html#a075b62c8a0886e6441296dd743f121aa", null ],
     [ "ignoredActors", "class_a_grabbable_actor.html#a949caaa2a26280c18c6e27ba59ac476c", null ],
     [ "impactSound", "class_a_grabbable_actor.html#a694545c3e3af178736732680306b8fe9", null ],
     [ "impactSoundOverride", "class_a_grabbable_actor.html#acda11c529b975a9ff0941708d0090441", null ],

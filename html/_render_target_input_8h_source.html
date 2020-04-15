@@ -126,35 +126,38 @@ $(document).ready(function(){initNavTree('_render_target_input_8h_source.html','
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_a_render_target_input.html#a7c14e83d2dd8eb965f451f7d86b38e93">   46</a></span>&#160;    <span class="keywordtype">float</span> traceDistance;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Input&quot;)</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_a_render_target_input.html#a9adde34191c275a274c28ed105239576">   50</a></span>&#160;    <span class="keywordtype">bool</span> debugTrace;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_a_render_target_input.html#ad632600f3ea0a3ee00a59f7ca5362f52">   50</a></span>&#160;    <span class="keywordtype">bool</span> traceEnabled;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    UPROPERTY(BlueprintReadOnly, Category = &quot;Input&quot;)</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_a_render_target_input.html#a57dcd228ffe67de56315eca5e0d7d5b4">   54</a></span>&#160;    <a class="code" href="class_a_render_target_board.html">ARenderTargetBoard</a>* currentBoard;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Input&quot;)</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_a_render_target_input.html#a9adde34191c275a274c28ed105239576">   54</a></span>&#160;    <span class="keywordtype">bool</span> debugTrace;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;private:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> firstHit; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    FVector lastTraceLocation; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    FVector2D lastUVLocation; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    FTimerHandle updateTimer; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;protected:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    virtual <span class="keywordtype">void</span> BeginPlay() override;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> InputTrace(FVector2D&amp; hitUVLoc);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;public:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="class_a_render_target_input.html">ARenderTargetInput</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    virtual <span class="keywordtype">void</span> Tick(<span class="keywordtype">float</span> DeltaTime) override;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    UFUNCTION(Category = &quot;Input&quot;)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> UpdateInput();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    UPROPERTY(BlueprintReadOnly, Category = &quot;Input&quot;)</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_a_render_target_input.html#a57dcd228ffe67de56315eca5e0d7d5b4">   58</a></span>&#160;    <a class="code" href="class_a_render_target_board.html">ARenderTargetBoard</a>* currentBoard;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;private:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> firstHit; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    FVector lastTraceLocation; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    FVector2D lastUVLocation; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    FTimerHandle updateTimer; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;protected:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    virtual <span class="keywordtype">void</span> BeginPlay() override;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> InputTrace(FVector2D&amp; hitUVLoc);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;public:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="class_a_render_target_input.html">ARenderTargetInput</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    virtual <span class="keywordtype">void</span> Tick(<span class="keywordtype">float</span> DeltaTime) override;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    virtual <span class="keywordtype">void</span> GrabPressed_Implementation(AVRHand* hand) override;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    virtual <span class="keywordtype">void</span> GrabReleased_Implementation(AVRHand* hand) override;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    UFUNCTION(Category = &quot;Input&quot;)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> UpdateInput();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    virtual <span class="keywordtype">void</span> GrabPressed_Implementation(AVRHand* hand) override;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    virtual <span class="keywordtype">void</span> GrabReleased_Implementation(AVRHand* hand) override;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_a_grabbable_actor_html"><div class="ttname"><a href="class_a_grabbable_actor.html">AGrabbableActor</a></div><div class="ttdef"><b>Definition:</b> GrabbableActor.h:117</div></div>
@@ -163,7 +166,7 @@ $(document).ready(function(){initNavTree('_render_target_input_8h_source.html','
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_6fd832a3d65363e09d8d597d0448c00b.html">Unreal Projects</a></li><li class="navelem"><a class="el" href="dir_3fff38bdce33944f7e219e822cbc5beb.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_0a163c88c69a69c7f2dcd29823167014.html">Source</a></li><li class="navelem"><a class="el" href="dir_1cfb3228dd2ecf18cd9e6aaec6c2525e.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_b5238b0afca055cb9af8367244e04e05.html">Project</a></li><li class="navelem"><b>RenderTargetInput.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d6224041361f9d8b268ade4f6903f24f.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_86390bb43291fc71f7996aa055b88b36.html">Source</a></li><li class="navelem"><a class="el" href="dir_4659e6f3c597c93358935e8923de97ee.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_10cde3e11b09fb7afeb608dcde2c4ad7.html">Project</a></li><li class="navelem"><b>RenderTargetInput.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

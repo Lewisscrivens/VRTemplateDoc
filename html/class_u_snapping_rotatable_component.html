@@ -134,12 +134,16 @@ Public Attributes</h2></td></tr>
 <tr class="separator:acf9bf578084b2c16293ab9a4ae477aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f2ce3dd137bf5bf04315f9cc39aca81"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_snapping_rotatable_component.html#a4f2ce3dd137bf5bf04315f9cc39aca81">rotatingLimit</a></td></tr>
 <tr class="separator:a4f2ce3dd137bf5bf04315f9cc39aca81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6d3a0dc8599e11b53ccc30d0e43ae80"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_snapping_rotatable_component.html#ad6d3a0dc8599e11b53ccc30d0e43ae80">returningDistance</a></td></tr>
+<tr class="separator:ad6d3a0dc8599e11b53ccc30d0e43ae80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d170f8babbb73ba3c6a75e37bf104a9"><td class="memItemLeft" align="right" valign="top">USoundBase *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_snapping_rotatable_component.html#a7d170f8babbb73ba3c6a75e37bf104a9">limitReachedSound</a></td></tr>
 <tr class="separator:a7d170f8babbb73ba3c6a75e37bf104a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e0f267b1a90223e0952b95eca97656b"><td class="memItemLeft" align="right" valign="top">UHapticFeedbackEffect_Base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_snapping_rotatable_component.html#a9e0f267b1a90223e0952b95eca97656b">limitReachedHaptics</a></td></tr>
 <tr class="separator:a9e0f267b1a90223e0952b95eca97656b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05c1b2fa874a2c95ba22f766206b14db"><td class="memItemLeft" align="right" valign="top">FLimitReached&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_snapping_rotatable_component.html#a05c1b2fa874a2c95ba22f766206b14db">limitReached</a></td></tr>
-<tr class="separator:a05c1b2fa874a2c95ba22f766206b14db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20cacc8d92de36cb91f554bb96040377"><td class="memItemLeft" align="right" valign="top">FLimitReached&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_snapping_rotatable_component.html#a20cacc8d92de36cb91f554bb96040377">limitReachedDel</a></td></tr>
+<tr class="separator:a20cacc8d92de36cb91f554bb96040377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02c7b2900c209d6f3041c5f99f8f6d8"><td class="memItemLeft" align="right" valign="top">FLimitReached&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_snapping_rotatable_component.html#ae02c7b2900c209d6f3041c5f99f8f6d8">limitExitedDel</a></td></tr>
+<tr class="separator:ae02c7b2900c209d6f3041c5f99f8f6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39106777721902efa90cc4961539054f"><td class="memItemLeft" align="right" valign="top">FOnRotatingCompSnapped&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_snapping_rotatable_component.html#a39106777721902efa90cc4961539054f">OnSnapConnect</a></td></tr>
 <tr class="separator:a39106777721902efa90cc4961539054f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52346710209f1c2150f460f633826781"><td class="memItemLeft" align="right" valign="top">FOnRotatingCompSnapped&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_snapping_rotatable_component.html#a52346710209f1c2150f460f633826781">OnSnapDisconnect</a></td></tr>
@@ -471,14 +475,29 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a05c1b2fa874a2c95ba22f766206b14db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05c1b2fa874a2c95ba22f766206b14db">&#9670;&nbsp;</a></span>limitReached</h2>
+<a id="ae02c7b2900c209d6f3041c5f99f8f6d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae02c7b2900c209d6f3041c5f99f8f6d8">&#9670;&nbsp;</a></span>limitExitedDel</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">FLimitReached USnappingRotatableComponent::limitReached</td>
+          <td class="memname">FLimitReached USnappingRotatableComponent::limitExitedDel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Called when the twistable has been inserted and twisted to the correct limit. </p>
+
+</div>
+</div>
+<a id="a20cacc8d92de36cb91f554bb96040377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20cacc8d92de36cb91f554bb96040377">&#9670;&nbsp;</a></span>limitReachedDel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FLimitReached USnappingRotatableComponent::limitReachedDel</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -573,6 +592,21 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Called when something is unsnapped. </p>
+
+</div>
+</div>
+<a id="ad6d3a0dc8599e11b53ccc30d0e43ae80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d3a0dc8599e11b53ccc30d0e43ae80">&#9670;&nbsp;</a></span>returningDistance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float USnappingRotatableComponent::returningDistance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The distance between the component and the grabbing had before its removed from the lock. </p>
 
 </div>
 </div>

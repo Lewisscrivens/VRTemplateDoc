@@ -192,16 +192,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInterfaceSettings<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a57a608295aa42cd8b402d95ad174be23"><td class="memItemLeft" align="right" valign="top">UAnimationAsset *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_grabbable_skel_mesh.html#a57a608295aa42cd8b402d95ad174be23">snappedAnimation</a></td></tr>
-<tr class="separator:a57a608295aa42cd8b402d95ad174be23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8de2501a36e25f51acacceb430c0461"><td class="memItemLeft" align="right" valign="top">AVRHand *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_grabbable_skel_mesh.html#ab8de2501a36e25f51acacceb430c0461">handRef</a></td></tr>
 <tr class="separator:ab8de2501a36e25f51acacceb430c0461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad664083386e698a3c525f75cc3aefe81"><td class="memItemLeft" align="right" valign="top">AVRHand *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_grabbable_skel_mesh.html#ad664083386e698a3c525f75cc3aefe81">otherHandRef</a></td></tr>
 <tr class="separator:ad664083386e698a3c525f75cc3aefe81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa05dfb43a90145be02d07e91ef610cf9"><td class="memItemLeft" align="right" valign="top">FName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_grabbable_skel_mesh.html#aa05dfb43a90145be02d07e91ef610cf9">boneToGrab</a></td></tr>
 <tr class="separator:aa05dfb43a90145be02d07e91ef610cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2348bc7e75327e0c4ada070aaa7d330"><td class="memItemLeft" align="right" valign="top">FName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_grabbable_skel_mesh.html#ac2348bc7e75327e0c4ada070aaa7d330">boneToSnap</a></td></tr>
-<tr class="separator:ac2348bc7e75327e0c4ada070aaa7d330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0899c3a9c6597acbe6f09b8e0d4eff07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_grabbable_skel_mesh.html#a0899c3a9c6597acbe6f09b8e0d4eff07">centerPhysicsJoint</a></td></tr>
 <tr class="separator:a0899c3a9c6597acbe6f09b8e0d4eff07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6497c2c4eaeb8cd9fce7c0b1fc72e5aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_grabbable_skel_mesh.html#a6497c2c4eaeb8cd9fce7c0b1fc72e5aa">adjustInertiaFromArray</a></td></tr>
@@ -230,6 +226,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a29db03b75561691b6799302469fb7dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86332eca660f942484fcc7320ded8459"><td class="memItemLeft" align="right" valign="top">UHapticFeedbackEffect_Base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_grabbable_skel_mesh.html#a86332eca660f942484fcc7320ded8459">collisionFeedback</a></td></tr>
 <tr class="separator:a86332eca660f942484fcc7320ded8459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e94dac1ddc6241af429455209b04d2"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_a_snapping_actor.html">ASnappingActor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_grabbable_skel_mesh.html#a36e94dac1ddc6241af429455209b04d2">hasSnappingActor</a></td></tr>
+<tr class="separator:a36e94dac1ddc6241af429455209b04d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a894c856f9267945ff86add7c8c8b2d6b"><td class="memItemLeft" align="right" valign="top">FGrabbedComponent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_grabbable_skel_mesh.html#a894c856f9267945ff86add7c8c8b2d6b">OnMeshGrabbed</a></td></tr>
 <tr class="separator:a894c856f9267945ff86add7c8c8b2d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afae15ecf21ef3f7c3b9fad30f59f25a8"><td class="memItemLeft" align="right" valign="top">FGrabbedComponent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_grabbable_skel_mesh.html#afae15ecf21ef3f7c3b9fad30f59f25a8">OnMeshReleased</a></td></tr>
@@ -783,21 +781,6 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac2348bc7e75327e0c4ada070aaa7d330"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2348bc7e75327e0c4ada070aaa7d330">&#9670;&nbsp;</a></span>boneToSnap</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FName UGrabbableSkelMesh::boneToSnap</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Storage of the bone to snap this component from, when overlapping with a snappable actor. </p>
-
-</div>
-</div>
 <a id="a0899c3a9c6597acbe6f09b8e0d4eff07"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0899c3a9c6597acbe6f09b8e0d4eff07">&#9670;&nbsp;</a></span>centerPhysicsJoint</h2>
 
@@ -903,6 +886,21 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a36e94dac1ddc6241af429455209b04d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e94dac1ddc6241af429455209b04d2">&#9670;&nbsp;</a></span>hasSnappingActor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_a_snapping_actor.html">ASnappingActor</a>* UGrabbableSkelMesh::hasSnappingActor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stored snapping actor so it can be ignored if overlapping to snapping actors at once. </p>
+
+</div>
+</div>
 <a id="a40d2d5f443470acd2c00250f233d139f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40d2d5f443470acd2c00250f233d139f">&#9670;&nbsp;</a></span>ignored</h2>
 
@@ -1005,21 +1003,6 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Other hand reference to second hand to grab this component if twoHandedGrabbing is enabled in the interface settings. </p>
-
-</div>
-</div>
-<a id="a57a608295aa42cd8b402d95ad174be23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57a608295aa42cd8b402d95ad174be23">&#9670;&nbsp;</a></span>snappedAnimation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">UAnimationAsset* UGrabbableSkelMesh::snappedAnimation</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Snapped animation to play. When snapped into a snappable component. </p>
 
 </div>
 </div>

@@ -44,11 +44,15 @@ bool \mbox{\hyperlink{class_u_snapping_rotatable_component_acf9bf578084b2c16293a
 \item 
 float \mbox{\hyperlink{class_u_snapping_rotatable_component_a4f2ce3dd137bf5bf04315f9cc39aca81}{rotating\+Limit}}
 \item 
+float \mbox{\hyperlink{class_u_snapping_rotatable_component_ad6d3a0dc8599e11b53ccc30d0e43ae80}{returning\+Distance}}
+\item 
 U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_u_snapping_rotatable_component_a7d170f8babbb73ba3c6a75e37bf104a9}{limit\+Reached\+Sound}}
 \item 
 U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_u_snapping_rotatable_component_a9e0f267b1a90223e0952b95eca97656b}{limit\+Reached\+Haptics}}
 \item 
-F\+Limit\+Reached \mbox{\hyperlink{class_u_snapping_rotatable_component_a05c1b2fa874a2c95ba22f766206b14db}{limit\+Reached}}
+F\+Limit\+Reached \mbox{\hyperlink{class_u_snapping_rotatable_component_a20cacc8d92de36cb91f554bb96040377}{limit\+Reached\+Del}}
+\item 
+F\+Limit\+Reached \mbox{\hyperlink{class_u_snapping_rotatable_component_ae02c7b2900c209d6f3041c5f99f8f6d8}{limit\+Exited\+Del}}
 \item 
 F\+On\+Rotating\+Comp\+Snapped \mbox{\hyperlink{class_u_snapping_rotatable_component_a39106777721902efa90cc4961539054f}{On\+Snap\+Connect}}
 \item 
@@ -143,11 +147,17 @@ Function to update any changes in hand rotation relative to the rotatable.
 \doxysubsubsection{\texorpdfstring{handRegrab}{handRegrab}}
 {\footnotesize\ttfamily A\+V\+R\+Hand$\ast$ U\+Snapping\+Rotatable\+Component\+::hand\+Regrab}
 
-The hand that just released the rotatable or grabbable actor. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a05c1b2fa874a2c95ba22f766206b14db}\label{class_u_snapping_rotatable_component_a05c1b2fa874a2c95ba22f766206b14db}} 
-\index{USnappingRotatableComponent@{USnappingRotatableComponent}!limitReached@{limitReached}}
-\index{limitReached@{limitReached}!USnappingRotatableComponent@{USnappingRotatableComponent}}
-\doxysubsubsection{\texorpdfstring{limitReached}{limitReached}}
-{\footnotesize\ttfamily F\+Limit\+Reached U\+Snapping\+Rotatable\+Component\+::limit\+Reached}
+The hand that just released the rotatable or grabbable actor. \mbox{\Hypertarget{class_u_snapping_rotatable_component_ae02c7b2900c209d6f3041c5f99f8f6d8}\label{class_u_snapping_rotatable_component_ae02c7b2900c209d6f3041c5f99f8f6d8}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!limitExitedDel@{limitExitedDel}}
+\index{limitExitedDel@{limitExitedDel}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{limitExitedDel}{limitExitedDel}}
+{\footnotesize\ttfamily F\+Limit\+Reached U\+Snapping\+Rotatable\+Component\+::limit\+Exited\+Del}
+
+Called when the twistable has been inserted and twisted to the correct limit. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a20cacc8d92de36cb91f554bb96040377}\label{class_u_snapping_rotatable_component_a20cacc8d92de36cb91f554bb96040377}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!limitReachedDel@{limitReachedDel}}
+\index{limitReachedDel@{limitReachedDel}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{limitReachedDel}{limitReachedDel}}
+{\footnotesize\ttfamily F\+Limit\+Reached U\+Snapping\+Rotatable\+Component\+::limit\+Reached\+Del}
 
 Called when the twistable has been inserted and twisted to the correct limit. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a9e0f267b1a90223e0952b95eca97656b}\label{class_u_snapping_rotatable_component_a9e0f267b1a90223e0952b95eca97656b}} 
 \index{USnappingRotatableComponent@{USnappingRotatableComponent}!limitReachedHaptics@{limitReachedHaptics}}
@@ -185,7 +195,13 @@ Called when something is snapped. \mbox{\Hypertarget{class_u_snapping_rotatable_
 \doxysubsubsection{\texorpdfstring{OnSnapDisconnect}{OnSnapDisconnect}}
 {\footnotesize\ttfamily F\+On\+Rotating\+Comp\+Snapped U\+Snapping\+Rotatable\+Component\+::\+On\+Snap\+Disconnect}
 
-Called when something is unsnapped. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a627deeac4b03a9ccc350c80e35899bf8}\label{class_u_snapping_rotatable_component_a627deeac4b03a9ccc350c80e35899bf8}} 
+Called when something is unsnapped. \mbox{\Hypertarget{class_u_snapping_rotatable_component_ad6d3a0dc8599e11b53ccc30d0e43ae80}\label{class_u_snapping_rotatable_component_ad6d3a0dc8599e11b53ccc30d0e43ae80}} 
+\index{USnappingRotatableComponent@{USnappingRotatableComponent}!returningDistance@{returningDistance}}
+\index{returningDistance@{returningDistance}!USnappingRotatableComponent@{USnappingRotatableComponent}}
+\doxysubsubsection{\texorpdfstring{returningDistance}{returningDistance}}
+{\footnotesize\ttfamily float U\+Snapping\+Rotatable\+Component\+::returning\+Distance}
+
+The distance between the component and the grabbing had before its removed from the lock. \mbox{\Hypertarget{class_u_snapping_rotatable_component_a627deeac4b03a9ccc350c80e35899bf8}\label{class_u_snapping_rotatable_component_a627deeac4b03a9ccc350c80e35899bf8}} 
 \index{USnappingRotatableComponent@{USnappingRotatableComponent}!rotatableMesh@{rotatableMesh}}
 \index{rotatableMesh@{rotatableMesh}!USnappingRotatableComponent@{USnappingRotatableComponent}}
 \doxysubsubsection{\texorpdfstring{rotatableMesh}{rotatableMesh}}

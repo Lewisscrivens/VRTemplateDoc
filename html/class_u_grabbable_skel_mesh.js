@@ -23,7 +23,6 @@ var class_u_grabbable_skel_mesh =
     [ "UpdateComponentsClosestBody", "class_u_grabbable_skel_mesh.html#a6933f5d40c713414ce490a0595a07379", null ],
     [ "adjustInertiaFromArray", "class_u_grabbable_skel_mesh.html#a6497c2c4eaeb8cd9fce7c0b1fc72e5aa", null ],
     [ "boneToGrab", "class_u_grabbable_skel_mesh.html#aa05dfb43a90145be02d07e91ef610cf9", null ],
-    [ "boneToSnap", "class_u_grabbable_skel_mesh.html#ac2348bc7e75327e0c4ada070aaa7d330", null ],
     [ "centerPhysicsJoint", "class_u_grabbable_skel_mesh.html#a0899c3a9c6597acbe6f09b8e0d4eff07", null ],
     [ "checkCollision", "class_u_grabbable_skel_mesh.html#aa45bdf4fd8c6a037ad1d3540589f968d", null ],
     [ "collisionFeedback", "class_u_grabbable_skel_mesh.html#a86332eca660f942484fcc7320ded8459", null ],
@@ -31,6 +30,7 @@ var class_u_grabbable_skel_mesh =
     [ "debug", "class_u_grabbable_skel_mesh.html#a84e592881542a30d6b934bd96809046c", null ],
     [ "handRef", "class_u_grabbable_skel_mesh.html#ab8de2501a36e25f51acacceb430c0461", null ],
     [ "hapticIntensityMultiplier", "class_u_grabbable_skel_mesh.html#a551aa0ba94c923fbac251261e2ba1c37", null ],
+    [ "hasSnappingActor", "class_u_grabbable_skel_mesh.html#a36e94dac1ddc6241af429455209b04d2", null ],
     [ "ignored", "class_u_grabbable_skel_mesh.html#a40d2d5f443470acd2c00250f233d139f", null ],
     [ "impactSound", "class_u_grabbable_skel_mesh.html#a29db03b75561691b6799302469fb7dea", null ],
     [ "impactSoundOverride", "class_u_grabbable_skel_mesh.html#a1b3fcd0000d4adac43c6fac6446ba259", null ],
@@ -38,7 +38,6 @@ var class_u_grabbable_skel_mesh =
     [ "OnMeshGrabbed", "class_u_grabbable_skel_mesh.html#a894c856f9267945ff86add7c8c8b2d6b", null ],
     [ "OnMeshReleased", "class_u_grabbable_skel_mesh.html#afae15ecf21ef3f7c3b9fad30f59f25a8", null ],
     [ "otherHandRef", "class_u_grabbable_skel_mesh.html#ad664083386e698a3c525f75cc3aefe81", null ],
-    [ "snappedAnimation", "class_u_grabbable_skel_mesh.html#a57a608295aa42cd8b402d95ad174be23", null ],
     [ "snapToHandLocationOffset", "class_u_grabbable_skel_mesh.html#aa7b7214aad8de1d2947d4f7b760a859e", null ],
     [ "snapToHandRotationOffset", "class_u_grabbable_skel_mesh.html#a34c5fb5f79030cc814c1a35a6509851a", null ],
     [ "timeToLerp", "class_u_grabbable_skel_mesh.html#a0b0aa94d9b0bdf020b493c68d7f67173", null ]

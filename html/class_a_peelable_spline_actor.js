@@ -16,6 +16,7 @@ var class_a_peelable_spline_actor =
     [ "SetInterfaceSettings_Implementation", "class_a_peelable_spline_actor.html#aa5f183d065b85a50fee480991e841646", null ],
     [ "Tick", "class_a_peelable_spline_actor.html#af960a8adffa3153665cc61b1db0aa2c1", null ],
     [ "debug", "class_a_peelable_spline_actor.html#ac5cd860d05d9aeb53eec25c3a1ad98cc", null ],
+    [ "defaultAngularLimit", "class_a_peelable_spline_actor.html#ac3d68a811d48511f9013526b688dcfef", null ],
     [ "grabArea", "class_a_peelable_spline_actor.html#a1543249e35e01fbb61a681b5da103a94", null ],
     [ "grabCurveSpline", "class_a_peelable_spline_actor.html#a7ca526befe203806e9549a936ecd9234", null ],
     [ "handRef", "class_a_peelable_spline_actor.html#a5cf4b2569d7c8d479a2030f1c9ff59d5", null ],

@@ -120,6 +120,8 @@ U\+Sound\+Base $\ast$ \mbox{\hyperlink{class_a_grabbable_actor_a694545c3e3af1787
 \item 
 U\+Haptic\+Feedback\+Effect\+\_\+\+Base $\ast$ \mbox{\hyperlink{class_a_grabbable_actor_a45471df31cd1feb529352472bce9d4c1}{collision\+Feedback}}
 \item 
+class \mbox{\hyperlink{class_a_snapping_actor}{A\+Snapping\+Actor}} $\ast$ \mbox{\hyperlink{class_a_grabbable_actor_a075b62c8a0886e6441296dd743f121aa}{has\+Snapping\+Actor}}
+\item 
 F\+Grabbed\+Component \mbox{\hyperlink{class_a_grabbable_actor_a338763aaf3c22c912b49b5944184bd76}{On\+Mesh\+Grabbed}}
 \item 
 F\+Grabbed \mbox{\hyperlink{class_a_grabbable_actor_ad8136ec668afd7e4e909239ee394e5df}{On\+Mesh\+Grabbed\+End}}
@@ -413,7 +415,13 @@ Struct to hold information on the hand grabbing this component like grab offsets
 \doxysubsubsection{\texorpdfstring{hapticIntensityMultiplier}{hapticIntensityMultiplier}}
 {\footnotesize\ttfamily float A\+Grabbable\+Actor\+::haptic\+Intensity\+Multiplier}
 
-The haptic feedback intensity multiplier. \mbox{\Hypertarget{class_a_grabbable_actor_a949caaa2a26280c18c6e27ba59ac476c}\label{class_a_grabbable_actor_a949caaa2a26280c18c6e27ba59ac476c}} 
+The haptic feedback intensity multiplier. \mbox{\Hypertarget{class_a_grabbable_actor_a075b62c8a0886e6441296dd743f121aa}\label{class_a_grabbable_actor_a075b62c8a0886e6441296dd743f121aa}} 
+\index{AGrabbableActor@{AGrabbableActor}!hasSnappingActor@{hasSnappingActor}}
+\index{hasSnappingActor@{hasSnappingActor}!AGrabbableActor@{AGrabbableActor}}
+\doxysubsubsection{\texorpdfstring{hasSnappingActor}{hasSnappingActor}}
+{\footnotesize\ttfamily class \mbox{\hyperlink{class_a_snapping_actor}{A\+Snapping\+Actor}}$\ast$ A\+Grabbable\+Actor\+::has\+Snapping\+Actor}
+
+Stored snapping actor so it can be ignored if overlapping to snapping actors at once. \mbox{\Hypertarget{class_a_grabbable_actor_a949caaa2a26280c18c6e27ba59ac476c}\label{class_a_grabbable_actor_a949caaa2a26280c18c6e27ba59ac476c}} 
 \index{AGrabbableActor@{AGrabbableActor}!ignoredActors@{ignoredActors}}
 \index{ignoredActors@{ignoredActors}!AGrabbableActor@{AGrabbableActor}}
 \doxysubsubsection{\texorpdfstring{ignoredActors}{ignoredActors}}

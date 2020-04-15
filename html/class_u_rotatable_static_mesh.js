@@ -28,7 +28,6 @@ var class_u_rotatable_static_mesh =
     [ "debug", "class_u_rotatable_static_mesh.html#a3d6f8f34cdc4e6523b0a3012ac7a885d", null ],
     [ "fakePhysics", "class_u_rotatable_static_mesh.html#aa64713918464be9e84464405a352762e", null ],
     [ "friction", "class_u_rotatable_static_mesh.html#ad68883b9882c8b3baf52842a9b7c5e10", null ],
-    [ "grabRotationStep", "class_u_rotatable_static_mesh.html#a6adf6b747f8fc5f7379359ad533b4024", null ],
     [ "grabScene", "class_u_rotatable_static_mesh.html#a61ad6c7b99e3cbab84f163b4b359602a", null ],
     [ "grabWhileLocked", "class_u_rotatable_static_mesh.html#abeeeed27464f4ed71549fbba1fbf01e3", null ],
     [ "handRef", "class_u_rotatable_static_mesh.html#a27ac89eedf160e0f11d6a846e1a2f25c", null ],

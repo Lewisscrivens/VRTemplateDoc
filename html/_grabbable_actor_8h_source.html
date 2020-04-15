@@ -289,100 +289,104 @@ $(document).ready(function(){initNavTree('_grabbable_actor_8h_source.html',''); 
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    UPROPERTY(BlueprintReadOnly, Category = &quot;Grabbable&quot;)</div>
 <div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="class_a_grabbable_actor.html#a45471df31cd1feb529352472bce9d4c1">  256</a></span>&#160;    UHapticFeedbackEffect_Base* collisionFeedback;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="comment">//    Grab delegates    //</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    UPROPERTY(BlueprintAssignable)</div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="class_a_grabbable_actor.html#a338763aaf3c22c912b49b5944184bd76">  264</a></span>&#160;    FGrabbedComponent OnMeshGrabbed;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    UPROPERTY(BlueprintReadOnly, Category = &quot;Grabbable&quot;)</div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="class_a_grabbable_actor.html#a075b62c8a0886e6441296dd743f121aa">  260</a></span>&#160;    class <a class="code" href="class_a_snapping_actor.html">ASnappingActor</a>* hasSnappingActor;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">//    Grab delegates    //</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    UPROPERTY(BlueprintAssignable)</div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="class_a_grabbable_actor.html#ad8136ec668afd7e4e909239ee394e5df">  268</a></span>&#160;    FGrabbed OnMeshGrabbedEnd;</div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="class_a_grabbable_actor.html#a338763aaf3c22c912b49b5944184bd76">  268</a></span>&#160;    FGrabbedComponent OnMeshGrabbed;</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    UPROPERTY(BlueprintAssignable)</div>
-<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="class_a_grabbable_actor.html#a698603f87e5d4dc0c82d43dd7b58f4bb">  272</a></span>&#160;    FPhysicalStateChanged OnPhysicsStateChanged;</div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="class_a_grabbable_actor.html#ad8136ec668afd7e4e909239ee394e5df">  272</a></span>&#160;    FGrabbed OnMeshGrabbedEnd;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    UPROPERTY(BlueprintAssignable)</div>
-<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="class_a_grabbable_actor.html#a61913f1f8b323adf47b2838ea833d62b">  276</a></span>&#160;    FCollisionChanged OnCollisionChanged;</div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="class_a_grabbable_actor.html#a698603f87e5d4dc0c82d43dd7b58f4bb">  276</a></span>&#160;    FPhysicalStateChanged OnPhysicsStateChanged;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    UPROPERTY(BlueprintAssignable)</div>
-<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="class_a_grabbable_actor.html#a869341d163212a11b103bd6f70513cf0">  280</a></span>&#160;    FGrabbedComponent OnMeshReleased;</div>
+<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="class_a_grabbable_actor.html#a61913f1f8b323adf47b2838ea833d62b">  280</a></span>&#160;    FCollisionChanged OnCollisionChanged;</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;private:</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;     </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    FTransform secondHandOriginalTransform, secondHandGrabbableRot; </div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    FTimerHandle lastRumbleHandle;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">float</span> lastImpactSoundTime, lastRumbleIntensity;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">float</span> lastFrameVelocity; </div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordtype">float</span> lastHandGrabDistance; </div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">float</span> lerpStartTime; </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">float</span> lastZ;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">bool</span> lerping; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">bool</span> attatched, physicsAttatched;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">bool</span> driveEnabled; </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;protected:</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    virtual <span class="keywordtype">void</span> BeginPlay() override;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#if WITH_EDITOR</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CanEditChange(<span class="keyword">const</span> UProperty* InProperty) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordtype">void</span> LerpingBack(<span class="keywordtype">float</span> deltaTime);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">void</span> ToggleLerping(<span class="keywordtype">bool</span> on);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">void</span> UpdateGrabInformation();</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    UFUNCTION(Category = <span class="stringliteral">&quot;Collision&quot;</span>)</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    void OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult&amp; Hit);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    UPROPERTY(BlueprintAssignable)</div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="class_a_grabbable_actor.html#a869341d163212a11b103bd6f70513cf0">  284</a></span>&#160;    FGrabbedComponent OnMeshReleased;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;private:</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;     </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    FTransform secondHandOriginalTransform, secondHandGrabbableRot; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    FTimerHandle lastRumbleHandle;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">float</span> lastImpactSoundTime, lastRumbleIntensity;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">float</span> lastFrameVelocity; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">float</span> lastHandGrabDistance; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">float</span> lerpStartTime; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">float</span> lastZ;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordtype">bool</span> lerping; </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">bool</span> attatched, physicsAttatched;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">bool</span> driveEnabled; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;protected:</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    virtual <span class="keywordtype">void</span> BeginPlay() override;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#if WITH_EDITOR</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CanEditChange(<span class="keyword">const</span> UProperty* InProperty) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">void</span> LerpingBack(<span class="keywordtype">float</span> deltaTime);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordtype">void</span> ToggleLerping(<span class="keywordtype">bool</span> on);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordtype">void</span> UpdateGrabInformation();</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    UFUNCTION(Category = &quot;Collision&quot;)</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">void</span> ResetLastRumbleIntensity();    </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    UFUNCTION(Category = <span class="stringliteral">&quot;Collision&quot;</span>)</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    void OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult&amp; Hit);</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;public:</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <a class="code" href="class_a_grabbable_actor.html">AGrabbableActor</a>();</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    virtual <span class="keywordtype">void</span> Tick(<span class="keywordtype">float</span> DeltaTime) override;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordtype">void</span> PickupAttatchTo();</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">void</span> PickupPhysicsHandle(<a class="code" href="struct_f_grab_information.html">FGrabInformation</a> grabInfo);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    UFUNCTION(Category = &quot;Collision&quot;)</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordtype">void</span> ResetLastRumbleIntensity();    </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;public:</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <a class="code" href="class_a_grabbable_actor.html">AGrabbableActor</a>();</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    virtual <span class="keywordtype">void</span> Tick(<span class="keywordtype">float</span> DeltaTime) override;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">void</span> PickupAttatchTo();</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">void</span> DropAttatchTo();</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordtype">void</span> DropPhysicsHandle(<a class="code" href="struct_f_grab_information.html">FGrabInformation</a> grabInfo);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordtype">bool</span> GetColliding();</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordtype">void</span> PickupPhysicsHandle(<a class="code" href="struct_f_grab_information.html">FGrabInformation</a> grabInfo);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordtype">void</span> DropAttatchTo();</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordtype">void</span> DropPhysicsHandle(<a class="code" href="struct_f_grab_information.html">FGrabInformation</a> grabInfo);</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    UFUNCTION(BlueprintPure, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordtype">bool</span> IsActorGrabbed();</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordtype">bool</span> GetColliding();</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    UFUNCTION(BlueprintPure, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordtype">bool</span> IsActorGrabbedTwoHanded();</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordtype">bool</span> IsActorGrabbed();</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    UFUNCTION(BlueprintCallable, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    FHitResult SweepActor();</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    UFUNCTION(BlueprintPure, Category = &quot;Grabbable&quot;)</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordtype">bool</span> IsActorGrabbedTwoHanded();</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    UFUNCTION(BlueprintCallable, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    FTransform GetGrabbedTransform();</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    FHitResult SweepActor();</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    virtual <span class="keywordtype">void</span> GrabPressed_Implementation(AVRHand* hand) override;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    virtual <span class="keywordtype">void</span> GrabReleased_Implementation(AVRHand* hand) override;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    virtual <span class="keywordtype">void</span> Dragging_Implementation(<span class="keywordtype">float</span> deltaTime) override;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    virtual <span class="keywordtype">void</span> Overlapping_Implementation(AVRHand* hand) override;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    virtual <span class="keywordtype">void</span> EndOverlapping_Implementation(AVRHand* hand) override;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    virtual <span class="keywordtype">void</span> Teleported_Implementation() override;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    virtual <a class="code" href="struct_f_hand_interface_settings.html">FHandInterfaceSettings</a> GetInterfaceSettings_Implementation() override;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    virtual <span class="keywordtype">void</span> SetInterfaceSettings_Implementation(<a class="code" href="struct_f_hand_interface_settings.html">FHandInterfaceSettings</a> newInterfaceSettings) override;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;};</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    UFUNCTION(BlueprintCallable, Category = &quot;Grabbable&quot;)</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    FTransform GetGrabbedTransform();</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    virtual <span class="keywordtype">void</span> GrabPressed_Implementation(AVRHand* hand) override;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    virtual <span class="keywordtype">void</span> GrabReleased_Implementation(AVRHand* hand) override;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    virtual <span class="keywordtype">void</span> Dragging_Implementation(<span class="keywordtype">float</span> deltaTime) override;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    virtual <span class="keywordtype">void</span> Overlapping_Implementation(AVRHand* hand) override;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    virtual <span class="keywordtype">void</span> EndOverlapping_Implementation(AVRHand* hand) override;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    virtual <span class="keywordtype">void</span> Teleported_Implementation() override;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    virtual <a class="code" href="struct_f_hand_interface_settings.html">FHandInterfaceSettings</a> GetInterfaceSettings_Implementation() override;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    virtual <span class="keywordtype">void</span> SetInterfaceSettings_Implementation(<a class="code" href="struct_f_hand_interface_settings.html">FHandInterfaceSettings</a> newInterfaceSettings) override;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_a_grabbable_actor_html"><div class="ttname"><a href="class_a_grabbable_actor.html">AGrabbableActor</a></div><div class="ttdef"><b>Definition:</b> GrabbableActor.h:117</div></div>
 <div class="ttc" id="aclass_i_hands_interface_html"><div class="ttname"><a href="class_i_hands_interface.html">IHandsInterface</a></div><div class="ttdef"><b>Definition:</b> HandsInterface.h:105</div></div>
+<div class="ttc" id="aclass_a_snapping_actor_html"><div class="ttname"><a href="class_a_snapping_actor.html">ASnappingActor</a></div><div class="ttdef"><b>Definition:</b> SnappingActor.h:53</div></div>
 <div class="ttc" id="astruct_f_grab_information_html_ad0d2d93bdc170e10a5c6d6792ec9ee4c"><div class="ttname"><a href="struct_f_grab_information.html#ad0d2d93bdc170e10a5c6d6792ec9ee4c">FGrabInformation::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdef"><b>Definition:</b> GrabbableActor.h:101</div></div>
 <div class="ttc" id="aclass_u_v_r_physics_handle_component_html"><div class="ttname"><a href="class_u_v_r_physics_handle_component.html">UVRPhysicsHandleComponent</a></div><div class="ttdef"><b>Definition:</b> VRPhysicsHandleComponent.h:126</div></div>
 <div class="ttc" id="astruct_f_grab_information_html"><div class="ttname"><a href="struct_f_grab_information.html">FGrabInformation</a></div><div class="ttdef"><b>Definition:</b> GrabbableActor.h:60</div></div>
@@ -390,7 +394,7 @@ $(document).ready(function(){initNavTree('_grabbable_actor_8h_source.html',''); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_6fd832a3d65363e09d8d597d0448c00b.html">Unreal Projects</a></li><li class="navelem"><a class="el" href="dir_3fff38bdce33944f7e219e822cbc5beb.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_0a163c88c69a69c7f2dcd29823167014.html">Source</a></li><li class="navelem"><a class="el" href="dir_1cfb3228dd2ecf18cd9e6aaec6c2525e.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_ff64d49ecd85e7f1ec7666cb2781132b.html">Interactables</a></li><li class="navelem"><b>GrabbableActor.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d6224041361f9d8b268ade4f6903f24f.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_86390bb43291fc71f7996aa055b88b36.html">Source</a></li><li class="navelem"><a class="el" href="dir_4659e6f3c597c93358935e8923de97ee.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_94d663d1deba5ffb3f43de6499c64716.html">Interactables</a></li><li class="navelem"><b>GrabbableActor.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

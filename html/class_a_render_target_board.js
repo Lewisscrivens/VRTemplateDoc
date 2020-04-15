@@ -15,6 +15,5 @@ var class_a_render_target_board =
     [ "inputMaterialInst", "class_a_render_target_board.html#a0138b2e6790b12e12336927a604834b1", null ],
     [ "removalMaterial", "class_a_render_target_board.html#aa2d866f2df19f6e50084b659d9d29d79", null ],
     [ "removalMaterialInstance", "class_a_render_target_board.html#a01c61c693138ef30c67aef89c5c4f7be", null ],
-    [ "removalRenderTarget", "class_a_render_target_board.html#a72b7c471667dc26cacdf4bc0b9135a30", null ],
     [ "renderTargetSize", "class_a_render_target_board.html#a4f356929872bd3b69c87b6f646ca646d", null ]
 ];

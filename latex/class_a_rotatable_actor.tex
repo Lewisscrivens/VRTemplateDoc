@@ -155,7 +155,7 @@ void \mbox{\hyperlink{class_a_rotatable_actor_afa627a29da8076fe9335f87ce93c7479}
 
 
 \doxysubsection{Detailed Description}
-Mixture between physics constraint and static rotation to allow angles greater than 180 degrees. N\+O\+TE\+: Pivot in place needs to have collision enabled with everything ignored for it to work correctly when created physics bodies for this constrained rotatable. N\+O\+TE\+: Grabbable rotating component must be a child of the rotatable box component and have a \char`\"{}\+Grabbable\char`\"{} tag. N\+O\+TE\+: This class is best suited to things that need a rotation limit above 180 degrees and need physical collisions like a door etc. 
+Mixture between physics constraint and static rotation to allow angles greater than 180 degrees. N\+O\+TE\+: Pivot in place needs to have collision enabled with everything ignored for it to work correctly when created physics bodies for this constrained rotatable. This is why there is a rotatable box that should have child static meshes added... N\+O\+TE\+: Grabbable rotating component must be a child of the rotatable box component and have a \char`\"{}\+Grabbable\char`\"{} tag on any components you can grab this rotatable from. N\+O\+TE\+: This class is best suited to things that need a rotation limit above 180 degrees and need physical collisions like a door etc. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_a_rotatable_actor_a94732aece3847fa563539537425ba97e}\label{class_a_rotatable_actor_a94732aece3847fa563539537425ba97e}} 

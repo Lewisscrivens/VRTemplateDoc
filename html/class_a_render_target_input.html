@@ -212,6 +212,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a463855d4be166cd79e4c030d3b54ff83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c14e83d2dd8eb965f451f7d86b38e93"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_render_target_input.html#a7c14e83d2dd8eb965f451f7d86b38e93">traceDistance</a></td></tr>
 <tr class="separator:a7c14e83d2dd8eb965f451f7d86b38e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad632600f3ea0a3ee00a59f7ca5362f52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_render_target_input.html#ad632600f3ea0a3ee00a59f7ca5362f52">traceEnabled</a></td></tr>
+<tr class="separator:ad632600f3ea0a3ee00a59f7ca5362f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9adde34191c275a274c28ed105239576"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_render_target_input.html#a9adde34191c275a274c28ed105239576">debugTrace</a></td></tr>
 <tr class="separator:a9adde34191c275a274c28ed105239576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57dcd228ffe67de56315eca5e0d7d5b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_render_target_board.html">ARenderTargetBoard</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_render_target_input.html#a57dcd228ffe67de56315eca5e0d7d5b4">currentBoard</a></td></tr>
@@ -282,6 +284,8 @@ UStaticMeshComponent *&#160;</td><td class="memItemRight" valign="bottom"><b>gra
 <tr class="separator:a694545c3e3af178736732680306b8fe9 inherit pub_attribs_class_a_grabbable_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45471df31cd1feb529352472bce9d4c1 inherit pub_attribs_class_a_grabbable_actor"><td class="memItemLeft" align="right" valign="top">UHapticFeedbackEffect_Base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_grabbable_actor.html#a45471df31cd1feb529352472bce9d4c1">collisionFeedback</a></td></tr>
 <tr class="separator:a45471df31cd1feb529352472bce9d4c1 inherit pub_attribs_class_a_grabbable_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a075b62c8a0886e6441296dd743f121aa inherit pub_attribs_class_a_grabbable_actor"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_a_snapping_actor.html">ASnappingActor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_grabbable_actor.html#a075b62c8a0886e6441296dd743f121aa">hasSnappingActor</a></td></tr>
+<tr class="separator:a075b62c8a0886e6441296dd743f121aa inherit pub_attribs_class_a_grabbable_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a338763aaf3c22c912b49b5944184bd76 inherit pub_attribs_class_a_grabbable_actor"><td class="memItemLeft" align="right" valign="top">FGrabbedComponent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_grabbable_actor.html#a338763aaf3c22c912b49b5944184bd76">OnMeshGrabbed</a></td></tr>
 <tr class="separator:a338763aaf3c22c912b49b5944184bd76 inherit pub_attribs_class_a_grabbable_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8136ec668afd7e4e909239ee394e5df inherit pub_attribs_class_a_grabbable_actor"><td class="memItemLeft" align="right" valign="top">FGrabbed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_grabbable_actor.html#ad8136ec668afd7e4e909239ee394e5df">OnMeshGrabbedEnd</a></td></tr>
@@ -577,6 +581,21 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The distance to trace from the grabbable mesh down along the Z-Axis to look for a RenderTargetBoard object. </p>
+
+</div>
+</div>
+<a id="ad632600f3ea0a3ee00a59f7ca5362f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad632600f3ea0a3ee00a59f7ca5362f52">&#9670;&nbsp;</a></span>traceEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ARenderTargetInput::traceEnabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This class is enabled? Needed for example in the marker the lid can be put on which would make this class functionality pointless. </p>
 
 </div>
 </div>

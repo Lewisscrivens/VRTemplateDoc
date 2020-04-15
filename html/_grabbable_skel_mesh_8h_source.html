@@ -114,146 +114,144 @@ $(document).ready(function(){initNavTree('_grabbable_skel_mesh_8h_source.html','
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = <span class="stringliteral">&quot;Grabbable&quot;</span>)</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a57a608295aa42cd8b402d95ad174be23">   32</a></span>&#160;    UAnimationAsset* snappedAnimation;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#ab8de2501a36e25f51acacceb430c0461">   32</a></span>&#160;    AVRHand* handRef;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#ab8de2501a36e25f51acacceb430c0461">   36</a></span>&#160;    AVRHand* handRef;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#ad664083386e698a3c525f75cc3aefe81">   36</a></span>&#160;    AVRHand* otherHandRef;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#ad664083386e698a3c525f75cc3aefe81">   40</a></span>&#160;    AVRHand* otherHandRef;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#aa05dfb43a90145be02d07e91ef610cf9">   41</a></span>&#160;    FName boneToGrab;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#aa05dfb43a90145be02d07e91ef610cf9">   45</a></span>&#160;    FName boneToGrab;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a0899c3a9c6597acbe6f09b8e0d4eff07">   45</a></span>&#160;    <span class="keywordtype">bool</span> centerPhysicsJoint;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#ac2348bc7e75327e0c4ada070aaa7d330">   49</a></span>&#160;    FName boneToSnap;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a0899c3a9c6597acbe6f09b8e0d4eff07">   53</a></span>&#160;    <span class="keywordtype">bool</span> centerPhysicsJoint;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a6497c2c4eaeb8cd9fce7c0b1fc72e5aa">   59</a></span>&#160;    <span class="keywordtype">bool</span> adjustInertiaFromArray;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable|Collisions&quot;)</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#aa45bdf4fd8c6a037ad1d3540589f968d">   64</a></span>&#160;    <span class="keywordtype">bool</span> checkCollision;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a6497c2c4eaeb8cd9fce7c0b1fc72e5aa">   51</a></span>&#160;    <span class="keywordtype">bool</span> adjustInertiaFromArray;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable|Collisions&quot;)</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#aa45bdf4fd8c6a037ad1d3540589f968d">   56</a></span>&#160;    <span class="keywordtype">bool</span> checkCollision;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable|Collisions&quot;)</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a0b0aa94d9b0bdf020b493c68d7f67173">   60</a></span>&#160;    <span class="keywordtype">float</span> timeToLerp;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a34c5fb5f79030cc814c1a35a6509851a">   64</a></span>&#160;    FRotator snapToHandRotationOffset;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable|Collisions&quot;)</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a0b0aa94d9b0bdf020b493c68d7f67173">   68</a></span>&#160;    <span class="keywordtype">float</span> timeToLerp;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#aa7b7214aad8de1d2947d4f7b760a859e">   68</a></span>&#160;    FVector snapToHandLocationOffset;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a34c5fb5f79030cc814c1a35a6509851a">   72</a></span>&#160;    FRotator snapToHandRotationOffset;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable|Haptic Effects&quot;)</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a551aa0ba94c923fbac251261e2ba1c37">   72</a></span>&#160;    <span class="keywordtype">float</span> hapticIntensityMultiplier;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#aa7b7214aad8de1d2947d4f7b760a859e">   76</a></span>&#160;    FVector snapToHandLocationOffset;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable|Haptic Effects&quot;)</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#ab01286fae895b5ab7a62d6836970971e">   76</a></span>&#160;    UHapticFeedbackEffect_Base* collisionFeedbackOverride;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable|Haptic Effects&quot;)</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a551aa0ba94c923fbac251261e2ba1c37">   80</a></span>&#160;    <span class="keywordtype">float</span> hapticIntensityMultiplier;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a1b3fcd0000d4adac43c6fac6446ba259">   80</a></span>&#160;    USoundBase* impactSoundOverride;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable|Haptic Effects&quot;)</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#ab01286fae895b5ab7a62d6836970971e">   84</a></span>&#160;    UHapticFeedbackEffect_Base* collisionFeedbackOverride;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a84e592881542a30d6b934bd96809046c">   84</a></span>&#160;    <span class="keywordtype">bool</span> debug;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable|Haptic Effects&quot;)</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a1b3fcd0000d4adac43c6fac6446ba259">   88</a></span>&#160;    USoundBase* impactSoundOverride;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#aa04d153bd63077a0fdd4009de8e0674a">   88</a></span>&#160;    <a class="code" href="struct_f_hand_interface_settings.html">FHandInterfaceSettings</a> interactableSettings;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a84e592881542a30d6b934bd96809046c">   92</a></span>&#160;    <span class="keywordtype">bool</span> debug;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#aa04d153bd63077a0fdd4009de8e0674a">   96</a></span>&#160;    <a class="code" href="struct_f_hand_interface_settings.html">FHandInterfaceSettings</a> interactableSettings;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">//    Grab Pointers     //</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//    Grab Pointers     //</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    UPROPERTY(BlueprintReadOnly, Category = &quot;Grabbable&quot;)</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a40d2d5f443470acd2c00250f233d139f">   97</a></span>&#160;    TArray&lt;AActor*&gt; ignored;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    UPROPERTY(BlueprintReadOnly, Category = &quot;Grabbable&quot;)</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a29db03b75561691b6799302469fb7dea">  101</a></span>&#160;    USoundBase* impactSound;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    UPROPERTY(BlueprintReadOnly, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a40d2d5f443470acd2c00250f233d139f">  105</a></span>&#160;    TArray&lt;AActor*&gt; ignored;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a86332eca660f942484fcc7320ded8459">  105</a></span>&#160;    UHapticFeedbackEffect_Base* collisionFeedback;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    UPROPERTY(BlueprintReadOnly, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a29db03b75561691b6799302469fb7dea">  109</a></span>&#160;    USoundBase* impactSound;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a36e94dac1ddc6241af429455209b04d2">  109</a></span>&#160;    class <a class="code" href="class_a_snapping_actor.html">ASnappingActor</a>* hasSnappingActor;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    UPROPERTY(BlueprintReadOnly, Category = &quot;Grabbable&quot;)</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a86332eca660f942484fcc7320ded8459">  113</a></span>&#160;    UHapticFeedbackEffect_Base* collisionFeedback;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">//    Grab delegates    //</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">//    Grab delegates    //</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    UPROPERTY(BlueprintAssignable)</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a894c856f9267945ff86add7c8c8b2d6b">  117</a></span>&#160;    FGrabbedComponent OnMeshGrabbed;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    UPROPERTY(BlueprintAssignable)</div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#a894c856f9267945ff86add7c8c8b2d6b">  121</a></span>&#160;    FGrabbedComponent OnMeshGrabbed;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#afae15ecf21ef3f7c3b9fad30f59f25a8">  121</a></span>&#160;    FGrabbedComponent OnMeshReleased;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    UPROPERTY(BlueprintAssignable)</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_u_grabbable_skel_mesh.html#afae15ecf21ef3f7c3b9fad30f59f25a8">  125</a></span>&#160;    FGrabbedComponent OnMeshReleased;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;private:</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    FName otherBoneToGrab;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    FVector originalInteriaScale; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    FVector originalRelativePickupOffset; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    FRotator originalRelativePickupRotation; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    FVector worldPickupOffset; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    FRotator worldRotationOffset; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    FVector originalIntertia;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    FTransform originalBoneOffset; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    FTimerHandle lastRumbleHandle;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">float</span> lastHitTime, lastImpactSoundTime, lastRumbleIntensity, lastZ;<span class="comment">// Hit event time events.</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">float</span> lastHandGrabDistance; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">float</span> originalMass; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">float</span> lerpStartTime; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">bool</span> grabbed; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">bool</span> grabFromClosestBone; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">bool</span> softHandle; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">bool</span> lerping; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;protected:</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    virtual <span class="keywordtype">void</span> BeginPlay() override;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">void</span> ToggleSoftPhysicsHandle(<span class="keywordtype">bool</span> on);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">void</span> LerpingBack(<span class="keywordtype">float</span> deltaTime);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> ToggleLerping(<span class="keywordtype">bool</span> on);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;public:</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="class_u_grabbable_skel_mesh.html">UGrabbableSkelMesh</a>();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;private:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    FName otherBoneToGrab;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    FVector originalInteriaScale; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    FVector originalRelativePickupOffset; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    FRotator originalRelativePickupRotation; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    FVector worldPickupOffset; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    FRotator worldRotationOffset; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    FVector originalIntertia;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    FTransform originalBoneOffset; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    FTimerHandle lastRumbleHandle;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">float</span> lastHitTime, lastImpactSoundTime, lastRumbleIntensity, lastZ;<span class="comment">// Hit event time events.</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">float</span> lastHandGrabDistance; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">float</span> originalMass; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">float</span> lerpStartTime; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">bool</span> grabbed; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">bool</span> grabFromClosestBone; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">bool</span> softHandle; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">bool</span> lerping; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;protected:</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    virtual <span class="keywordtype">void</span> BeginPlay() override;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">void</span> ToggleSoftPhysicsHandle(<span class="keywordtype">bool</span> on);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> LerpingBack(<span class="keywordtype">float</span> deltaTime);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">void</span> ToggleLerping(<span class="keywordtype">bool</span> on);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;public:</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="class_u_grabbable_skel_mesh.html">UGrabbableSkelMesh</a>();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    UFUNCTION(BlueprintCallable)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">void</span> OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult&amp; Hit);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    UFUNCTION(BlueprintCallable)</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">void</span> OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult&amp; Hit);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    UFUNCTION(Category = &quot;Timer&quot;)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">void</span> ResetLastRumbleIntensity();</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    UFUNCTION(Category = &quot;Timer&quot;)</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">void</span> ResetLastRumbleIntensity();</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">void</span> PickupPhysicsHandle(AVRHand* hand);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">void</span> DropPhysicsHandle(AVRHand* hand);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    FName UpdateComponentsClosestBody(AVRHand* hand);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">bool</span> IsMeshGrabbed();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">void</span> PickupPhysicsHandle(AVRHand* hand);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">void</span> DropPhysicsHandle(AVRHand* hand);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    FName UpdateComponentsClosestBody(AVRHand* hand);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">bool</span> IsMeshGrabbed();</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    UFUNCTION(BlueprintCallable)</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    FTransform GetGrabbedTransform();</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    UFUNCTION(BlueprintCallable)</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    FTransform GetGrabbedTransform();</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">bool</span> GetRecentlyHit();</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    UFUNCTION(BlueprintCallable)</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">bool</span> GetRecentlyHit();</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    virtual <span class="keywordtype">void</span> GrabPressed_Implementation(AVRHand* hand) override;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    virtual <span class="keywordtype">void</span> GrabReleased_Implementation(AVRHand* hand) override;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    virtual <span class="keywordtype">void</span> Dragging_Implementation(<span class="keywordtype">float</span> deltaTime) override;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    virtual <span class="keywordtype">void</span> Overlapping_Implementation(AVRHand* hand) override;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    virtual <span class="keywordtype">void</span> EndOverlapping_Implementation(AVRHand* hand) override;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    virtual <span class="keywordtype">void</span> Teleported_Implementation() override;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    virtual <a class="code" href="struct_f_hand_interface_settings.html">FHandInterfaceSettings</a> GetInterfaceSettings_Implementation() override;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    virtual <span class="keywordtype">void</span> SetInterfaceSettings_Implementation(<a class="code" href="struct_f_hand_interface_settings.html">FHandInterfaceSettings</a> newInterfaceSettings) override;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;};</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    virtual <span class="keywordtype">void</span> GrabPressed_Implementation(AVRHand* hand) override;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    virtual <span class="keywordtype">void</span> GrabReleased_Implementation(AVRHand* hand) override;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    virtual <span class="keywordtype">void</span> Dragging_Implementation(<span class="keywordtype">float</span> deltaTime) override;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    virtual <span class="keywordtype">void</span> Overlapping_Implementation(AVRHand* hand) override;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    virtual <span class="keywordtype">void</span> EndOverlapping_Implementation(AVRHand* hand) override;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    virtual <span class="keywordtype">void</span> Teleported_Implementation() override;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    virtual <a class="code" href="struct_f_hand_interface_settings.html">FHandInterfaceSettings</a> GetInterfaceSettings_Implementation() override;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    virtual <span class="keywordtype">void</span> SetInterfaceSettings_Implementation(<a class="code" href="struct_f_hand_interface_settings.html">FHandInterfaceSettings</a> newInterfaceSettings) override;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_i_hands_interface_html"><div class="ttname"><a href="class_i_hands_interface.html">IHandsInterface</a></div><div class="ttdef"><b>Definition:</b> HandsInterface.h:105</div></div>
+<div class="ttc" id="aclass_a_snapping_actor_html"><div class="ttname"><a href="class_a_snapping_actor.html">ASnappingActor</a></div><div class="ttdef"><b>Definition:</b> SnappingActor.h:53</div></div>
 <div class="ttc" id="aclass_u_v_r_physics_handle_component_html"><div class="ttname"><a href="class_u_v_r_physics_handle_component.html">UVRPhysicsHandleComponent</a></div><div class="ttdef"><b>Definition:</b> VRPhysicsHandleComponent.h:126</div></div>
 <div class="ttc" id="aclass_u_grabbable_skel_mesh_html"><div class="ttname"><a href="class_u_grabbable_skel_mesh.html">UGrabbableSkelMesh</a></div><div class="ttdef"><b>Definition:</b> GrabbableSkelMesh.h:24</div></div>
 <div class="ttc" id="astruct_f_hand_interface_settings_html"><div class="ttname"><a href="struct_f_hand_interface_settings.html">FHandInterfaceSettings</a></div><div class="ttdef"><b>Definition:</b> HandsInterface.h:26</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_6fd832a3d65363e09d8d597d0448c00b.html">Unreal Projects</a></li><li class="navelem"><a class="el" href="dir_3fff38bdce33944f7e219e822cbc5beb.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_0a163c88c69a69c7f2dcd29823167014.html">Source</a></li><li class="navelem"><a class="el" href="dir_1cfb3228dd2ecf18cd9e6aaec6c2525e.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_ff64d49ecd85e7f1ec7666cb2781132b.html">Interactables</a></li><li class="navelem"><b>GrabbableSkelMesh.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d6224041361f9d8b268ade4f6903f24f.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_86390bb43291fc71f7996aa055b88b36.html">Source</a></li><li class="navelem"><a class="el" href="dir_4659e6f3c597c93358935e8923de97ee.html">VRTemplate</a></li><li class="navelem"><a class="el" href="dir_94d663d1deba5ffb3f43de6499c64716.html">Interactables</a></li><li class="navelem"><b>GrabbableSkelMesh.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

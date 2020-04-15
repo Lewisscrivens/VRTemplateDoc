@@ -295,7 +295,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:afa627a29da8076fe9335f87ce93c7479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Mixture between physics constraint and static rotation to allow angles greater than 180 degrees. NOTE: Pivot in place needs to have collision enabled with everything ignored for it to work correctly when created physics bodies for this constrained rotatable. NOTE: Grabbable rotating component must be a child of the rotatable box component and have a "Grabbable" tag. NOTE: This class is best suited to things that need a rotation limit above 180 degrees and need physical collisions like a door etc. </p>
+<div class="textblock"><p>Mixture between physics constraint and static rotation to allow angles greater than 180 degrees. NOTE: Pivot in place needs to have collision enabled with everything ignored for it to work correctly when created physics bodies for this constrained rotatable. This is why there is a rotatable box that should have child static meshes added... NOTE: Grabbable rotating component must be a child of the rotatable box component and have a "Grabbable" tag on any components you can grab this rotatable from. NOTE: This class is best suited to things that need a rotation limit above 180 degrees and need physical collisions like a door etc. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a94732aece3847fa563539537425ba97e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94732aece3847fa563539537425ba97e">&#9670;&nbsp;</a></span>ARotatableActor()</h2>

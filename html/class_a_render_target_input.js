@@ -13,5 +13,6 @@ var class_a_render_target_input =
     [ "inputSize", "class_a_render_target_input.html#a463855d4be166cd79e4c030d3b54ff83", null ],
     [ "inputType", "class_a_render_target_input.html#a87d494c7f92369ce501a34339280774d", null ],
     [ "traceDistance", "class_a_render_target_input.html#a7c14e83d2dd8eb965f451f7d86b38e93", null ],
+    [ "traceEnabled", "class_a_render_target_input.html#ad632600f3ea0a3ee00a59f7ca5362f52", null ],
     [ "updateRate", "class_a_render_target_input.html#ab30e64cc3c63dddd1cbd498e4034bbd3", null ]
 ];
